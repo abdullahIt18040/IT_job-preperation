@@ -1,199 +1,376 @@
-### Data Structure
+# Data Structure
 
-### What is Data Structure?
-```
-A Data Structure is a way of organizing, storing, and managing data in a computer so that we can use the data efficiently.
+## What is Data Structure?
+
+A **Data Structure** is a way of **organizing, storing, and managing data** in a computer so that we can use the data efficiently.
 
 In simple words:
 
-Data Structure = A way to store and organize data so that operations like access, search, insertion, deletion, and update can be performed efficiently.
+> **Data Structure = A way to store and organize data so that operations like access, search, insertion, deletion, and update can be performed efficiently.**
 
-Example
+### Example
 
 Suppose we have student marks:
 
+```text
 80, 75, 90, 65, 88
+```
 
 We can store them in an Array:
 
+```java
 int[] marks = {80, 75, 90, 65, 88};
+```
 
 Now we can easily access:
 
+```java
 marks[2]
+```
 
 Result:
 
+```text
 90
+```
 
-So, Array is a Data Structure.
+So, **Array is a Data Structure**.
 
-Types of Data Structure
+---
+
+# Types of Data Structure
 
 Data Structures are mainly divided into two types:
 
-                    Data Structure
-                         │
-             ┌───────────┴───────────┐
-             │                       │
-         Linear                  Non-Linear
-       Data Structure           Data Structure
-             │                       │
-      ┌──────┼──────┐          ┌─────┴─────┐
-      │      │      │          │           │
-    Array  Stack  Queue       Tree        Graph
-             │
-       Linked List
-1. Linear Data Structure
+```text
+                         Data Structure
+                              │
+                ┌─────────────┴─────────────┐
+                │                           │
+             Linear                    Non-Linear
+          Data Structure             Data Structure
+                │                           │
+       ┌────────┼────────┐           ┌──────┴──────┐
+       │        │        │           │             │
+     Array    Stack    Queue        Tree          Graph
+       │
+  Linked List
+```
 
-In a Linear Data Structure, data elements are arranged sequentially, one after another.
+---
+
+# 1. Linear Data Structure
+
+In a **Linear Data Structure**, data elements are arranged **sequentially, one after another**.
 
 Example:
 
+```text
 10 → 20 → 30 → 40 → 50
+```
 
 The elements follow a linear sequence.
 
-Main Linear Data Structures
-A. Array
+### Main Linear Data Structures
 
-Stores elements using indexes.
+* Array
+* Linked List
+* Stack
+* Queue
 
-Index:  0   1   2   3
-       ┌───┬───┬───┬───┐
-Data:  │10 │20 │30 │40 │
-       └───┴───┴───┴───┘
+---
+
+## A. Array
+
+An **Array** stores multiple elements of the same type and provides access using an **index**.
 
 Example:
 
+```text
+Index:  0    1    2    3
+       ┌────┬────┬────┬────┐
+Data:  │ 10 │ 20 │ 30 │ 40 │
+       └────┴────┴────┴────┘
+```
+
+Java:
+
+```java
 int[] arr = {10, 20, 30, 40};
+```
 
-Access: O(1)
-2. Non-Linear Data Structure
+Access:
 
-In a Non-Linear Data Structure, elements are not arranged sequentially.
+```java
+arr[2]
+```
 
-They can have hierarchical or network relationships.
+Result:
+
+```text
+30
+```
+
+**Access Time Complexity:** `O(1)`
+
+---
+
+## B. Linked List
+
+A **Linked List** consists of nodes where each node contains data and a reference to another node.
+
+```text
+10 → 20 → 30 → 40 → null
+```
+
+Example:
+
+```java
+class Node {
+    int data;
+    Node next;
+}
+```
+
+**Access Time Complexity:** `O(n)`
+
+---
+
+## C. Stack
+
+A **Stack** follows:
+
+> **LIFO — Last In, First Out**
+
+Example:
+
+```text
+        30 ← Top
+        20
+        10
+```
+
+If we call `pop()`, `30` will be removed first.
+
+### Common Operations
+
+```text
+push() → Add element
+pop()  → Remove top element
+peek() → View top element
+```
+
+### Real-World Examples
+
+* Undo/Redo
+* Browser history
+* Function call stack
+* Recursion
+* DFS
+
+---
+
+## D. Queue
+
+A **Queue** follows:
+
+> **FIFO — First In, First Out**
+
+Example:
+
+```text
+Front                    Rear
+  ↓                        ↓
+10 → 20 → 30 → 40
+```
+
+If we remove an element, `10` will be removed first.
+
+### Common Operations
+
+```text
+enqueue() → Add element
+dequeue() → Remove element
+peek()    → View front element
+```
+
+### Real-World Examples
+
+* Printer queue
+* CPU scheduling
+* Message processing
+* Producer-Consumer
+* BFS
+
+---
+
+# 2. Non-Linear Data Structure
+
+In a **Non-Linear Data Structure**, elements are not arranged sequentially.
+
+They can represent:
+
+* **Hierarchical relationships**
+* **Network relationships**
 
 Main examples:
 
-Tree
-Graph
-A. Tree
+* Tree
+* Graph
 
-A Tree represents hierarchical data.
+---
+
+# A. Tree
+
+A **Tree** represents hierarchical data.
 
 Example:
 
+```text
               10
             /    \
            5      20
          /  \    /  \
         2    7  15   30
+```
 
 Here:
 
-10 → Root
-5,20 → Children
-2,7,15,30 → Leaf nodes
+```text
+10       → Root
+5, 20    → Child Nodes
+2, 7, 15, 30 → Leaf Nodes
+```
 
-Types of Tree:
+### Types of Trees
 
-Binary Tree
-Binary Search Tree (BST)
-AVL Tree
-Red-Black Tree
-B-Tree
-Trie
+* Binary Tree
+* Binary Search Tree (BST)
+* AVL Tree
+* Red-Black Tree
+* B-Tree
+* Trie
 
-Real-world examples:
+### Real-World Examples
 
-File system
-Database indexes
-HTML DOM
-Organization hierarchy
-B. Graph
+* File systems
+* Database indexes
+* HTML DOM
+* Organization hierarchy
 
-A Graph represents relationships between entities.
+---
+
+# B. Graph
+
+A **Graph** represents (network relationship) relationships or connections between entities.
 
 Example:
 
+```text
        A
       / \
      B---C
       \ /
        D
+```
 
 Here:
 
-A, B, C, D = Vertices/Nodes
-Connections = Edges
+```text
+A, B, C, D → Vertices / Nodes
+Connections → Edges
+```
 
-Real-world examples:
+### Real-World Examples
 
-Google Maps
-Social networks
-Computer networks
-Airline routes
+```text
+Google Maps      → City = Node, Road = Edge
+Social Network   → Person = Node, Friendship = Edge
+Computer Network → Computer = Node, Connection = Edge
+Airline Network  → Airport = Node, Flight Route = Edge
+```
 
-Important algorithms:
+### Important Graph Algorithms
 
-BFS
-DFS
-Dijkstra
-Bellman-Ford
-Floyd-Warshall
-Prim
-Kruskal
-3. Another Important Classification
+* BFS
+* DFS
+* Dijkstra
+* Bellman-Ford
+* Floyd-Warshall
+* Prim
+* Kruskal
 
-Data Structures can also be classified as:
+---
 
-Static Data Structure
+# 3. Static vs Dynamic Data Structure
 
-Size generally cannot change after creation.
+Data Structures can also be classified based on whether their size can change.
 
-Example:
+## Static Data Structure
 
-Array
+The size is generally fixed after creation.
+
+### Example
+
+```java
 int[] arr = new int[10];
+```
 
-The size is 10.
+The array has a fixed size of `10`.
 
-Dynamic Data Structure
+**Example:**
 
-Size can grow or shrink during program execution.
+```text
+Array
+```
 
-Examples:
+---
 
-Linked List
-Stack
-Queue
-Tree
-Graph
+## Dynamic Data Structure
 
-Java examples:
+The size can grow or shrink during program execution.
 
+### Examples
+
+* Linked List
+* Stack
+* Queue
+* Tree
+* Graph
+
+### Java Examples
+
+```text
 ArrayList
 LinkedList
 HashMap
 HashSet
 PriorityQueue
-4. Important Java Data Structures
+```
 
-Since you are working with Java/Spring Boot, these are especially important:
+> Note: Java's `ArrayList` is a dynamic array implementation, while `HashMap`/`HashSet` are hash-based structures rather than simply "dynamic versions" of an array.
 
-Data Structure	Java Collection
-Array	int[], String[]
-Dynamic Array	ArrayList
-Linked List	LinkedList
-Stack	Deque / Stack
-Queue	Queue
-Hash Table	HashMap
-Set	HashSet
-Sorted Set	TreeSet
-Priority Queue	PriorityQueue
-5. Complete Picture
+---
+
+# 4. Important Java Data Structures
+
+| Data Structure | Java Implementation   |
+| -------------- | --------------------- |
+| Array          | `int[]`, `String[]`   |
+| Dynamic Array  | `ArrayList`           |
+| Linked List    | `LinkedList`          |
+| Stack          | `Deque`, `Stack`      |
+| Queue          | `Queue`, `ArrayDeque` |
+| Hash Table     | `HashMap`             |
+| Set            | `HashSet`             |
+| Sorted Set     | `TreeSet`             |
+| Priority Queue | `PriorityQueue`       |
+
+---
+
+# 5. Complete Picture
+
+```text
                          DATA STRUCTURE
                               │
              ┌────────────────┴────────────────┐
@@ -205,9 +382,11 @@ Priority Queue	PriorityQueue
    Array   Stack    Queue              Tree         Graph
      │
  Linked List
+```
 
-And another classification:
+### Based on Size
 
+```text
 Data Structure
 │
 ├── Static
@@ -219,17 +398,46 @@ Data Structure
     ├── Queue
     ├── Tree
     └── Graph
-⭐ Interview Definition
+```
 
-A data structure is a systematic way of organizing and storing data in memory so that data can be accessed and modified efficiently.
+---
 
-সবচেয়ে গুরুত্বপূর্ণভাবে মনে রাখুন:
+# ⭐ Interview Definition
 
-Linear → Array, Linked List, Stack, Queue
+> **A Data Structure is a systematic way of organizing and storing data in memory so that data can be accessed and modified efficiently.**
 
-Non-Linear → Tree, Graph
+## Quick Memory
 
-Static → Array
+```text
+Linear
+→ Array
+→ Linked List
+→ Stack
+→ Queue
 
-Dynamic → Linked List, Stack, Queue, Tree, Graph
+Non-Linear
+→ Tree
+→ Graph
+
+Static
+→ Array
+
+Dynamic
+→ Linked List
+→ Stack
+→ Queue
+→ Tree
+→ Graph
+```
+
+## Key Idea
+
+```text
+Data Structure
+     ↓
+Organize Data
+     ↓
+Efficient Operations
+     ↓
+Access | Search | Insert | Delete | Update
 ```
