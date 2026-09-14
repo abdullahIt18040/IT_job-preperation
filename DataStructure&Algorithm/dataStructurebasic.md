@@ -1442,4 +1442,1080 @@ Binary Search→ O(log n)
 Insert       → O(n)
 Delete       → O(n)
 ```
+# Linked List — IT Government Job Preparation
+
+## 1. What is a Linked List?
+
+A **Linked List** is a linear data structure where elements are stored in separate objects called **nodes**.
+
+Each node generally contains:
+
+1. **Data**
+2. **Reference/Link** to the next node
+
+```text
+Node
+┌──────────┬──────────┐
+│  Data    │  Next    │
+└──────────┴──────────┘
+```
+
+Example:
+
+```text
+10 → 20 → 30 → 40 → null
+```
+
+Here:
+
+```text
+10 → First Node
+20 → Second Node
+30 → Third Node
+40 → Last Node
+null → End of List
+```
+
+### Important
+
+> Unlike an array, Linked List elements are not required to be stored in contiguous memory locations.
+
+---
+
+# 2. Structure of a Node
+
+A simple Java Node:
+
+```java
+class Node {
+    int data;
+    Node next;
+
+    Node(int data) {
+        this.data = data;
+        this.next = null;
+    }
+}
+```
+
+Example:
+
+```java
+Node first = new Node(10);
+Node second = new Node(20);
+
+first.next = second;
+```
+
+Structure:
+
+```text
+first
+  ↓
+┌──────┬──────┐
+│  10  │  ────────┐
+└──────┴──────┘   │
+                   ↓
+              ┌──────┬──────┐
+              │  20  │ null │
+              └──────┴──────┘
+```
+
+---
+
+# 3. Important Terminology
+
+| Term     | Meaning                                          |
+| -------- | ------------------------------------------------ |
+| Node     | Stores data and link/reference                   |
+| Head     | First node                                       |
+| Tail     | Last node                                        |
+| Next     | Reference to next node                           |
+| Previous | Reference to previous node in doubly linked list |
+| Null     | Indicates end of list                            |
+
+Example:
+
+```text
+Head
+ ↓
+10 → 20 → 30 → 40 → null
+                      ↑
+                     Tail
+```
+
+### Most Important
+
+> **Head points to the first node.**
+
+> **Tail points to the last node.**
+
+---
+
+# 4. Features of Linked List
+
+* Linear data structure
+* Dynamic size
+* Consists of nodes
+* Nodes contain data and references
+* Does not require contiguous memory
+* Sequential access
+* Easy insertion and deletion
+* Random access is not efficient
+* Uses extra memory for references
+
+---
+
+# 5. Types of Linked List
+
+There are mainly four important types:
+
+```text
+Linked List
+│
+├── Singly Linked List
+├── Doubly Linked List
+├── Circular Singly Linked List
+└── Circular Doubly Linked List
+```
+
+---
+
+# 6. Singly Linked List
+
+Each node contains:
+
+```text
+Data + Next
+```
+
+Structure:
+
+```text
+10 → 20 → 30 → 40 → null
+```
+
+Java:
+
+```java
+class Node {
+    int data;
+    Node next;
+}
+```
+
+### Diagram
+
+```text
+┌─────┬──────┐    ┌─────┬──────┐
+│ 10  │  ─────────→ 20  │  ─────────→ ...
+└─────┴──────┘    └─────┴──────┘
+```
+
+### Important
+
+> Singly Linked List can move only in the **forward direction**.
+
+---
+
+# 7. Doubly Linked List
+
+Each node contains:
+
+```text
+Previous + Data + Next
+```
+
+Structure:
+
+```text
+null ← 10 ⇄ 20 ⇄ 30 ⇄ 40 → null
+```
+
+Java:
+
+```java
+class Node {
+    int data;
+    Node prev;
+    Node next;
+}
+```
+
+### Important
+
+> Doubly Linked List supports traversal in **both directions**.
+
+---
+
+# 8. Circular Singly Linked List
+
+In a Circular Linked List, the last node points back to the first node.
+
+```text
+     ┌──────────────────────┐
+     ↓                      │
+10 → 20 → 30 → 40 ─────────┘
+```
+
+There is no `null` at the end.
+
+```text
+Last.next = Head
+```
+
+### Important
+
+> Circular Singly Linked List forms a loop.
+
+---
+
+# 9. Circular Doubly Linked List
+
+Both directions form a circle.
+
+```text
+      ┌─────────────────────┐
+      ↓                     │
+10 ⇄ 20 ⇄ 30 ⇄ 40
+↑                     ↓
+└─────────────────────┘
+```
+
+Each node has:
+
+```text
+Previous + Data + Next
+```
+
+---
+
+# 10. Linked List vs Array
+
+| Feature                | Array                               | Linked List                 |
+| ---------------------- | ----------------------------------- | --------------------------- |
+| Memory                 | Sequential/contiguous storage model | Nodes can be non-contiguous |
+| Size                   | Fixed                               | Dynamic                     |
+| Random Access          | O(1)                                | O(n)                        |
+| Search                 | O(n)                                | O(n)                        |
+| Insert Beginning       | O(n)                                | O(1)*                       |
+| Delete Beginning       | O(n)                                | O(1)*                       |
+| Extra Reference Memory | No                                  | Yes                         |
+| Cache Locality         | Better generally                    | Usually poorer              |
+| Memory Allocation      | Usually one array allocation        | Node-by-node allocation     |
+
+`*` Assuming the required head/reference is already available.
+
+### Remember
+
+```text
+Array
+→ Fast Random Access
+
+Linked List
+→ Efficient Insert/Delete at known positions
+```
+
+---
+
+# 11. Linked List Time Complexity
+
+For a typical singly linked list:
+
+| Operation                  | Time Complexity |
+| -------------------------- | --------------: |
+| Access by Index            |            O(n) |
+| Search                     |            O(n) |
+| Insert at Beginning        |            O(1) |
+| Delete at Beginning        |            O(1) |
+| Insert at End              |           O(n)* |
+| Delete at End              |            O(n) |
+| Insert After Known Node    |            O(1) |
+| Delete After/At Known Node |           O(1)* |
+| Traversal                  |            O(n) |
+
+`*` Complexity can change if the implementation maintains a tail pointer or the required node/reference is already available.
+
+---
+
+# 12. Why Random Access is O(n)?
+
+Suppose:
+
+```text
+10 → 20 → 30 → 40 → 50
+```
+
+To access `40`, we cannot directly jump to index `3`.
+
+We must traverse:
+
+```text
+10 → 20 → 30 → 40
+```
+
+Therefore:
+
+```text
+Access by Index → O(n)
+```
+
+### Array vs Linked List
+
+```text
+Array:
+
+arr[3]
+  ↓
+Direct Access → O(1)
+```
+
+```text
+Linked List:
+
+Head
+ ↓
+10 → 20 → 30 → 40
+               ↑
+           Traverse
+           
+→ O(n)
+```
+
+---
+
+# 13. Insertion at Beginning
+
+Original:
+
+```text
+10 → 20 → 30
+```
+
+Insert `5`:
+
+```text
+5 → 10 → 20 → 30
+```
+
+Java idea:
+
+```java
+newNode.next = head;
+head = newNode;
+```
+
+Complexity:
+
+```text
+O(1)
+```
+
+---
+
+# 14. Insertion at End
+
+Original:
+
+```text
+10 → 20 → 30
+```
+
+Insert `40`:
+
+```text
+10 → 20 → 30 → 40
+```
+
+Without a tail pointer, we need to traverse to the last node.
+
+Complexity:
+
+```text
+O(n)
+```
+
+With a maintained tail pointer:
+
+```text
+O(1)
+```
+
+---
+
+# 15. Deletion from Beginning
+
+Original:
+
+```text
+10 → 20 → 30
+```
+
+Delete first node:
+
+```text
+20 → 30
+```
+
+Java:
+
+```java
+head = head.next;
+```
+
+Complexity:
+
+```text
+O(1)
+```
+
+---
+
+# 16. Searching in Linked List
+
+Example:
+
+```text
+10 → 20 → 30 → 40
+```
+
+Search for `30`.
+
+We check:
+
+```text
+10 → 20 → 30
+```
+
+Complexity:
+
+```text
+Best Case    → O(1)
+Average Case → O(n)
+Worst Case   → O(n)
+```
+
+---
+
+# 17. Traversal
+
+Java:
+
+```java
+Node current = head;
+
+while (current != null) {
+    System.out.println(current.data);
+    current = current.next;
+}
+```
+
+Complexity:
+
+```text
+O(n)
+```
+
+---
+
+# 18. Basic Singly Linked List Implementation
+
+```java
+class Node {
+
+    int data;
+    Node next;
+
+    Node(int data) {
+        this.data = data;
+        this.next = null;
+    }
+}
+```
+
+Linked List:
+
+```java
+class LinkedList {
+
+    Node head;
+
+    void add(int data) {
+
+        Node newNode = new Node(data);
+
+        if (head == null) {
+            head = newNode;
+            return;
+        }
+
+        Node current = head;
+
+        while (current.next != null) {
+            current = current.next;
+        }
+
+        current.next = newNode;
+    }
+}
+```
+
+---
+
+# 19. Important Linked List Operations
+
+Common operations:
+
+```text
+1. Insert
+2. Delete
+3. Search
+4. Traverse
+5. Reverse
+```
+
+---
+
+# 20. Reverse a Linked List
+
+Original:
+
+```text
+10 → 20 → 30 → null
+```
+
+After Reverse:
+
+```text
+30 → 20 → 10 → null
+```
+
+Typical Java approach:
+
+```java
+Node previous = null;
+Node current = head;
+
+while (current != null) {
+
+    Node next = current.next;
+
+    current.next = previous;
+
+    previous = current;
+    current = next;
+}
+
+head = previous;
+```
+
+Complexity:
+
+```text
+Time  → O(n)
+Space → O(1)
+```
+
+### Important Exam Point
+
+> Iterative Linked List reversal can be done in **O(n) time and O(1) extra space**.
+
+---
+
+# 21. Advantages of Linked List
+
+### 1. Dynamic Size
+
+Linked List can grow and shrink dynamically.
+
+### 2. Easy Insertion
+
+Insertion at the beginning is:
+
+```text
+O(1)
+```
+
+### 3. Easy Deletion
+
+Deletion at the beginning is:
+
+```text
+O(1)
+```
+
+### 4. No Contiguous Memory Requirement
+
+Nodes do not need to be stored next to each other in memory.
+
+### 5. Useful for Dynamic Data
+
+Useful when the number of elements changes frequently.
+
+---
+
+# 22. Disadvantages of Linked List
+
+### 1. Slow Random Access
+
+Accessing an element by index:
+
+```text
+O(n)
+```
+
+### 2. Extra Memory
+
+Each node needs one or more references.
+
+Example:
+
+```text
+Data + Next
+```
+
+Doubly linked list:
+
+```text
+Previous + Data + Next
+```
+
+### 3. Poor Cache Locality
+
+Nodes may be scattered in memory.
+
+### 4. More Complex
+
+Pointer/reference manipulation can introduce bugs.
+
+### 5. Reverse Traversal
+
+Singly Linked List cannot directly move backward.
+
+---
+
+# 23. Singly vs Doubly Linked List
+
+| Feature            | Singly  | Doubly       |
+| ------------------ | ------- | ------------ |
+| Next Reference     | Yes     | Yes          |
+| Previous Reference | No      | Yes          |
+| Forward Traversal  | Yes     | Yes          |
+| Backward Traversal | No      | Yes          |
+| Memory Usage       | Lower   | Higher       |
+| Implementation     | Simpler | More complex |
+
+Remember:
+
+```text
+Singly
+→ next
+
+Doubly
+→ prev + next
+```
+
+---
+
+# 24. Singly vs Circular Linked List
+
+| Feature   | Singly         | Circular                          |
+| --------- | -------------- | --------------------------------- |
+| Last Node | Points to null | Points to first node              |
+| End       | null           | No null at end                    |
+| Structure | Linear         | Circular                          |
+| Traversal | Stops at null  | Stops when reaching starting node |
+
+---
+
+# 25. Important Applications
+
+Linked Lists are commonly used in:
+
+* Stack implementation
+* Queue implementation
+* Hash table chaining
+* Graph adjacency lists
+* Browser history
+* Undo/Redo systems
+* Music playlists
+* Memory management concepts
+
+---
+
+# 26. Java Collections Related to Linked List
+
+Java provides:
+
+```java
+import java.util.LinkedList;
+```
+
+Example:
+
+```java
+LinkedList<Integer> list = new LinkedList<>();
+
+list.add(10);
+list.add(20);
+list.add(30);
+```
+
+Output:
+
+```text
+10 → 20 → 30
+```
+
+Java's `LinkedList` implements:
+
+```text
+List
+Deque
+Queue
+```
+
+and is implemented as a **doubly linked list**.
+
+---
+
+# 27. LinkedList vs ArrayList in Java
+
+| Feature             | ArrayList       | LinkedList         |
+| ------------------- | --------------- | ------------------ |
+| Internal Structure  | Resizable array | Doubly linked list |
+| Random Access       | Fast            | Slow               |
+| `get(index)`        | O(1)            | O(n)               |
+| Memory              | Lower           | Higher             |
+| Insert at Beginning | O(n)            | O(1)               |
+| Remove First        | O(n)            | O(1)               |
+| Implements List     | Yes             | Yes                |
+| Implements Deque    | No              | Yes                |
+
+### Important
+
+> `LinkedList` is **not automatically faster** than `ArrayList`. For frequent random access, `ArrayList` is usually better.
+
+---
+
+# 28. Important Government Job MCQ Questions
+
+### Q1. What is a Linked List?
+
+A linear data structure consisting of nodes connected through references.
+
+### Q2. What does a node contain?
+
+```text
+Data + Reference
+```
+
+### Q3. What does the Head represent?
+
+```text
+First node
+```
+
+### Q4. What does the last node point to in a normal singly linked list?
+
+```text
+null
+```
+
+### Q5. Time complexity of accessing an element by index?
+
+```text
+O(n)
+```
+
+### Q6. Time complexity of insertion at the beginning?
+
+```text
+O(1)
+```
+
+### Q7. Time complexity of deletion at the beginning?
+
+```text
+O(1)
+```
+
+### Q8. Does Linked List require contiguous memory?
+
+```text
+No
+```
+
+### Q9. Which Linked List supports forward and backward traversal?
+
+```text
+Doubly Linked List
+```
+
+### Q10. In Circular Linked List, where does the last node point?
+
+```text
+First node / Head
+```
+
+### Q11. Which Linked List uses `prev` and `next`?
+
+```text
+Doubly Linked List
+```
+
+### Q12. Which Java collection is implemented as a doubly linked list?
+
+```text
+LinkedList
+```
+
+### Q13. What is the search complexity in a Linked List?
+
+```text
+O(n)
+```
+
+### Q14. What is the extra memory requirement of a node?
+
+```text
+Reference/link storage
+```
+
+### Q15. Can a singly linked list traverse backward directly?
+
+```text
+No
+```
+
+---
+
+# 29. Important MCQ Traps
+
+## Trap 1: Random Access
+
+```text
+Array       → O(1)
+Linked List → O(n)
+```
+
+---
+
+## Trap 2: First Insertion
+
+If inserting at the beginning:
+
+```text
+Array       → O(n)
+Linked List → O(1)
+```
+
+---
+
+## Trap 3: Last Node
+
+Normal Singly Linked List:
+
+```text
+Last.next = null
+```
+
+Circular Linked List:
+
+```text
+Last.next = Head
+```
+
+---
+
+## Trap 4: Doubly Linked List
+
+Doubly Linked List has:
+
+```text
+prev + data + next
+```
+
+---
+
+## Trap 5: Java LinkedList
+
+```java
+LinkedList<Integer> list = new LinkedList<>();
+```
+
+Java's `LinkedList` is a:
+
+```text
+Doubly Linked List
+```
+
+---
+
+# 30. Important Complexity Comparison
+
+```text
+                 Array       Linked List
+------------------------------------------------
+Access           O(1)        O(n)
+Search           O(n)        O(n)
+Insert Beginning O(n)        O(1)
+Delete Beginning O(n)        O(1)
+Insert Middle    O(n)        O(1)*
+Delete Middle    O(n)        O(1)*
+```
+
+`*` For Linked List, the relevant position/node reference must already be known; finding it can take `O(n)`.
+
+---
+
+# 31. Array vs Linked List — One Line
+
+```text
+Array
+→ Fast Access
+
+Linked List
+→ Flexible Size + Efficient Insert/Delete
+```
+
+---
+
+# 32. Quick Revision
+
+```text
+Linked List
+│
+├── Linear Data Structure
+├── Node Based
+├── Dynamic Size
+├── Non-contiguous Nodes
+│
+├── Singly
+│   └── next
+│
+├── Doubly
+│   └── prev + next
+│
+├── Circular
+│   └── Last → Head
+│
+├── Access       → O(n)
+├── Search       → O(n)
+├── Insert Head  → O(1)
+├── Delete Head  → O(1)
+└── Traversal    → O(n)
+```
+
+---
+
+# 33. One-Minute Revision for Exam
+
+```text
+Linked List
+→ Node-based linear data structure
+
+Node
+→ Data + Reference
+
+Head
+→ First node
+
+Tail
+→ Last node
+
+Singly
+→ next
+
+Doubly
+→ prev + next
+
+Circular
+→ Last points to Head
+
+Access
+→ O(n)
+
+Search
+→ O(n)
+
+Insert at Beginning
+→ O(1)
+
+Delete at Beginning
+→ O(1)
+
+Normal Singly Last Node
+→ next = null
+
+Circular Last Node
+→ next = Head
+
+Java LinkedList
+→ Doubly Linked List
+
+Java LinkedList
+→ List + Deque + Queue
+```
+
+---
+
+# 34. Most Important for Bangladesh IT Government Jobs
+
+For **Programmer / Assistant Programmer / ICT Officer / Senior Officer (IT) / Officer (IT)** preparation, prioritize:
+
+### ⭐ Very High Priority
+
+1. Linked List definition
+2. Node
+3. Head and Tail
+4. Singly Linked List
+5. Doubly Linked List
+6. Circular Linked List
+7. Array vs Linked List
+8. Access complexity
+9. Search complexity
+10. Insert/Delete complexity
+11. `null` vs circular connection
+12. Java `LinkedList`
+
+### ⭐ High Priority
+
+13. Reverse Linked List
+14. Linked List traversal
+15. ArrayList vs LinkedList
+16. Stack using Linked List
+17. Queue using Linked List
+18. Doubly Linked List structure
+19. Circular Linked List applications
+20. Time and space complexity
+
+---
+
+# Final Remember
+
+> **Linked List = Nodes + References + Dynamic Size**
+
+```text
+Array
+→ Fast Access
+→ O(1)
+
+Linked List
+→ Sequential Access
+→ O(n)
+
+Linked List Insert/Delete at Head
+→ O(1)
+
+Singly
+→ next
+
+Doubly
+→ prev + next
+
+Circular
+→ Last → Head
+```
+
 
