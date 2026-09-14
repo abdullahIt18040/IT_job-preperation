@@ -1,7 +1,8 @@
 # Queue or implemetation Linklist 
-## Enque and Dequeue OPeration
+## Explain Enque and Dequeue OPeration given Example 
 <img width="618" height="266" alt="image" src="https://github.com/user-attachments/assets/4837475b-2a81-4a1a-8255-36b3c755c438" />
 
+<img width="1213" height="614" alt="image" src="https://github.com/user-attachments/assets/a2524e15-aca5-4d41-ad9f-07fa55fe7d34" />
 
 ## 1. What is a Queue?
 
