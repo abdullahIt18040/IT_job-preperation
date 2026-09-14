@@ -3824,3 +3824,357 @@ BFS       → Queue
 Recursion → Call Stack
 ```
 
+# Stack — Important Topics
+
+## 1. Expression Notations
+
+Three important expression notations:
+
+```text
+1. Infix
+2. Prefix
+3. Postfix
+```
+
+### Infix
+
+Operator is **between operands**.
+
+```text
+A + B
+A * B
+```
+
+### Prefix
+
+Operator is **before operands**.
+
+```text
++ A B
+* A B
+```
+
+### Postfix
+
+Operator is **after operands**.
+
+```text
+A B +
+A B *
+```
+
+---
+
+## 2. Postfix Evaluation
+
+Postfix expression-এর result বের করতে **Stack** ব্যবহার করা হয়।
+
+### Rules
+
+```text
+Operand  → Push
+
+Operator → Pop two operands
+         → Calculate
+         → Push result
+```
+
+Example:
+
+```text
+2 3 4 * +
+```
+
+```text
+3 × 4 = 12
+2 + 12 = 14
+```
+
+Answer:
+
+```text
+14
+```
+
+---
+
+## 3. Infix → Postfix
+
+Infix থেকে Postfix conversion-এর জন্য **Stack + Operator Precedence** ব্যবহার করা হয়।
+
+Example:
+
+```text
+Infix:
+A + B * C
+
+Postfix:
+A B C * +
+```
+
+### Bracket Rules
+
+```text
+( [ { → Push
+
+) ] } → Pop until matching opening bracket
+```
+
+Brackets final Postfix expression-এ থাকে না।
+
+---
+
+# 4. Monotonic Stack
+
+A **Monotonic Stack** is a stack where elements are maintained in a specific increasing or decreasing order.
+
+Two common types:
+
+```text
+Monotonic Increasing Stack
+Monotonic Decreasing Stack
+```
+
+### Increasing Stack
+
+Stack-এর elements ছোট থেকে বড় order-এ থাকে।
+
+```text
+[1, 3, 5, 8]
+```
+
+### Decreasing Stack
+
+Stack-এর elements বড় থেকে ছোট order-এ থাকে।
+
+```text
+[8, 5, 3, 1]
+```
+
+### Why Use It?
+
+Monotonic Stack is useful for finding:
+
+```text
+Next Greater Element
+Next Smaller Element
+Previous Greater Element
+Previous Smaller Element
+Stock Span
+```
+
+Most problems can be solved in:
+
+```text
+Time = O(n)
+Space = O(n)
+```
+
+---
+
+# 5. Next Greater Element
+
+For each element, find the **first greater element on its right side**.
+
+Example:
+
+```text
+Array:
+[4, 5, 2, 10]
+```
+
+Result:
+
+```text
+4  → 5
+5  → 10
+2  → 10
+10 → -1
+```
+
+Therefore:
+
+```text
+[5, 10, 10, -1]
+```
+
+### Main Idea
+
+Use a **Monotonic Decreasing Stack**.
+
+When current element is greater than stack top:
+
+```text
+Current > Stack Top
+        ↓
+Pop
+        ↓
+Current is Next Greater Element
+```
+
+### Complexity
+
+```text
+Time  → O(n)
+Space → O(n)
+```
+
+---
+
+# 6. Stock Span
+
+**Stock Span** means:
+
+> For each day, find how many consecutive previous days had a stock price less than or equal to today's price.
+
+Example:
+
+```text
+Prices:
+[100, 80, 60, 70, 60, 75, 85]
+```
+
+Stock Span:
+
+```text
+[1, 1, 1, 2, 1, 4, 6]
+```
+
+For `75`:
+
+```text
+60 ≤ 75
+70 ≤ 75
+60 ≤ 75
+75 = 75
+```
+
+So span:
+
+```text
+4
+```
+
+### Main Idea
+
+Use a **Monotonic Decreasing Stack**.
+
+Usually stack stores **indices** rather than only prices.
+
+### Complexity
+
+```text
+Time  → O(n)
+Space → O(n)
+```
+
+---
+
+# 7. Min Stack
+
+A **Min Stack** is a stack that supports:
+
+```text
+push()
+pop()
+top()
+getMin()
+```
+
+where:
+
+```text
+getMin() → returns minimum element
+```
+
+### Example
+
+```text
+Push: 5
+Push: 3
+Push: 7
+Push: 2
+```
+
+Stack:
+
+```text
+[5, 3, 7, 2]
+```
+
+```text
+getMin() → 2
+```
+
+After:
+
+```text
+pop()
+```
+
+Stack:
+
+```text
+[5, 3, 7]
+```
+
+Now:
+
+```text
+getMin() → 3
+```
+
+### Important
+
+A good Min Stack implementation provides:
+
+```text
+push()  → O(1)
+pop()   → O(1)
+top()   → O(1)
+getMin()→ O(1)
+```
+
+One common approach is to maintain:
+
+```text
+Main Stack
++
+Min Stack
+```
+
+The **Min Stack** keeps track of the minimum value at each stage.
+
+---
+
+# Quick Revision
+
+| Topic                | Main Concept              |              Time |
+| -------------------- | ------------------------- | ----------------: |
+| Infix                | Operator between operands |                 — |
+| Prefix               | Operator before operands  |                 — |
+| Postfix              | Operator after operands   |                 — |
+| Postfix Evaluation   | Stack                     |            `O(n)` |
+| Infix → Postfix      | Stack + Precedence        |            `O(n)` |
+| Monotonic Stack      | Maintains order           |            `O(n)` |
+| Next Greater Element | Decreasing Stack          |            `O(n)` |
+| Stock Span           | Decreasing Stack          |            `O(n)` |
+| Min Stack            | Stack + Minimum tracking  | `O(1)` operations |
+
+## Memory Trick
+
+```text
+Next Greater Element
+        ↓
+Monotonic Decreasing Stack
+
+Stock Span
+        ↓
+Monotonic Decreasing Stack
+
+Min Stack
+        ↓
+Track Minimum
+```
+
+> **Monotonic Stack-এর সবচেয়ে গুরুত্বপূর্ণ point: প্রতিটি element সাধারণত সর্বোচ্চ একবার push এবং একবার pop হয়, তাই overall time complexity `O(n)`.**
