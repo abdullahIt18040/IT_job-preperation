@@ -378,3 +378,160 @@ Answer: DFS
 
 `* BFS guarantees the shortest path when the graph is unweighted (or all edges have equal cost).`
 
+
+# Merge Sort vs Quick Sort — Short Note
+
+## Merge Sort
+
+**Divide and Conquer** algorithm.
+
+```text
+Array → Divide → Divide → Merge → Sorted Array
+```
+
+### Time Complexity
+
+| Case    | Complexity   |
+| ------- | ------------ |
+| Best    | `O(n log n)` |
+| Average | `O(n log n)` |
+| Worst   | `O(n log n)` |
+
+### Why?
+
+```text
+Divide → O(log n)
+Merge  → O(n)
+
+Total → O(n log n)
+```
+
+Even if the array is already sorted, Merge Sort still performs divide and merge operations.
+
+### Space
+
+```text
+O(n)
+```
+
+because extra space is required for merging.
+
+### Features
+
+```text
+Stable   → Yes
+In-place → Generally No
+```
+
+---
+
+# Quick Sort
+
+Also a **Divide and Conquer** algorithm.
+
+```text
+Choose Pivot
+     ↓
+Partition
+     ↓
+Left + Pivot + Right
+     ↓
+Recursive Sorting
+```
+
+### Time Complexity
+
+| Case    | Complexity   |
+| ------- | ------------ |
+| Best    | `O(n log n)` |
+| Average | `O(n log n)` |
+| Worst   | `O(n²)`      |
+
+### Good Pivot
+
+Balanced partitions:
+
+```text
+        n
+       / \
+     n/2 n/2
+```
+
+```text
+→ O(n log n)
+```
+
+### Bad Pivot
+
+Highly unbalanced partitions:
+
+```text
+n
+|
+n-1
+|
+n-2
+|
+...
+```
+
+```text
+→ O(n²)
+```
+
+Example:
+
+```text
+[1,2,3,4,5,6,7,8]
+```
+
+If the last element is always selected as pivot:
+
+```text
+[1,2,3,4,5,6,7] | 8
+[1,2,3,4,5,6]   | 7
+[1,2,3,4,5]     | 6
+...
+```
+
+Therefore:
+
+```text
+Worst Case = O(n²)
+```
+
+### Space
+
+```text
+Average → O(log n)
+Worst   → O(n)
+```
+
+---
+
+# Quick Comparison
+
+| Feature     | Merge Sort   | Quick Sort         |
+| ----------- | ------------ | ------------------ |
+| Best        | `O(n log n)` | `O(n log n)`       |
+| Average     | `O(n log n)` | `O(n log n)`       |
+| Worst       | `O(n log n)` | `O(n²)`            |
+| Space       | `O(n)`       | `O(log n)` average |
+| Stable      | Yes          | Usually No         |
+| In-place    | No           | Usually Yes        |
+| Main Factor | Merge        | Pivot              |
+
+## Memory Trick
+
+```text
+Merge Sort → Always O(n log n)
+
+Quick Sort → Good Pivot = O(n log n)
+             Bad Pivot  = O(n²)
+```
+
+### Interview Answer
+
+> **Merge Sort guarantees O(n log n) in all cases, while Quick Sort is O(n log n) on average but can become O(n²) with poor pivot selection.**
+
+
