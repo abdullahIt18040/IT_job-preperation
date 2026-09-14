@@ -1,4 +1,6 @@
 # Data Structure
+<img width="917" height="376" alt="image" src="https://github.com/user-attachments/assets/9b4d59a8-dcc1-4a73-98d1-41e3cd8d3578" />
+
 
 ## What is Data Structure?
 
