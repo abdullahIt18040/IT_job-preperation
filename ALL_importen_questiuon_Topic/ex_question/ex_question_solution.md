@@ -533,5 +533,6 @@ Quick Sort → Good Pivot = O(n log n)
 ### Interview Answer
 
 > **Merge Sort guarantees O(n log n) in all cases, while Quick Sort is O(n log n) on average but can become O(n²) with poor pivot selection.**
+## In-place means sorting is performed within the original array using very little extra memory quick sort  is in place .
 
 
