@@ -296,3 +296,212 @@ Remove
 
 FIFO → First In, First Out
 ```
+# Queue — Enqueue and Dequeue
+
+A **Queue** follows the **FIFO (First In, First Out)** principle.
+
+```text
+First In → First Out
+```
+
+```text
+Front                         Rear
+  ↓                             ↓
+[10] → [20] → [30] → [40]
+```
+
+---
+
+# 1. Enqueue Operation
+
+**Enqueue** means inserting a new element into the Queue.
+
+The new element is always inserted at the **Rear**.
+
+## Rule
+
+```text
+Enqueue → Insert at Rear
+```
+
+```text
+If Queue is Full
+    → Overflow
+Otherwise
+    → Add element at Rear
+```
+
+## Algorithm
+
+```text
+ENQUEUE(Queue, item)
+
+1. If REAR == MAX - 1
+       Print "Queue Overflow"
+       Return
+
+2. If FRONT == -1
+       FRONT = 0
+
+3. REAR = REAR + 1
+
+4. Queue[REAR] = item
+```
+
+## Example
+
+Before:
+
+```text
+Front                 Rear
+  ↓                     ↓
+[10] → [20] → [30]
+```
+
+Perform:
+
+```text
+ENQUEUE(40)
+```
+
+After:
+
+```text
+Front                        Rear
+  ↓                            ↓
+[10] → [20] → [30] → [40]
+```
+
+## Time Complexity
+
+```text
+Enqueue = O(1)
+```
+
+---
+
+# 2. Dequeue Operation
+
+**Dequeue** means removing an element from the Queue.
+
+The element is always removed from the **Front**.
+
+## Rule
+
+```text
+Dequeue → Remove from Front
+```
+
+```text
+If Queue is Empty
+    → Underflow
+Otherwise
+    → Remove element from Front
+```
+
+## Algorithm
+
+```text
+DEQUEUE(Queue)
+
+1. If FRONT == -1 OR FRONT > REAR
+       Print "Queue Underflow"
+       Return
+
+2. item = Queue[FRONT]
+
+3. FRONT = FRONT + 1
+
+4. Return item
+```
+
+## Example
+
+Before:
+
+```text
+Front                        Rear
+  ↓                            ↓
+[10] → [20] → [30] → [40]
+```
+
+Perform:
+
+```text
+DEQUEUE()
+```
+
+Removed:
+
+```text
+10
+```
+
+After:
+
+```text
+Front                 Rear
+  ↓                     ↓
+[20] → [30] → [40]
+```
+
+## Time Complexity
+
+```text
+Dequeue = O(1)
+```
+
+---
+
+# 3. Enqueue vs Dequeue
+
+| Operation | Action | Position | Complexity |
+| --------- | ------ | -------- | ---------: |
+| Enqueue   | Insert | Rear     |     `O(1)` |
+| Dequeue   | Remove | Front    |     `O(1)` |
+
+---
+
+# 4. Important Terms
+
+### Overflow
+
+Queue full থাকা অবস্থায় নতুন element insert করতে গেলে:
+
+```text
+Overflow
+```
+
+### Underflow
+
+Queue empty থাকা অবস্থায় element remove করতে গেলে:
+
+```text
+Underflow
+```
+
+---
+
+# 5. Easy Memory Trick
+
+```text
+ENQUEUE
+   ↓
+INSERT
+   ↓
+REAR
+```
+
+```text
+DEQUEUE
+   ↓
+REMOVE
+   ↓
+FRONT
+```
+
+### Final Rule
+
+> **Enqueue → Insert at Rear**
+> **Dequeue → Remove from Front**
+> **Both → O(1)**
