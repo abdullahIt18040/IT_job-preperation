@@ -2520,4 +2520,1307 @@ Circular
 → Last → Head
 ```
 
+# Stack — IT Government Job Preparation
+
+## 1. What is a Stack?
+
+A **Stack** is a linear data structure that follows the **LIFO (Last In, First Out)** principle.
+
+```text
+LIFO = Last In, First Out
+```
+
+The element inserted last is removed first.
+
+### Real-Life Example
+
+A stack of plates:
+
+```text
+       ┌───────┐
+       │ Plate │ ← Last Added
+       ├───────┤
+       │ Plate │
+       ├───────┤
+       │ Plate │ ← First Added
+       └───────┘
+           ↑
+         TOP
+```
+
+If we add:
+
+```text
+10 → 20 → 30
+```
+
+Then removal happens:
+
+```text
+30 → 20 → 10
+```
+
+---
+
+# 2. Important Principle
+
+```text
+Stack → LIFO
+```
+
+### LIFO
+
+```text
+Last In
+   ↓
+First Out
+```
+
+Example:
+
+```text
+Push:    10 → 20 → 30
+
+Pop:     30 → 20 → 10
+```
+
+### Important Exam Point
+
+> **Stack follows LIFO (Last In, First Out).**
+
+---
+
+# 3. Stack Terminology
+
+Important terms:
+
+| Term      | Meaning                       |
+| --------- | ----------------------------- |
+| Push      | Insert an element             |
+| Pop       | Remove the top element        |
+| Peek/Top  | View the top element          |
+| IsEmpty   | Check whether stack is empty  |
+| Overflow  | Stack is full                 |
+| Underflow | Stack is empty during removal |
+
+---
+
+# 4. Stack Structure
+
+```text
+        TOP
+         ↓
+      ┌────┐
+      │ 40 │
+      ├────┤
+      │ 30 │
+      ├────┤
+      │ 20 │
+      ├────┤
+      │ 10 │
+      └────┘
+```
+
+The **Top** indicates the element available for insertion/removal.
+
+---
+
+# 5. Stack Operations
+
+Main operations:
+
+```text
+Push
+Pop
+Peek
+isEmpty
+isFull
+```
+
+---
+
+# 6. Push Operation
+
+`Push` means adding an element to the top of the stack.
+
+Before:
+
+```text
+TOP
+ ↓
+30
+20
+10
+```
+
+Push `40`:
+
+```text
+TOP
+ ↓
+40
+30
+20
+10
+```
+
+### Complexity
+
+```text
+O(1)
+```
+
+---
+
+# 7. Pop Operation
+
+`Pop` removes the top element.
+
+Before:
+
+```text
+TOP
+ ↓
+40
+30
+20
+10
+```
+
+Pop:
+
+```text
+Removed → 40
+```
+
+After:
+
+```text
+TOP
+ ↓
+30
+20
+10
+```
+
+### Complexity
+
+```text
+O(1)
+```
+
+---
+
+# 8. Peek Operation
+
+`Peek` returns the top element without removing it.
+
+```text
+TOP
+ ↓
+40
+30
+20
+10
+```
+
+```text
+Peek() → 40
+```
+
+The stack remains unchanged.
+
+### Complexity
+
+```text
+O(1)
+```
+
+---
+
+# 9. IsEmpty
+
+Checks whether the stack contains any elements.
+
+```text
+if stack is empty
+    → true
+else
+    → false
+```
+
+Complexity:
+
+```text
+O(1)
+```
+
+---
+
+# 10. Stack Time Complexity
+
+| Operation | Time Complexity |
+| --------- | --------------: |
+| Push      |            O(1) |
+| Pop       |            O(1) |
+| Peek      |            O(1) |
+| IsEmpty   |            O(1) |
+| Search    |            O(n) |
+| Traversal |            O(n) |
+
+### Most Important
+
+```text
+Push → O(1)
+Pop  → O(1)
+Peek → O(1)
+```
+
+---
+
+# 11. Stack Overflow
+
+**Stack Overflow** occurs when we try to push an element into a full fixed-size stack.
+
+Example:
+
+```text
+Stack Size = 3
+
+10
+20
+30
+```
+
+Trying:
+
+```text
+Push(40)
+```
+
+causes:
+
+```text
+Stack Overflow
+```
+
+### Remember
+
+```text
+Full Stack + Push
+→ Overflow
+```
+
+---
+
+# 12. Stack Underflow
+
+**Stack Underflow** occurs when we try to pop an element from an empty stack.
+
+```text
+Stack = Empty
+```
+
+Then:
+
+```text
+Pop()
+```
+
+causes:
+
+```text
+Stack Underflow
+```
+
+### Remember
+
+```text
+Empty Stack + Pop
+→ Underflow
+```
+
+---
+
+# 13. Stack Implementation
+
+A Stack can be implemented using:
+
+```text
+1. Array
+2. Linked List
+```
+
+---
+
+# 14. Stack Using Array
+
+Example:
+
+```java
+class Stack {
+
+    int[] stack;
+    int top = -1;
+
+    Stack(int size) {
+        stack = new int[size];
+    }
+}
+```
+
+Initially:
+
+```text
+top = -1
+```
+
+This means the stack is empty.
+
+---
+
+# 15. Push Using Array
+
+```java
+void push(int value) {
+
+    if (top == stack.length - 1) {
+        System.out.println("Stack Overflow");
+        return;
+    }
+
+    stack[++top] = value;
+}
+```
+
+Example:
+
+```text
+Push(10)
+
+top = 0
+
+10
+↑
+top
+```
+
+Then:
+
+```text
+Push(20)
+
+20 ← top
+10
+```
+
+---
+
+# 16. Pop Using Array
+
+```java
+int pop() {
+
+    if (top == -1) {
+        throw new RuntimeException("Stack Underflow");
+    }
+
+    return stack[top--];
+}
+```
+
+### Complexity
+
+```text
+O(1)
+```
+
+---
+
+# 17. Peek Using Array
+
+```java
+int peek() {
+
+    if (top == -1) {
+        throw new RuntimeException("Stack is Empty");
+    }
+
+    return stack[top];
+}
+```
+
+Complexity:
+
+```text
+O(1)
+```
+
+---
+
+# 18. Stack Using Linked List
+
+A Stack can also be implemented using a Linked List.
+
+```text
+TOP
+ ↓
+30 → 20 → 10 → null
+```
+
+Push:
+
+```text
+40
+ ↓
+40 → 30 → 20 → 10
+```
+
+Pop:
+
+```text
+30 → 20 → 10
+```
+
+### Complexity
+
+```text
+Push → O(1)
+Pop  → O(1)
+Peek → O(1)
+```
+
+---
+
+# 19. Stack Using Java Collection
+
+Java provides the `Deque` interface, which is generally preferred for stack behavior.
+
+```java
+Deque<Integer> stack = new ArrayDeque<>();
+```
+
+Import:
+
+```java
+import java.util.ArrayDeque;
+import java.util.Deque;
+```
+
+Push:
+
+```java
+stack.push(10);
+stack.push(20);
+stack.push(30);
+```
+
+Stack:
+
+```text
+30
+20
+10
+```
+
+Pop:
+
+```java
+stack.pop();
+```
+
+Result:
+
+```text
+30
+```
+
+Peek:
+
+```java
+stack.peek();
+```
+
+Result:
+
+```text
+20
+```
+
+---
+
+# 20. Java Stack Class
+
+Java also has:
+
+```java
+Stack<Integer> stack = new Stack<>();
+```
+
+Example:
+
+```java
+Stack<Integer> stack = new Stack<>();
+
+stack.push(10);
+stack.push(20);
+stack.push(30);
+
+System.out.println(stack.pop());
+```
+
+Output:
+
+```text
+30
+```
+
+### Important Java Point
+
+For modern Java code, `Deque` / `ArrayDeque` is generally preferred over the legacy `Stack` class for stack operations.
+
+---
+
+# 21. Stack vs Queue
+
+This is a **very important government job MCQ topic**.
+
+| Feature   | Stack             | Queue                  |
+| --------- | ----------------- | ---------------------- |
+| Principle | LIFO              | FIFO                   |
+| Full Form | Last In First Out | First In First Out     |
+| Insert    | Push              | Enqueue                |
+| Delete    | Pop               | Dequeue                |
+| Main End  | Top               | Front/Rear             |
+| Example   | Stack of plates   | People waiting in line |
+
+### Remember
+
+```text
+Stack → LIFO
+Queue → FIFO
+```
+
+---
+
+# 22. Stack vs Array
+
+| Feature           | Stack        | Array                     |
+| ----------------- | ------------ | ------------------------- |
+| Principle         | LIFO         | No fixed access principle |
+| Insert            | Push         | Index assignment          |
+| Delete            | Pop          | Index-based               |
+| Access            | Top-focused  | Random access             |
+| Access Complexity | O(1) for top | O(1) by index             |
+
+---
+
+# 23. Stack Applications
+
+Stack is widely used in computer science.
+
+### 1. Function Calls
+
+The **call stack** stores information related to function/method calls.
+
+```text
+main()
+ ↓
+methodA()
+ ↓
+methodB()
+```
+
+When `methodB()` finishes:
+
+```text
+methodB()
+   ↓
+removed first
+```
+
+This follows LIFO.
+
+---
+
+### 2. Recursion
+
+Recursive function calls use the call stack.
+
+Example:
+
+```java
+void fun(int n) {
+
+    if (n == 0)
+        return;
+
+    fun(n - 1);
+}
+```
+
+Each recursive call creates a stack frame.
+
+---
+
+### 3. Undo/Redo
+
+Applications can use stacks to implement:
+
+```text
+Undo
+Redo
+```
+
+---
+
+### 4. Browser History
+
+Stack-like behavior can be used for:
+
+```text
+Back
+Forward
+```
+
+---
+
+### 5. Expression Evaluation
+
+Stacks are used in:
+
+* Infix expression
+* Prefix expression
+* Postfix expression
+
+---
+
+### 6. Parentheses Matching
+
+Example:
+
+```text
+{ [ ( ) ] }
+```
+
+Stack can be used to check whether brackets are properly balanced.
+
+---
+
+### 7. Depth First Search
+
+DFS commonly uses a stack.
+
+```text
+DFS → Stack
+BFS → Queue
+```
+
+### Very Important MCQ
+
+> **DFS uses Stack, while BFS uses Queue.**
+
+---
+
+### 8. Syntax Parsing
+
+Compilers and parsers use stack-based techniques for processing expressions and syntax.
+
+---
+
+# 24. Expression Notations
+
+Three important expression forms:
+
+```text
+Infix
+Prefix
+Postfix
+```
+
+---
+
+## Infix
+
+Operator is between operands.
+
+```text
+A + B
+```
+
+Example:
+
+```text
+A + B * C
+```
+
+---
+
+## Prefix
+
+Operator comes before operands.
+
+```text
++ A B
+```
+
+Example:
+
+```text
++ A * B C
+```
+
+---
+
+## Postfix
+
+Operator comes after operands.
+
+```text
+A B +
+```
+
+Example:
+
+```text
+A B C * +
+```
+
+### Important
+
+> Stack is commonly used to evaluate **postfix expressions** and convert between expression notations.
+
+---
+
+# 25. Parentheses Matching
+
+Expression:
+
+```text
+{[()]}
+```
+
+Process:
+
+```text
+{
+{[
+{[(
+{[
+{
+empty
+```
+
+All brackets match correctly.
+
+Invalid example:
+
+```text
+{[(])
+```
+
+Stack detects mismatched brackets.
+
+---
+
+# 26. Important Stack Algorithms
+
+### Basic
+
+* Push
+* Pop
+* Peek
+* IsEmpty
+* IsFull
+
+### Common Problems
+
+* Reverse a String
+* Balanced Parentheses
+* Infix to Postfix
+* Infix to Prefix
+* Postfix Evaluation
+* Prefix Evaluation
+* Next Greater Element
+* Previous Greater Element
+* Next Smaller Element
+* Stock Span Problem
+* Min Stack
+* DFS
+
+---
+
+# 27. Reverse a String Using Stack
+
+Input:
+
+```text
+HELLO
+```
+
+Push:
+
+```text
+H
+E
+L
+L
+O
+```
+
+Pop:
+
+```text
+O
+L
+L
+E
+H
+```
+
+Output:
+
+```text
+OLLEH
+```
+
+---
+
+# 28. Monotonic Stack
+
+A **Monotonic Stack** maintains elements in increasing or decreasing order.
+
+Common applications:
+
+* Next Greater Element
+* Next Smaller Element
+* Stock Span
+* Largest Rectangle in Histogram
+
+Example:
+
+```text
+2  1  5  3  4
+```
+
+Monotonic stack can solve Next Greater Element efficiently.
+
+Typical complexity:
+
+```text
+O(n)
+```
+
+### Important
+
+> Many problems that appear to require nested loops can be solved using a monotonic stack in **O(n)**.
+
+---
+
+# 29. Min Stack
+
+A **Min Stack** supports:
+
+```text
+push()
+pop()
+top()
+getMin()
+```
+
+with:
+
+```text
+O(1)
+```
+
+for each operation in a suitable implementation.
+
+Common approach:
+
+```text
+Main Stack
++
+Minimum Stack
+```
+
+---
+
+# 30. Advantages of Stack
+
+* Simple data structure
+* Push and Pop are efficient
+* O(1) insertion/removal at top
+* Useful for recursion
+* Useful for expression evaluation
+* Useful for DFS
+* Useful for parentheses matching
+* Useful for undo operations
+
+---
+
+# 31. Disadvantages of Stack
+
+* Limited access
+* Cannot efficiently access arbitrary middle elements
+* Searching takes O(n)
+* Fixed array implementation can overflow
+* Recursive use can cause stack overflow if recursion becomes too deep
+
+---
+
+# 32. Important Government Job MCQ Questions
+
+### Q1. Which principle does Stack follow?
+
+```text
+LIFO
+```
+
+---
+
+### Q2. What does LIFO mean?
+
+```text
+Last In, First Out
+```
+
+---
+
+### Q3. Which operation inserts an element into Stack?
+
+```text
+Push
+```
+
+---
+
+### Q4. Which operation removes an element from Stack?
+
+```text
+Pop
+```
+
+---
+
+### Q5. Which operation returns the top element without removing it?
+
+```text
+Peek
+```
+
+---
+
+### Q6. What happens when we push into a full Stack?
+
+```text
+Stack Overflow
+```
+
+---
+
+### Q7. What happens when we pop from an empty Stack?
+
+```text
+Stack Underflow
+```
+
+---
+
+### Q8. What is the time complexity of Push?
+
+```text
+O(1)
+```
+
+---
+
+### Q9. What is the time complexity of Pop?
+
+```text
+O(1)
+```
+
+---
+
+### Q10. What is the time complexity of Peek?
+
+```text
+O(1)
+```
+
+---
+
+### Q11. Which data structure is used in DFS?
+
+```text
+Stack
+```
+
+---
+
+### Q12. Which data structure is used in BFS?
+
+```text
+Queue
+```
+
+---
+
+### Q13. Which data structure is used for recursion?
+
+```text
+Stack
+```
+
+---
+
+### Q14. Which data structure is commonly used for balanced parentheses?
+
+```text
+Stack
+```
+
+---
+
+### Q15. Which data structure is commonly used for postfix expression evaluation?
+
+```text
+Stack
+```
+
+---
+
+### Q16. Which principle does Queue follow?
+
+```text
+FIFO
+```
+
+---
+
+### Q17. What is the opposite concept of LIFO?
+
+```text
+FIFO
+```
+
+---
+
+### Q18. Can Stack be implemented using Linked List?
+
+```text
+Yes
+```
+
+---
+
+### Q19. Can Stack be implemented using Array?
+
+```text
+Yes
+```
+
+---
+
+### Q20. Which data structure is used in function calls?
+
+```text
+Call Stack
+```
+
+---
+
+# 33. Important MCQ Traps
+
+## Trap 1
+
+```text
+Stack → LIFO
+Queue → FIFO
+```
+
+Do not confuse them.
+
+---
+
+## Trap 2
+
+```text
+Push → Insert
+Pop  → Delete
+Peek → View Top
+```
+
+---
+
+## Trap 3
+
+```text
+Full Stack + Push
+→ Overflow
+```
+
+```text
+Empty Stack + Pop
+→ Underflow
+```
+
+---
+
+## Trap 4
+
+```text
+DFS → Stack
+BFS → Queue
+```
+
+---
+
+## Trap 5
+
+```text
+Recursion
+→ Call Stack
+```
+
+---
+
+## Trap 6
+
+Stack does not provide efficient random access.
+
+```text
+Top → O(1)
+Search → O(n)
+```
+
+---
+
+# 34. Stack Complexity Summary
+
+| Operation | Complexity |
+| --------- | ---------: |
+| Push      |       O(1) |
+| Pop       |       O(1) |
+| Peek      |       O(1) |
+| IsEmpty   |       O(1) |
+| Search    |       O(n) |
+| Traversal |       O(n) |
+
+---
+
+# 35. Stack vs Queue — Quick Revision
+
+```text
+Stack
+→ LIFO
+→ Push
+→ Pop
+→ Peek
+→ DFS
+→ Recursion
+```
+
+```text
+Queue
+→ FIFO
+→ Enqueue
+→ Dequeue
+→ BFS
+```
+
+---
+
+# 36. Most Important for Bangladesh IT Government Jobs
+
+For **Programmer / Assistant Programmer / ICT Officer / Senior Officer (IT) / Officer (IT)** exams, prioritize:
+
+### ⭐ Very High Priority
+
+1. Stack definition
+2. LIFO
+3. Push
+4. Pop
+5. Peek
+6. Overflow
+7. Underflow
+8. Stack complexity
+9. Stack vs Queue
+10. Stack using Array
+11. Stack using Linked List
+12. DFS → Stack
+13. BFS → Queue
+14. Recursion → Call Stack
+15. Parentheses matching
+
+### ⭐ High Priority
+
+16. Infix
+17. Prefix
+18. Postfix
+19. Postfix evaluation
+20. Infix to Postfix
+21. Reverse String
+22. Monotonic Stack
+23. Next Greater Element
+24. Stock Span
+25. Min Stack
+26. Java `Stack`
+27. Java `Deque`
+28. `ArrayDeque`
+
+---
+
+# 37. One-Minute Revision
+
+```text
+STACK
+│
+├── LIFO
+│
+├── Push     → Insert
+├── Pop      → Remove
+├── Peek     → Top element
+│
+├── Full + Push
+│   └── Overflow
+│
+├── Empty + Pop
+│   └── Underflow
+│
+├── Push     → O(1)
+├── Pop      → O(1)
+├── Peek     → O(1)
+├── Search   → O(n)
+│
+├── DFS      → Stack
+├── BFS      → Queue
+├── Recursion→ Call Stack
+│
+└── Implemented using
+    ├── Array
+    └── Linked List
+```
+
+# Final Remember
+
+> **Stack = LIFO + Push + Pop + Peek**
+
+```text
+Last In
+   ↓
+First Out
+
+Push → O(1)
+Pop  → O(1)
+Peek → O(1)
+
+Full  + Push → Overflow
+Empty + Pop  → Underflow
+
+DFS       → Stack
+BFS       → Queue
+Recursion → Call Stack
+```
 
