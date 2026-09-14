@@ -141,10 +141,10 @@ Important types:
 
 A **Circular Queue** is a queue where the last position is connected back to the first position.
 ```text
-<img width="758" height="289" alt="image" src="https://github.com/user-attachments/assets/e1d3d090-b36d-42b5-ad65-8f84c93f2ed8" />
+
 
 ```
-
+<img width="758" height="289" alt="image" src="https://github.com/user-attachments/assets/e1d3d090-b36d-42b5-ad65-8f84c93f2ed8" />
 It helps utilize unused spaces efficiently.
 
 ### Important
