@@ -1,4 +1,8 @@
 <img width="1223" height="644" alt="image" src="https://github.com/user-attachments/assets/5ab960b4-7afd-4d05-9ef0-b14deabd8be4" />
+### infix to prefix (same priority eksate thakte perbe) 
+
+<img width="1173" height="663" alt="image" src="https://github.com/user-attachments/assets/a8947ef2-9975-4708-b831-b4e6761ec372" />
+
 
 
 <img width="1172" height="467" alt="image" src="https://github.com/user-attachments/assets/d7553d95-3f7b-430c-9cfa-80ba409b3eb3" />
