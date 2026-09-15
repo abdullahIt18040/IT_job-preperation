@@ -493,9 +493,152 @@ rule : privot left side  always small and right will be greater .
 <img width="378" height="665" alt="image" src="https://github.com/user-attachments/assets/9f614b7f-f73b-4621-ada2-72f13dd2b043" />
 <img width="646" height="614" alt="image" src="https://github.com/user-attachments/assets/5ce61d2a-cecf-47f6-b45d-7ac55da55a13" />
 ### time complexity :
-best case O (nlogn)
-worst case O (n^2)
+best case O (nlogn) when privot select always middle .
+worst case O (n^2) when rivot select alwayas high or low value 
 <img width="721" height="671" alt="image" src="https://github.com/user-attachments/assets/ec8260e6-6650-479f-b8a9-7cff986dc2ba" />
+# Quick Sort
+
+## 1. What is Quick Sort?
+
+**Quick Sort** is a **divide-and-conquer** sorting algorithm.
+
+It selects a **pivot**, partitions the array around the pivot, and recursively sorts the left and right parts.
+
+> **Idea:** Choose Pivot → Partition → Recursively Sort
+
+## 2. Example
+
+```text
+Array:
+[5, 3, 8, 4, 2]
+
+Pivot = 4
+
+Smaller than 4 → [3, 2]
+Pivot           → [4]
+Greater than 4  → [5, 8]
+
+[3, 2] [4] [5, 8]
+
+Sort left:
+[2, 3]
+
+Sort right:
+[5, 8]
+
+Final:
+[2, 3, 4, 5, 8]
+```
+
+## 3. Algorithm
+
+```text
+QUICK_SORT(A, low, high)
+
+if low < high
+    pivotIndex = PARTITION(A, low, high)
+
+    QUICK_SORT(A, low, pivotIndex - 1)
+    QUICK_SORT(A, pivotIndex + 1, high)
+```
+
+## 4. Partition
+
+```text
+PARTITION(A, low, high)
+
+pivot = A[high]
+i = low - 1
+
+for j = low to high - 1
+    if A[j] <= pivot
+        i++
+        swap(A[i], A[j])
+
+swap(A[i + 1], A[high])
+
+return i + 1
+```
+
+## 5. Java
+
+```java
+public static void quickSort(int[] arr, int low, int high) {
+    if (low < high) {
+        int pivotIndex = partition(arr, low, high);
+
+        quickSort(arr, low, pivotIndex - 1);
+        quickSort(arr, pivotIndex + 1, high);
+    }
+}
+
+private static int partition(int[] arr, int low, int high) {
+    int pivot = arr[high];
+    int i = low - 1;
+
+    for (int j = low; j < high; j++) {
+        if (arr[j] <= pivot) {
+            i++;
+
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+        }
+    }
+
+    int temp = arr[i + 1];
+    arr[i + 1] = arr[high];
+    arr[high] = temp;
+
+    return i + 1;
+}
+```
+
+## 6. Complexity
+
+| Case    | Time       |
+| ------- | ---------- |
+| Best    | O(n log n) |
+| Average | O(n log n) |
+| Worst   | O(n²)      |
+
+**Space:** O(log n) average recursion stack
+**In-place:** Yes
+**Stable:** No
+
+## 7. When Does Worst Case Occur?
+
+Worst case occurs when the pivot repeatedly creates **highly unbalanced partitions**.
+
+Example:
+
+```text
+[1, 2, 3, 4, 5, 6, 7]
+
+Pivot = 7
+[1,2,3,4,5,6] | 7
+
+Pivot = 6
+[1,2,3,4,5] | 6
+
+Pivot = 5
+[1,2,3,4] | 5
+```
+
+This gives:
+
+```text
+O(n²)
+```
+
+## 8. Key Point
+
+> **Quick Sort = Pivot + Partition + Recursion**
+
+### Memory Trick
+
+**Choose → Partition → Left/Right → Repeat**
+
 
 
 
