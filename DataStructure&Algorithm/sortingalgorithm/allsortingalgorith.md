@@ -382,4 +382,9 @@ public static void bubbleSort(int[] arr) {
 
 **Memory Trick:**
 `Compare → Swap → Largest goes to the end`
-
+```
+Easy Memory
+Case	Input	Time
+Best	[1,2,3,4,5] Already sorted	O(n)*
+Worst	[5,4,3,2,1] Reverse sorted	O(n²)
+```
