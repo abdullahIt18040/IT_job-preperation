@@ -391,3 +391,9 @@ Worst Case — O(n²)
 Occurs when the array is reverse sorted.
 
 ```
+
+### Selection sort .
+find Minimum number ,
+<img width="657" height="632" alt="image" src="https://github.com/user-attachments/assets/2c5b8d5b-24fe-48e0-b860-211582845b18" />
+
+<img width="1139" height="677" alt="image" src="https://github.com/user-attachments/assets/c6b3f877-5c5a-4083-90bd-f12b1bf1ad83" />
