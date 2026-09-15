@@ -397,3 +397,93 @@ find Minimum number ,
 <img width="657" height="632" alt="image" src="https://github.com/user-attachments/assets/2c5b8d5b-24fe-48e0-b860-211582845b18" />
 
 <img width="1139" height="677" alt="image" src="https://github.com/user-attachments/assets/c6b3f877-5c5a-4083-90bd-f12b1bf1ad83" />
+# Selection Sort
+
+## 1. What is Selection Sort?
+
+**Selection Sort** repeatedly finds the **smallest element** from the unsorted part and places it at the beginning.
+
+> **Idea:** Find Minimum → Swap → Repeat
+
+## 2. Example
+
+```text
+[5, 3, 8, 4, 2]
+
+Find minimum → 2
+Swap 2 with 5
+
+[2, 3, 8, 4, 5]
+
+Find minimum → 3
+Already in correct position
+
+[2, 3, 8, 4, 5]
+
+Find minimum → 4
+Swap 4 with 8
+
+[2, 3, 4, 8, 5]
+
+Find minimum → 5
+Swap 5 with 8
+
+[2, 3, 4, 5, 8]
+```
+
+## 3. Algorithm
+
+```text
+SELECTION_SORT(A, n)
+
+for i = 0 to n-2
+    minIndex = i
+
+    for j = i+1 to n-1
+        if A[j] < A[minIndex]
+            minIndex = j
+
+    swap(A[i], A[minIndex])
+```
+
+## 4. Java
+
+```java
+public static void selectionSort(int[] arr) {
+    for (int i = 0; i < arr.length - 1; i++) {
+
+        int minIndex = i;
+
+        for (int j = i + 1; j < arr.length; j++) {
+            if (arr[j] < arr[minIndex]) {
+                minIndex = j;
+            }
+        }
+
+        int temp = arr[i];
+        arr[i] = arr[minIndex];
+        arr[minIndex] = temp;
+    }
+}
+```
+
+## 5. Complexity
+
+| Case    | Time  |
+| ------- | ----- |
+| Best    | O(n²) |
+| Average | O(n²) |
+| Worst   | O(n²) |
+
+**Space:** O(1)
+**In-place:** Yes
+**Stable:** No (standard implementation)
+
+## 6. Key Point
+
+> **Selection Sort always searches for the minimum element and puts it in its correct position.**
+
+### Memory Trick
+
+**Find Minimum → Swap → Sorted Part Grows**
+
