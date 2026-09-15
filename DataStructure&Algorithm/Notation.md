@@ -6,6 +6,8 @@
 <img width="1173" height="663" alt="image" src="https://github.com/user-attachments/assets/a8947ef2-9975-4708-b831-b4e6761ec372" />
 infix to prefix :
 <img width="1177" height="677" alt="image" src="https://github.com/user-attachments/assets/40aee1e4-9a4b-4b14-87a7-8049acc1b63d" />
+<img width="1149" height="669" alt="image" src="https://github.com/user-attachments/assets/244160a4-7414-421e-a97b-c0ffe17a6889" />
+
 infix to post fix:
 <img width="770" height="492" alt="image" src="https://github.com/user-attachments/assets/7367b7f6-446e-4315-b9f6-42f2f475d115" />
 <img width="915" height="647" alt="image" src="https://github.com/user-attachments/assets/0c43fe6a-caf4-488d-9e63-606c5a61606b" />
