@@ -486,4 +486,18 @@ public static void selectionSort(int[] arr) {
 ### Memory Trick
 
 **Find Minimum → Swap → Sorted Part Grows**
+### Merge Sort 
+rule : privot left side  always small and right will be greater .
+<img width="943" height="648" alt="image" src="https://github.com/user-attachments/assets/80529cbe-f4bd-4cf6-bb8b-4ebe38e2520d" />
+<img width="466" height="657" alt="image" src="https://github.com/user-attachments/assets/f97e1811-4284-4dff-9fb7-d7e4db2d1e6e" />
+<img width="378" height="665" alt="image" src="https://github.com/user-attachments/assets/9f614b7f-f73b-4621-ada2-72f13dd2b043" />
+<img width="646" height="614" alt="image" src="https://github.com/user-attachments/assets/5ce61d2a-cecf-47f6-b45d-7ac55da55a13" />
+### time complexity :
+best case O (nlogn)
+worst case O (n^2)
+<img width="721" height="671" alt="image" src="https://github.com/user-attachments/assets/ec8260e6-6650-479f-b8a9-7cff986dc2ba" />
+
+
+
+
 
