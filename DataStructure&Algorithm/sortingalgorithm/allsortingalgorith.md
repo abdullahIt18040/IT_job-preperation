@@ -307,3 +307,79 @@ insert key
 ```
 
 > **Insertion Sort = Pick → Compare → Shift → Insert**
+## Question 4 th  iteration array elemet show 
+# Bubble Sort
+
+## 1. What is Bubble Sort?
+
+**Bubble Sort** is a simple sorting algorithm that repeatedly compares **adjacent elements** and swaps them if they are in the wrong order.
+
+> **Idea:** Compare → Swap → Repeat
+
+## 2. Example
+
+```text
+[5, 3, 8, 4, 2]
+
+Pass 1:
+[3, 5, 4, 2, 8]
+
+Pass 2:
+[3, 4, 2, 5, 8]
+
+Pass 3:
+[3, 2, 4, 5, 8]
+
+Pass 4:
+[2, 3, 4, 5, 8]
+```
+
+The **largest element moves to the end** after each pass.
+
+## 3. Algorithm
+
+```text
+BUBBLE_SORT(A, n)
+
+for i = 0 to n-2
+    for j = 0 to n-i-2
+        if A[j] > A[j+1]
+            swap(A[j], A[j+1])
+```
+
+## 4. Java
+
+```java
+public static void bubbleSort(int[] arr) {
+    for (int i = 0; i < arr.length - 1; i++) {
+        for (int j = 0; j < arr.length - i - 1; j++) {
+
+            if (arr[j] > arr[j + 1]) {
+                int temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+}
+```
+
+## 5. Complexity
+
+| Case    | Time  |
+| ------- | ----- |
+| Best    | O(n)  |
+| Average | O(n²) |
+| Worst   | O(n²) |
+
+**Space:** O(1)
+**Stable:** Yes
+**In-place:** Yes
+
+## 6. Key Point
+
+> **Bubble Sort:** Compare adjacent elements and swap them if they are in the wrong order.
+
+**Memory Trick:**
+`Compare → Swap → Largest goes to the end`
+
