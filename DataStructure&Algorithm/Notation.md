@@ -1,5 +1,7 @@
 <img width="1223" height="644" alt="image" src="https://github.com/user-attachments/assets/5ab960b4-7afd-4d05-9ef0-b14deabd8be4" />
-### infix to prefix (same priority eksate thakte perbe) 
+
+
+### infix to prefix (a) same priority eksate thakte perbe b) reverse this c) after c) after result again reverse ) 
 
 <img width="1173" height="663" alt="image" src="https://github.com/user-attachments/assets/a8947ef2-9975-4708-b831-b4e6761ec372" />
 
