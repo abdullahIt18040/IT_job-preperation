@@ -4,6 +4,12 @@
 ### infix to prefix (a) same priority eksate thakte perbe b) reverse this c) after c) after result again reverse ) 
 
 <img width="1173" height="663" alt="image" src="https://github.com/user-attachments/assets/a8947ef2-9975-4708-b831-b4e6761ec372" />
+infix to prefix :
+<img width="1177" height="677" alt="image" src="https://github.com/user-attachments/assets/40aee1e4-9a4b-4b14-87a7-8049acc1b63d" />
+infix to post fix:
+<img width="770" height="492" alt="image" src="https://github.com/user-attachments/assets/7367b7f6-446e-4315-b9f6-42f2f475d115" />
+<img width="915" height="647" alt="image" src="https://github.com/user-attachments/assets/0c43fe6a-caf4-488d-9e63-606c5a61606b" />
+
 
 
 
@@ -12,6 +18,9 @@
 <img width="1183" height="634" alt="image" src="https://github.com/user-attachments/assets/7552242f-c751-43ca-a2df-088b59fff0c7" />
 <img width="1207" height="530" alt="image" src="https://github.com/user-attachments/assets/662d56a6-ac3f-4467-8cbb-7b79b384cb62" />
 <img width="1104" height="225" alt="image" src="https://github.com/user-attachments/assets/3b46f7bb-6789-440c-abec-715aff095219" />
+<img width="1093" height="516" alt="image" src="https://github.com/user-attachments/assets/26bbb8fa-1386-4a1e-ac39-3521c53e9715" />
+<img width="1001" height="481" alt="image" src="https://github.com/user-attachments/assets/a8e77e3a-0963-4316-82c7-454dce55a336" />
+
 
 
 
