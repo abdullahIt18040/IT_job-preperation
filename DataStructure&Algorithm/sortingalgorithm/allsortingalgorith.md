@@ -640,6 +640,8 @@ O(n²)
 **Choose → Partition → Left/Right → Repeat**
 
 
+### Merge Sort 
+<img width="1199" height="675" alt="image" src="https://github.com/user-attachments/assets/781aa30f-999c-4508-9aef-6424f717d511" />
 
 
 
