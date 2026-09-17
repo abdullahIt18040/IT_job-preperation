@@ -279,6 +279,252 @@ Leaf
 ### B tree
 <img width="1161" height="633" alt="image" src="https://github.com/user-attachments/assets/81384e69-191e-4219-9079-5f8a20ce3680" />
 <img width="558" height="375" alt="image" src="https://github.com/user-attachments/assets/866632a1-867f-47ef-b98c-a76d8774a135" />
+# 3-Order B-Tree
+
+A **3-Order B-Tree** is a balanced multiway search tree where:
+
+* Maximum **Children = 3**
+* Maximum **Keys = 2**
+* If a node gets **3 keys**, it causes **overflow**
+* During split, the **middle key moves to the parent**
+* All leaf nodes remain at the **same level**
+
+---
+
+## Example
+
+Given array:
+
+```text
+6, 2, 4, 15, 18, 8, 27, 9, 10, 13, 12, 17
+```
+
+### Step 1: Insert 6
+
+```text
+[6]
+```
+
+### Step 2: Insert 2
+
+```text
+[2 | 6]
+```
+
+### Step 3: Insert 4
+
+```text
+[2 | 4 | 6]  → Overflow
+```
+
+Middle key `4` moves up:
+
+```text
+      [4]
+     /   \
+   [2]   [6]
+```
+
+---
+
+### Step 4: Insert 15
+
+```text
+      [4]
+     /   \
+   [2]   [6 | 15]
+```
+
+### Step 5: Insert 18
+
+Right node becomes:
+
+```text
+[6 | 15 | 18] → Overflow
+```
+
+Split and move `15` up:
+
+```text
+        [4 | 15]
+       /   |    \
+     [2]  [6]  [18]
+```
+
+---
+
+### Step 6: Insert 8
+
+```text
+        [4 | 15]
+       /    |      \
+     [2]  [6 | 8]  [18]
+```
+
+### Step 7: Insert 27
+
+```text
+        [4 | 15]
+       /    |       \
+     [2]  [6 | 8]  [18 | 27]
+```
+
+---
+
+### Step 8: Insert 9
+
+`9` goes into `[6 | 8]`:
+
+```text
+[6 | 8 | 9] → Overflow
+```
+
+Split:
+
+```text
+Middle key = 8
+```
+
+Parent becomes:
+
+```text
+[4 | 8 | 15] → Overflow
+```
+
+Again split. Middle key `8` becomes the new root:
+
+```text
+              [8]
+             /   \
+           [4]   [15]
+          /  \   /   \
+        [2] [6] [9] [18 | 27]
+```
+
+---
+
+### Step 9: Insert 10
+
+```text
+              [8]
+             /   \
+           [4]   [15]
+          /  \   /     \
+        [2] [6] [9|10] [18|27]
+```
+
+---
+
+### Step 10: Insert 13
+
+Right-middle node:
+
+```text
+[9 | 10 | 13] → Overflow
+```
+
+Middle key `10` moves to parent:
+
+```text
+              [8]
+             /   \
+           [4]   [10 | 15]
+          /  \   /   |     \
+        [2] [6] [9] [13] [18|27]
+```
+
+---
+
+### Step 11: Insert 12
+
+`12` goes to `[13]`:
+
+```text
+              [8]
+             /   \
+           [4]   [10 | 15]
+          /  \   /      |       \
+        [2] [6] [9]   [12 | 13] [18|27]
+```
+
+---
+
+### Step 12: Insert 17
+
+`17` goes to `[18 | 27]`:
+
+```text
+[17 | 18 | 27] → Overflow
+```
+
+Middle key `18` moves to parent:
+
+```text
+[10 | 15 | 18] → Overflow
+```
+
+Middle key `15` moves to root.
+
+---
+
+# Final 3-Order B-Tree
+
+```text
+                    [8 | 15]
+                   /    |     \
+                [4]    [10]   [18]
+               /  \    /  \    /  \
+             [2] [6] [9] [12|13] [17] [27]
+```
+
+---
+
+## Split Summary
+
+| Insert | Overflow       | Middle Key     |
+| ------ | -------------- | -------------- |
+| 4      | `[2, 4, 6]`    | `4`            |
+| 18     | `[6, 15, 18]`  | `15`           |
+| 9      | `[6, 8, 9]`    | `8`            |
+| 9      | `[4, 8, 15]`   | `8` → New Root |
+| 13     | `[9, 10, 13]`  | `10`           |
+| 17     | `[17, 18, 27]` | `18`           |
+| 17     | `[10, 15, 18]` | `15` → Root    |
+
+---
+
+## Important Rules
+
+```text
+Order = 3
+
+Maximum Children = 3
+Maximum Keys     = 2
+
+If Keys > 2
+      ↓
+   Overflow
+      ↓
+    Split
+      ↓
+Middle Key → Parent
+```
+
+### Easy Formula
+
+```text
+Maximum Keys = Order - 1
+
+For Order 3:
+
+Maximum Keys = 3 - 1 = 2
+```
+
+### Remember
+
+> **3-Order B-Tree = 2-3 Tree**
+
+The tree always remains **balanced**, and all leaf nodes stay at the **same level**.
 
 
 ### B tree and B+ tree
