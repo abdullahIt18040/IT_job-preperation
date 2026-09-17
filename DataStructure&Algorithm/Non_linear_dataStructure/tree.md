@@ -276,6 +276,9 @@ Child
  ↓
 Leaf
 ```
+### B tree
+<img width="1161" height="633" alt="image" src="https://github.com/user-attachments/assets/81384e69-191e-4219-9079-5f8a20ce3680" />
+
 
 ### B tree and B+ tree
 <img width="979" height="684" alt="image" src="https://github.com/user-attachments/assets/9f825bc4-a23b-4cde-812f-a3da49116ab6" />
