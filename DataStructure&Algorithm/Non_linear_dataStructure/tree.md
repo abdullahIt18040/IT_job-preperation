@@ -640,6 +640,208 @@ Height     → O(log n)
 <img width="1182" height="498" alt="image" src="https://github.com/user-attachments/assets/f449baf1-ca4e-477d-ac8c-55d990122175" />
 <img width="966" height="672" alt="image" src="https://github.com/user-attachments/assets/c61ae3c0-f54b-40d2-b083-0b36bbe5c888" />
 <img width="579" height="445" alt="image" src="https://github.com/user-attachments/assets/112f795f-4602-4053-9cd1-e54789a47811" />
+# B+ Tree
+
+A **B+ Tree** is a **self-balancing multiway search tree** and is widely used in **Databases and File Systems**.
+
+## Key Features
+
+* All actual **data/records are stored only in leaf nodes**.
+* Internal nodes contain **keys/indexes** used for navigation.
+* All leaf nodes are connected using a **linked list**.
+* All leaf nodes remain at the **same level**.
+* It is efficient for **search, insertion, deletion, and range queries**.
+
+---
+
+## Basic Structure
+
+```text
+                 [20 | 40]
+                /    |     \
+               /     |      \
+          [5 | 10] [20 | 30] [40 | 50 | 60]
+             ↓          ↓             ↓
+             └──────────┴─────────────┘
+                 Linked Leaf Nodes
+```
+
+### Important
+
+```text
+Internal Node
+      ↓
+Keys / Indexes
+
+Leaf Node
+      ↓
+Actual Data / Records
+```
+
+---
+
+# Search Example
+
+Search for `30`:
+
+```text
+                 [20 | 40]
+                /    |     \
+               /     |      \
+          [5 | 10] [20 | 30] [40 | 50]
+                       ↑
+                      30
+```
+
+Steps:
+
+```text
+30 > 20
+30 < 40
+      ↓
+Go to middle child
+      ↓
+[20 | 30]
+      ↓
+Found 30
+```
+
+---
+
+# Leaf Node Linked List
+
+One of the most important features of a B+ Tree is that **leaf nodes are linked together**.
+
+```text
+[5 | 10] → [20 | 30] → [40 | 50 | 60]
+```
+
+This makes **sequential access and range queries efficient**.
+
+---
+
+# Range Search
+
+Suppose we want:
+
+```text
+20 ≤ key ≤ 50
+```
+
+First find `20`:
+
+```text
+[5 | 10] → [20 | 30] → [40 | 50 | 60]
+             ↑
+           Start
+```
+
+Then follow the linked leaf nodes:
+
+```text
+[20 | 30] → [40 | 50]
+```
+
+Therefore, range search is efficient.
+
+### Range Query Complexity
+
+If `k` records are returned:
+
+```text
+O(log n + k)
+```
+
+Where:
+
+* `O(log n)` → Find the starting key
+* `O(k)` → Read `k` records
+
+---
+
+# B-Tree vs B+ Tree
+
+| Feature           | B-Tree          | B+ Tree            |
+| ----------------- | --------------- | ------------------ |
+| Data location     | Internal + Leaf | **Only Leaf**      |
+| Internal nodes    | Keys + Data     | **Keys/Indexes**   |
+| Leaf nodes linked | Usually No      | **Yes**            |
+| Range Search      | Less efficient  | **More efficient** |
+| Sequential Access | Less efficient  | **More efficient** |
+| Database Usage    | Common          | **Very common**    |
+
+---
+
+# Time Complexity
+
+| Operation    | Complexity     |
+| ------------ | -------------- |
+| Search       | `O(log n)`     |
+| Insertion    | `O(log n)`     |
+| Deletion     | `O(log n)`     |
+| Range Search | `O(log n + k)` |
+| Traversal    | `O(n)`         |
+
+Where `k` = number of records returned by the range query.
+
+---
+
+# Space Complexity
+
+For `n` keys/records:
+
+```text
+Space Complexity = O(n)
+```
+
+---
+
+# Why B+ Tree is Useful in Database?
+
+Consider:
+
+```sql
+SELECT *
+FROM employee
+WHERE id BETWEEN 1000 AND 2000;
+```
+
+B+ Tree can:
+
+```text
+Find 1000
+   ↓
+Go to corresponding leaf
+   ↓
+Follow linked leaves
+   ↓
+Read 1001, 1002, ... 2000
+```
+
+This makes **range queries and sequential data access efficient**.
+
+---
+
+# Exam Shortcut
+
+```text
+B+ Tree
+-------
+Data → Only Leaf Nodes
+
+Internal Node → Keys / Indexes
+
+Leaf Nodes → Linked List
+
+Search      → O(log n)
+Insertion   → O(log n)
+Deletion    → O(log n)
+Range Search → O(log n + k)
+Space       → O(n)
+```
+
+> **Remember:** B+ Tree = **Data in Leaf + Linked Leaves + Efficient Range Search**
+
 
 
 
