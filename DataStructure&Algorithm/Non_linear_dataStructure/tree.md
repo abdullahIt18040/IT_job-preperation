@@ -278,6 +278,7 @@ Leaf
 ```
 ### B tree
 <img width="1161" height="633" alt="image" src="https://github.com/user-attachments/assets/81384e69-191e-4219-9079-5f8a20ce3680" />
+<img width="558" height="375" alt="image" src="https://github.com/user-attachments/assets/866632a1-867f-47ef-b98c-a76d8774a135" />
 
 
 ### B tree and B+ tree
