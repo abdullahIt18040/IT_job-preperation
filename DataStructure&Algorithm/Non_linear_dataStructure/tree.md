@@ -279,6 +279,8 @@ Leaf
 ### B tree
 <img width="1161" height="633" alt="image" src="https://github.com/user-attachments/assets/81384e69-191e-4219-9079-5f8a20ce3680" />
 <img width="558" height="375" alt="image" src="https://github.com/user-attachments/assets/866632a1-867f-47ef-b98c-a76d8774a135" />
+<img width="534" height="625" alt="image" src="https://github.com/user-attachments/assets/d9667985-e9d7-490b-b673-c8c292224188" />
+
 # 3-Order B-Tree
 
 A **3-Order B-Tree** is a balanced multiway search tree where:
@@ -525,6 +527,113 @@ Maximum Keys = 3 - 1 = 2
 > **3-Order B-Tree = 2-3 Tree**
 
 The tree always remains **balanced**, and all leaf nodes stay at the **same level**.
+# B-Tree Time & Space Complexity
+
+A **B-Tree** is a self-balancing multiway search tree.
+
+## Time Complexity
+
+| Operation | Time Complexity |
+| --------- | --------------- |
+| Search    | `O(log n)`      |
+| Insertion | `O(log n)`      |
+| Deletion  | `O(log n)`      |
+| Traversal | `O(n)`          |
+
+### Search
+
+Because a B-Tree is balanced, its height is logarithmic:
+
+```text
+Height = O(log n)
+```
+
+Therefore:
+
+```text
+Search = O(log n)
+```
+
+### Insertion
+
+Insertion may require node splitting:
+
+```text
+Find position
+     ↓
+Insert key
+     ↓
+Overflow?
+     ↓
+Split node
+     ↓
+Move middle key to parent
+```
+
+Overall:
+
+```text
+Insertion = O(log n)
+```
+
+### Deletion
+
+Deletion may require:
+
+* Borrowing a key
+* Merging nodes
+* Adjusting the parent
+
+Overall:
+
+```text
+Deletion = O(log n)
+```
+
+### Traversal
+
+Every key needs to be visited:
+
+```text
+Traversal = O(n)
+```
+
+---
+
+# Space Complexity
+
+If the B-Tree contains `n` keys:
+
+```text
+Space Complexity = O(n)
+```
+
+The tree needs memory to store all keys and child references.
+
+---
+
+# Summary
+
+```text
+B-Tree Complexity
+-----------------
+
+Search     → O(log n)
+Insertion  → O(log n)
+Deletion   → O(log n)
+Traversal  → O(n)
+
+Space      → O(n)
+
+Height     → O(log n)
+```
+
+## MCQ Shortcut
+
+> **B-Tree Search = O(log n)**
+> **B-Tree Insertion = O(log n)**
+> **B-Tree Deletion = O(log n)**
+> **B-Tree Space = O(n)**
 
 
 ### B tree and B+ tree
