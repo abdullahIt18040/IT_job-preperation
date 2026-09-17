@@ -634,6 +634,14 @@ Height     → O(log n)
 > **B-Tree Insertion = O(log n)**
 > **B-Tree Deletion = O(log n)**
 > **B-Tree Space = O(n)**
+> 
+###  B+ tree
+
+<img width="1182" height="498" alt="image" src="https://github.com/user-attachments/assets/f449baf1-ca4e-477d-ac8c-55d990122175" />
+<img width="966" height="672" alt="image" src="https://github.com/user-attachments/assets/c61ae3c0-f54b-40d2-b083-0b36bbe5c888" />
+<img width="579" height="445" alt="image" src="https://github.com/user-attachments/assets/112f795f-4602-4053-9cd1-e54789a47811" />
+
+
 
 
 ### B tree and B+ tree
