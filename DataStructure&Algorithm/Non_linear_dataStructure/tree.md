@@ -277,12 +277,11 @@ Child
 Leaf
 ```
 
-### Memory Trick
+### B tree and B+ tree
+<img width="979" height="684" alt="image" src="https://github.com/user-attachments/assets/9f825bc4-a23b-4cde-812f-a3da49116ab6" />
 
-**Preorder:** Root → Left → Right
-**Inorder:** Left → Root → Right
-**Postorder:** Left → Right → Root
-**Level Order:** Level by Level
+
+
 
 
 
