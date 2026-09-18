@@ -996,6 +996,139 @@ Left < Root < Right
 **Insert:** Compare → Find Empty Position
 **Delete:** Leaf / One Child / Two Children
 **Inorder:** Always gives Sorted Order
+# BST — Case 3: Two Children
+
+When a node has **two children**, we cannot simply remove it because the **BST property may be violated**.
+
+We replace the node with either:
+
+1. **Inorder Successor**
+2. **Inorder Predecessor**
+
+---
+
+## 1. Inorder Successor
+
+**Inorder Successor = Smallest value in the Right Subtree**
+
+### Example
+
+```text
+        50
+       /  \
+     30    70
+          /  \
+        60    80
+```
+
+Delete `70`.
+
+Right subtree of `70`:
+
+```text
+    80
+```
+
+So:
+
+```text
+Inorder Successor = 80
+```
+
+Replace `70` with `80`:
+
+```text
+        50
+       /  \
+     30    80
+          /
+        60
+```
+
+---
+
+## 2. Inorder Predecessor
+
+**Inorder Predecessor = Largest value in the Left Subtree**
+
+Using the same tree:
+
+```text
+        50
+       /  \
+     30    70
+          /  \
+        60    80
+```
+
+Delete `70`.
+
+Left subtree of `70`:
+
+```text
+    60
+```
+
+So:
+
+```text
+Inorder Predecessor = 60
+```
+
+Replace `70` with `60`:
+
+```text
+        50
+       /  \
+     30    60
+             \
+              80
+```
+
+---
+### BST — Case 3: Two Children
+```
+Consider this BST:
+
+        50
+       /  \
+     30    70
+          /  \
+        60    80
+             / \
+            78  90
+
+Now we want to delete 70.
+
+Using Inorder Successor
+Step 1: Find the Right Subtree
+
+Right subtree of 70:
+
+        80
+       /  \
+      78   90
+Step 2: Find the Smallest Value
+
+The smallest value in the right subtree is:
+
+78
+
+Therefore:
+
+Inorder Successor = 78
+Step 3: Replace 70 with 78
+        50
+       /  \
+     30    78
+          /  \
+        60    80
+                \
+                 90
+
+The original 78 is removed from under 80.
+```
+
 
 
 
