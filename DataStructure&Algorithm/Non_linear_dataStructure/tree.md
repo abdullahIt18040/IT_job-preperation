@@ -1130,6 +1130,79 @@ The original 78 is removed from under 80.
 ```
 
 
+# Why BST Worst Case = O(n)?
+
+BST-এর **worst case** হয় যখন tree টি **skewed** বা একদিকে লম্বা হয়ে যায়।
+
+```text
+10
+  \
+   20
+     \
+      30
+        \
+         40
+```
+
+এখানে প্রত্যেক node-এর **শুধু একটি child** আছে। তাই এই BST দেখতে অনেকটা **Linked List-এর মতো** হয়ে গেছে।
+
+## Search করলে কী হয়?
+
+ধরি, আমরা `40` খুঁজছি:
+
+```text
+40
+ ↓
+10 → 20 → 30 → 40
+```
+
+এক এক করে **10, 20, 30, 40** — সব node দেখতে হচ্ছে।
+
+যদি মোট `n`টি node থাকে:
+
+```text
+Number of nodes checked ≈ n
+```
+
+তাই:
+
+```text
+Time Complexity = O(n)
+```
+
+## Balanced BST হলে
+
+```text
+        40
+       /  \
+     20    60
+    / \    / \
+   10 30  50 70
+```
+
+প্রতিবার search করলে প্রায় অর্ধেক অংশ বাদ দেওয়া যায়।
+
+```text
+Time Complexity = O(log n)
+```
+
+## Easy Comparison
+
+```text
+Balanced BST → Height ≈ log n → O(log n)
+
+Skewed BST   → Height ≈ n     → O(n)
+```
+
+## Key Point
+
+> BST-এর **Search, Insert, Delete** complexity মূলত tree-এর **height (h)**-এর উপর নির্ভর করে।
+
+```text
+h ≈ log n → O(log n)
+
+h ≈ n     → O(n)
+```
 
 
 
