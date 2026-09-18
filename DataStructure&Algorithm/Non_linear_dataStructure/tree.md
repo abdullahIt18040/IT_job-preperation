@@ -1206,6 +1206,15 @@ h ≈ n     → O(n)
 
 <img width="1191" height="542" alt="image" src="https://github.com/user-attachments/assets/eb47c356-5b57-457b-9a95-31b471f82f90" />
 
+<img width="611" height="655" alt="image" src="https://github.com/user-attachments/assets/3ecf29cf-213f-40d3-8309-e9d2d63ac412" />
+<img width="1101" height="487" alt="image" src="https://github.com/user-attachments/assets/3b8221fc-1dc0-436b-9362-acdb88065101" />
+<img width="745" height="476" alt="image" src="https://github.com/user-attachments/assets/382cd769-7374-45e4-afda-aa010211fd50" />
+<img width="791" height="308" alt="image" src="https://github.com/user-attachments/assets/0a576178-42cc-4523-b45f-2c4f5055726d" />
+<img width="1088" height="547" alt="image" src="https://github.com/user-attachments/assets/9ae353b6-f852-4657-8b1b-253d02c74579" />
+
+
+
+
 
 
 
