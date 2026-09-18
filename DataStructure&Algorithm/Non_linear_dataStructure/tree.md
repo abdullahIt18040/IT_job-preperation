@@ -1204,6 +1204,7 @@ h ≈ log n → O(log n)
 h ≈ n     → O(n)
 ```
 
+<img width="1191" height="542" alt="image" src="https://github.com/user-attachments/assets/eb47c356-5b57-457b-9a95-31b471f82f90" />
 
 
 
