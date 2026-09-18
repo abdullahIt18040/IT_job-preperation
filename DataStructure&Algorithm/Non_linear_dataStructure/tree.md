@@ -848,6 +848,155 @@ Space       → O(n)
 
 ### B tree and B+ tree
 <img width="979" height="684" alt="image" src="https://github.com/user-attachments/assets/9f825bc4-a23b-4cde-812f-a3da49116ab6" />
+<img width="1172" height="603" alt="image" src="https://github.com/user-attachments/assets/8296c20e-89a0-4946-9a1e-397f4b18d6f0" />
+## Binary Search Tree
+<img width="1203" height="600" alt="image" src="https://github.com/user-attachments/assets/4762fa9f-85e9-479f-a0bf-04aa4eaef8d4" />
+# Binary Search Tree (BST)
+
+## 1. What is BST?
+
+A **Binary Search Tree (BST)** is a binary tree where:
+
+```text
+Left Subtree < Root < Right Subtree
+```
+
+Example:
+
+```text
+        50
+       /  \
+     30    70
+    / \    / \
+   20 40  60 80
+```
+
+## 2. Main Properties
+
+* Each node has **at most 2 children**.
+* Left values are **smaller** than the root.
+* Right values are **greater** than the root.
+* Inorder traversal gives **sorted order**.
+
+```text
+Inorder → 20 30 40 50 60 70 80
+```
+
+## 3. Search
+
+To search for a value:
+
+```text
+If value < root → go left
+If value > root → go right
+If value == root → Found
+```
+
+Example: Search `60`
+
+```text
+60 < 50 ? No
+60 > 50 → Right
+
+60 < 70 → Left
+
+60 == 60 → Found
+```
+
+## 4. Insert
+
+Example: Insert `65`
+
+```text
+        50
+          \
+           70
+          /
+         60
+           \
+            65
+```
+
+Rule:
+
+```text
+Smaller → Left
+Greater → Right
+```
+
+## 5. Delete
+
+Three cases:
+
+### Case 1: Leaf Node
+
+```text
+Delete 20
+```
+
+Simply remove it.
+
+### Case 2: One Child
+
+Replace the deleted node with its child.
+
+### Case 3: Two Children
+
+Replace with:
+
+* **Inorder Successor** = smallest value in right subtree
+* or **Inorder Predecessor** = largest value in left subtree
+
+## 6. Time Complexity
+
+| Operation |  Average | Worst |
+| --------- | -------: | ----: |
+| Search    | O(log n) |  O(n) |
+| Insert    | O(log n) |  O(n) |
+| Delete    | O(log n) |  O(n) |
+
+**Space:** O(h)
+
+Where `h` = height of the tree.
+
+## 7. Why Worst Case O(n)?
+
+If the tree becomes **skewed**:
+
+```text
+10
+  \
+   20
+     \
+      30
+        \
+         40
+```
+
+The BST behaves like a **Linked List**.
+
+Therefore:
+
+```text
+Height = n
+Time = O(n)
+```
+
+## 8. Key Point
+
+> **BST = Binary Tree + Search Property**
+
+```text
+Left < Root < Right
+```
+
+### Memory Trick
+
+**Search:** Compare → Left/Right
+**Insert:** Compare → Find Empty Position
+**Delete:** Leaf / One Child / Two Children
+**Inorder:** Always gives Sorted Order
+
 
 
 
