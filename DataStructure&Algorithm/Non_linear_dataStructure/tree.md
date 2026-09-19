@@ -1255,6 +1255,12 @@ h ≈ n     → O(n)
 <img width="531" height="279" alt="image" src="https://github.com/user-attachments/assets/8661f3ae-dadb-4625-a05d-174ca113df45" />
 <img width="1050" height="254" alt="image" src="https://github.com/user-attachments/assets/995b580d-bf93-4bff-a156-a1355a65d7ac" />
 <img width="1029" height="521" alt="image" src="https://github.com/user-attachments/assets/0ffa0481-d3c9-4d38-b7f9-83b4b2acfeab" />
+## Heap
+##
+<img width="744" height="251" alt="image" src="https://github.com/user-attachments/assets/f8084c87-cbec-453b-980a-31c1231a1fa6" />
+## Tree must be Complete binary tree  to work heap 
+<img width="1046" height="272" alt="image" src="https://github.com/user-attachments/assets/cf3880e2-e0bd-47d1-93a0-abb0a62abc7e" />
+
 
 
 
