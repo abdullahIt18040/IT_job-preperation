@@ -1256,6 +1256,7 @@ h ≈ n     → O(n)
 ## AVL tree 
 <img width="894" height="583" alt="image" src="https://github.com/user-attachments/assets/8e1514fd-a235-4ce6-8ab6-dba787b4cd9e" />
 
+<img width="631" height="375" alt="image" src="https://github.com/user-attachments/assets/7e94aaf8-c400-4467-a92e-876d3cdc809f" />
 
 
 
