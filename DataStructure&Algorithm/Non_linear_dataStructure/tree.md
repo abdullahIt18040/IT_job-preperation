@@ -1218,7 +1218,7 @@ h ≈ n     → O(n)
 <img width="745" height="476" alt="image" src="https://github.com/user-attachments/assets/382cd769-7374-45e4-afda-aa010211fd50" />
 <img width="791" height="308" alt="image" src="https://github.com/user-attachments/assets/0a576178-42cc-4523-b45f-2c4f5055726d" />
 <img width="1088" height="547" alt="image" src="https://github.com/user-attachments/assets/9ae353b6-f852-4657-8b1b-253d02c74579" />
-
+### FUll Binay tree
 <img width="1332" height="746" alt="image" src="https://github.com/user-attachments/assets/a0f065cc-5090-441e-aa21-848d0b0d8185" />
 <img width="502" height="620" alt="image" src="https://github.com/user-attachments/assets/a0e3ea1f-787d-434c-bc22-dd556c63f120" />
 <img width="653" height="631" alt="image" src="https://github.com/user-attachments/assets/6c746a8d-d0e3-4298-82da-595bd71c2cf9" />
@@ -1228,6 +1228,7 @@ h ≈ n     → O(n)
 <img width="861" height="548" alt="image" src="https://github.com/user-attachments/assets/836d4b6f-787d-4faf-8037-5213f395dd8b" />
 <img width="1046" height="514" alt="image" src="https://github.com/user-attachments/assets/b5069547-4d71-4f5e-b028-6e2dc4a5cfd3" />
 <img width="1193" height="416" alt="image" src="https://github.com/user-attachments/assets/a865b4ce-ff8d-47e4-9b3d-d060217f3d6b" />
+### Complete Binay tree
 
 
 
