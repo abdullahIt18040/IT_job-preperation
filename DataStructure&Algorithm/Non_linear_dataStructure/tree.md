@@ -1229,6 +1229,17 @@ h ≈ n     → O(n)
 <img width="1046" height="514" alt="image" src="https://github.com/user-attachments/assets/b5069547-4d71-4f5e-b028-6e2dc4a5cfd3" />
 <img width="1193" height="416" alt="image" src="https://github.com/user-attachments/assets/a865b4ce-ff8d-47e4-9b3d-d060217f3d6b" />
 ### Complete Binay tree
+<img width="739" height="369" alt="image" src="https://github.com/user-attachments/assets/02ea95f4-1107-412d-9a01-fa95f025e758" />
+## not complete binARY tree 
+<img width="345" height="170" alt="image" src="https://github.com/user-attachments/assets/200e2ca3-4bda-424e-b0a2-e9f1046bd3f2" />
+## complete binary tree math 
+<img width="764" height="393" alt="image" src="https://github.com/user-attachments/assets/8bea3cda-f28c-41cc-8897-350b5965c3c3" />
+
+### Perfecr Binary tree 
+<img width="366" height="449" alt="image" src="https://github.com/user-attachments/assets/d12116a1-2883-4ebd-961b-f21084656822" />
+
+
+
 
 
 
