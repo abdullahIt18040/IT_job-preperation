@@ -1238,26 +1238,19 @@ h ≈ n     → O(n)
 ### Perfecr Binary tree 
 <img width="366" height="449" alt="image" src="https://github.com/user-attachments/assets/d12116a1-2883-4ebd-961b-f21084656822" />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## AVL tree 
 <img width="894" height="583" alt="image" src="https://github.com/user-attachments/assets/8e1514fd-a235-4ce6-8ab6-dba787b4cd9e" />
 
 <img width="631" height="375" alt="image" src="https://github.com/user-attachments/assets/7e94aaf8-c400-4467-a92e-876d3cdc809f" />
 
 <img width="1253" height="483" alt="image" src="https://github.com/user-attachments/assets/f98a44db-20eb-48d1-83d3-d8da37028e23" />
+<img width="632" height="473" alt="image" src="https://github.com/user-attachments/assets/9dab53ee-eae8-423e-8c09-3092b98f5bf8" />
+<img width="573" height="391" alt="image" src="https://github.com/user-attachments/assets/0b532d0e-cc91-41c4-bceb-54013a697967" />
+<img width="531" height="279" alt="image" src="https://github.com/user-attachments/assets/8661f3ae-dadb-4625-a05d-174ca113df45" />
+<img width="1050" height="254" alt="image" src="https://github.com/user-attachments/assets/995b580d-bf93-4bff-a156-a1355a65d7ac" />
+<img width="1029" height="521" alt="image" src="https://github.com/user-attachments/assets/0ffa0481-d3c9-4d38-b7f9-83b4b2acfeab" />
+
+
+
 
 
