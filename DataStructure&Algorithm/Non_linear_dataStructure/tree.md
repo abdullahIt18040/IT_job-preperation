@@ -1203,6 +1203,13 @@ h ≈ log n → O(log n)
 
 h ≈ n     → O(n)
 ```
+<img width="785" height="246" alt="image" src="https://github.com/user-attachments/assets/23203d7b-7260-4c74-807e-b0dd06eb9886" />
+<img width="812" height="574" alt="image" src="https://github.com/user-attachments/assets/875f1ceb-e1e0-4343-897c-a42acbe17e92" />
+<img width="1142" height="649" alt="image" src="https://github.com/user-attachments/assets/aba5b1ab-5b6e-42bd-98bb-ee2625a81b3b" />
+<img width="1089" height="463" alt="image" src="https://github.com/user-attachments/assets/4ec5f380-bb77-4069-81e3-1d0584d1a68c" />
+
+
+
 
 <img width="1191" height="542" alt="image" src="https://github.com/user-attachments/assets/eb47c356-5b57-457b-9a95-31b471f82f90" />
 
