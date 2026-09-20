@@ -1,3 +1,8 @@
+## Tree Trasvarsal
+## Sorting Algorith
+## Searching algorithm
+### must be learn algoritm with code :
+
 # Non-Linear Data Structure
 
 ## 1. What is Non-Linear Data Structure?
