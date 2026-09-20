@@ -1437,6 +1437,65 @@ it work  Deapt
 
 
 
+# DFS vs BFS
+
+## Is DFS Better Than BFS?
+
+**DFS is not always better than BFS.** It depends on the problem.
+
+### DFS is Preferred When
+
+* We need to **explore deeply**
+* We need **backtracking**
+* We need **cycle detection**
+* We need **topological sorting**
+* The tree is **wide** and memory usage is a concern
+
+### BFS is Preferred When
+
+* We need **level-order traversal**
+* We need the **shortest path** in an unweighted graph
+* We need the **minimum number of edges/steps**
+
+### Easy to Remember
+
+```text
+DFS → Go Deep First
+BFS → Go Level by Level
+```
+
+## DFS Memory Advantage
+
+DFS does not keep all nodes of the current level in memory.
+It generally uses a **Stack / Recursion**.
+
+### General Graph
+
+```text
+DFS Space = O(V)
+BFS Space = O(V)
+```
+
+### Tree
+
+For a tree, the difference is important:
+
+```text
+DFS → O(h)
+BFS → O(w)
+```
+
+Where:
+
+```text
+h = Height of the tree
+w = Maximum Width of the tree
+```
+
+A **very wide tree** can make BFS use more memory because many nodes may be stored in the queue at the same time.
+
+> **DFS → Depth & Backtracking**
+> **BFS → Level & Shortest Path**
 
 
 
