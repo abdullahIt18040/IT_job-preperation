@@ -1419,6 +1419,15 @@ same vabe min heap jonno odelete hobe:
 <img width="1050" height="570" alt="image" src="https://github.com/user-attachments/assets/b96bc033-2fec-4875-81de-c26849f17087" />
 <img width="594" height="751" alt="image" src="https://github.com/user-attachments/assets/28188f5d-df97-41c4-b961-1e2def87a544" />
 
+<img width="896" height="569" alt="image" src="https://github.com/user-attachments/assets/efbab298-c794-4963-97cc-00e14f48dd49" />
+## BFS Algorith :
+
+ BFS Search level by level 
+ 
+<img width="1162" height="664" alt="image" src="https://github.com/user-attachments/assets/51ae007a-2c61-472c-9537-8243d971cd2d" />
+
+
+
 
 
 
