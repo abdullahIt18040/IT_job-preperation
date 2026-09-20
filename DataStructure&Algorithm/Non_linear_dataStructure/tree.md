@@ -1503,6 +1503,13 @@ A **very wide tree** can make BFS use more memory because many nodes may be stor
 <img width="658" height="236" alt="image" src="https://github.com/user-attachments/assets/f7016d78-1565-4331-80b0-2d4c180c17e7" />
 ## very very import:
 <img width="687" height="379" alt="image" src="https://github.com/user-attachments/assets/323d9dbc-9589-4494-ad73-f08c7f1c44e1" />
+<img width="724" height="380" alt="image" src="https://github.com/user-attachments/assets/1b2d3306-9dba-4988-ba6a-941743e398b5" />
+<img width="645" height="272" alt="image" src="https://github.com/user-attachments/assets/95ad897e-7579-4629-8521-5e76146b1672" />
+<img width="660" height="323" alt="image" src="https://github.com/user-attachments/assets/d41a4964-19cc-49c7-9a7b-bcd9a95f2151" />
+<img width="759" height="416" alt="image" src="https://github.com/user-attachments/assets/70e2922b-ca6d-4234-b86c-02db04588ec8" />
+
+
+
 
 
 
