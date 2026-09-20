@@ -1256,10 +1256,155 @@ h ≈ n     → O(n)
 <img width="1050" height="254" alt="image" src="https://github.com/user-attachments/assets/995b580d-bf93-4bff-a156-a1355a65d7ac" />
 <img width="1029" height="521" alt="image" src="https://github.com/user-attachments/assets/0ffa0481-d3c9-4d38-b7f9-83b4b2acfeab" />
 ## Heap
+# Max Heap and Min Heap
+
+## 1. What is a Heap?
+
+A **Heap** is a **Complete Binary Tree** that follows a specific **Heap Property**.
+
+Two types:
+
+* **Max Heap**
+* **Min Heap**
+
+---
+
+## 2. Max Heap
+
+In a **Max Heap**:
+
+```text
+Parent ≥ Children
+```
+
+The **largest element is always at the root**.
+
+Example:
+
+```text
+          50
+        /    \
+      30      40
+     /  \    /
+    10  20  35
+```
+
+```text
+50 ≥ 30, 40
+30 ≥ 10, 20
+40 ≥ 35
+```
+
+### Key Point
+
+```text
+Maximum element → Root
+```
+
+---
+
+## 3. Min Heap
+
+In a **Min Heap**:
+
+```text
+Parent ≤ Children
+```
+
+The **smallest element is always at the root**.
+
+Example:
+
+```text
+          10
+        /    \
+      20      15
+     /  \    /
+    30  40  25
+```
+
+```text
+10 ≤ 20, 15
+20 ≤ 30, 40
+15 ≤ 25
+```
+
+### Key Point
+
+```text
+Minimum element → Root
+```
+
+---
+
+## 4. Max Heap vs Min Heap
+
+| Feature  | Max Heap          | Min Heap          |
+| -------- | ----------------- | ----------------- |
+| Root     | Maximum           | Minimum           |
+| Property | Parent ≥ Children | Parent ≤ Children |
+| Used for | Maximum priority  | Minimum priority  |
+
+---
+
+## 5. Important Properties
+
+A Heap is a **Complete Binary Tree**.
+
+For an array representation using **0-based indexing**:
+
+```text
+Parent(i) = (i - 1) / 2
+Left(i)   = 2i + 1
+Right(i)  = 2i + 2
+```
+
+Example:
+
+```text
+Array:
+[50, 30, 40, 10, 20, 35]
+```
+
+represents:
+
+```text
+          50
+        /    \
+      30      40
+     /  \    /
+    10  20  35
+```
+
+---
+
+## 6. Complexity
+
+| Operation   |     Time |
+| ----------- | -------: |
+| Get Max/Min |     O(1) |
+| Insert      | O(log n) |
+| Delete Root | O(log n) |
+| Build Heap  |     O(n) |
+| Search      |     O(n) |
+
+---
+
+## 7. Easy Memory Trick
+
+```text
+Max Heap → Maximum → Root
+Min Heap → Minimum → Root
+```
+
+> **Max Heap:** Parent is greater than or equal to its children.
+> **Min Heap:** Parent is less than or equal to its children.
+
 ##
 <img width="744" height="251" alt="image" src="https://github.com/user-attachments/assets/f8084c87-cbec-453b-980a-31c1231a1fa6" />
 ## Tree must be Complete binary tree  to work heap 
 <img width="1046" height="272" alt="image" src="https://github.com/user-attachments/assets/cf3880e2-e0bd-47d1-93a0-abb0a62abc7e" />
+<img width="454" height="636" alt="image" src="https://github.com/user-attachments/assets/66e9ad9b-e253-4402-8562-c1c2aff5d500" />
 
 
 
