@@ -1405,6 +1405,10 @@ Min Heap → Minimum → Root
 ## Tree must be Complete binary tree  to work heap 
 <img width="1046" height="272" alt="image" src="https://github.com/user-attachments/assets/cf3880e2-e0bd-47d1-93a0-abb0a62abc7e" />
 <img width="454" height="636" alt="image" src="https://github.com/user-attachments/assets/66e9ad9b-e253-4402-8562-c1c2aff5d500" />
+<img width="658" height="666" alt="image" src="https://github.com/user-attachments/assets/7e8b225f-63fb-46d7-b7ba-aac854d9085b" />
+same vabe min heap jonno odelete hobe:
+
+
 
 
 
