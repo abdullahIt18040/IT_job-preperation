@@ -1408,6 +1408,12 @@ Min Heap → Minimum → Root
 <img width="658" height="666" alt="image" src="https://github.com/user-attachments/assets/7e8b225f-63fb-46d7-b7ba-aac854d9085b" />
 same vabe min heap jonno odelete hobe:
 
+## Algorithm of Heap 
+<img width="1154" height="648" alt="image" src="https://github.com/user-attachments/assets/cfe3ec0e-3d32-4e6c-9f98-9edc0ccce1ba" />
+## Question 
+<img width="1050" height="570" alt="image" src="https://github.com/user-attachments/assets/b96bc033-2fec-4875-81de-c26849f17087" />
+<img width="594" height="751" alt="image" src="https://github.com/user-attachments/assets/28188f5d-df97-41c4-b961-1e2def87a544" />
+
 
 
 
