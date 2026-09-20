@@ -1429,6 +1429,10 @@ same vabe min heap jonno odelete hobe:
 ## DFS Algorith 
 it work  Deapt 
 <img width="1166" height="672" alt="image" src="https://github.com/user-attachments/assets/80690e28-9a62-47d7-b439-9c19f5831d3b" />
+<img width="1041" height="541" alt="image" src="https://github.com/user-attachments/assets/e7579ad0-9a1e-4bd7-8992-27afc21e4228" />
+<img width="1137" height="382" alt="image" src="https://github.com/user-attachments/assets/07900d0a-cc5f-4b72-bc0d-a8caa0c67050" />
+
+
 
 
 
