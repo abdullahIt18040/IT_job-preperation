@@ -1498,6 +1498,15 @@ A **very wide tree** can make BFS use more memory because many nodes may be stor
 > **BFS → Level & Shortest Path**
 
 
+<img width="753" height="396" alt="image" src="https://github.com/user-attachments/assets/c686e079-7d0f-4f10-b026-b0b0e35fd4dd" />
+<img width="781" height="400" alt="image" src="https://github.com/user-attachments/assets/d6ad6513-a986-4089-9541-465f475ad7d4" />
+<img width="658" height="236" alt="image" src="https://github.com/user-attachments/assets/f7016d78-1565-4331-80b0-2d4c180c17e7" />
+## very very import:
+<img width="687" height="379" alt="image" src="https://github.com/user-attachments/assets/323d9dbc-9589-4494-ad73-f08c7f1c44e1" />
+
+
+
+
 
 
 
