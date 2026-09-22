@@ -2352,6 +2352,10 @@ Space = O(V)
 <img width="747" height="220" alt="image" src="https://github.com/user-attachments/assets/93e55419-7c3e-4bb6-9045-5818194c52e0" />
 <img width="1263" height="726" alt="image" src="https://github.com/user-attachments/assets/d7cd2979-5705-4918-93e8-423c208cce35" />
 <img width="1308" height="741" alt="image" src="https://github.com/user-attachments/assets/f8eeeacd-85be-4ff3-a27c-3c13f0e882fa" />
+## excercise :
+
+<img width="926" height="439" alt="image" src="https://github.com/user-attachments/assets/b5cdb87f-445e-400f-8664-87f4a23740dc" />
+<img width="949" height="445" alt="image" src="https://github.com/user-attachments/assets/a83229e7-c8e8-480a-9e2a-ed604ca33b69" />
 
 
 
