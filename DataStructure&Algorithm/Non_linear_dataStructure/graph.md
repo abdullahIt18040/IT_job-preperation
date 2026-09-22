@@ -2344,4 +2344,5 @@ Visited Neighbor + Not Parent → Cycle
 Time  = O(V + E)
 Space = O(V)
 ```
+<img width="817" height="330" alt="image" src="https://github.com/user-attachments/assets/2302aad6-c5b2-44c8-8ae0-8f0a20069758" />
 
