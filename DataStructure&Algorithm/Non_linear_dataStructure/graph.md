@@ -1625,6 +1625,650 @@ HAS Cycle
 
 <img width="645" height="857" alt="image" src="https://github.com/user-attachments/assets/e231d11a-cbf6-4e93-8922-8089044769f0" />
 <img width="473" height="669" alt="image" src="https://github.com/user-attachments/assets/12398848-119f-4a61-9dbc-94a0544269ca" />
+### Graph representaion 
+# Graph Representation
+
+**Graph Representation** means storing a graph in computer memory so that we can efficiently perform operations such as:
+
+* Add/remove vertices
+* Add/remove edges
+* Check whether two vertices are connected
+* Traverse the graph using BFS/DFS
+* Find paths
+
+A graph consists of:
+
+```text
+Graph = Vertices (V) + Edges (E)
+```
+
+There are several common ways to represent a graph:
+
+1. Adjacency Matrix
+2. Adjacency List
+3. Incidence Matrix
+4. Edge List
+
+---
+
+# 1. Adjacency Matrix
+
+An **Adjacency Matrix** represents a graph using a **2D matrix**.
+
+If there are `n` vertices, the matrix size is:
+
+```text
+n × n
+```
+
+For an unweighted graph:
+
+```text
+1 → Edge exists
+0 → No edge
+```
+
+---
+
+## Example Graph
+
+Consider:
+
+```text
+      1
+     / \
+    /   \
+   2-----3
+```
+
+Edges are:
+
+```text
+E = {(1,2), (1,3), (2,3)}
+```
+
+The vertices are:
+
+```text
+V = {1,2,3}
+```
+
+### Adjacency Matrix
+
+```text
+      1  2  3
+    +---------
+1   |  0  1  1
+2   |  1  0  1
+3   |  1  1  0
+```
+
+Explanation:
+
+```text
+Matrix[1][2] = 1
+```
+
+means:
+
+```text
+1 is connected to 2
+```
+
+Similarly:
+
+```text
+Matrix[1][3] = 1
+```
+
+means:
+
+```text
+1 is connected to 3
+```
+
+---
+
+## Important Property of Undirected Graph
+
+For an undirected graph:
+
+```text
+A[i][j] = A[j][i]
+```
+
+Therefore, the adjacency matrix is **symmetric**.
+
+Example:
+
+```text
+A[1][2] = 1
+A[2][1] = 1
+```
+
+---
+
+## Adjacency Matrix Space Complexity
+
+For `n` vertices:
+
+```text
+Space = O(n²)
+```
+
+because we need:
+
+```text
+n × n
+```
+
+cells.
+
+### Edge Checking
+
+To check whether an edge exists:
+
+```text
+A[u][v]
+```
+
+This takes:
+
+```text
+O(1)
+```
+
+### Key Points
+
+```text
+Adjacency Matrix
+       ↓
+2D Array
+       ↓
+Size = n × n
+       ↓
+Space = O(n²)
+       ↓
+Edge lookup = O(1)
+```
+
+---
+
+# 2. Adjacency List
+
+An **Adjacency List** stores a list of the neighboring vertices for each vertex.
+
+Consider the same graph:
+
+```text
+      1
+     / \
+    /   \
+   2-----3
+```
+
+Edges:
+
+```text
+(1,2)
+(1,3)
+(2,3)
+```
+
+### Adjacency List
+
+```text
+1 → 2 → 3
+
+2 → 1 → 3
+
+3 → 1 → 2
+```
+
+This means:
+
+```text
+Vertex 1
+→ Connected to 2 and 3
+
+Vertex 2
+→ Connected to 1 and 3
+
+Vertex 3
+→ Connected to 1 and 2
+```
+
+---
+
+## Adjacency List Using Array/List
+
+Conceptually:
+
+```text
+Adj[1] = [2, 3]
+Adj[2] = [1, 3]
+Adj[3] = [1, 2]
+```
+
+---
+
+# Adjacency List Space Complexity
+
+For a graph with:
+
+```text
+V = Number of vertices
+E = Number of edges
+```
+
+Space complexity is:
+
+```text
+O(V + E)
+```
+
+For a **sparse graph**, adjacency lists are usually much more space-efficient than an `O(V²)` matrix.
+
+### Key Points
+
+```text
+Adjacency List
+       ↓
+Stores neighbors
+       ↓
+Space = O(V + E)
+```
+
+---
+
+# 3. Incidence Matrix
+
+An **Incidence Matrix** represents the relationship between:
+
+```text
+Vertices ↔ Edges
+```
+
+Unlike an adjacency matrix:
+
+```text
+Adjacency Matrix
+→ Vertex × Vertex
+```
+
+while:
+
+```text
+Incidence Matrix
+→ Vertex × Edge
+```
+
+---
+
+## Example
+
+Consider:
+
+```text
+      1
+     / \
+    /   \
+   2-----3
+```
+
+Edges:
+
+```text
+e1 = (1,2)
+e2 = (1,3)
+e3 = (2,3)
+```
+
+The incidence matrix is:
+
+```text
+       e1 e2 e3
+      ----------
+1      1  1  0
+2      1  0  1
+3      0  1  1
+```
+
+Here:
+
+```text
+1 → incident to e1 and e2
+2 → incident to e1 and e3
+3 → incident to e2 and e3
+```
+
+### Matrix Size
+
+If:
+
+```text
+V = Number of vertices
+E = Number of edges
+```
+
+then:
+
+```text
+Incidence Matrix Size = V × E
+```
+
+---
+
+# 4. Edge List
+
+An **Edge List** simply stores all edges of the graph.
+
+Example:
+
+```text
+      1
+     / \
+    /   \
+   2-----3
+```
+
+Edges:
+
+```text
+(1,2)
+(1,3)
+(2,3)
+```
+
+Therefore:
+
+```text
+Edge List:
+
+[
+  (1,2),
+  (1,3),
+  (2,3)
+]
+```
+
+For a weighted graph:
+
+```text
+(1,2,10)
+(1,3,20)
+(2,3,15)
+```
+
+where the third value represents the edge weight.
+
+---
+
+# Weighted Graph Representation
+
+Consider:
+
+```text
+1 ----10---- 2
+ \           /
+  \         /
+   20      15
+     \     /
+       3
+```
+
+Here:
+
+```text
+Weight(1,2) = 10
+Weight(1,3) = 20
+Weight(2,3) = 15
+```
+
+### Weighted Adjacency Matrix
+
+```text
+      1   2   3
+    +-----------
+1   |  0  10  20
+2   | 10   0  15
+3   | 20  15   0
+```
+
+The value represents the edge weight.
+
+---
+
+# Directed Graph Representation
+
+Consider:
+
+```text
+1 --------> 2
+|            |
+|            ↓
+└──────────> 3
+```
+
+Edges:
+
+```text
+1 → 2
+1 → 3
+2 → 3
+```
+
+### Directed Adjacency Matrix
+
+```text
+      1  2  3
+    +---------
+1   |  0  1  1
+2   |  0  0  1
+3   |  0  0  0
+```
+
+Notice:
+
+```text
+A[1][2] = 1
+```
+
+but:
+
+```text
+A[2][1] = 0
+```
+
+because the edge exists only:
+
+```text
+1 → 2
+```
+
+not:
+
+```text
+2 → 1
+```
+
+---
+
+# Adjacency Matrix vs Adjacency List
+
+| Feature                       | Adjacency Matrix | Adjacency List          |
+| ----------------------------- | ---------------- | ----------------------- |
+| Data structure                | 2D Array         | Array/List of neighbors |
+| Space                         | `O(V²)`          | `O(V + E)`              |
+| Edge lookup                   | `O(1)`           | Usually `O(degree)`     |
+| Best for                      | Dense graphs     | Sparse graphs           |
+| Easy to implement             | Yes              | Yes                     |
+| BFS/DFS                       | Possible         | Very common             |
+| Represents neighbors directly | No               | **Yes**                 |
+
+---
+
+# Dense vs Sparse Graph
+
+## Dense Graph
+
+A graph is **dense** when it has a large number of edges, close to the maximum possible.
+
+Example:
+
+```text
+Many vertices
++
+Many edges
+↓
+Dense Graph
+```
+
+For dense graphs:
+
+```text
+Adjacency Matrix
+```
+
+can be convenient.
+
+---
+
+## Sparse Graph
+
+A graph is **sparse** when it has relatively few edges compared with the number of vertices.
+
+Example:
+
+```text
+Many vertices
++
+Few edges
+↓
+Sparse Graph
+```
+
+For sparse graphs:
+
+```text
+Adjacency List
+```
+
+is generally more space-efficient.
+
+---
+
+# Graph Representation and BFS/DFS
+
+BFS and DFS commonly use an **Adjacency List**.
+
+Example:
+
+```text
+Adjacency List
+
+1 → 2, 3
+2 → 1, 4
+3 → 1
+4 → 2
+```
+
+### BFS
+
+```text
+Queue
+ ↓
+Visit level by level
+```
+
+### DFS
+
+```text
+Stack / Recursion
+ ↓
+Go deep first
+```
+
+The graph representation stores the connections; BFS/DFS uses those connections for traversal.
+
+---
+
+# ⭐ Exam Must Remember
+
+```text
+Adjacency Matrix
+→ Vertex × Vertex
+→ 2D Array
+→ O(V²)
+→ Edge lookup O(1)
+```
+
+```text
+Adjacency List
+→ Vertex → Neighbors
+→ O(V + E)
+→ Good for sparse graphs
+```
+
+```text
+Incidence Matrix
+→ Vertex × Edge
+→ V × E
+```
+
+```text
+Edge List
+→ Stores edges directly
+→ (u,v)
+```
+
+---
+
+# 🎯 Quick MCQ Table
+
+| Question                                     | Answer                       |
+| -------------------------------------------- | ---------------------------- |
+| Which representation uses a 2D array?        | **Adjacency Matrix**         |
+| Adjacency matrix size for `V` vertices?      | **V × V**                    |
+| Space complexity of adjacency matrix?        | **O(V²)**                    |
+| Edge lookup in adjacency matrix?             | **O(1)**                     |
+| Which representation stores neighbors?       | **Adjacency List**           |
+| Space complexity of adjacency list?          | **O(V + E)**                 |
+| Which is generally better for sparse graphs? | **Adjacency List**           |
+| Which is convenient for dense graphs?        | **Adjacency Matrix**         |
+| Incidence matrix represents what?            | **Vertex–Edge relationship** |
+| Incidence matrix size?                       | **V × E**                    |
+| Edge list stores what?                       | **List of edges**            |
+| Undirected adjacency matrix is what?         | **Symmetric**                |
+
+---
+
+# 🧠 Super Short Memory Trick
+
+```text
+Adjacency Matrix
+→ Who is connected to whom?
+→ Vertex × Vertex
+
+Adjacency List
+→ Who are my neighbors?
+→ Vertex → Neighbors
+
+Incidence Matrix
+→ Which vertex belongs to which edge?
+→ Vertex × Edge
+
+Edge List
+→ What are the edges?
+→ (u, v)
+```
+
+---
+
+
+
+## adjacent matrix & Adjacency list 
+<img width="833" height="400" alt="image" src="https://github.com/user-attachments/assets/fa8e7e10-a8e3-475a-bc1f-54867dd81f6d" />
 
 
 
