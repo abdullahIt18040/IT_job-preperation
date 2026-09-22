@@ -231,4 +231,9 @@ Min Heap → Minimum → Root
 
 > **Max Heap:** Parent is greater than or equal to its children.
 > **Min Heap:** Parent is less than or equal to its children.
+### Type of graph 
+<img width="843" height="420" alt="image" src="https://github.com/user-attachments/assets/6cc3cec4-a454-48a2-acdc-2cd201d444f1" />
+<img width="857" height="498" alt="image" src="https://github.com/user-attachments/assets/8bb2ce75-fe6a-469f-bec1-4ff93877535e" />
+
+
 
