@@ -2359,6 +2359,83 @@ Space = O(V)
 
 
 
+# Dijkstra's Algorithm
+
+**Dijkstra's Algorithm** is a **Greedy Algorithm** used to find the **Single-Source Shortest Path (SSSP)** in a **weighted graph with non-negative edge weights**.
+
+## Key Points
+
+```text
+Type        → Greedy Algorithm
+Problem     → Single-Source Shortest Path
+Graph       → Weighted Graph
+Weight      → Non-negative (≥ 0)
+Data Struct → Priority Queue / Min Heap
+```
+
+### Basic Idea
+
+```text
+1. Set source distance = 0
+2. Set all other distances = ∞
+3. Select the unvisited vertex with minimum distance
+4. Relax its neighboring vertices
+5. Repeat until all vertices are processed
+```
+
+### Relaxation
+
+```text
+if dist[u] + weight(u,v) < dist[v]
+
+    dist[v] = dist[u] + weight(u,v)
+```
+
+### Example
+
+```text
+A ----4---- B
+|
+1
+|
+C ----3---- D
+```
+
+Source:
+
+```text
+A
+```
+
+Shortest path to `D`:
+
+```text
+A → C → D
+```
+
+Distance:
+
+```text
+1 + 3 = 4
+```
+
+## Complexity
+
+Using **Priority Queue + Adjacency List**:
+
+```text
+Time  → O((V + E) log V)
+Space → O(V + E)
+```
+
+## Important Rules
+
+```text
+Dijkstra → Non-negative weights
+BFS      → Unweighted shortest path
+Bellman-Ford → Negative weights
+```
+
 
 
 
