@@ -2271,4 +2271,77 @@ Edge List
 <img width="833" height="400" alt="image" src="https://github.com/user-attachments/assets/fa8e7e10-a8e3-475a-bc1f-54867dd81f6d" />
 
 
+# Cycle Detection using BFS and DFS
+
+## 1. BFS — Undirected Graph
+
+```text
+1. Start BFS from a vertex.
+2. Mark the vertex as visited.
+3. Put the vertex into the queue.
+4. Remove a vertex from the queue.
+5. Check all its neighbors.
+
+6. If neighbor is unvisited:
+   → Mark visited
+   → Set parent
+   → Add to queue
+
+7. If neighbor is already visited
+   and neighbor != parent:
+   → Cycle exists.
+
+8. Repeat for all vertices.
+```
+
+### Rule
+
+```text
+Visited Neighbor + Not Parent = Cycle
+```
+
+---
+
+## 2. DFS — Undirected Graph
+
+```text
+1. Start DFS from a vertex.
+2. Mark the vertex as visited.
+3. Check all its neighbors.
+
+4. If neighbor is unvisited:
+   → Set parent
+   → Apply DFS on neighbor
+
+5. If neighbor is already visited
+   and neighbor != parent:
+   → Cycle exists.
+
+6. Repeat for all vertices.
+```
+
+### Rule
+
+```text
+Visited Neighbor + Not Parent = Cycle
+```
+
+---
+
+## BFS vs DFS
+
+```text
+BFS → Queue
+DFS → Recursion / Stack
+
+Both:
+Visited Neighbor + Not Parent → Cycle
+```
+
+### Complexity
+
+```text
+Time  = O(V + E)
+Space = O(V)
+```
 
