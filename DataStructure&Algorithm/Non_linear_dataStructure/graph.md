@@ -2346,3 +2346,15 @@ Space = O(V)
 ```
 <img width="817" height="330" alt="image" src="https://github.com/user-attachments/assets/2302aad6-c5b2-44c8-8ae0-8f0a20069758" />
 
+## Excercise DFS
+<img width="731" height="341" alt="image" src="https://github.com/user-attachments/assets/ad3ef1c1-0b0a-407a-a97e-e93ce01caa47" />
+
+<img width="747" height="220" alt="image" src="https://github.com/user-attachments/assets/93e55419-7c3e-4bb6-9045-5818194c52e0" />
+<img width="1263" height="726" alt="image" src="https://github.com/user-attachments/assets/d7cd2979-5705-4918-93e8-423c208cce35" />
+<img width="1308" height="741" alt="image" src="https://github.com/user-attachments/assets/f8eeeacd-85be-4ff3-a27c-3c13f0e882fa" />
+
+
+
+
+
+
