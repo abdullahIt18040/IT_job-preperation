@@ -2451,7 +2451,10 @@ n= vertix , iteration = n-1
 <img width="1176" height="470" alt="image" src="https://github.com/user-attachments/assets/ac60e0c8-0199-490b-9c5f-d8f6964bb857" />
 <img width="1176" height="660" alt="image" src="https://github.com/user-attachments/assets/4b71cb63-e52f-4eca-8fee-20afdce6323c" />
 <img width="865" height="456" alt="image" src="https://github.com/user-attachments/assets/d8dabcca-0ecd-4f51-9091-51d1d96efdc0" />
+<img width="847" height="399" alt="image" src="https://github.com/user-attachments/assets/814b9ce7-ff59-43cc-81d8-a32a8934c852" />
 
+
+d
 
 ```
 negative cycle থাকলে Bellman-Ford shortest path নির্দিষ্টভাবে বের করতে পারে না—তবে গুরুত্বপূর্ণ বিষয় হলো, Bellman-Ford negative cycle detect করতে পারে।
