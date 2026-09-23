@@ -2504,5 +2504,52 @@ Reachable negative cycle থাকলে → shortest path undefined/does not ex
 
 <img width="1351" height="684" alt="image" src="https://github.com/abdullahIt18040/IT_job-preperation/blob/main/bellmanalgorithm.PNG" />
 
+# Bellman-Ford Algorithm
+
+**Bellman-Ford** is a **single-source shortest path algorithm** used to find the shortest distance from one source vertex to all other vertices.
+
+## Key Features
+
+* Supports **negative edge weights**
+* Can detect **negative weight cycles**
+* Works with **directed and undirected graphs**
+* Unlike **Dijkstra**, it supports negative edge weights
+
+## Algorithm
+
+```text
+1. Set source distance = 0.
+2. Set all other distances = ∞.
+3. Repeat V - 1 times:
+      → Relax every edge.
+4. Check all edges one more time:
+      → If any distance can still be reduced,
+        a negative weight cycle exists.
+```
+
+## Relaxation
+
+For an edge `(u → v)` with weight `w`:
+
+```text
+if dist[u] + w < dist[v]
+    dist[v] = dist[u] + w
+```
+
+## Complexity
+
+```text
+Time  → O(V × E)
+Space → O(V)
+```
+
+## Bellman-Ford vs Dijkstra
+
+```text
+Bellman-Ford → Supports negative weights + detects negative cycles
+Dijkstra     → Does not support negative weights
+```
+
+> **Remember:** Bellman-Ford = Shortest Path + Negative Edge Support + Negative Cycle Detection
 
 
