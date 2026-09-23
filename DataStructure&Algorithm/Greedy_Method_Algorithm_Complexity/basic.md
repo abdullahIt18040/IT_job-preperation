@@ -81,3 +81,7 @@ O()  → Upper Bound
 ```
 
 **In short:** Asymptotic notation tells us **how an algorithm's performance grows when the input size becomes large**.
+<img width="992" height="499" alt="image" src="https://github.com/user-attachments/assets/01f0dc90-4191-42ab-b42d-ca5163069a7c" />
+
+<img width="1227" height="564" alt="image" src="https://github.com/user-attachments/assets/2db7fafe-7444-48d7-be87-806a4a7d2026" />
+
