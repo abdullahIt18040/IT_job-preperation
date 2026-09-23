@@ -2501,7 +2501,7 @@ Reachable negative cycle থাকলে → shortest path undefined/does not ex
 
 
 ### We have to write in bellfor algorim in exaim is 
-<img width="932" height="615" alt="image" src="https://github.com/user-attachments/assets/7b448dec-9bbf-4c57-9960-fd27c4e584cf" />
+<img width="1351" height="684" alt="image" src="https://github.com/user-attachments/assets/0e0af55d-6ed5-4ea2-97dd-aebf245afb4d" />
 
 
 
