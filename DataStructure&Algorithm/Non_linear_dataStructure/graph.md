@@ -2450,9 +2450,23 @@ n= vertix , iteration = n-1
 <img width="1176" height="655" alt="image" src="https://github.com/user-attachments/assets/a660d5ff-6475-4c0d-be06-53276faa2678" />
 <img width="1176" height="470" alt="image" src="https://github.com/user-attachments/assets/ac60e0c8-0199-490b-9c5f-d8f6964bb857" />
 <img width="1176" height="660" alt="image" src="https://github.com/user-attachments/assets/4b71cb63-e52f-4eca-8fee-20afdce6323c" />
+```
+negative cycle থাকলে Bellman-Ford shortest path নির্দিষ্টভাবে বের করতে পারে না—তবে গুরুত্বপূর্ণ বিষয় হলো, Bellman-Ford negative cycle detect করতে পারে।
 
+🔴 Negative Cycle কী?
 
+যদি কোনো cycle-এর সব edge-এর weight যোগ করলে ফলাফল negative হয়:
 
+A → B = 2
+B → C = -5
+C → A = 1
+
+Total = 2 + (-5) + 1
+      = -2
+
+তাহলে এটি একটি Negative Cycle।
+
+```
 
 
 
