@@ -2485,6 +2485,6 @@ Reachable negative cycle থাকলে → shortest path undefined/does not ex
 <img width="840" height="428" alt="image" src="https://github.com/user-attachments/assets/6b883195-5e1e-4d84-b519-d5929496e012" />
 
 
-
+<img width="840" height="428" alt="image" src="https://github.com/user-attachments/assets/e8c2fbb6-3d2f-48de-be93-f5d72d3283ed" />
 
 
