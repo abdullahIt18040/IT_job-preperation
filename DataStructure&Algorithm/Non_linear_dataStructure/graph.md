@@ -2479,6 +2479,11 @@ Reachable negative cycle থাকলে → shortest path undefined/does not ex
 
 ```
 
+In exam we have to write  follow this.
+
+<img width="840" height="428" alt="image" src="https://github.com/user-attachments/assets/b0b1d10a-1a11-4ce7-a1e1-85fa4238ca30" />
+
+
 
 
 
