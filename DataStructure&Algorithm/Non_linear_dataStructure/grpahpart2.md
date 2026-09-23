@@ -15,3 +15,7 @@ When cycle exist  then
 ## For complete Graph 
 <img width="1088" height="343" alt="image" src="https://github.com/user-attachments/assets/d46a8c2e-d5cb-431b-9681-752f65948c9c" />
 
+## Minimum spaning tree
+
+<img width="830" height="427" alt="image" src="https://github.com/user-attachments/assets/2788cefc-a928-4874-ae32-6f0089992449" />
+<img width="691" height="161" alt="image" src="https://github.com/user-attachments/assets/e00baaec-3e41-4d21-b16e-966672c42a63" />
