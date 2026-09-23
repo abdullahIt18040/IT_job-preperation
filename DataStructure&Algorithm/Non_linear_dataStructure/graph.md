@@ -2465,6 +2465,17 @@ Total = 2 + (-5) + 1
       = -2
 
 তাহলে এটি একটি Negative Cycle।
+Dijkstra vs Bellman-Ford:
+
+
+
+Dijkstra → Negative edge weight and → Negative edge cycle  handle করতে পারে না 
+
+Bellman-Ford → Negative edge handle করতে পারে 
+
+Bellman-Ford → Negative cycle detect করতে পারে 
+
+Reachable negative cycle থাকলে → shortest path undefined/does not exist।
 
 ```
 
