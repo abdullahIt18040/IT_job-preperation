@@ -2463,7 +2463,7 @@ er basi kore lav nai same value repeat hoi
 
 <img width="847" height="399" alt="image" src="https://github.com/user-attachments/assets/814b9ce7-ff59-43cc-81d8-a32a8934c852" />
 
-(https://github.com/abdullahIt18040/IT_job-preperation/blob/main/bellmanalgorithm.PNG)
+<img width="1351" height="684" alt="image" src="https://github.com/abdullahIt18040/IT_job-preperation/blob/main/bellmanalgorithm.PNG" />
 
 ## Negative Cycle
 
@@ -2502,7 +2502,7 @@ Reachable negative cycle থাকলে → shortest path undefined/does not ex
 
 ### We have to write in bellfor algorim in exaim is 
 
-<img width="1351" height="684" alt="image" src="blob/main/bellmanalgorithm.PNG" />
+<img width="1351" height="684" alt="image" src="https://github.com/abdullahIt18040/IT_job-preperation/blob/main/bellmanalgorithm.PNG" />
 
 
 
