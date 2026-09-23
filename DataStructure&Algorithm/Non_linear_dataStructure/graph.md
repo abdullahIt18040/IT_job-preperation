@@ -2454,12 +2454,15 @@ n= vertix , iteration = n-1
 <img width="847" height="399" alt="image" src="https://github.com/user-attachments/assets/814b9ce7-ff59-43cc-81d8-a32a8934c852" />
 
 
-d
+![Uploading image.png…]()
 
-```
+
+
+
+
 negative cycle থাকলে Bellman-Ford shortest path নির্দিষ্টভাবে বের করতে পারে না—তবে গুরুত্বপূর্ণ বিষয় হলো, Bellman-Ford negative cycle detect করতে পারে।
 
-🔴 Negative Cycle কী?
+ Negative Cycle কী?
 
 যদি কোনো cycle-এর সব edge-এর weight যোগ করলে ফলাফল negative হয়:
 
@@ -2483,7 +2486,7 @@ Bellman-Ford → Negative cycle detect করতে পারে
 
 Reachable negative cycle থাকলে → shortest path undefined/does not exist।
 
-```
+
 ### We have to write in bellfor algorim in exaim is 
 
 
