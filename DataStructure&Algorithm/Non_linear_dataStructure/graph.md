@@ -2418,7 +2418,6 @@ Distance:
 ```text
 1 + 3 = 4
 ```
-
 ## Complexity
 
 Using **Priority Queue + Adjacency List**:
@@ -2431,12 +2430,14 @@ Space → O(V + E)
 ## Important Rules
 
 ```text
-Dijkstra → Non-negative weights
-BFS      → Unweighted shortest path
+Dijkstra     → Non-negative weights
+BFS          → Unweighted shortest path
 Bellman-Ford → Negative weights
 ```
-## Bellman for algoritm
-```
+
+## Bellman-Ford Algorithm
+
+```text
 Bellman-Ford:
 V = number of vertices
 Maximum iterations = V - 1
@@ -2444,40 +2445,49 @@ Maximum iterations = V - 1
 If an iteration makes no distance update:
 → Stop early
 → Further iterations are unnecessary
-n= vertix , iteration = n-1
- iteration maximum n-1 ber kora lagbe er basi kore lav nai same value repeat hoi
 
+n = vertex
+iteration = n - 1
+
+iteration maximum n - 1 ber kora lagbe
+er basi kore lav nai same value repeat hoi
+```
 
 <img width="1176" height="655" alt="image" src="https://github.com/user-attachments/assets/a660d5ff-6475-4c0d-be06-53276faa2678" />
+
 <img width="907" height="474" alt="image" src="https://github.com/user-attachments/assets/d73581ad-ccf7-4514-bf9d-409051f2cffc" />
 
 <img width="1176" height="660" alt="image" src="https://github.com/user-attachments/assets/4b71cb63-e52f-4eca-8fee-20afdce6323c" />
+
 <img width="865" height="456" alt="image" src="https://github.com/user-attachments/assets/d8dabcca-0ecd-4f51-9091-51d1d96efdc0" />
+
 <img width="847" height="399" alt="image" src="https://github.com/user-attachments/assets/814b9ce7-ff59-43cc-81d8-a32a8934c852" />
+
 <img width="847" height="399" alt="image" src="https://github.com/user-attachments/assets/7c897c20-1e9d-4620-b188-d8ae60d9709c" />
 
-
-
-
-
-
-
+## Negative Cycle
 
 negative cycle থাকলে Bellman-Ford shortest path নির্দিষ্টভাবে বের করতে পারে না—তবে গুরুত্বপূর্ণ বিষয় হলো, Bellman-Ford negative cycle detect করতে পারে।
 
- Negative Cycle কী?
+### Negative Cycle কী?
 
 যদি কোনো cycle-এর সব edge-এর weight যোগ করলে ফলাফল negative হয়:
 
+```text
 A → B = 2
 B → C = -5
 C → A = 1
+```
 
+```text
 Total = 2 + (-5) + 1
       = -2
+```
 
-তাহলে এটি একটি Negative Cycle।
-Dijkstra vs Bellman-Ford:
+তাহলে এটি একটি **Negative Cycle**।
+
+## Dijkstra vs Bellman-Ford
+
 
 
 
