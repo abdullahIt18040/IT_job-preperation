@@ -2452,9 +2452,10 @@ n= vertix , iteration = n-1
 <img width="1176" height="660" alt="image" src="https://github.com/user-attachments/assets/4b71cb63-e52f-4eca-8fee-20afdce6323c" />
 <img width="865" height="456" alt="image" src="https://github.com/user-attachments/assets/d8dabcca-0ecd-4f51-9091-51d1d96efdc0" />
 <img width="847" height="399" alt="image" src="https://github.com/user-attachments/assets/814b9ce7-ff59-43cc-81d8-a32a8934c852" />
+<img width="847" height="399" alt="image" src="https://github.com/user-attachments/assets/7c897c20-1e9d-4620-b188-d8ae60d9709c" />
 
 
-![Uploading image.png…]()
+
 
 
 
