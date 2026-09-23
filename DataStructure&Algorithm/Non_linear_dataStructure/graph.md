@@ -2463,7 +2463,7 @@ er basi kore lav nai same value repeat hoi
 
 <img width="847" height="399" alt="image" src="https://github.com/user-attachments/assets/814b9ce7-ff59-43cc-81d8-a32a8934c852" />
 
-<img width="847" height="399" alt="image" src="https://github.com/user-attachments/assets/7c897c20-1e9d-4620-b188-d8ae60d9709c" />
+[<img width="847" height="399" alt="image" src="https://github.com/user-attachments/assets/7c897c20-1e9d-4620-b188-d8ae60d9709c" />](https://github.com/abdullahIt18040/IT_job-preperation/blob/main/bellmanalgorithm.PNG)
 
 ## Negative Cycle
 
