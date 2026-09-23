@@ -2446,11 +2446,11 @@ If an iteration makes no distance update:
 → Further iterations are unnecessary
 n= vertix , iteration = n-1
  iteration maximum n-1 ber kora lagbe er basi kore lav nai same value repeat hoi
-```
-<img width="907" height="474" alt="image" src="https://github.com/user-attachments/assets/6b2f6fcb-80ee-4377-942f-e9004bae1c53" />
+
 
 <img width="1176" height="655" alt="image" src="https://github.com/user-attachments/assets/a660d5ff-6475-4c0d-be06-53276faa2678" />
-<img width="1176" height="470" alt="image" src="https://github.com/user-attachments/assets/ac60e0c8-0199-490b-9c5f-d8f6964bb857" />
+<img width="907" height="474" alt="image" src="https://github.com/user-attachments/assets/d73581ad-ccf7-4514-bf9d-409051f2cffc" />
+
 <img width="1176" height="660" alt="image" src="https://github.com/user-attachments/assets/4b71cb63-e52f-4eca-8fee-20afdce6323c" />
 <img width="865" height="456" alt="image" src="https://github.com/user-attachments/assets/d8dabcca-0ecd-4f51-9091-51d1d96efdc0" />
 <img width="847" height="399" alt="image" src="https://github.com/user-attachments/assets/814b9ce7-ff59-43cc-81d8-a32a8934c852" />
