@@ -256,9 +256,111 @@ time complextity O (2^n)
 <img width="734" height="419" alt="image" src="https://github.com/user-attachments/assets/f4b06c04-1a0f-468f-85ca-35ae0e335b14" />
 <img width="990" height="569" alt="image" src="https://github.com/user-attachments/assets/520a8b81-ddf3-4a91-becf-0b46f4f8f530" />
 ## time complextity 
+<img width="1007" height="463" alt="image" src="https://github.com/user-attachments/assets/3883fbbf-3588-4fc6-aff5-cc510a952b8d" />
+
+<img width="1058" height="436" alt="image" src="https://github.com/user-attachments/assets/1046c7c8-5019-48ab-b4fc-0816d3ecfb61" />
+<img width="1065" height="468" alt="image" src="https://github.com/user-attachments/assets/23bf2f90-0a1a-406e-baaf-06157d5cce29" />
+<img width="334" height="387" alt="image" src="https://github.com/user-attachments/assets/fbddbd57-7100-4849-8b8c-3a264a4e4d38" />
+
+<img width="1154" height="505" alt="image" src="https://github.com/user-attachments/assets/67e5a7a1-8666-44e3-be06-7f9bcf53580e" />
+
+# Greedy Algorithm
+
+A **Greedy Algorithm** makes the **best possible choice at each step** with the hope of getting the overall optimal solution.
+
+## Advantages
+
+1. **Simple and Easy to Understand**
+
+   * The logic is usually straightforward.
+
+2. **Easy to Implement**
+
+   * Generally requires less code and simpler logic.
+
+3. **Fast Execution**
+
+   * Greedy algorithms often have good time complexity.
+
+4. **Uses Less Memory**
+
+   * Usually does not require storing many possible solutions.
+
+5. **Works Well for Some Optimization Problems**
+
+   * Especially when the problem has:
+
+     * **Greedy Choice Property**
+     * **Optimal Substructure**
+
+### Examples
+
+* Kruskal's Algorithm
+* Prim's Algorithm
+* Dijkstra's Algorithm
+* Huffman Coding
+* Activity Selection
+
+---
+
+## Disadvantages
+
+1. **Does Not Always Give the Optimal Solution**
+
+   * A locally best choice may lead to a globally non-optimal solution.
+
+2. **Choices Are Usually Not Reconsidered**
+
+   * Once a choice is made, the algorithm generally does not change it.
+
+3. **Requires Greedy Choice Property**
+
+   * It works correctly only when making the local best choice can lead to an optimal solution.
+
+4. **Proof of Correctness Can Be Difficult**
+
+   * A mathematical proof may be required to show that the greedy approach produces an optimal solution.
+
+---
+
+## Key Idea
+
+```text
+Greedy Algorithm
+       ↓
+Choose the best option NOW
+       ↓
+Continue step by step
+       ↓
+Hope for the optimal solution
+```
+
+## Greedy vs Dynamic Programming
+
+```text
+Greedy
+   → Makes the best choice at the current step
+
+Dynamic Programming
+   → Solves and compares subproblems
+   → Stores previous results
+```
+
+### Key Point
+
+> **Greedy Algorithm → Best choice at the current step**
+>
+> **It does not always guarantee the globally optimal solution.**
+soltuion
+ <img width="960" height="568" alt="image" src="https://github.com/user-attachments/assets/76d8929a-2e27-47d8-b05b-46ad556d7f60" />
+> needs 2 coines.
+<img width="1104" height="518" alt="image" src="https://github.com/user-attachments/assets/a0ed75b2-84dd-4f81-9a56-542aa1303200" />
+
+Fraction knapsack probelem  unit price = total value / total weight then which value maximun it choose after then take less expensive value and so on
+<img width="1115" height="451" alt="image" src="https://github.com/user-attachments/assets/2006c23f-626a-4b16-a490-dc8d095d9ea9" />
+<img width="839" height="631" alt="image" src="https://github.com/user-attachments/assets/3c62cc82-028c-408c-8d6c-f4b7fb324e50" />
+## Huffman coding Algorithm
+<img width="1202" height="610" alt="image" src="https://github.com/user-attachments/assets/1f6da70a-f8b6-4b75-82bc-0b2e4efd8a7a" />
+solution:
+<img width="1202" height="610" alt="image" src="https://github.com/user-attachments/assets/65609e27-7654-4169-9226-d18a0ac913a8" />
 ![Uploading image.png…]()
-
-
-
-
-
