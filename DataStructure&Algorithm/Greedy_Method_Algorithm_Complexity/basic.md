@@ -250,4 +250,15 @@ O(n!)
 > **Remember:** As `n` increases, complexities lower in this list generally grow much faster.
 
 <img width="1227" height="564" alt="image" src="https://github.com/user-attachments/assets/2db7fafe-7444-48d7-be87-806a4a7d2026" />
+<img width="926" height="560" alt="image" src="https://github.com/user-attachments/assets/301ea563-e123-4c0d-83da-d868bcb4675a" />
+## fibonacce serise or sum 1 t0 n using recursion 
+time complextity O (2^n)
+<img width="734" height="419" alt="image" src="https://github.com/user-attachments/assets/f4b06c04-1a0f-468f-85ca-35ae0e335b14" />
+<img width="990" height="569" alt="image" src="https://github.com/user-attachments/assets/520a8b81-ddf3-4a91-becf-0b46f4f8f530" />
+## time complextity 
+![Uploading image.png…]()
+
+
+
+
 
