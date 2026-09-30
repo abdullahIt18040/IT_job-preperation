@@ -163,3 +163,6 @@ fun(3) = 19
 ```
 
 **Answer: `19`**
+<img width="973" height="517" alt="image" src="https://github.com/user-attachments/assets/feab87c4-d79f-4020-93a2-497de5970026" />
+<img width="986" height="359" alt="image" src="https://github.com/user-attachments/assets/076fcb41-b995-4b6d-bf66-820da0af4cb5" />
+
