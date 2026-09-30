@@ -164,5 +164,63 @@ fun(3) = 19
 
 **Answer: `19`**
 <img width="973" height="517" alt="image" src="https://github.com/user-attachments/assets/feab87c4-d79f-4020-93a2-497de5970026" />
+<img width="255" height="150" alt="image" src="https://github.com/user-attachments/assets/f8710467-8c26-435a-9d5e-dc7b4a59187f" />
+# Optimization Problem — Short Notes
+
+## 1. Optimization Problem
+
+A problem where we need to find the **best possible solution**.
+or
+An Optimization Problem is a problem where we need to find the best possible solution from a set of possible solutions.
+
+* **Maximize** → make something largest
+* **Minimize** → make something smallest
+
+**Example:** Find the route with minimum distance.
+
+---
+
+## 2. Feasible Solution
+
+A Feasible Solution is a solution that satisfies all constraints or rules of the problem.
+```text
+Capacity = 10 kg
+
+8 kg  → Feasible ✅
+12 kg → Not Feasible ❌
+```
+
+---
+
+## 3. Optimal Solution
+
+The **best feasible solution** according to the objective.
+or
+An Optimal Solution is the best feasible solution according to the objective .
+
+```text
+Costs:
+A → 500
+B → 300
+C → 400
+
+B → Optimal Solution
+```
+
+because `300` is the minimum.
+
+---
+
+## Easy Shortcut
+
+```text
+Optimization Problem → Find the best solution
+Feasible Solution    → Satisfies all constraints
+Optimal Solution     → Best among feasible solutions
+```
+
+> **Optimal Solution = Best Feasible Solution**
+
+
 <img width="986" height="359" alt="image" src="https://github.com/user-attachments/assets/076fcb41-b995-4b6d-bf66-820da0af4cb5" />
 
