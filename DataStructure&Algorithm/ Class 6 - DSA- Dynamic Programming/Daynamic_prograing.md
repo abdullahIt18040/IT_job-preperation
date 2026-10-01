@@ -285,3 +285,8 @@ Explore
 Valid?
  ├─ Yes → Continue
  └─ No  → Undo → Try another choice
+Backtracking tries different choices and finds a solution that satisfies all given constraints or rules . it finds feasible solution.
+
+# given arrary arr[4] = [2,1,4,3] n=4 m=5 find feasible solution sum of subset backtracking  draw tree and find feasible solution.
+
+<img width="864" height="440" alt="image" src="https://github.com/user-attachments/assets/dd2ea21a-35c8-458f-9efc-a01b91e79a7e" />
