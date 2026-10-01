@@ -287,7 +287,16 @@ Valid?
  └─ No  → Undo → Try another choice
 Backtracking tries different choices and finds a solution that satisfies all given constraints or rules . it finds feasible solution.
 ```
-# given arrary arr[4] = [2,1,4,3] n=4 m=5 find feasible solution sum of subset backtracking  draw tree and find feasible solution.
+# given arrary arr[4] = [2,1,4,3] n=4 m=5 find feasible solution sum of subset backtracking  draw tree and find  solution.
 
 <img width="864" height="440" alt="image" src="https://github.com/user-attachments/assets/dd2ea21a-35c8-458f-9efc-a01b91e79a7e" />
+
+<img width="1058" height="573" alt="image" src="https://github.com/user-attachments/assets/980a6e1b-5b19-4368-8d4c-70ed7c06a4a7" />
+<img width="1139" height="674" alt="image" src="https://github.com/user-attachments/assets/1f4aa21c-6119-4b17-8db1-e9933eef4c4e" />
+<img width="1090" height="674" alt="image" src="https://github.com/user-attachments/assets/55fc5d39-6a18-4cb6-979b-fc421252430e" />
+<img width="990" height="674" alt="image" src="https://github.com/user-attachments/assets/a9c1bf96-4b67-457a-86c3-862683ed63ed" />
+<img width="994" height="668" alt="image" src="https://github.com/user-attachments/assets/2c600fed-1dd9-488c-ace1-79e8116969e9" />
+
+
+
 
