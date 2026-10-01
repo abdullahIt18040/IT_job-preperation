@@ -268,3 +268,20 @@ If this is the shortest path from `A` to `D`, then `A → B → C` must also be 
 > **Optimal Substructure = Optimal solution contains optimal sub-solutions.**
 
 
+# Backtracking
+
+## Definition
+
+**Backtracking** is an algorithmic technique where we try different choices one by one. If a choice does not work, we go back and try another choice.
+
+
+### Basic Idea
+
+```text
+Choose
+  ↓
+Explore
+  ↓
+Valid?
+ ├─ Yes → Continue
+ └─ No  → Undo → Try another choice
