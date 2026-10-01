@@ -223,4 +223,46 @@ Optimal Solution     → Best among feasible solutions
 
 
 <img width="986" height="359" alt="image" src="https://github.com/user-attachments/assets/076fcb41-b995-4b6d-bf66-820da0af4cb5" />
+## Define Dynamic Programming and explain its properties with example.
+
+#  Dynamic Programming
+
+Dynamic Programming (DP) solves a problem by breaking it into smaller **subproblems** and **storing their results** to avoid repeated calculations.
+
+> **DP = Solve + Store + Reuse**
+
+## 1. Overlapping Subproblems
+
+The **same subproblem appears multiple times**.
+
+### Example: Fibonacci
+
+```text
+F(5)
+├── F(4)
+│   └── F(3)
+└── F(3)
+    └── F(2)
+```
+
+Here, `F(3)` is calculated more than once, so we store its result.
+
+> **Overlapping Subproblems = Same subproblem occurs repeatedly.**
+
+---
+
+## 2. Optimal Substructure
+
+The **optimal solution of a problem can be built from optimal solutions of smaller subproblems**.
+
+### Example: Shortest Path
+
+```text
+A → B → C → D
+```
+
+If this is the shortest path from `A` to `D`, then `A → B → C` must also be the shortest path from `A` to `C`.
+
+> **Optimal Substructure = Optimal solution contains optimal sub-solutions.**
+
 
