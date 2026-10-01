@@ -223,7 +223,9 @@ Optimal Solution     → Best among feasible solutions
 
 
 <img width="986" height="359" alt="image" src="https://github.com/user-attachments/assets/076fcb41-b995-4b6d-bf66-820da0af4cb5" />
-## Define Dynamic Programming and explain its properties with example.
+
+
+# Define Dynamic Programming and explain its properties with example ?
 
 #  Dynamic Programming
 
