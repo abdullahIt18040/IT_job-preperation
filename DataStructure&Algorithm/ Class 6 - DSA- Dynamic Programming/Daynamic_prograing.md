@@ -302,6 +302,7 @@ Backtracking tries different choices and finds a solution that satisfies all giv
 <img width="990" height="674" alt="image" src="https://github.com/user-attachments/assets/a9c1bf96-4b67-457a-86c3-862683ed63ed" />
 <img width="994" height="668" alt="image" src="https://github.com/user-attachments/assets/2c600fed-1dd9-488c-ace1-79e8116969e9" />
 
-
+# Time complexit O(2^n)
+# space complexity O(n)
 
 
