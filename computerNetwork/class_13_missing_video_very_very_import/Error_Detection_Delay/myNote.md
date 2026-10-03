@@ -133,3 +133,159 @@ Error Detection
 ## Key Point
 
 > **Error detection does not necessarily correct the error. It only detects whether an error has occurred.**
+# Error Detection Methods
+
+## 1. Parity Check
+
+**Parity Check** is a simple error-detection technique that adds an extra bit called a **parity bit** to the data.
+
+The parity bit is used to make the number of `1`s either **even or odd**.
+
+### Types of Parity
+
+#### Even Parity
+
+The total number of `1`s should be **even**.then add 0 
+
+Example:
+
+```text
+Data:        1011001
+Number of 1s = 4
+Parity bit   = 0
+
+Transmitted: 1011001'0`
+```
+
+If the number of `1`s is already even, parity bit = `0`.
+
+Another example:
+
+```text
+
+The total number of `1`s should be **odd**.then add 1
+Data:        1011000
+Number of 1s = 3
+Parity bit   = 1
+
+Transmitted: 1011000'1'
+```
+
+Now total number of `1`s = 4 (even).
+
+#### Odd Parity
+
+The total number of `1`s should be **odd**.
+
+Example:
+
+```text
+Data:        1011000
+Number of 1s = 3
+Parity bit   = 0
+```
+
+Total `1`s remains 3 → **odd**.
+
+If the number of `1`s is even, parity bit = `1`.
+
+### Advantages
+
+* Simple and easy to implement
+* Requires very little extra data
+* Can detect many single-bit errors
+
+### Disadvantage
+
+* Cannot reliably detect errors when an **even number of bits** are changed.
+
+---
+
+# 2. Checksum
+
+**Checksum** is an error-detection technique where data is divided into fixed-size blocks and the blocks are added together.
+
+The final result is called the **checksum** and is sent along with the data.
+
+### Basic Process
+
+```text
+Sender
+   ↓
+Divide data into blocks
+   ↓
+Add the blocks
+   ↓
+Generate Checksum
+   ↓
+Send Data + Checksum
+   ↓
+Receiver
+   ↓
+Calculate checksum again
+   ↓
+Compare
+   ↓
+Error / No Error
+```
+
+### Simple Example
+
+Suppose we have three 4-bit blocks:
+
+```text
+1010
+1100
+1001
+```
+
+Add the blocks:
+
+```text
+  1010
++ 1100
++ 1001
+------
+100011
+```
+
+The result is processed according to the checksum method, and the resulting checksum is transmitted with the data.
+
+At the receiver side, the checksum is recalculated.
+
+```text
+Checksum matches → No error detected
+Checksum differs  → Error detected
+```
+
+### Advantages
+
+* Simple to implement
+* More effective than a simple parity check
+* Commonly used in network protocols
+
+### Disadvantage
+
+* Cannot detect all possible errors
+* Generally less powerful than CRC for detecting transmission errors
+
+---
+
+## Parity Check vs Checksum
+
+| Feature         | Parity Check           | Checksum                  |
+| --------------- | ---------------------- | ------------------------- |
+| Basic idea      | Adds a parity bit      | Adds a calculated sum     |
+| Extra data      | Usually 1 bit          | Multiple bits             |
+| Complexity      | Very simple            | More complex              |
+| Error detection | Limited                | Better than parity        |
+| Common use      | Simple error detection | Network/data transmission |
+
+### Exam Shortcut
+
+```text
+Parity Check → Count 1s
+Checksum     → Add data blocks
+CRC          → Polynomial division
+```
+
