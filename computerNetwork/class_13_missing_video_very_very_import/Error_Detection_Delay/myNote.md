@@ -145,7 +145,7 @@ The parity bit is used to make the number of `1`s either **even or odd**.
 
 #### Even Parity
 
-The total number of `1`s should be **even**.then add 0 
+The total number of `1`s is  **even**.then add 0 
 
 Example:
 
@@ -163,7 +163,7 @@ Another example:
 
 ```text
 
-The total number of `1`s should be **odd**.then add 1
+The total number of `1`s is   **odd**.then add 1
 Data:        1011000
 Number of 1s = 3
 Parity bit   = 1
