@@ -173,6 +173,10 @@ Transmitted: 1011000'1'
 
 Now total number of `1`s = 4 (even).
 
+The total number of `1`s should be **even**.then add 0 
+<img width="1092" height="564" alt="image" src="https://github.com/user-attachments/assets/bfef14a2-0811-45df-94fc-aa220a568619" />
+<img width="1174" height="381" alt="image" src="https://github.com/user-attachments/assets/acafbbf8-86b7-4e57-a2b2-7636b408a73e" />
+
 #### Odd Parity
 
 The total number of `1`s should be **odd**.
