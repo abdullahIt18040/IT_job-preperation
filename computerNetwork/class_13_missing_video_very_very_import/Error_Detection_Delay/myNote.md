@@ -263,6 +263,11 @@ At the receiver side, the checksum is recalculated.
 Checksum matches → No error detected
 Checksum differs  → Error detected
 ```
+<img width="1151" height="606" alt="image" src="https://github.com/user-attachments/assets/f929c271-2480-458c-8a5c-17a119a26b46" />
+
+
+<img width="416" height="639" alt="image" src="https://github.com/user-attachments/assets/d09d58b2-68c6-4218-8e12-e9490f6f1508" />
+
 
 ### Advantages
 
