@@ -188,10 +188,12 @@ Data:        1011000
 Number of 1s = 3
 Parity bit   = 0
 ```
+<img width="613" height="215" alt="image" src="https://github.com/user-attachments/assets/d800e205-69b3-4665-a0ce-32326e45577d" />
 
 Total `1`s remains 3 → **odd**.
 
 If the number of `1`s is even, parity bit = `1`.
+<img width="546" height="185" alt="image" src="https://github.com/user-attachments/assets/2be2838a-133e-4217-aba4-e194fad397ab" />
 
 ### Advantages
 
@@ -292,4 +294,7 @@ Parity Check → Count 1s
 Checksum     → Add data blocks
 CRC          → Polynomial division
 ```
+
+<img width="937" height="324" alt="image" src="https://github.com/user-attachments/assets/3fd814d6-0fae-4d1f-be08-a1a220443b64" />
+
 
