@@ -240,3 +240,43 @@ Receiver receives and processes data
 > **A computer network is a collection of connected devices that communicate and share data and resources using networking protocols.**
 
 <img width="1173" height="524" alt="image" src="https://github.com/user-attachments/assets/ad907f01-7aa4-4370-8d54-3748161ba4c2" />
+<img width="1030" height="539" alt="image" src="https://github.com/user-attachments/assets/b1c4fd5c-293c-4d10-a545-ef7af75e3ab0" />
+# Types of Computer Network
+
+A **computer network** can be classified based on the **geographical area it covers**.
+
+## 1. PAN — Personal Area Network
+
+* Covers a **very small area**.
+* Usually used around one person.
+* **Example:** Bluetooth connection between a phone and earbuds.
+
+## 2. LAN — Local Area Network
+
+* Covers a **small area** such as a room, building, office, or school.
+* **Example:** Office Wi-Fi network.
+
+## 3. MAN — Metropolitan Area Network
+
+* Covers a **city or large town**.
+* **Example:** Network connecting offices across a city.
+
+## 4. WAN — Wide Area Network
+
+* Covers a **large geographical area**, such as countries or continents.
+* **Example:** Internet.
+
+## Easy Way to Remember
+
+```text
+PAN → Person
+LAN → Building
+MAN → City
+WAN → Country / World
+```
+
+### Short Definition
+
+> **Network types are categories of networks based on the geographical area they cover.**
+
+
