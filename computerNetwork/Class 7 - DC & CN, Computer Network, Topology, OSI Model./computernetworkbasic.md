@@ -844,8 +844,10 @@ Mesh topology provides **multiple paths** between devices.
 <img width="733" height="601" alt="image" src="https://github.com/user-attachments/assets/b4dfe0c7-3e95-40c5-9318-b33dcbeab0ac" />
 <img width="855" height="541" alt="image" src="https://github.com/user-attachments/assets/a3e1e47e-c397-411f-820b-8ec7f8aee874" />
 <img width="852" height="564" alt="image" src="https://github.com/user-attachments/assets/9b9f90c4-8a29-4fb4-bc1c-5f71bce5f785" />
-<img width="975" height="559" alt="image" src="https://github.com/user-attachments/assets/09714300-4ee3-4728-b929-8d85c6001220" />
 
+<img width="894" height="603" alt="image" src="https://github.com/user-attachments/assets/1638f51e-29a8-4e9b-9888-40f945f6cc12" />
+
+<img width="995" height="576" alt="image" src="https://github.com/user-attachments/assets/ec6c446c-4b2c-4929-a83c-f9ad292f42ce" />
 
 <img width="1001" height="590" alt="image" src="https://github.com/user-attachments/assets/361777c9-9402-40c1-b48d-008fef66ecf7" />
 
