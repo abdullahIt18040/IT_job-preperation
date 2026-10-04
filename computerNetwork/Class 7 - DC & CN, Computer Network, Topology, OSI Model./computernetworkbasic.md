@@ -836,8 +836,13 @@ Mesh topology provides **multiple paths** between devices.
 | Multiple floors/buildings     | **Tree**          |
 | Different topologies combined | **Hybrid**        |
 | Multiple alternative paths    | **Mesh**          |
+<img width="698" height="535" alt="image" src="https://github.com/user-attachments/assets/1fd7a6f7-3924-4060-b902-aa78015890b3" />
+
+<img width="982" height="403" alt="image" src="https://github.com/user-attachments/assets/368d3692-e242-45d7-a892-09528d08c448" />
+<img width="993" height="517" alt="image" src="https://github.com/user-attachments/assets/48877cad-b5bd-4e4d-a2ac-cfd39f56e5d1" />
 
 
+<img width="1001" height="590" alt="image" src="https://github.com/user-attachments/assets/361777c9-9402-40c1-b48d-008fef66ecf7" />
 
 
 
