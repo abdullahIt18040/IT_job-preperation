@@ -457,147 +457,21 @@ PC4 ↔ PC1 → Point-to-point
 
 ---
 
-### 4. Mesh Topology
 
-In a **full mesh**, every device is directly connected to every other device.
 
-```text
-PC ───── PC
-|\       /|
-| \     / |
-|  \   /  |
-PC ───── PC
-```
+<img width="986" height="505" alt="image" src="https://github.com/user-attachments/assets/79b99e83-7ba2-478f-ae06-12731c69f81f" />
+<img width="1020" height="524" alt="image" src="https://github.com/user-attachments/assets/e47bc05c-9789-467d-afd3-fd4ad57822d2" />
+<img width="969" height="456" alt="image" src="https://github.com/user-attachments/assets/1be805c7-72b4-421a-ad46-cef28c95e304" />
+<img width="1001" height="522" alt="image" src="https://github.com/user-attachments/assets/c8cace40-ee58-4e56-b07b-56e07b22de89" />
+<img width="1011" height="525" alt="image" src="https://github.com/user-attachments/assets/2ba1fd8e-85ff-4fa4-94de-d7e5a4b97905" />
 
-**Features:**
+<img width="995" height="467" alt="image" src="https://github.com/user-attachments/assets/2af1db60-e7bd-459d-962f-1cc945a7c4bb" />
 
-* Multiple connections exist between devices.
-* Provides multiple paths for data.
-* Very reliable.
+<img width="1102" height="611" alt="image" src="https://github.com/user-attachments/assets/a951d5d2-f588-4746-87f1-6ceb9678b700" />
+<img width="1091" height="456" alt="image" src="https://github.com/user-attachments/assets/04a0ff1e-1fef-4ada-9375-9b4b2859f513" />
+<img width="1078" height="470" alt="image" src="https://github.com/user-attachments/assets/96a3cdb4-8e76-41a4-9cff-4a294382c64f" />
+<img width="1088" height="592" alt="image" src="https://github.com/user-attachments/assets/6ffd7121-9009-4a1e-aca7-a578521d4820" />
 
-**Number of Cables:**
-
-For **n devices** in a full mesh:
-
-```text
-Number of cables = n(n - 1) / 2
-```
-
-Example:
-
-```text
-4 devices → 4(4-1)/2 = 6 cables
-```
-
-**Advantages:**
-
-* Very reliable.
-* Failure of one link does not usually stop communication.
-* Provides high security and privacy.
-* Multiple paths are available.
-
-**Disadvantages:**
-
-* Very expensive.
-* Requires a large amount of cable.
-* Difficult to install and maintain.
-
----
-
-### 5. Tree Topology
-
-Tree topology has a **hierarchical structure** and is often formed by connecting multiple star networks.
-
-```text
-           Core
-          /    \
-      Switch  Switch
-      /  \     /  \
-     PC  PC   PC  PC
-```
-
-**Features:**
-
-* Has a hierarchical structure.
-* Combines features of Star and Bus topology.
-* Suitable for large networks.
-
-**Number of Cables:**
-
-* Depends on the number of devices and levels.
-* In a simple tree with **n devices, approximately n-1 connections** are needed to connect all devices.
-
-**Advantages:**
-
-* Easy to expand.
-* Easy to manage large networks.
-* Problems can be isolated to a particular branch.
-
-**Disadvantages:**
-
-* Requires more cable than Bus topology.
-* If a higher-level device/backbone fails, a large part of the network can be affected.
-* More complex than Star or Bus.
-
----
-
-### 6. Hybrid Topology
-
-Hybrid topology is a **combination of two or more different topologies**.
-
-```text
-Star + Bus
-    ↓
-Hybrid Topology
-```
-
-**Features:**
-
-* Combines different topologies.
-* Flexible and scalable.
-* Common in large organizations.
-
-**Number of Cables:**
-
-* **Depends on the topologies used.**
-* There is no fixed number of cables.
-
-**Advantages:**
-
-* Highly flexible.
-* Easy to expand.
-* Can be designed according to network requirements.
-* Failure in one section may not affect the entire network.
-
-**Disadvantages:**
-
-* Expensive to design and install.
-* Complex to manage.
-* Requires skilled network administrators.
-
----
-
-## Quick Comparison
-
-| Topology   | Main Feature            | Cable Requirement    | Main Advantage       | Main Disadvantage                   |
-| ---------- | ----------------------- | -------------------- | -------------------- | ----------------------------------- |
-| **Bus**    | One backbone cable      | Low                  | Low cost             | Backbone failure affects network    |
-| **Star**   | Central device          | `n` cables           | Easy to manage       | Central device failure              |
-| **Ring**   | Circular connection     | `n` links            | Orderly transmission | One link failure can affect network |
-| **Mesh**   | Many direct connections | `n(n-1)/2`           | Very reliable        | Very expensive                      |
-| **Tree**   | Hierarchical            | Depends on structure | Easy to expand       | Backbone/root failure               |
-| **Hybrid** | Combination             | Depends on design    | Flexible             | Complex and costly                  |
-
-## Easy Way to Remember
-
-```text
-Bus    → One Main Cable
-Star   → Central Device
-Ring   → Circle
-Mesh   → Many Connections
-Tree   → Hierarchical
-Hybrid → Combination
-```
 
 
 
