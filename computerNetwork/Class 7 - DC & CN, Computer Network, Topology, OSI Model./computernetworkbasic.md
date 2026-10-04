@@ -472,6 +472,372 @@ PC4 ↔ PC1 → Point-to-point
 <img width="1078" height="470" alt="image" src="https://github.com/user-attachments/assets/96a3cdb4-8e76-41a4-9cff-4a294382c64f" />
 <img width="1088" height="592" alt="image" src="https://github.com/user-attachments/assets/6ffd7121-9009-4a1e-aca7-a578521d4820" />
 
+# Network Topology Example — 100 PCs in 2 Floors
+
+## Problem
+
+Suppose a building has **100 PCs**:
+
+* **1st Floor → 50 PCs**
+* **2nd Floor → 50 PCs**
+
+Which network topology is suitable?
+
+## Answer
+
+**Tree Topology** is a suitable choice.
+
+### Network Structure
+
+```text
+                    Core Switch
+                   /           \
+                  /             \
+        1st Floor Switch     2nd Floor Switch
+             /   |   \           /   |   \
+            PC   PC   PC  ...   PC   PC   PC
+             \   |   /           \   |   /
+              50 PCs              50 PCs
+```
+
+### Why Tree Topology?
+
+1. **Easy Management**
+   Each floor can be managed separately.
+
+2. **Scalable**
+   More PCs or floors can be added easily.
+
+3. **Fault Isolation**
+   A problem on one floor may not affect the other floor.
+
+4. **Good Performance**
+   Each floor has its own switch to handle local traffic.
+
+5. **Suitable for Large Networks**
+   Tree topology is suitable for networks with many devices and multiple levels/floors.
+
+## Simple Structure
+
+```text
+Core Switch
+    │
+    ├── Switch 1 → 50 PCs (1st Floor)
+    │
+    └── Switch 2 → 50 PCs (2nd Floor)
+```
+
+## Exam Point
+
+> **For 100 PCs distributed across two floors, Tree Topology is a suitable choice because it provides a hierarchical structure with separate switches for each floor.**
+
+### Important Note
+
+In real-world networks, this structure is often called an **Extended Star / Hierarchical Star topology**, because each floor uses a **Star topology** and the switches are connected hierarchically.
+# Network Topology — Scenario Based Problems
+
+## Problem 1 — Small Office
+
+### Scenario
+
+একটি ছোট অফিসে **10টি PC** আছে। সব PC একটি central device-এর সাথে connected হবে।
+
+### Question
+
+Which topology is suitable?
+
+### Answer
+
+**Star Topology**
+
+### Why?
+
+কারণ সব PC একটি **central switch**-এর সাথে connected থাকবে এবং network manage করা সহজ হবে।
+
+```text
+        PC
+         |
+PC ─── Switch ─── PC
+         |
+        PC
+```
+
+---
+
+## Problem 2 — 100 PCs in Two Floors
+
+### Scenario
+
+একটি building-এ:
+
+* 1st Floor → 50 PCs
+* 2nd Floor → 50 PCs
+
+### Question
+
+Which topology is suitable?
+
+### Answer
+
+**Tree Topology**
+
+### Why?
+
+প্রতিটি floor-এর জন্য আলাদা switch ব্যবহার করে hierarchical network তৈরি করা যায়।
+
+```text
+             Core Switch
+             /         \
+        Switch 1      Switch 2
+        50 PCs        50 PCs
+```
+
+---
+
+## Problem 3 — Maximum Reliability
+
+### Scenario
+
+একটি network-এ **maximum reliability** দরকার। একটি connection নষ্ট হলেও communication বন্ধ হওয়া যাবে না।
+
+### Question
+
+Which topology is best?
+
+### Answer
+
+**Mesh Topology**
+
+### Why?
+
+Mesh topology-তে multiple paths থাকে। একটি link নষ্ট হলেও অন্য path দিয়ে data যেতে পারে।
+
+> **Maximum reliability → Mesh**
+
+---
+
+## Problem 4 — Minimum Cable Cost
+
+### Scenario
+
+একটি network তৈরি করতে হবে যেখানে **cable cost যত কম সম্ভব** রাখতে হবে।
+
+### Question
+
+Which topology is suitable?
+
+### Answer
+
+**Bus Topology**
+
+### Why?
+
+Bus topology-তে একটি main backbone cable ব্যবহার করা হয়।
+
+> **Low cable cost → Bus**
+
+---
+
+## Problem 5 — Easy Fault Detection
+
+### Scenario
+
+একটি office network-এ এমন topology দরকার যেখানে কোনো একটি PC-এর connection নষ্ট হলে সহজে সমস্যা খুঁজে বের করা যাবে।
+
+### Question
+
+Which topology is suitable?
+
+### Answer
+
+**Star Topology**
+
+### Why?
+
+প্রতিটি PC-এর আলাদা connection থাকে। তাই কোন cable বা PC-এর connection-এ সমস্যা হয়েছে সহজে identify করা যায়।
+
+> **Easy troubleshooting → Star**
+
+---
+
+## Problem 6 — Circular Network
+
+### Scenario
+
+প্রতিটি computer তার পাশের দুইটি computer-এর সাথে connected এবং পুরো network একটি closed circle তৈরি করে।
+
+### Question
+
+Which topology is this?
+
+### Answer
+
+**Ring Topology**
+
+```text
+PC1 ── PC2
+ |       |
+PC4 ── PC3
+```
+
+> **Closed circle → Ring**
+
+---
+
+## Problem 7 — One Main Cable
+
+### Scenario
+
+একটি network-এ সব computers একটি **single main cable**-এর সাথে connected।
+
+### Question
+
+Which topology is used?
+
+### Answer
+
+**Bus Topology**
+
+> **Single backbone cable → Bus**
+
+---
+
+## Problem 8 — Central Device
+
+### Scenario
+
+একটি network-এ সব computers একটি **central switch**-এর সাথে connected।
+
+### Question
+
+Which topology is used?
+
+### Answer
+
+**Star Topology**
+
+> **Central device → Star**
+
+---
+
+## Problem 9 — Every Device Connected to Every Other Device
+
+### Scenario
+
+একটি network-এ প্রতিটি device অন্য প্রতিটি device-এর সাথে directly connected।
+
+### Question
+
+Which topology is used?
+
+### Answer
+
+**Full Mesh Topology**
+
+For `n` devices:
+
+```text
+Number of links = n(n - 1) / 2
+```
+
+Example:
+
+```text
+4 devices
+= 4(4-1)/2
+= 6 links
+```
+
+---
+
+## Problem 10 — Multiple Buildings
+
+### Scenario
+
+একটি university campus-এ:
+
+* Building A → 3 floors
+* Building B → 4 floors
+* Building C → 5 floors
+
+প্রতিটি building-এর ভিতরে আলাদা switches এবং buildingগুলোর মধ্যে higher-level connection থাকবে।
+
+### Question
+
+Which topology is suitable?
+
+### Answer
+
+**Tree / Hierarchical Topology**
+
+### Why?
+
+Network-টি hierarchical structure-এ organize করা যায়।
+
+```text
+                 Core
+              /    |    \
+             A     B     C
+            /|\   /|\   /|\
+         Floors Floors Floors
+```
+
+---
+
+## Problem 11 — Different Topologies Combined
+
+### Scenario
+
+একটি network-এর একটি অংশে Star topology এবং অন্য অংশে Ring topology ব্যবহার করা হয়েছে।
+
+### Question
+
+Which topology is this?
+
+### Answer
+
+**Hybrid Topology**
+
+> **Combination of different topologies → Hybrid**
+
+---
+
+## Problem 12 — One Link Failure
+
+### Scenario
+
+একটি network-এ একটি cable নষ্ট হলেও alternative path দিয়ে data transmission চালু রাখতে হবে।
+
+### Question
+
+Which topology is best?
+
+### Answer
+
+**Mesh Topology**
+
+### Why?
+
+Mesh topology provides **multiple paths** between devices.
+
+---
+
+# Quick Exam Tricks
+
+| Requirement                   | Suitable Topology |
+| ----------------------------- | ----------------- |
+| Central device                | **Star**          |
+| Single main cable             | **Bus**           |
+| Circular connection           | **Ring**          |
+| Maximum reliability           | **Mesh**          |
+| Low cable cost                | **Bus**           |
+| Easy troubleshooting          | **Star**          |
+| Large hierarchical network    | **Tree**          |
+| Multiple floors/buildings     | **Tree**          |
+| Different topologies combined | **Hybrid**        |
+| Multiple alternative paths    | **Mesh**          |
+
+
 
 
 
