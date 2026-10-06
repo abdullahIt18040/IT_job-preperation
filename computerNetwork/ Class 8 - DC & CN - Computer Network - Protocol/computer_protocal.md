@@ -1093,3 +1093,70 @@ Gateway → ভিন্ন Network/System-এর মধ্যে Bridge কর�
 ```
 
 
+<img width="733" height="365" alt="image" src="https://github.com/user-attachments/assets/2cccbc40-6520-4afd-ad64-c3a077261061" />
+```
+Default Gateway — সহজ বাংলায়
+
+Default Gateway হলো এমন একটি device/IP address, যার মাধ্যমে আপনার computer নিজের network-এর বাইরে অন্য network বা Internet-এ data পাঠায়।
+
+Example
+
+ধরুন:
+
+PC
+IP: 192.168.1.10
+        |
+        | 
+   Router
+Gateway: 192.168.1.1
+        |
+     Internet
+
+PC যদি 192.168.1.x network-এর বাইরে কোনো IP-তে data পাঠাতে চায়, তাহলে সেটি 192.168.1.1 (Default Gateway)-এর কাছে পাঠাবে।
+
+সহজ উদাহরণ
+
+আপনি যদি নিজের বাসার LAN-এর অন্য PC-তে data পাঠান → Gateway দরকার নেই।
+
+কিন্তু Internet-এ যেতে চাইলে:
+
+PC → Default Gateway (Router) → Internet
+গুরুত্বপূর্ণ
+Default Gateway সাধারণত Router-এর IP address।
+এটি নিজের network-এর বাইরে যাওয়ার পথ।
+PC-এর Default Gateway না থাকলে সাধারণত local network-এর বাইরে যোগাযোগ করা যাবে না।
+
+মনে রাখুন:
+
+🏠 Local Network → বাইরে যেতে হলে → Default Gatewa
+```
+# Bridge in Computer Networking
+
+A **Bridge** is a networking device that connects **two or more LAN segments** and forwards data based on **MAC addresses**.
+
+### Key Points
+
+* Works mainly at **Data Link Layer (Layer 2)**.
+* Uses **MAC Address** to forward frames.
+* Reduces unnecessary traffic between LAN segments.
+* A **Switch can be considered a multi-port bridge**.
+
+### Example
+
+```text
+LAN 1                         LAN 2
+
+PC ── PC ── Bridge ── PC ── PC
+```
+
+### Bridge vs Router
+
+| Bridge                | Router                      |
+| --------------------- | --------------------------- |
+| Layer 2               | Layer 3                     |
+| Uses MAC Address      | Uses IP Address             |
+| Connects LAN segments | Connects different networks |
+
+### Easy Way to Remember
+
+> **Bridge → Layer 2 → MAC Address → Connects LAN Segments**
