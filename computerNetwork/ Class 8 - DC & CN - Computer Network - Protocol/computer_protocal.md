@@ -521,5 +521,315 @@ Common examples:
 
 ---
 
+<img width="757" height="404" alt="image" src="https://github.com/user-attachments/assets/71a3dfca-c037-4f2e-a6df-89f58f1d16be" />
 
+# TCP — Transmission Control Protocol
+
+## What is TCP?
+
+**TCP (Transmission Control Protocol)** is a **Transport Layer protocol** that provides **reliable, ordered, and error-checked delivery of data** between devices over a network.
+
+### Bangla Meaning
+
+> **TCP হলো একটি connection-oriented Transport Layer protocol, যা connection establish করে reliable, ordered এবং error-checkedভাবে data পাঠায়।**
+
+### Simple Definition
+
+> **TCP = Connection-Oriented + Reliable + Ordered + Error-Checked Data Delivery**
+
+---
+
+# Why is TCP Used?
+
+When data is sent over a network, packets may be:
+
+* Lost
+* Duplicated
+* Damaged
+* Received out of order
+
+TCP provides mechanisms to handle these problems.
+
+```text
+Sender
+  │
+  │ TCP
+  ↓
+Network
+  │
+  ↓
+Receiver
+```
+
+---
+
+# Main Features of TCP
+
+## 1. Connection-Oriented
+
+TCP sends data only after establishing a connection between the sender and receiver.
+
+```text
+Connection Establish
+        ↓
+     Send Data
+        ↓
+ Connection Close
+```
+
+---
+
+## 2. Reliable Delivery
+TCP নিশ্চিত করে যে data properly receiver-এর কাছে পৌঁছেছে।
+TCP ensures reliable delivery using:
+
+* Acknowledgments
+* Sequence numbers
+* Retransmission
+* Checksum
+
+```text
+Sender                         Receiver
+  |                               |
+  |--------- Data --------------->|
+  |<-------- ACK -----------------|
+```
+
+If a packet is lost, TCP can retransmit it.
+
+```text
+Sender ─── Packet 1 ───> Receiver
+Sender ─── Packet 2 ───X
+Sender ─── Packet 3 ───> Receiver
+
+Packet 2 → Lost
+
+        ↓
+
+TCP retransmits Packet 2
+```
+
+---
+
+## 3. Ordered Delivery
+
+TCP ensures that data is delivered to the application in the correct order.
+
+```text
+Sender:
+
+Packet 1
+Packet 2
+Packet 3
+
+        ↓
+
+Receiver:
+
+Packet 1
+Packet 2
+Packet 3
+```
+
+TCP uses **Sequence Numbers** to maintain the correct order.
+
+---
+
+## 4. Error Detection
+
+TCP uses a **checksum** to detect errors in transmitted data.
+
+```text
+Data
+ ↓
+TCP Checksum
+ ↓
+Receiver checks the data
+```
+
+If an error is detected, the affected data can be retransmitted.
+
+---
+
+## 5. Flow Control
+
+TCP prevents a fast sender from overwhelming a slow receiver.
+
+```text
+Fast Sender
+     ↓
+ TCP Flow Control
+     ↓
+Slow Receiver
+```
+
+TCP uses the **Receive Window (Window Size)** for flow control.
+
+---
+
+## 6. Congestion Control
+
+TCP controls the sending rate when the network becomes congested.
+
+```text
+Network Congestion
+        ↓
+TCP reduces sending rate
+        ↓
+Less Network Congestion
+```
+
+---
+
+# TCP Three-Way Handshake
+
+TCP uses a **Three-Way Handshake** to establish a connection.
+
+```text
+Client                         Server
+  |                              |
+  |----------- SYN ------------>|
+  |                              |
+  |<-------- SYN + ACK ----------|
+  |                              |
+  |----------- ACK ------------>|
+  |                              |
+  |     Connection Established   |
+```
+
+### Steps
+
+### Step 1 — SYN
+
+Client sends a **SYN** packet to request a connection.
+
+```text
+Client → Server : SYN
+```
+
+### Step 2 — SYN + ACK
+
+Server accepts the request and responds with:
+
+```text
+Server → Client : SYN + ACK
+```
+
+### Step 3 — ACK
+
+Client confirms the response:
+
+```text
+Client → Server : ACK
+```
+
+Now the TCP connection is established.
+
+---
+
+# TCP Connection Termination
+
+TCP normally uses a **Four-Way Termination** to close a connection.
+
+```text
+Client                         Server
+  |                              |
+  |----------- FIN ------------>|
+  |                              |
+  |<---------- ACK -------------|
+  |                              |
+  |<---------- FIN -------------|
+  |                              |
+  |----------- ACK ------------>|
+  |                              |
+  |      Connection Closed       |
+```
+
+---
+
+# TCP Header
+
+TCP has a more complex header than UDP.
+
+```text
+  0                   15 16                  31
+ +---------------------+---------------------+
+ |     Source Port     |   Destination Port  |
+ +---------------------+---------------------+
+ |                Sequence Number            |
+ +-------------------------------------------+
+ |             Acknowledgment Number         |
+ +-------------------------------------------+
+ | Header | Flags |       Window Size        |
+ +-------------------------------------------+
+ |      Checksum      |    Urgent Pointer    |
+ +-------------------------------------------+
+ |              Options (Optional)           |
+ +-------------------------------------------+
+ |                   Data                    |
+ +-------------------------------------------+
+```
+
+### Minimum TCP Header Size
+
+> **Minimum TCP header size = 20 bytes**
+
+---
+
+# Important TCP Flags
+
+| Flag    | Purpose                        |
+| ------- | ------------------------------ |
+| **SYN** | Establishes a connection       |
+| **ACK** | Acknowledges received data     |
+| **FIN** | Gracefully closes a connection |
+| **RST** | Resets/terminates a connection |
+| **PSH** | Pushes data to the application |
+| **URG** | Indicates urgent data          |
+
+---
+
+# Common Uses of TCP
+
+TCP is used when **reliable data delivery** is important.
+
+Common examples:
+
+* **HTTP**
+* **HTTPS**
+* **FTP**
+* **SMTP**
+* **IMAP**
+* **SSH**
+
+Example:
+
+```text
+Web Browser
+     ↓
+    TCP
+     ↓
+Web Server
+```
+
+---
+
+# TCP vs UDP
+
+| Feature            | TCP                           | UDP                    |
+| ------------------ | ----------------------------- | ---------------------- |
+| Full Form          | Transmission Control Protocol | User Datagram Protocol |
+| Layer              | Transport Layer               | Transport Layer        |
+| Connection         | Connection-oriented           | Connectionless         |
+| Reliability        | Reliable                      | Not guaranteed         |
+| Ordering           | Guaranteed                    | Not guaranteed         |
+| Acknowledgment     | Yes                           | No                     |
+| Retransmission     | Yes                           | No                     |
+| Flow Control       | Yes                           | No                     |
+| Congestion Control | Yes                           | No                     |
+| Speed              | Generally slower              | Generally faster       |
+| Minimum Header     | 20 bytes                      | 8 bytes                |
+| Common Uses        | HTTP/HTTPS, FTP, SSH          | DNS, Gaming, VoIP      |
+
+---
 
