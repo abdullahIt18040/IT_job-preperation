@@ -868,6 +868,7 @@ Client                                      Server
   |                                           |
   |<========== Data Transfer ===============>|
 ```
+<img width="579" height="401" alt="image" src="https://github.com/user-attachments/assets/faeb83ae-c567-41c0-997c-dcab2d8776b1" />
 
 ---
 
