@@ -24,10 +24,11 @@ Synthia wants to send an email to her friend. She sends the email through the Ap
 ## very very importent (NAT)
 
 <img width="856" height="475" alt="image" src="https://github.com/user-attachments/assets/4d75599c-59a5-4d50-a87e-ae5d57c3092e" />
-```
-Answer
-(a) Why was NAT necessary?
 
+
+Answer
+### (a) Why was NAT necessary?
+```
 The original IPv4 addressing system uses a 32-bit IP address.
 
 Therefore, the total number of IPv4 addresses is:
@@ -48,8 +49,9 @@ Public IPv4 addresses became scarce.
 To reduce the demand for public IPv4 addresses, NAT (Network Address Translation) was introduced.
 
 NAT allows many devices inside a private network to share one public IP address when accessing the Internet.
-(b) NAT Translation Process
-
+```
+## (b) NAT Translation Process
+```
 Suppose an employee has:
 
 Private IP: 172.168.1.5
