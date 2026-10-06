@@ -364,5 +364,162 @@ Traceroute uses the **TTL (Time To Live)** field and ICMP messages to identify i
 
 ---
 
+<img width="859" height="410" alt="image" src="https://github.com/user-attachments/assets/c552fd79-f797-42f6-9370-be764c717245" />
+
+
+# UDP — User Datagram Protocol
+
+## What is UDP?
+
+**UDP (User Datagram Protocol)** is a **Transport Layer protocol** used to send data between devices over a network **without establishing a connection or guaranteeing delivery**.
+
+### Bangla Meaning
+
+> **UDP হলো একটি Transport Layer protocol, যা network-এর মাধ্যমে device-এর মধ্যে আগে connection establish না করে data পাঠায় এবং data অবশ্যই পৌঁছাবে—এমন কোনো guarantee দেয় না।**
+
+---
+
+## Simple Definition
+
+> **UDP = Connectionless + Fast + Low Overhead + No Delivery Guarantee**
+
+---
+
+## How UDP Works
+
+UDP does not establish a connection before sending data.
+
+```text
+Sender                         Receiver
+  |                               |
+  |--------- UDP Data ----------->|
+  |--------- UDP Data ----------->|
+  |--------- UDP Data ----------->|
+```
+
+There is no connection establishment like TCP.
+
+---
+
+## Main Features of UDP
+
+### 1. Connectionless
+
+UDP does not establish a connection before sending data.
+
+```text
+No Connection
+      ↓
+ Send Data
+      ↓
+ Receiver
+```
+
+---
+
+### 2. Fast
+
+UDP has low overhead because it does not perform:
+
+* Connection establishment
+* Acknowledgment
+* Retransmission
+* Complex flow control
+
+Therefore, UDP is generally faster than TCP.
+
+---
+
+### 3. No Delivery Guarantee
+
+UDP does not guarantee that the data will reach the destination.
+
+```text
+Sender ─────> Network ───X───> Receiver
+                         Packet Lost
+```
+
+If a packet is lost, UDP does not automatically retransmit it.
+
+---
+
+### 4. No Ordering Guarantee
+
+UDP does not guarantee that packets will arrive in the same order in which they were sent.
+
+```text
+Sender:
+
+Packet 1
+Packet 2
+Packet 3
+
+        ↓
+
+Receiver:
+
+Packet 2
+Packet 1
+Packet 3
+```
+
+---
+
+### 5. No Retransmission
+
+If a UDP packet is lost, UDP itself does not send it again.
+
+```text
+Packet Lost
+     ↓
+UDP does not retransmit
+```
+
+---
+
+# UDP Header
+
+UDP has a simple header with **4 main fields**.
+
+```text
+  0               15 16              31
+ +------------------+------------------+
+ |   Source Port    | Destination Port |
+ +------------------+------------------+
+ |      Length      |     Checksum     |
+ +------------------+------------------+
+ |                Data                |
+ +-------------------------------------+
+```
+
+| Field                | Purpose                              |
+| -------------------- | ------------------------------------ |
+| **Source Port**      | Identifies the sending application   |
+| **Destination Port** | Identifies the receiving application |
+| **Length**           | Total length of UDP header + data    |
+| **Checksum**         | Used for error detection             |
+
+### UDP Header Size
+
+> **Minimum UDP header size = 8 bytes**
+
+---
+
+# Common Uses of UDP
+
+UDP is useful when **speed and low latency** are more important than perfect reliability.
+
+Common examples:
+
+* DNS
+* DHCP
+* VoIP
+* Online Gaming
+* Live Streaming
+* Video Conferencing
+* TFTP
+
+---
+
 
 
