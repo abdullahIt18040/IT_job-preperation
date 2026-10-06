@@ -1,3 +1,7 @@
+Question
+```
+Synthia wants to send an email to her friend. She sends the email through the Application Layer and Transport Layer. Draw a diagram showing how the email is transmitted from Synthia (sender) to her friend (receiver), including the protocols used at each layer.
+```
 <img width="977" height="607" alt="image" src="https://github.com/user-attachments/assets/c4d551fb-081c-4ec0-b073-a7516fd81fab" />
 
 <img width="1115" height="605" alt="image" src="https://github.com/user-attachments/assets/434d413e-2730-40e6-8876-2af5c19e6003" />
