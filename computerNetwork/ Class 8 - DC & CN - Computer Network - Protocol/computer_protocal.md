@@ -833,3 +833,104 @@ Web Server
 
 ---
 
+## File download from a website normally uses HTTP/HTTPS at the Application Layer and TCP at the Transport Layer.
+<img width="734" height="393" alt="image" src="https://github.com/user-attachments/assets/6bade70c-97f3-4ae6-ad26-8d137c24c7aa" />
+# TCP Three-Way Handshake
+
+## What is TCP Three-Way Handshake?
+
+**TCP Three-Way Handshake** is the process used by TCP to **establish a connection** between a client and a server before data transmission begins.
+
+It uses **three messages**:
+
+```text
+SYN → SYN + ACK → ACK
+```
+
+### Simple Definition
+
+> **TCP Three-Way Handshake is a three-step process used to establish a reliable TCP connection between two devices.**
+
+---
+
+# TCP Three-Way Handshake Process
+
+```text
+Client                                      Server
+  |                                           |
+  |------------- SYN ----------------------->|
+  |                                           |
+  |<------------ SYN + ACK ------------------|
+  |                                           |
+  |------------- ACK ----------------------->|
+  |                                           |
+  |       Connection Established              |
+  |                                           |
+  |<========== Data Transfer ===============>|
+```
+
+---
+
+## Step 1: SYN
+
+The client sends a **SYN (Synchronize)** packet to the server.
+
+```text
+Client → Server : SYN
+```
+
+### Meaning
+
+The client is saying:
+
+> "I want to establish a TCP connection."
+
+The client also sends an **initial sequence number**.
+
+---
+
+## Step 2: SYN + ACK
+
+The server receives the SYN and responds with **SYN + ACK**.
+
+```text
+Server → Client : SYN + ACK
+```
+
+Here:
+
+* **SYN** → Server is also synchronizing its sequence number.
+* **ACK** → Server acknowledges the client's SYN.
+
+### Meaning
+
+The server is saying:
+
+> "I received your request, and I am ready to establish the connection."
+
+---
+
+## Step 3: ACK
+
+The client sends an **ACK (Acknowledgment)** back to the server.
+
+```text
+Client → Server : ACK
+```
+
+### Meaning
+
+The client confirms:
+
+> "I received your response."
+
+Now the TCP connection is established.
+
+```text
+Connection Established
+        ↓
+Data Transfer Begins
+```
+
+---
+
