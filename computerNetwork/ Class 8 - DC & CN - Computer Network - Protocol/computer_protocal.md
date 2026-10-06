@@ -935,3 +935,37 @@ Data Transfer Begins
 
 ---
 
+<img width="833" height="418" alt="image" src="https://github.com/user-attachments/assets/c4ab1d4f-c8d9-4c24-a80b-4e148e6beb1c" />
+<img width="742" height="401" alt="image" src="https://github.com/user-attachments/assets/7bdaf6f7-d40a-4412-b30f-430af0f06380" />
+# FTP Control and Data Connection
+
+**FTP (File Transfer Protocol)** is an Application Layer protocol used to transfer files between a client and a server. It uses **TCP**.
+
+### 1. Control Connection
+
+* Used to send **commands** and receive **responses**.
+* Uses **TCP port 21**.
+* Example: `USER`, `PASS`, `LIST`, `RETR`, `STOR`.
+
+### 2. Data Connection
+
+* Used to transfer **actual files and directory listing data**.
+* Port depends on the FTP mode.
+
+### Simple Diagram
+
+```text
+Client                         FTP Server
+  |                                |
+  |--- Control Connection -------->|  TCP 21
+  |    Commands / Responses        |
+  |                                |
+  |<--- Data Connection ---------->|  File/Data
+  |                                |
+```
+
+### Easy Way to Remember
+
+> **Control = What should I do?**
+> **Data = Here is the actual data!**
+
