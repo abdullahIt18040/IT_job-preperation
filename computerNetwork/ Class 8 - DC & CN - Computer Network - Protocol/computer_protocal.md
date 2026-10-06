@@ -247,5 +247,122 @@ or
 
 rather than 172.168.1.5
 ```
+# ICMPv4 — Internet Control Message Protocol Version 4
+
+## What is ping & tracert ?
+
+**ICMPv4 (Internet Control Message Protocol version 4)** is a **Network Layer protocol** used with IPv4 networks.
+> **ICMPv4 is a Network Layer protocol used with IPv4 to report packet-delivery errors and perform network diagnostics.**
+It is mainly used for:
+
+* Error reporting
+* Network diagnostics
+* Control and informational messages
+
+---
+
+# Why is ICMPv4 Needed?
+
+Suppose a PC sends an IPv4 packet to a server:
+
+```text
+PC ───────────> Router ───────────> Server
+```
+
+If the packet cannot reach the destination, the network device can use ICMPv4 to inform the sender about the problem.
+
+```text
+PC ── IPv4 Packet ──> Router ──X──> Server
+                       │
+                       │ ICMPv4 Error Message
+                       ↓
+PC <────────────────────────────
+```
+
+So, ICMPv4 helps devices **report problems related to IPv4 packet delivery**.
+
+---
+
+# Main Functions of ICMPv4
+
+## 1. Error Reporting
+
+ICMPv4 reports problems that occur during IPv4 packet delivery.
+
+Common examples:
+
+* **Destination Unreachable** → The destination cannot be reached.
+* **Time Exceeded** → The packet's TTL has reached 0.
+* **Parameter Problem** → There is a problem with the IPv4 packet header.
+* **Redirect** → A better route may be available.
+
+---
+
+## 2. Network Diagnostics
+
+ICMPv4 is commonly used to test network connectivity.
+
+For example:
+
+```bash
+ping google.com
+```
+
+The `ping` command uses:
+
+```text
+ICMP Echo Request
+ICMP Echo Reply
+```
+
+### Ping Process
+
+```text
+PC                         Server
+ |                           |
+ |---- ICMP Echo Request ---->|
+ |                           |
+ |<---- ICMP Echo Reply ------|
+ |                           |
+```
+
+If the PC receives an Echo Reply, it indicates that the destination is reachable and responding to ICMP.
+
+---
+
+# 3. Traceroute / Tracert
+
+ICMP messages are also involved in discovering the path between two devices.
+
+### Windows
+
+```bash
+tracert google.com
+```
+
+### Linux
+
+```bash
+traceroute google.com
+```
+
+Example:
+
+```text
+PC
+ ↓
+Router 1
+ ↓
+Router 2
+ ↓
+Router 3
+ ↓
+Server
+```
+
+Traceroute uses the **TTL (Time To Live)** field and ICMP messages to identify intermediate routers.
+
+---
+
 
 
