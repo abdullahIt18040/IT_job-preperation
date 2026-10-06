@@ -969,3 +969,127 @@ Client                         FTP Server
 > **Control = What should I do?**
 > **Data = Here is the actual data!**
 
+<img width="878" height="454" alt="image" src="https://github.com/user-attachments/assets/4880b17c-9ebc-4545-afad-ea8dea8231fe" />
+<img width="822" height="360" alt="image" src="https://github.com/user-attachments/assets/89de15d8-473e-4e6b-b530-d1d576ac3cc0" />
+<img width="615" height="178" alt="image" src="https://github.com/user-attachments/assets/e56a7c20-156a-4871-b2c5-da56ac20ac2a" />
+<img width="630" height="158" alt="image" src="https://github.com/user-attachments/assets/cb3800df-6321-4844-a245-2c7d7651fcd4" />
+<img width="723" height="363" alt="image" src="https://github.com/user-attachments/assets/cf602f5b-01fc-4e4b-8a9f-71c67573c370" />
+<img width="756" height="338" alt="image" src="https://github.com/user-attachments/assets/a84b94dd-076f-4e99-b60a-2e7ef9d498f4" />
+
+# Router, Switch, Hub, and Gateway
+
+## 1. Router
+
+* Connects **different networks**.
+* Works mainly at the **Network Layer (Layer 3)**.
+* Uses **IP addresses** to forward packets.
+* Example: Connects a home LAN to the Internet.
+
+```text
+LAN A ── Router ── LAN B / Internet
+```
+
+## 2. Switch
+
+* Connects multiple devices within the **same LAN**.
+* Works mainly at the **Data Link Layer (Layer 2)**.
+* Uses **MAC addresses** to forward frames.
+* More efficient than a hub.
+
+```text
+PC ─┐
+PC ─┼── Switch ── Server
+PC ─┘
+```
+
+## 3. Hub
+
+* Connects multiple devices in a **LAN**.
+* Works at the **Physical Layer (Layer 1)**.
+* Sends incoming data to **all connected devices**.
+* Less efficient and less secure than a switch.
+
+```text
+       ┌── PC 1
+Hub ───┼── PC 2
+       └── PC 3
+```
+
+## 4. Gateway
+
+* Acts as an **entry/exit point between different networks or systems**.
+* Can operate at different layers depending on its function.
+* Performs **protocol translation** when different protocols need to communicate.
+* A **default gateway** in a LAN is commonly the router that connects the LAN to other networks.
+
+### Quick Comparison
+
+| Device      | Main Layer | Uses                 | Main Function                       |
+| ----------- | ---------- | -------------------- | ----------------------------------- |
+| **Hub**     | Layer 1    | Signal               | Broadcasts to all ports             |
+| **Switch**  | Layer 2    | MAC Address          | Connects devices in a LAN           |
+| **Router**  | Layer 3    | IP Address           | Connects different networks         |
+| **Gateway** | Depends    | Protocol/System info | Connects different networks/systems |
+
+### Easy Way to Remember
+
+**Hub → Broadcast**
+**Switch → MAC**
+**Router → IP**
+**Gateway → Different networks/protocols**
+```
+1. Router (রাউটার)
+বিভিন্ন Network-কে যুক্ত করে।
+IP Address দেখে data কোথায় যাবে তা নির্ধারণ করে।
+মূলত Network Layer (Layer 3)-এ কাজ করে।
+উদাহরণ: আপনার বাসার LAN → Internet।
+
+মনে রাখুন:
+👉 Router = IP Address
+
+2. Switch (সুইচ)
+একই LAN-এর একাধিক device-কে যুক্ত করে।
+MAC Address ব্যবহার করে data নির্দিষ্ট device-এ পাঠায়।
+মূলত Data Link Layer (Layer 2)-এ কাজ করে।
+PC ─┐
+PC ─┼── Switch ── Server
+PC ─┘
+
+মনে রাখুন:
+👉 Switch = MAC Address
+
+3. Hub (হাব)
+একই LAN-এর একাধিক device-কে যুক্ত করে।
+Data পেলে সব port-এ পাঠিয়ে দেয়।
+Physical Layer (Layer 1)-এ কাজ করে।
+Switch-এর তুলনায় কম efficient।
+        ┌── PC 1
+Hub ────┼── PC 2
+        └── PC 3
+
+মনে রাখুন:
+👉 Hub = Broadcast to All
+
+4. Gateway (গেটওয়ে)
+ভিন্ন ধরনের network/system/protocol-এর মধ্যে যোগাযোগের gateway বা entry/exit point হিসেবে কাজ করে।
+প্রয়োজন হলে protocol translation করতে পারে।
+একটি সাধারণ LAN-এ Default Gateway সাধারণত Router-এর IP address।
+
+মনে রাখুন:
+👉 Gateway = Different Network/System-এর মধ্যে যোগাযোগ
+
+খুব সহজে মনে রাখুন
+Device	কী দেখে/ব্যবহার করে	মূল কাজ
+Hub	Signal	সবার কাছে পাঠায়
+Switch	MAC	নির্দিষ্ট device-এ পাঠায়
+Router	IP	Network থেকে অন্য Network-এ পাঠায়
+Gateway	Protocol/System	ভিন্ন Network/System-এর মধ্যে যোগাযোগ
+
+এক লাইনে:
+Hub → সবাইকে পাঠায়
+Switch → MAC দেখে পাঠায়
+Router → IP দেখে Network বদলায়
+Gateway → ভিন্ন Network/System-এর মধ্যে Bridge করে
+```
+
+
