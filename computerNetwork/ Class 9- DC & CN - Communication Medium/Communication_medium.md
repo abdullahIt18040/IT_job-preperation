@@ -226,7 +226,7 @@ STP → Shield → Better EMI Protection + More Expensive
 | Crosstalk   | Higher         | Lower          |
 | Performance | Lower          | Higher         |
 | Cost        | Cheaper        | More expensive |
-| Common Use  | Older networks | Modern LAN     |
+| Cable       | 3*2 = 6         |  4*2= 8       |
 
 # Standerd Twisted pair  eithernet cable 
 <img width="460" height="285" alt="image" src="https://github.com/user-attachments/assets/82be76ec-b7fe-4244-babf-ebfeb7f1dc30" />
