@@ -141,33 +141,77 @@ Computer → RJ-45 → Twisted Pair Cable → RJ-45 → Switch
 * Generally less suitable than fiber for very high-speed, long-distance communication
 
 ---
+# Twisted Pair Cable
 
-## Quick Exam Note
+**Twisted Pair Cable** is a type of **guided transmission medium** made of two insulated copper wires twisted together to reduce **electromagnetic interference (EMI)** and **crosstalk**.
 
-| Category          | Twisted Pair Cable              |
-| ----------------- | ------------------------------- |
-| Medium            | Guided / Wired                  |
-| Material          | Copper                          |
-| Types             | UTP, STP                        |
-| Connector         | RJ-45 (8P8C)                    |
-| Common Use        | LAN / Ethernet                  |
-| Typical Segment   | Up to 100 m                     |
-| Main Advantage    | Low cost                        |
-| Main Disadvantage | Limited distance & interference |
+## Types of Twisted Pair Cable
 
-### Easy Remember
+There are two main types:
+
+1. **UTP — Unshielded Twisted Pair**
+2. **STP — Shielded Twisted Pair**
+
+---
+
+## 1. UTP — Unshielded Twisted Pair
+
+**UTP** is a twisted pair cable that has **no additional metallic shielding** around the twisted wire pairs.
+
+### Features
+
+* No additional shielding
+* Lightweight and flexible
+* Low cost
+* Easy to install
+* Commonly used in **LAN/Ethernet**
+* More affected by **EMI** than STP
+
+### Examples
+
+* Cat5e
+* Cat6
+* Cat6a
+
+---
+
+## 2. STP — Shielded Twisted Pair
+
+**STP** is a twisted pair cable that has **metallic shielding** to protect the cable from electromagnetic interference.
+
+### Features
+
+* Has additional metallic shielding
+* Better protection against **EMI**
+* More expensive than UTP
+* Heavier and less flexible
+* Used in environments with high electrical interference
+
+---
+
+## STP vs UTP
+
+| Feature        | UTP                     | STP                              |
+| -------------- | ----------------------- | -------------------------------- |
+| Full Form      | Unshielded Twisted Pair | Shielded Twisted Pair            |
+| Shielding      | No                      | Yes                              |
+| EMI Protection | Low                     | High                             |
+| Cost           | Low                     | Higher                           |
+| Installation   | Easy                    | More difficult                   |
+| Flexibility    | High                    | Lower                            |
+| Common Use     | Home/Office LAN         | Industrial/High-EMI environments |
+
+## Easy Remember
 
 ```text
-Twisted Pair
-     |
-     ├── UTP → Unshielded
-     |
-     └── STP → Shielded
+UTP → No Shield → Cheap + Flexible + Easy
 
-Connector → RJ-45
-Typical Ethernet Segment → 100 m
-Material → Copper
+STP → Shield → Better EMI Protection + More Expensive
 ```
+
+### Key Point
+
+> **UTP is cheaper and easier to install, while STP provides better protection against electromagnetic interference.**
 
 
 
