@@ -429,8 +429,7 @@ Data transmission occurs through **Total Internal Reflection (TIR)**.
 ### 🧠 Easy Remember
 
 > **Optical Fiber = Light + High Speed + High Bandwidth + Long Distance + No EMI**
-<img width="1094" height="249" alt="image" src="https://github.com/user-attachments/assets/6637dd05-139b-4295-943f-b267c00ca2cd" />
-
+<img width="984" height="200" alt="image" src="https://github.com/user-attachments/assets/eba6063c-0343-40d5-9f4d-b04c929d40d0" />
 
 <img width="896" height="746" alt="image" src="https://github.com/user-attachments/assets/f78c048a-3f69-4007-ab77-6d5b991930d3" />
 
