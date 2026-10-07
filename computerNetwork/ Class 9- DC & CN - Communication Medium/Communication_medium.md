@@ -387,5 +387,65 @@ Coating → Provides protection
 > **Optical Fiber = Non-metallic + Core + Cladding + Coating + Total Internal Reflection**
 <img width="1108" height="604" alt="image" src="https://github.com/user-attachments/assets/b4374746-f7f9-439d-a8f2-d34de96aa355" />
 
+# Optical Fiber
+
+**Optical fiber** is a **non-metallic guided transmission medium** that transmits data using **light signals**.
+
+## Main Parts
+
+```text
+Core → Carries light
+Cladding → Keeps light inside the core
+Coating → Protects the fiber
+```
+
+Data transmission occurs through **Total Internal Reflection (TIR)**.
+
+## Features
+
+* Uses **light signals**
+* Non-metallic
+* Very high bandwidth
+* Very high data transmission speed
+* Low signal loss
+* No EMI . electromagnetic interference (EMI)
+* Lightweight and thin
+
+## Coverage
+
+* Suitable for **long-distance communication**
+* Can cover **several kilometers to hundreds of kilometers** with appropriate equipment
+* Used in **WAN, submarine cables, and backbone networks**
+
+## Common Converter/ Fiber Converter  / Related Devices
+
+
+* Media Converter — Copper Ethernet ↔ Fiber
+* Fiber Optic Transceiver — Electrical ↔ Optical signal
+* SFP Transceiver — Pluggable fiber transceiver used in switches/routers
+* GBIC — Older type of pluggable network transceiver
+* ONT/ONU — Optical ↔ Ethernet conversion, commonly used in FTTH
+
+## Advantages
+
+* Very high bandwidth
+* Very high speed
+* Long transmission distance
+* Low attenuation
+* Immune to EMI
+* More secure and difficult to tap
+* Lightweight and small
+
+## Disadvantages
+
+* Higher installation cost
+* Fragile compared with copper cable
+* Difficult to splice and repair
+* Requires specialized tools and skills
+* Equipment can be more expensive
+
+### 🧠 Easy Remember
+
+> **Optical Fiber = Light + High Speed + High Bandwidth + Long Distance + No EMI**
 
 
