@@ -565,22 +565,30 @@ Original Data
 * ✈️ Aircraft communication
 * 🚢 Marine communication
 
-## Advantages
+<img width="1171" height="620" alt="image" src="https://github.com/user-attachments/assets/16ed49fb-874d-4197-a27d-c0710c3256e9" />
 
-* No physical cable required
-* Supports mobility
-* Can cover large areas
-* Easy to deploy
-* Useful in remote locations
+# Microwave Transmission
 
-## Disadvantages
+**Microwave transmission** is a **wireless communication method** that uses **high-frequency electromagnetic waves** to transmit data through air or space.
 
-* Can suffer from interference
-* Security risks
-* Signals can be affected by obstacles
-* Performance depends on frequency and environment
+### Key Points
+
+* **Medium:** Air / free space
+* **Signal:** Electromagnetic waves
+* **Frequency:** Approximately **1–300 GHz**
+* **Direction:** Mostly **directional**
+* Requires **line-of-sight (LOS)** for terrestrial links
+* Uses **microwave antennas/dishes**
+
+### Uses
+
+* Mobile communication
+* Satellite communication
+* TV broadcasting
+* Long-distance telephone/data communication
+* Point-to-point wireless links
 
 
-
+> **Microwave = High-frequency + Directional + Line-of-Sight + High Speed**
 
 
