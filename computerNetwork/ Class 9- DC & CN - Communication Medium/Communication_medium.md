@@ -432,4 +432,5 @@ Data transmission occurs through **Total Internal Reflection (TIR)**.
 <img width="984" height="200" alt="image" src="https://github.com/user-attachments/assets/eba6063c-0343-40d5-9f4d-b04c929d40d0" />
 
 <img width="896" height="746" alt="image" src="https://github.com/user-attachments/assets/f78c048a-3f69-4007-ab77-6d5b991930d3" />
+<img width="1173" height="563" alt="image" src="https://github.com/user-attachments/assets/6647fe63-f79b-4b3c-b770-46473711dd7a" />
 
