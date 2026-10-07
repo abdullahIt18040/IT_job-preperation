@@ -434,3 +434,87 @@ Data transmission occurs through **Total Internal Reflection (TIR)**.
 <img width="896" height="746" alt="image" src="https://github.com/user-attachments/assets/f78c048a-3f69-4007-ab77-6d5b991930d3" />
 <img width="1173" height="563" alt="image" src="https://github.com/user-attachments/assets/6647fe63-f79b-4b3c-b770-46473711dd7a" />
 
+<img width="1107" height="521" alt="image" src="https://github.com/user-attachments/assets/0c08dae8-d208-4e31-808f-2c33f306593a" />
+
+# Wireless Transmission
+
+**Wireless transmission** is a method of transmitting data **without using physical cables**, by using **electromagnetic waves** through air or space.
+
+## Types of Wireless Transmission
+
+| Type              | Description                                                  | Common Uses                                   |
+| ----------------- | ------------------------------------------------------------ | --------------------------------------------- |
+| **Radio Waves**   | Signals transmitted using radio-frequency waves              | Wi-Fi, Bluetooth, Radio                       |
+| **Microwaves**    | High-frequency electromagnetic waves                         | Mobile networks, point-to-point communication |
+| **Infrared (IR)** | Uses infrared light for short-distance communication         | Remote controls, short-range devices          |
+| **Satellite**     | Uses satellites to transmit signals over very long distances | TV, GPS, Internet, communication              |
+
+## Advantages
+
+* No physical cable required
+* Easy and fast installation
+* Supports mobility
+* Useful in remote areas
+* Can provide wide coverage
+
+## Disadvantages
+
+* Can be affected by interference
+* Security risks if not properly protected
+* Obstacles can weaken signals
+* Weather can affect some wireless systems
+* Performance may vary with distance
+
+<img width="802" height="416" alt="image" src="https://github.com/user-attachments/assets/1d23ab00-8564-4b0e-bb70-4476951cffb6" />
+# Wavelength and Frequency
+
+## 1. Wavelength (λ)
+
+**Wavelength** is the **distance between two consecutive corresponding points** of a wave, such as two consecutive crests or troughs.
+
+* Symbol: **λ (lambda)**
+* Unit: **meter (m)**
+* Higher wavelength → lower frequency
+* Lower wavelength → higher frequency
+
+## 2. Frequency (f)
+
+**Frequency** is the **number of complete wave cycles passing a point per second**.
+
+* Symbol: **f**
+* Unit: **Hertz (Hz)**
+* 1 Hz = 1 cycle per second
+* Higher frequency → lower wavelength
+* Lower frequency → higher wavelength
+
+## Relationship
+
+```text
+v = f × λ
+```
+
+Where:
+
+* `v` = Wave speed
+* `f` = Frequency
+* `λ` = Wavelength
+
+Therefore:
+
+```text
+λ = v / f
+f = v / λ
+```
+
+### Easy to Remember
+
+```text
+Frequency ↑  →  Wavelength ↓
+Frequency ↓  →  Wavelength ↑
+```
+
+**Frequency = How many waves per second**
+
+**Wavelength = Distance of one wave**
+
+
