@@ -517,4 +517,70 @@ Frequency ↓  →  Wavelength ↑
 
 **Wavelength = Distance of one wave**
 
+<img width="1051" height="529" alt="image" src="https://github.com/user-attachments/assets/62eecdef-09d5-4ea7-beb2-6f9933793cb0" />
+<img width="683" height="372" alt="image" src="https://github.com/user-attachments/assets/dca0a5fe-8581-49f4-a822-ac83ac6d8073" />
+<img width="1104" height="562" alt="image" src="https://github.com/user-attachments/assets/c9ff8376-cd0a-4d23-865a-6aa8e1c86a21" />
+# Radio Wave Transmission
+
+**Radio wave transmission** is a wireless communication method that uses **radio-frequency electromagnetic waves** to transmit data through air or space.
+
+## Key Features
+
+| Feature            | Description                                           |
+| ------------------ | ----------------------------------------------------- |
+| **Medium**         | Air / free space                                      |
+| **Signal**         | Electromagnetic wave                                  |
+| **Frequency**      | Generally **3 kHz – 300 GHz** radio-frequency range   |
+| **Direction**      | Can be **omnidirectional** or directional             |
+| **Cable Required** | No                                                    |
+| **Range**          | Short to very long, depending on frequency and system |
+
+## How It Works
+
+```text
+Transmitter
+     ↓
+Electrical Data
+     ↓
+Modulation
+     ↓
+Radio Waves
+     ↓
+Air / Free Space
+     ↓
+Antenna
+     ↓
+Receiver
+     ↓
+Original Data
+```
+
+## Applications
+
+* 📻 AM/FM radio
+* 📺 Television broadcasting
+* 📱 Mobile communication
+* 📡 Wireless networks
+* 🔵 Bluetooth
+* ✈️ Aircraft communication
+* 🚢 Marine communication
+
+## Advantages
+
+* No physical cable required
+* Supports mobility
+* Can cover large areas
+* Easy to deploy
+* Useful in remote locations
+
+## Disadvantages
+
+* Can suffer from interference
+* Security risks
+* Signals can be affected by obstacles
+* Performance depends on frequency and environment
+
+
+
+
 
