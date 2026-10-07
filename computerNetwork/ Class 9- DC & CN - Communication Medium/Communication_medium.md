@@ -385,5 +385,7 @@ Coating → Provides protection
 ```
 
 > **Optical Fiber = Non-metallic + Core + Cladding + Coating + Total Internal Reflection**
+<img width="1108" height="604" alt="image" src="https://github.com/user-attachments/assets/b4374746-f7f9-439d-a8f2-d34de96aa355" />
+
 
 
