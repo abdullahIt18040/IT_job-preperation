@@ -436,7 +436,7 @@ Data transmission occurs through **Total Internal Reflection (TIR)**.
 
 <img width="1107" height="521" alt="image" src="https://github.com/user-attachments/assets/0c08dae8-d208-4e31-808f-2c33f306593a" />
 
-# Wireless Transmission
+# Wireless Transmission( LESS IMPORTENT FOR EXAM ) 
 
 **Wireless transmission** is a method of transmitting data **without using physical cables**, by using **electromagnetic waves** through air or space.
 
@@ -591,4 +591,68 @@ Original Data
 
 > **Microwave = High-frequency + Directional + Line-of-Sight + High Speed**
 
+<img width="1164" height="601" alt="image" src="https://github.com/user-attachments/assets/25cf4efd-f54c-4f9f-b720-b4c95051a913" />
+# Infrared (IR) Transmission
 
+**Infrared (IR) transmission** is a wireless communication method that uses **infrared electromagnetic waves** to transmit data over a **short distance**.
+
+### Key Points
+
+* **Medium:** Air / free space
+* **Signal:** Infrared light
+* **Range:** Short distance
+* **Direction:** Mostly line-of-sight
+* **Cable Required:** No
+* **Cannot normally pass through walls**
+
+### Uses
+
+* TV remote controls
+* Wireless keyboards and mice
+* Short-range device communication
+* Sensors
+* Some medical and industrial devices
+
+
+> **Infrared = Short Distance + Line-of-Sight + Cannot Pass Through Walls**
+
+<img width="1162" height="528" alt="image" src="https://github.com/user-attachments/assets/396a453a-1fd9-426c-aa26-568f9155069c" />
+# Light Transmission in Wireless Communication
+
+**Light transmission** is a wireless communication method in which **light waves are used to transmit data through air or free space**.
+
+### How It Works
+
+```text
+Transmitter
+    ↓
+Electrical Data
+    ↓
+Light Signal
+    ↓
+Air / Free Space
+    ↓
+Light Receiver
+    ↓
+Original Data
+```
+
+### Examples
+* **Visible Light Communication (VLC)**
+* **Li-Fi**
+* Free-space optical communication
+
+### Key Features
+
+* Uses **light waves** instead of radio waves.
+* Usually requires **line-of-sight (LOS)**.
+* Provides high data transmission speed.
+* Does not use radio-frequency spectrum.
+* Light generally cannot pass through walls.
+
+
+
+> **Light Transmission = Wireless data communication using light waves through free space.**
+
+
+<img width="1175" height="251" alt="image" src="https://github.com/user-attachments/assets/8fd3eda2-1bcc-48d7-b793-16d13bf363d3" />
