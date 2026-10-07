@@ -360,4 +360,30 @@ Coaxial Cable
 
 
 
+<img width="999" height="593" alt="image" src="https://github.com/user-attachments/assets/2ed91cd3-2590-481c-8e11-de8905bf8d5d" />
+# Optical Fiber
+<img width="884" height="582" alt="image" src="https://github.com/user-attachments/assets/6804ebe5-0ea8-4f11-8e61-238f0e48956c" />
+
+**Optical fiber** is a **non-metallic guided transmission medium** that transmits data in the form of **light signals**.
+
+It consists of **three main parts**:
+
+1. **Core** – The innermost part through which light travels.
+2. **Cladding** – Surrounds the core and keeps light inside the core through **total internal reflection**.
+3. **Coating** – The outer protective layer that protects the fiber from physical damage.
+
+### Working Principle
+
+Data is transmitted through the fiber using **light pulses**. The light travels through the core by **Total Internal Reflection (TIR)**.
+
+```text
+Core → Light travels
+   ↓
+Cladding → Keeps light inside
+   ↓
+Coating → Provides protection
+```
+
+> **Optical Fiber = Non-metallic + Core + Cladding + Coating + Total Internal Reflection**
+
 
