@@ -288,14 +288,76 @@ The **Transmit (TX)** and **Receive (RX)** pairs are crossed.
 | 7   | White/Brown  | White/Brown  |
 | 8   | Brown        | Brown        |
 
-### Easy Remember
+<img width="922" height="539" alt="image" src="https://github.com/user-attachments/assets/6bf0ceb2-63e3-4b76-8e74-c265d2d37736" />
+##  Coaxial cable 
+<img width="1086" height="606" alt="image" src="https://github.com/user-attachments/assets/37b918d9-f5f9-4417-8d96-73b0ff59de1d" />
+# Coaxial Cable
+
+**Coaxial Cable** is a **guided transmission medium** that carries electrical signals through a central copper conductor.
+
+## Structure
 
 ```text
-Straight-Through → Same standard → A-A or B-B
-
-Crossover       → Different standard → A-B
+Central Copper Conductor
+        ↓
+   Insulation
+        ↓
+  Metallic Shield
+        ↓
+  Outer Jacket
 ```
 
-> **Important:** Modern Ethernet devices commonly support **Auto-MDI/MDIX**, so many modern devices can automatically detect and correct TX/RX pairs. Therefore, crossover cables are much less necessary today.
+## Features
+
+* Uses a central **copper conductor**
+* Has **metallic shielding**
+* Provides good **EMI/noise protection**
+* Carries electrical signals
+* More durable than UTP
+* Used for high-frequency signals
+
+## Coverage
+
+* Depends on the application and cable type
+* Legacy **10Base5 Ethernet:** up to **500 meters per segment**
+
+## Connectors
+
+* **BNC** → Common in older networking/CCTV
+* **F-Type** → TV/Cable TV
+* **N-Type** → Antenna/RF applications
+
+## Advantages
+
+* Good protection against EMI
+* Longer transmission distance than basic twisted-pair systems
+* Reliable for high-frequency signals
+* Durable
+
+## Disadvantages
+
+* Thicker and less flexible
+* More difficult to install
+* More expensive than UTP
+* Less commonly used for modern LANs
+
+## Common Uses
+
+```text
+Coaxial Cable
+├── Cable TV
+├── CCTV
+├── Broadband
+├── Antenna
+└── Legacy Ethernet
+```
+
+### 🧠 Easy Remember
+
+> **Coaxial = Copper Core + Insulation + Metal Shield**
+
+> **BNC → Coaxial → Older Ethernet/CCTV**
+
+
 
 
