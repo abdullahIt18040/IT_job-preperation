@@ -37,8 +37,9 @@ IPv6 → 128-bit → ~3.4 × 10³⁸ addresses
 a) class A , First octed 1st one bit 0 fixed.
 b) class B , First octed 1st two bits 1 0 fixed.
 b) class C , First octed 1st three bits  1 1 0 fixed.
-
+class A 1st and last network address not used .
 ```
-<img width="1153" height="580" alt="image" src="https://github.com/user-attachments/assets/07d133d7-5a64-4eef-8e77-abfbab6bf889" />
+<img width="1148" height="602" alt="image" src="https://github.com/user-attachments/assets/ee0cf96a-6f16-47cd-a000-1a878ac52a54" />
+
 
 
