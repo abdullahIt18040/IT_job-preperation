@@ -1160,3 +1160,6 @@ PC ── PC ── Bridge ── PC ── PC
 ### Easy Way to Remember
 
 > **Bridge → Layer 2 → MAC Address → Connects LAN Segments**
+<img width="797" height="303" alt="image" src="https://github.com/user-attachments/assets/7745d0a9-a0d3-49b3-bbf4-495df40d15f1" />
+<img width="713" height="226" alt="image" src="https://github.com/user-attachments/assets/2513a6f6-a0be-4aea-b32d-f3f7a31b0755" />
+
