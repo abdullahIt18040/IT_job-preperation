@@ -30,11 +30,12 @@ IPv6 → 128-bit → ~3.4 × 10³⁸ addresses
 <img width="1035" height="402" alt="image" src="https://github.com/user-attachments/assets/d3a0de7c-1b4c-4c2f-9f95-6903fd90c7fb" />
 
 <img width="644" height="400" alt="image" src="https://github.com/user-attachments/assets/a88d32c0-63fc-4008-b550-db712a31750e" />
-## class Ipv4
+###  class Ipv4
 ```
 a) class A , First octed 1st one bit 0 fixed.
 b) class B , First octed 1st two bits 1 0 fixed.
 b) class C , First octed 1st three bits  1 1 0 fixed.
+
 ```
 <img width="1153" height="580" alt="image" src="https://github.com/user-attachments/assets/07d133d7-5a64-4eef-8e77-abfbab6bf889" />
 
