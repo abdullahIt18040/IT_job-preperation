@@ -47,10 +47,12 @@ class A 1st and last network address not used .
 
 <img width="1074" height="607" alt="image" src="https://github.com/user-attachments/assets/636dc66b-a31a-48ae-bd4c-36ba2926c1a8" />
 <img width="623" height="463" alt="image" src="https://github.com/user-attachments/assets/15063073-02c3-4957-a1d4-a8519a4953f6" />
+
 ``` text
 
-# For Calss A : 0 and 127 bits are reserved
+# For Calss A : 0 and 127 bits are reserved. 
 
 ```
+
 <img width="1175" height="615" alt="image" src="https://github.com/user-attachments/assets/0b89f118-aeee-4ab8-b7d8-5e941fc9c312" />
 
