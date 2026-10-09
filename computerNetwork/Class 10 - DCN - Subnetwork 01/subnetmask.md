@@ -58,3 +58,6 @@ class A 1st and last network address not used .
 <img width="1147" height="463" alt="image" src="https://github.com/user-attachments/assets/770b4b2c-2477-4287-a3a9-582c7d99e392" />
 <img width="663" height="323" alt="image" src="https://github.com/user-attachments/assets/fbfab1f3-e9c2-4a64-8fbe-c530c1b951d1" />
 
+<img width="1005" height="278" alt="image" src="https://github.com/user-attachments/assets/544b433b-ea5c-405b-bc93-a4afad3f26bf" />
+<img width="964" height="409" alt="image" src="https://github.com/user-attachments/assets/6872dbdb-0d88-4535-9456-cb019203f5f9" />
+
