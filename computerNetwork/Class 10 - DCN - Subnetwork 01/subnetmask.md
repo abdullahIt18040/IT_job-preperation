@@ -30,9 +30,11 @@ IPv6 → 128-bit → ~3.4 × 10³⁸ addresses
 <img width="1035" height="402" alt="image" src="https://github.com/user-attachments/assets/d3a0de7c-1b4c-4c2f-9f95-6903fd90c7fb" />
 
 <img width="644" height="400" alt="image" src="https://github.com/user-attachments/assets/a88d32c0-63fc-4008-b550-db712a31750e" />
-``` text
+
+
 ###  Class Ipv4
-```
+
+
  
 ```text
 a) class A , First octed 1st one bit 0 fixed.
@@ -45,6 +47,10 @@ class A 1st and last network address not used .
 
 <img width="1074" height="607" alt="image" src="https://github.com/user-attachments/assets/636dc66b-a31a-48ae-bd4c-36ba2926c1a8" />
 <img width="623" height="463" alt="image" src="https://github.com/user-attachments/assets/15063073-02c3-4957-a1d4-a8519a4953f6" />
-# For Calss A : 0 and 127 bits are reserved   
+``` text
+
+# For Calss A : 0 and 127 bits are reserved
+
+```
 <img width="1175" height="615" alt="image" src="https://github.com/user-attachments/assets/0b89f118-aeee-4ab8-b7d8-5e941fc9c312" />
 
