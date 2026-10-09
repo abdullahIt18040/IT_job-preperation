@@ -60,4 +60,11 @@ class A 1st and last network address not used .
 
 <img width="1005" height="278" alt="image" src="https://github.com/user-attachments/assets/544b433b-ea5c-405b-bc93-a4afad3f26bf" />
 <img width="964" height="409" alt="image" src="https://github.com/user-attachments/assets/6872dbdb-0d88-4535-9456-cb019203f5f9" />
+<img width="1147" height="562" alt="image" src="https://github.com/user-attachments/assets/b3f4c3c7-60de-4126-98d4-9e73e3e4a5d0" />
 
+```text
+network id start always 0,it is fixed
+```
+<img width="1149" height="498" alt="image" src="https://github.com/user-attachments/assets/a94ff320-d958-4f48-86ce-59d075d103f8" />
+
+<img width="1149" height="498" alt="image" src="https://github.com/user-attachments/assets/1736df09-6ac4-42a8-bba5-284202336c45" />
