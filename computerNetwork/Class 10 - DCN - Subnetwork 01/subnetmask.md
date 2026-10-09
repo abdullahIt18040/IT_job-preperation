@@ -50,7 +50,7 @@ class A 1st and last network address not used .
 
 ``` text
 
-# For Calss A : 0 and 127 bits are reserved. 
+# For = class  A : 0 and 127 bits are reserved. network   2^n - 2 ;
 
 ```
 
