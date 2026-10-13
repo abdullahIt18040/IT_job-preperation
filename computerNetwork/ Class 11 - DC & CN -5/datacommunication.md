@@ -202,15 +202,98 @@ select best one which is optimal among goupe of receiver
 ### Types of Transmission Impairment
 
 1. **Attenuation:** The signal loses strength as it travels over a distance.
-   - Example: A weak Wi-Fi signal far from the router.
 
-2. **Distortion:** The signal changes its shape or form during transmission.
+<img width="820" height="550" alt="image" src="https://github.com/user-attachments/assets/5c7081c1-f5f6-46c3-8edc-c1e915543d69" />
+
+- **Cause:** Long transmission distance.
+- **Example:** A weak Wi-Fi signal far from the router.
+- **Recovery:**
+  - **Amplifier:** Increases the strength of an analog signal.
+  - **Repeater:** Regenerates and retransmits a weakened digital signal.
+
+**Remember:** Attenuation = Loss of signal strength.
+
+3. **Distortion:** The signal changes its shape or form during transmission.
+
+<img width="980" height="515" alt="image" src="https://github.com/user-attachments/assets/83aaf9c1-a5dd-4316-aafb-ae068244427a" />
+
+
+- **Cause:** Different parts of a signal travel at different speeds or experience different delays.
+- **Example:** A distorted voice during a phone call.
+- **Recovery:** Use equalizers or appropriate communication equipment ( like if we are used copper then we should used pure copper) to reduce distortion.
+
    - Example: A distorted audio signal during a call.
 
-3. **Noise:** Unwanted signals interfere with the original signal.
+5. **Noise:** Unwanted signals interfere with the original signal.
+
+<img width="1107" height="568" alt="image" src="https://github.com/user-attachments/assets/1a683f43-7e43-48d4-b7a5-4e93d836f50d" />
+
+### Noise
+
+**Definition:** Noise is an unwanted signal that interferes with the original signal during transmission.
+
+- **Cause:** Electrical interference or electromagnetic interference.
+
+- - Electrical Interference (বৈদ্যুতিক বিঘ্ন): বৈদ্যুতিক যন্ত্র বা তার থেকে উৎপন্ন অবাঞ্ছিত সিগন্যাল মূল ডেটা সিগন্যালকে বাধাগ্রস্ত করে।
+উদাহরণ: মোটর বা বৈদ্যুতিক যন্ত্রের কারণে ডেটা সিগন্যালে সমস্যা হওয়া।
+- Electromagnetic Interference (তড়িৎচুম্বকীয় বিঘ্ন): বাইরের তড়িৎচুম্বকীয় ক্ষেত্রের কারণে মূল সিগন্যাল বাধাগ্রস্ত বা বিকৃত হওয়া।
+  Interference = বিঘ্ন বা বাধা।
+  
+- **Example:** Static sound during a phone call.
+- **Reduction:** Use shielding, filters, or error-correction techniques.
+
+**Remember:** Noise = Unwanted signal interference.
+
    - Example: Static noise during a phone call.
 
-**Remember:**
-- Attenuation = Loss of signal strength
-- Distortion = Change in signal shape
-- Noise = Unwanted signal interference
+
+
+## Noise
+
+**Definition:** Noise is an unwanted signal that interferes with the original signal during transmission.
+
+**বাংলা:** ডেটা ট্রান্সমিশনের সময় মূল সিগন্যালের সঙ্গে অনাকাঙ্ক্ষিত সিগন্যাল মিশে মূল সিগন্যালকে বাধাগ্রস্ত করলে তাকে **Noise** বলে।
+
+### Types of Noise
+
+1. **Thermal Noise (তাপীয় নয়েজ)**
+   - **Definition:** Caused by the random movement of electrons.
+   - **বাংলা:** ইলেকট্রনের অনিয়মিত চলাচলের কারণে সৃষ্টি হয়।
+   - **Example:** Background noise in electronic circuits.
+
+2. **Induced Noise (বাহ্যিক উৎসজনিত নয়েজ)**
+   - **Definition:** Caused by external electromagnetic sources.
+   - **বাংলা:** বাইরের বৈদ্যুতিক বা তড়িৎচুম্বকীয় উৎসের কারণে সৃষ্টি হয়।
+   - **Example:** Interference caused by an electric motor.
+
+3. **Crosstalk (পারস্পরিক সিগন্যাল বিঘ্ন)**
+   - **Definition:** Occurs when a signal from one communication channel interferes with another.
+   - **বাংলা:** একটি যোগাযোগ চ্যানেলের সিগন্যাল অন্য চ্যানেলের সিগন্যালকে বাধাগ্রস্ত করলে তাকে Crosstalk বলে।
+   - **Example:** One telephone line's signal interfering with another line.
+
+4. **Impulse Noise (আকস্মিক নয়েজ)**
+   - **Definition:** Sudden, high-intensity noise caused by events such as lightning or electrical switching.
+   - **বাংলা:** বজ্রপাত বা বৈদ্যুতিক সুইচিংয়ের মতো ঘটনার কারণে হঠাৎ তীব্র নয়েজ সৃষ্টি হয়।
+   - **Example:** A sudden burst of noise during a phone call.
+
+### Example of Noise
+Static sound or unwanted disturbance during a phone call.
+
+**বাংলা:** ফোনে কথা বলার সময় খসখসে বা অপ্রয়োজনীয় শব্দ শোনা।
+
+### Noise Reduction Techniques
+- **Shielding:** Protects cables from external interference. (বাইরের বিঘ্ন থেকে তারকে সুরক্ষিত রাখে।)
+- **Filters:** Reduce unwanted signal components. (অপ্রয়োজনীয় সিগন্যাল কমায়।)
+- **Error Correction:** Detects and corrects certain transmission errors. (ডেটা ট্রান্সমিশনের কিছু ত্রুটি শনাক্ত ও সংশোধন করে।)
+
+### Remember for Job Exams
+- **Thermal** = Random movement of electrons
+- **Induced** = External electromagnetic source
+- **Crosstalk** = One channel interferes with another
+- **Impulse** = Sudden, high-intensity noise
+
+**বাংলায় মনে রাখার কৌশল:**
+- Thermal = ইলেকট্রনের অনিয়মিত চলাচল
+- Induced = বাইরের উৎস
+- Crosstalk = এক লাইনের সিগন্যাল অন্য লাইনে বিঘ্ন ঘটায়
+- Impulse = হঠাৎ তীব্র নয়েজ
