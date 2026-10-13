@@ -35,11 +35,15 @@ Data transmission is divided into two types:
 - **Diagram:** `A ───→ B`
 
 ### 2. Half-Duplex
+<img width="1053" height="477" alt="image" src="https://github.com/user-attachments/assets/c19af2af-5525-47df-ab16-6e1c665fbbbc" />
+
 - Data flows in both directions, but one at a time.
 - Example: Walkie-talkie.
 - **Diagram:** `A ←──→ B` *(one at a time)*
 
 ### 3. Full-Duplex
+<img width="787" height="483" alt="image" src="https://github.com/user-attachments/assets/36208047-4031-4d7a-b925-50c907785c5f" />
+
 - Data flows in both directions simultaneously.
 - Example: Telephone call.
 - **Diagram:** `A ⇄ B` *(at the same time)*
@@ -55,3 +59,4 @@ Data transmission is divided into two types:
 - Simplex = One-way
 - Half-Duplex = Take turns
 - Full-Duplex = Both at once
+<img width="1109" height="579" alt="image" src="https://github.com/user-attachments/assets/29386da3-7bbd-40dc-995c-8c36eb954a1a" />
