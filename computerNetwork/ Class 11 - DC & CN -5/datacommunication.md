@@ -297,3 +297,29 @@ Static sound or unwanted disturbance during a phone call.
 - Induced = বাইরের উৎস
 - Crosstalk = এক লাইনের সিগন্যাল অন্য লাইনে বিঘ্ন ঘটায়
 - Impulse = হঠাৎ তীব্র নয়েজ
+
+## SNR (Signal-to-Noise Ratio)
+
+**Definition:** SNR is the ratio of signal power to noise power in a communication system.
+
+**বাংলা:** মূল সিগন্যালের শক্তি ও নয়েজের শক্তির অনুপাতকে SNR বলে।
+
+### Formula
+<img width="764" height="432" alt="image" src="https://github.com/user-attachments/assets/393aa8cb-40c4-45a6-bc99-2b5e79467e0b" />
+<img width="792" height="335" alt="image" src="https://github.com/user-attachments/assets/a322ec18-d574-4fb7-a4af-0f5d52a24d14" />
+
+
+### Key Points
+- **High SNR:** Better signal quality and less noise relative to the signal.
+- **Low SNR:** Poorer signal quality and more noise relative to the signal.
+- SNR is commonly expressed in **decibels (dB)**.
+
+### Remember for Job Exams
+- **SNR = Signal Power / Noise Power**
+- **Higher SNR = Better signal quality**
+- **Lower SNR = Poorer signal quality**
+<img width="919" height="436" alt="image" src="https://github.com/user-attachments/assets/88f02911-8d63-430f-844e-eda87e3fe160" />
+<img width="821" height="463" alt="image" src="https://github.com/user-attachments/assets/9669c839-683e-48a9-b4d7-9b84d296e672" />
+<img width="1002" height="594" alt="image" src="https://github.com/user-attachments/assets/156032d0-4735-48d2-98b1-a102f4d1fa85" />
+
+
