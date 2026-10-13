@@ -183,8 +183,12 @@ Based on delivery, data transmission is classified into four types:
 - **Example:** Streaming a live video to a subscribed group.
 
 ### 4. Anycast
+
 <img width="1195" height="527" alt="image" src="https://github.com/user-attachments/assets/47d5a12c-bd01-4f4d-95df-6186f934810c" />
+
+
 select best one which is optimal among goupe of receiver
+
 **Definition:** Data is sent from one sender to the nearest or best receiver among a group of receivers.
 - **Communication:** One-to-One from a Group
 - **Example:** DNS services using anycast to direct requests to an appropriate server.
