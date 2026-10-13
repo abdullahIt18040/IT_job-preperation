@@ -189,4 +189,5 @@ select best one which is optimal among goupe of receiver
 - **Communication:** One-to-One from a Group
 - **Example:** DNS services using anycast to direct requests to an appropriate server.
 
+<img width="1015" height="564" alt="image" src="https://github.com/user-attachments/assets/65be817d-31a4-49b2-9bbf-230c58db1137" />
 
