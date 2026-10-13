@@ -94,3 +94,42 @@ Data transmission is divided into two types:
 ```
 
 **Remember:** Serial = One bit at a time.
+## Types of Serial Transmission
+
+### 1. Asynchronous Transmission
+
+<img width="929" height="455" alt="image" src="https://github.com/user-attachments/assets/9224c802-6f44-4a58-9a84-bd09454f43b1" />
+<img width="746" height="305" alt="image" src="https://github.com/user-attachments/assets/e6846e6a-8f71-4ec6-9d6a-3939488cbdc9" />
+
+- Sends data one character at a time.
+- Uses start and stop bits.
+- Example: UART.
+
+### 2. Synchronous Transmission
+<img width="969" height="354" alt="image" src="https://github.com/user-attachments/assets/8698e007-9db6-411c-9224-d647f39ccc19" />
+<img width="735" height="211" alt="image" src="https://github.com/user-attachments/assets/6f86a2e2-63b9-45a9-876b-a5326b76f3a7" />
+
+- Sends data in blocks or frames.
+- Uses synchronized timing.
+- Example: SPI.
+
+**Memory Trick:**
+- Asynchronous = Start and Stop bits.
+- Synchronous = Synchronized timing.
+### Isochronous Transmission
+
+- **Definition:** Sends data at regular, fixed time intervals.
+- **Use:** Real-time audio and video.
+- **Example:** Video calling.
+
+**Diagram:**
+```text
+Data 1 ── Data 2 ── Data 3 ── Data 4
+        Equal Time Intervals
+```
+
+**Memory Trick:** Isochronous = Fixed time intervals.
+<img width="1022" height="225" alt="image" src="https://github.com/user-attachments/assets/0ba3f114-2f57-4766-b6da-b64d188bfe78" />
+
+<img width="863" height="450" alt="image" src="https://github.com/user-attachments/assets/28c1ec4d-61e8-4b98-8151-8badfdec5d0f" />
+
