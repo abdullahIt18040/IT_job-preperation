@@ -60,3 +60,37 @@ Data transmission is divided into two types:
 - Half-Duplex = Take turns
 - Full-Duplex = Both at once
 <img width="1109" height="579" alt="image" src="https://github.com/user-attachments/assets/29386da3-7bbd-40dc-995c-8c36eb954a1a" />
+## 2. Based on Transmission Method
+
+### 1. Serial Transmission
+- Sends **one bit at a time**.
+- Example: USB communication.
+- Diagram: `1 → 0 → 1 → 1`
+
+### 2. Parallel Transmission
+- Sends **multiple bits simultaneously** through multiple lines.
+- Example: Traditional parallel printer port.
+
+```text
+1 ─────→
+0 ─────→
+1 ─────→
+1 ─────→
+```
+
+**Memory Trick:**
+- Serial = One bit at a time.
+- Parallel = Multiple bits at a time.
+- 
+<img width="1111" height="569" alt="image" src="https://github.com/user-attachments/assets/85321c35-d69a-4b76-bd96-61dab4f0e87b" />
+### 1. Serial Transmission
+
+- **Definition:** Sends data one bit at a time.
+- **Example:** USB communication.
+- **Diagram:**
+
+```text
+1 → 0 → 1 → 1 → 0
+```
+
+**Remember:** Serial = One bit at a time.
