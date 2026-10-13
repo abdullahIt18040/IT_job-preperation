@@ -159,4 +159,34 @@ Sender                 Receiver
 - Less suitable for long distances due to signal timing and interference issues.
 
 **Remember:** Parallel Transmission = Multiple bits at the same time through multiple lines.
+<img width="1065" height="588" alt="image" src="https://github.com/user-attachments/assets/cb586ef3-33ee-492c-869e-7b05867e84a6" />
+## Data Transmission Based on Delivery
+
+Based on delivery, data transmission is classified into four types:
+
+### 1. Unicast
+**Definition:** Data is sent from one sender to one specific receiver.
+
+- **Communication:** One-to-One
+- **Example:** Sending an email to one person.
+
+### 2. Broadcast
+**Definition:** Data is sent from one sender to all devices in a network.
+
+- **Communication:** One-to-All
+- **Example:** An ARP request in a local IPv4 network.
+
+### 3. Multicast
+**Definition:** Data is sent from one sender to a specific group of receivers.
+
+- **Communication:** One-to-Selected Group
+- **Example:** Streaming a live video to a subscribed group.
+
+### 4. Anycast
+<img width="1195" height="527" alt="image" src="https://github.com/user-attachments/assets/47d5a12c-bd01-4f4d-95df-6186f934810c" />
+select best one which is optimal among goupe of receiver
+**Definition:** Data is sent from one sender to the nearest or best receiver among a group of receivers.
+- **Communication:** One-to-One from a Group
+- **Example:** DNS services using anycast to direct requests to an appropriate server.
+
 
