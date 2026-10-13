@@ -195,3 +195,22 @@ select best one which is optimal among goupe of receiver
 
 <img width="1015" height="564" alt="image" src="https://github.com/user-attachments/assets/65be817d-31a4-49b2-9bbf-230c58db1137" />
 
+## Transmission Impairment
+
+**Definition:** Transmission impairment is when   a signal becomes weaker or changes while traveling from sender to receiver.
+
+### Types of Transmission Impairment
+
+1. **Attenuation:** The signal loses strength as it travels over a distance.
+   - Example: A weak Wi-Fi signal far from the router.
+
+2. **Distortion:** The signal changes its shape or form during transmission.
+   - Example: A distorted audio signal during a call.
+
+3. **Noise:** Unwanted signals interfere with the original signal.
+   - Example: Static noise during a phone call.
+
+**Remember:**
+- Attenuation = Loss of signal strength
+- Distortion = Change in signal shape
+- Noise = Unwanted signal interference
