@@ -132,4 +132,31 @@ Data 1 ── Data 2 ── Data 3 ── Data 4
 <img width="1022" height="225" alt="image" src="https://github.com/user-attachments/assets/0ba3f114-2f57-4766-b6da-b64d188bfe78" />
 
 <img width="863" height="450" alt="image" src="https://github.com/user-attachments/assets/28c1ec4d-61e8-4b98-8151-8badfdec5d0f" />
+### Parallel Transmission
+<img width="1019" height="507" alt="image" src="https://github.com/user-attachments/assets/d5277250-54ba-4a7c-8a8e-56f878fb6948" />
+
+**Definition:** Parallel Transmission is a method of data transmission in which multiple bits are sent simultaneously from sender to receiver through multiple lines..
+
+- **Uses:** Short-distance data transmission.
+- **Example:** Traditional computer-to-printer communication using a parallel port.
+
+**Diagram:**
+
+```text
+Sender                 Receiver
+  Bit 1 ────────────────►
+  Bit 2 ────────────────►
+  Bit 3 ────────────────►
+  Bit 4 ────────────────►
+```
+
+**Advantages:**
+- Transfers multiple bits simultaneously.
+- Can provide high speed over short distances.
+
+**Disadvantages:**
+- Requires multiple communication lines.
+- Less suitable for long distances due to signal timing and interference issues.
+
+**Remember:** Parallel Transmission = Multiple bits at the same time through multiple lines.
 
