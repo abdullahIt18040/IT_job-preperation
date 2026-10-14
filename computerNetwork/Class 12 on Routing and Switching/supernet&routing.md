@@ -109,7 +109,7 @@ Router-গুলো Routing Information আদান-প্রদান কর�
 
 1. A router learns about its directly connected networks.
 2. It exchanges routing information with other routers using a routing protocol.
-3. It learns about remote networks.
+3. It learns about different route networks.
 4. It compares available routes using routing metrics and protocol rules.
 5. It selects the preferred route and updates its routing information.
 6. When a packet arrives, the router uses its routing table to forward the packet toward its destination.
@@ -143,8 +143,8 @@ Definition: Distance Vector Routing is a method where routers learn routes from 
 **Key Points:**
 
 - Shares routing information with neighboring routers.
-- RIP uses hop count as its metric.
-- Classic distance-vector routing uses the Bellman-Ford method.
+- RIP uses hop count as its metric.সহজ বাংলা ব্যাখ্যা: RIP গন্তব্যে পৌঁছাতে কতটি Router পার হতে হবে, তা গণনা করে পথ নির্বাচন করে। এই গণনাকে Hop Count বলে।
+-  distance-vector routing uses the Bellman-Ford method.
 - May experience slow convergence and routing loops.
 
 ### B. Link State Routing
