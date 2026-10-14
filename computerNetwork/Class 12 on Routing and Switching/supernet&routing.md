@@ -149,7 +149,7 @@ Definition: Distance Vector Routing is a method where routers learn routes from 
 
 ### B. Link State Routing
 
-**Definition:** In Link State Routing, routers build a map of the network topology and calculate the shortest paths using link-state information.
+**Definition:**Link State Routing is a method where routers create a map of the network and find the shortest path to the destination. using link-state information.
 
 **বাংলা ব্যাখ্যা:** Router-গুলো Network-এর Link ও Cost সম্পর্কে তথ্য সংগ্রহ করে Network Topology তৈরি করে এবং Shortest Path নির্ধারণ করে।
 
