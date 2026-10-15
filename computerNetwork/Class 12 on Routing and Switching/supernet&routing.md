@@ -488,57 +488,35 @@ IPv6 default route: `::/0`
 
 ---
 
-## 9. Advantages of Routing
+# 7. Distance Vector vs. Link State Routing
 
-- Enables communication between different networks.
-- Helps select suitable paths for data packets.
-- Dynamic routing can adapt to topology changes.
-- Supports large and complex networks.
-- Provides alternative paths when available and properly configured.
+## Definition
 
-## 10. Disadvantages of Routing
+**Distance Vector Routing:** Each router learns routes from its neighboring routers and selects a route based on distance.
 
-- Dynamic routing requires processing power and memory.
-- Routing protocols may consume network bandwidth.
-- Configuration errors can cause routing problems.
-- Large networks can be difficult to troubleshoot.
+**Link State Routing:** Each router builds a map of the network and uses it to find the shortest path.
 
----
+## Comparative Analysis
 
-## 11. Job Exam Quick Revision
+| Feature | Distance Vector Routing | Link State Routing |
+|---|---|---|
+| 1. Working Principle | Learns routes from neighboring routers. | Builds a map of the network. |
+| 2. Information Exchanged | Exchanges routing table information with neighbors. | Shares link-state information about network links. |
+| 3. Routing Algorithm | Bellman-Ford algorithm. | Dijkstra's algorithm. |
+| 4. Convergence Speed | Generally slow. | Generally fast. |
+| 5. Information Maintained | Maintains destination, distance, and next hop. | Maintains a network topology database and routing table. |
+| 6. Bandwidth Requirement | Periodic updates may consume bandwidth. | Link-state updates consume bandwidth when distributed. |
+| 7. CPU and Memory | Generally requires fewer resources. | Generally requires more CPU and memory. |
+| 8. Routing Problem | May suffer from the count-to-infinity problem. | Temporary routing loops may occur during network changes. |
+| 9. Advantages | Simple to configure and suitable for small networks. | Fast convergence and better knowledge of network topology. |
+| 10. Disadvantages | Slow convergence and possible routing loops. | More complex and requires more resources. |
+| 11. Examples | RIP | OSPF, IS-IS |
 
-| Question | Answer |
-|---|---|
-| What is routing? | Selecting a path for data packets. |
-| What is static routing? | Manually configured routing. |
-| What is dynamic routing? | Routing that learns routes using protocols. |
-| Which protocol uses Bellman-Ford? | RIP (classic distance-vector method). |
-| Which protocol uses Dijkstra's algorithm? | OSPF. |
-| Which protocol uses DUAL? | EIGRP. |
-| Which protocol is used between ASes? | BGP. |
-| What is a routing table? | A table containing routing information. |
-| What is a next hop? | The next router or gateway on the path. |
-| What is a routing metric? | A value used to compare routes. |
-| What is the IPv4 default route? | `0.0.0.0/0` |
-| What is the IPv6 default route? | `::/0` |
+## Conclusion
 
----
+Distance Vector Routing is simple and suitable for small networks, whereas Link State Routing provides faster convergence and is suitable for larger networks.
 
-## 12. Final Summary
 
-- **Routing:** Selecting the path.
-- **Forwarding:** Sending the packet to the next hop.
-- **Static Routing:** Routes are configured manually.
-- **Dynamic Routing:** Routes are learned using routing protocols.
-- **RIP:** Distance Vector.
-- **OSPF:** Link State.
-- **EIGRP:** Advanced Distance Vector.
-- **BGP:** Path Vector.
-- **Routing Table:** Stores route information.
-
-**One-line definition for exams:**
-
-Routing is the process of selecting an appropriate path for forwarding data packets from a source to a destination across a network.
 
 <img width="768" height="413" alt="image" src="https://github.com/user-attachments/assets/08406414-449b-4a91-803c-7eb549db7069" />
 
