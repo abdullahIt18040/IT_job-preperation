@@ -72,6 +72,9 @@ Routing is mainly divided into two types.
 
 ## 4. Important Routing Protocols
 
+<img width="892" height="472" alt="image" src="https://github.com/user-attachments/assets/782dd57e-02db-4312-8a38-94f7f87bcfaf" />
+
+
 # Routing Protocol in Computer Networks
 
 ## 1. What is a Routing Protocol?
@@ -183,6 +186,84 @@ Definition: Distance Vector Routing is a method where routers learn routes from 
 - Helps prevent AS-level routing loops through AS-PATH checks.
 
 ---
+
+# Unicast and Multicast Routing
+
+## 1. Unicast Routing
+
+**Definition:** Unicast Routing sends data from one sender to one receiver.
+
+**বাংলা ব্যাখ্যা:** একজন Sender থেকে একজন Receiver-এর কাছে ডেটা পাঠানোকে Unicast Routing বলে।
+
+**Example:**
+- Sending an email to one person.
+- Sending data to a specific computer.
+
+**Key Points:**
+- One-to-One communication.
+- Data is sent to a single receiver.
+- Uses a Unicast IP address.
+
+**Remember:** Unicast = One-to-One.
+
+---
+
+## 2. Multicast Routing
+
+**Definition:** Multicast Routing sends data from one sender to a specific group of receivers.
+
+**বাংলা ব্যাখ্যা:** একজন Sender থেকে নির্দিষ্ট একদল Receiver-এর কাছে ডেটা পাঠানোকে Multicast Routing বলে।
+
+**Example:**
+- Live video streaming to a specific group.
+- Online classes for a group of students.
+
+**Key Points:**
+- One-to-Many communication (specific group).
+- Data is delivered to group members.
+- Uses a Multicast IP address.
+- Helps reduce unnecessary duplicate data transmission.
+
+**Remember:** Multicast = One-to-Specific Group.
+
+---
+
+## 3. Unicast vs. Multicast Routing
+
+| Feature | Unicast | Multicast |
+|---|---|---|
+| Communication | One-to-One | One-to-Specific Group |
+| Sender | One | One |
+| Receiver | One | Multiple group members |
+| IP Address | Unicast IP | Multicast IP |
+| Example | Email to one person | Streaming to a group |
+
+---
+
+## 4. Bonus: Broadcast Routing
+
+**Definition:** Broadcast Routing sends data to all devices in a network where broadcast is supported.
+
+**বাংলা ব্যাখ্যা:** একটি নেটওয়ার্কের সব ডিভাইসের কাছে ডেটা পাঠানোকে Broadcast বলে।
+
+**Remember:** Broadcast = One-to-All.
+
+---
+
+## 5. Job Exam Quick Revision
+
+- **Unicast:** One-to-One
+- **Multicast:** One-to-Specific Group
+- **Broadcast:** One-to-All
+- **Unicast IP:** Identifies a single interface for unicast delivery.
+- **Multicast IPv4 Range:** `224.0.0.0` – `239.255.255.255`
+
+when send data from source router to distination router we are used follow two routing protocal .
+
+1. Distance routing (used bellman-ford algoritm) .
+   
+3. link- state routing (used Dijkstra algorithm) .
+   
 
 ## 4. Important Routing Protocols for Job Exams
 
