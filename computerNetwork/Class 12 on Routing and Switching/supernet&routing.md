@@ -196,6 +196,7 @@ Definition: Distance Vector Routing is a method where routers learn routes from 
 **বাংলা ব্যাখ্যা:** একজন Sender থেকে একজন Receiver-এর কাছে ডেটা পাঠানোকে Unicast Routing বলে।
 
 **Example:**
+
 - Sending an email to one person.
 - Sending data to a specific computer.
 
@@ -261,9 +262,63 @@ Definition: Distance Vector Routing is a method where routers learn routes from 
 when send data from source router to distination router we are used follow two routing protocal .
 
 1. Distance routing (used bellman-ford algoritm) .
+   <img width="831" height="374" alt="image" src="https://github.com/user-attachments/assets/f26f47ac-5f4d-469a-8d50-1e375c3dad0c" />
+  <img width="1066" height="622" alt="image" src="https://github.com/user-attachments/assets/0a979d87-437c-4fe3-8f05-3e89e30c3121" />
+
    
 3. link- state routing (used Dijkstra algorithm) .
    
+## 4. Important  Distance routing and  link- state routing   differmnece  for Job Exams
+# Count-to-Infinity Problem
+
+## 1. Definition
+
+**Definition:** Count-to-Infinity is a problem in Distance Vector Routing where routers keep increasing the distance to a destination that is no longer reachable.
+
+**বাংলা ব্যাখ্যা:** কোনো নেটওয়ার্ক নষ্ট হয়ে গেলে Router-গুলো ভুল তথ্যের কারণে গন্তব্যের দূরত্ব বারবার বাড়াতে থাকে। একে Count-to-Infinity Problem বলে।
+
+## 2. Example
+
+Suppose Router A, B, and C are connected:
+
+`A ---- B ---- C`
+
+- Network X is connected to Router A.
+- Network X becomes unreachable.
+- Router B and C mistakenly believe that the other router can still reach X.
+- So, they keep increasing the distance.
+
+Example:
+
+`2 → 3 → 4 → 5 → ... → Infinity`
+
+## 3. How to Resolve Count-to-Infinity
+
+### 1. Split Horizon
+A router does not send a route back to the router from which it learned that route.
+
+**বাংলা:** যে Router থেকে Route শিখেছে, তাকে সেই Route আবার জানায় না।
+
+### 2. Route Poisoning
+A router marks a failed route as unreachable by setting its metric to infinity.
+
+**বাংলা:** কোনো Route নষ্ট হলে তার Metric Infinity করে দেয়।
+
+### 3. Poison Reverse
+A router tells the neighbor that the route learned from it is unreachable through that neighbor by advertising an infinite metric.
+
+**বাংলা:** যে Router থেকে Route শিখেছে, তাকে Metric Infinity করে জানায় যে ওই পথে গন্তব্যে যাওয়া সম্ভব নয়।
+
+### 4. Triggered Updates
+A router sends an update immediately when a route changes.
+
+**বাংলা:** Route পরিবর্তন হলে সঙ্গে সঙ্গে Update পাঠায়।
+
+
+### 5. Maximum Hop Count
+RIP uses 16 as infinity. A destination with a hop count of 16 is considered unreachable.
+
+**বাংলা:** RIP-এ Hop Count 16 হলে গন্তব্য Unreachable ধরা হয়।
 
 ## 4. Important Routing Protocols for Job Exams
 
