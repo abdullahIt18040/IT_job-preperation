@@ -534,43 +534,7 @@ Each router builds a map of the network and uses it to find the shortest path.
 
 ---
 
-## Conclusion
 
-**English:** Distance Vector Routing is simple and suitable for small networks, whereas Link State Routing provides faster convergence and is suitable for larger networks.
-
-**বাংলা ব্যাখ্যা:** Distance Vector Routing সহজ এবং ছোট নেটওয়ার্কের জন্য উপযোগী। অন্যদিকে, Link State Routing সাধারণত দ্রুত Convergence করে এবং বড় নেটওয়ার্কের জন্য বেশি উপযোগী।
-
----
-
-## Important Terms
-
-**1. Convergence:** The time required for routers to update their routing information after a network change.
-
-বাংলা: নেটওয়ার্কে পরিবর্তন হলে Router-গুলোর Routing Information সঠিক হতে যে সময় লাগে।
-
-**2. Routing Loop:** Data keeps moving between routers without reaching its destination.
-
-বাংলা: ডেটা গন্তব্যে না পৌঁছে বারবার Router-গুলোর মধ্যে ঘুরতে থাকে।
-
-**3. Count-to-Infinity:** Routers keep increasing the distance to an unreachable destination because of incorrect routing information.
-
-বাংলা: ভুল Routing Information-এর কারণে Router-গুলো অচল গন্তব্যের Distance বারবার বাড়াতে থাকে।
-
-**4. Bandwidth:** The capacity of a network to transfer data over a period of time.
-
-বাংলা: নেটওয়ার্কের মাধ্যমে নির্দিষ্ট সময়ে ডেটা স্থানান্তরের ক্ষমতা।
-
----
-
-## Job Exam Quick Revision
-
-- **Distance Vector** = Neighbor + Bellman-Ford + RIP
-- **Link State** = Network Map + Dijkstra + OSPF
-- **Distance Vector** = Generally slower convergence
-- **Link State** = Generally faster convergence
-- **Distance Vector** = Count-to-Infinity Problem
-
-**মনে রাখার কৌশল:** Distance Vector প্রতিবেশীর কাছ থেকে Route শেখে, আর Link State নেটওয়ার্কের Map তৈরি করে Route বের করে।
 
 
 
