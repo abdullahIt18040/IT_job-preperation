@@ -273,8 +273,7 @@ when send data from source router to distination router we are used follow two r
 
 ## 1. Definition
 
-**Definition:** Count-to-Infinity is a problem in Distance Vector Routing where routers keep increasing the distance to a destination that is no longer reachable.
-
+**Definition:** When a network fails, routers keep increasing the distance to the destination because of incorrect routing information. This is called the Count-to-Infinity Problem.
 **বাংলা ব্যাখ্যা:** কোনো নেটওয়ার্ক নষ্ট হয়ে গেলে Router-গুলো ভুল তথ্যের কারণে গন্তব্যের দূরত্ব বারবার বাড়াতে থাকে। একে Count-to-Infinity Problem বলে।
 
 ## 2. Example
@@ -304,15 +303,7 @@ A router marks a failed route as unreachable by setting its metric to infinity.
 
 **বাংলা:** কোনো Route নষ্ট হলে তার Metric Infinity করে দেয়।
 
-### 3. Poison Reverse
-A router tells the neighbor that the route learned from it is unreachable through that neighbor by advertising an infinite metric.
 
-**বাংলা:** যে Router থেকে Route শিখেছে, তাকে Metric Infinity করে জানায় যে ওই পথে গন্তব্যে যাওয়া সম্ভব নয়।
-
-### 4. Triggered Updates
-A router sends an update immediately when a route changes.
-
-**বাংলা:** Route পরিবর্তন হলে সঙ্গে সঙ্গে Update পাঠায়।
 
 
 ### 5. Maximum Hop Count
