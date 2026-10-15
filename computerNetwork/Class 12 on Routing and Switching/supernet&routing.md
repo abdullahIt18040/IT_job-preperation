@@ -487,34 +487,90 @@ IPv6 default route: `::/0`
 | Examples: RIP, OSPF, BGP | Examples: IPv4, IPv6 |
 
 ---
-
 # 7. Distance Vector vs. Link State Routing
 
 ## Definition
 
-**Distance Vector Routing:** Each router learns routes from its neighboring routers and selects a route based on distance.
+**1. Distance Vector Routing:**
 
-**Link State Routing:** Each router builds a map of the network and uses it to find the shortest path.
+Each router learns routes from its neighboring routers and selects a route based on distance.
+
+**বাংলা ব্যাখ্যা:** প্রতিটি Router তার পাশের Router থেকে Route-এর তথ্য শেখে এবং দূরত্ব অনুযায়ী Route নির্বাচন করে।
+
+**2. Link State Routing:**
+
+Each router builds a map of the network and uses it to find the shortest path.
+
+**বাংলা ব্যাখ্যা:** প্রতিটি Router নেটওয়ার্কের একটি Map তৈরি করে এবং গন্তব্যে যাওয়ার সবচেয়ে ছোট পথ খুঁজে বের করে।
+
+---
 
 ## Comparative Analysis
 
 | Feature | Distance Vector Routing | Link State Routing |
 |---|---|---|
-| 1. Working Principle | Learns routes from neighboring routers. | Builds a map of the network. |
-| 2. Information Exchanged | Exchanges routing table information with neighbors. | Shares link-state information about network links. |
-| 3. Routing Algorithm | Bellman-Ford algorithm. | Dijkstra's algorithm. |
-| 4. Convergence Speed | Generally slow. | Generally fast. |
-| 5. Information Maintained | Maintains destination, distance, and next hop. | Maintains a network topology database and routing table. |
-| 6. Bandwidth Requirement | Periodic updates may consume bandwidth. | Link-state updates consume bandwidth when distributed. |
-| 7. CPU and Memory | Generally requires fewer resources. | Generally requires more CPU and memory. |
-| 8. Routing Problem | May suffer from the count-to-infinity problem. | Temporary routing loops may occur during network changes. |
-| 9. Advantages | Simple to configure and suitable for small networks. | Fast convergence and better knowledge of network topology. |
-| 10. Disadvantages | Slow convergence and possible routing loops. | More complex and requires more resources. |
-| 11. Examples | RIP | OSPF, IS-IS |
+| **1. Working Principle** | Learns routes from neighboring routers. | Builds a map of the network. |
+| **বাংলা ব্যাখ্যা** | পাশের Router থেকে Route শেখে। | নেটওয়ার্কের Map তৈরি করে। |
+| **2. Information Exchanged** | Exchanges routing table information with neighbors. | Shares link-state information about network links. |
+| **বাংলা ব্যাখ্যা** | Neighbor Router-দের সঙ্গে Routing Table-এর তথ্য আদান-প্রদান করে। | নেটওয়ার্কের Link-এর অবস্থা ও Cost-এর তথ্য ছড়িয়ে দেয়। |
+| **3. Routing Algorithm** | Bellman-Ford algorithm. | Dijkstra's algorithm. |
+| **বাংলা ব্যাখ্যা** | Bellman-Ford Algorithm ব্যবহার করে Route হিসাব করে। | Dijkstra Algorithm ব্যবহার করে Shortest Path বের করে। |
+| **4. Convergence Speed** | Generally slow. | Generally fast. |
+| **বাংলা ব্যাখ্যা** | নেটওয়ার্ক পরিবর্তনের পর সঠিক Route পেতে সাধারণত বেশি সময় লাগে। | সাধারণত দ্রুত নতুন Route নির্ধারণ করে। |
+| **5. Information Maintained** | Maintains destination, distance, and next hop. | Maintains a network topology database and routing table. |
+| **বাংলা ব্যাখ্যা** | গন্তব্য, দূরত্ব এবং পরবর্তী Router-এর তথ্য রাখে। | নেটওয়ার্কের Map-এর তথ্য ও Routing Table রাখে। |
+| **6. Bandwidth Requirement** | Periodic updates may consume bandwidth. | Link-state updates also consume bandwidth. |
+| **বাংলা ব্যাখ্যা** | নিয়মিত Update পাঠাতে Bandwidth লাগে। | Link-এর তথ্য ছড়িয়ে দিতেও Bandwidth লাগে। |
+| **7. CPU and Memory** | Generally requires fewer resources. | Generally requires more CPU and memory. |
+| **বাংলা ব্যাখ্যা** | সাধারণত কম CPU ও Memory লাগে। | সাধারণত বেশি CPU ও Memory লাগে। |
+| **8. Routing Problem** | May suffer from the count-to-infinity problem. | Temporary routing loops may occur during network changes. |
+| **বাংলা ব্যাখ্যা** | Count-to-Infinity সমস্যা হতে পারে, যেখানে ভুল তথ্যের কারণে Distance বাড়তে থাকে। | নেটওয়ার্ক পরিবর্তনের সময় সাময়িক Routing Loop হতে পারে। |
+| **9. Advantages** | Simple to configure and suitable for small networks. | Fast convergence and better knowledge of network topology. |
+| **বাংলা ব্যাখ্যা** | সহজে Configure করা যায় এবং ছোট নেটওয়ার্কের জন্য উপযোগী। | দ্রুত Route নির্ধারণ করে এবং নেটওয়ার্ক সম্পর্কে ভালো ধারণা রাখে। |
+| **10. Disadvantages** | Slow convergence and possible routing loops. | More complex and requires more resources. |
+| **বাংলা ব্যাখ্যা** | ধীরে Converge করতে পারে এবং Routing Loop হতে পারে। | Configure করা কঠিন এবং বেশি Resource লাগে। |
+| **11. Examples** | RIP | OSPF, IS-IS |
+| **বাংলা ব্যাখ্যা** | RIP হলো Distance Vector Protocol। | OSPF ও IS-IS হলো Link State Protocol। |
+
+---
 
 ## Conclusion
 
-Distance Vector Routing is simple and suitable for small networks, whereas Link State Routing provides faster convergence and is suitable for larger networks.
+**English:** Distance Vector Routing is simple and suitable for small networks, whereas Link State Routing provides faster convergence and is suitable for larger networks.
+
+**বাংলা ব্যাখ্যা:** Distance Vector Routing সহজ এবং ছোট নেটওয়ার্কের জন্য উপযোগী। অন্যদিকে, Link State Routing সাধারণত দ্রুত Convergence করে এবং বড় নেটওয়ার্কের জন্য বেশি উপযোগী।
+
+---
+
+## Important Terms
+
+**1. Convergence:** The time required for routers to update their routing information after a network change.
+
+বাংলা: নেটওয়ার্কে পরিবর্তন হলে Router-গুলোর Routing Information সঠিক হতে যে সময় লাগে।
+
+**2. Routing Loop:** Data keeps moving between routers without reaching its destination.
+
+বাংলা: ডেটা গন্তব্যে না পৌঁছে বারবার Router-গুলোর মধ্যে ঘুরতে থাকে।
+
+**3. Count-to-Infinity:** Routers keep increasing the distance to an unreachable destination because of incorrect routing information.
+
+বাংলা: ভুল Routing Information-এর কারণে Router-গুলো অচল গন্তব্যের Distance বারবার বাড়াতে থাকে।
+
+**4. Bandwidth:** The capacity of a network to transfer data over a period of time.
+
+বাংলা: নেটওয়ার্কের মাধ্যমে নির্দিষ্ট সময়ে ডেটা স্থানান্তরের ক্ষমতা।
+
+---
+
+## Job Exam Quick Revision
+
+- **Distance Vector** = Neighbor + Bellman-Ford + RIP
+- **Link State** = Network Map + Dijkstra + OSPF
+- **Distance Vector** = Generally slower convergence
+- **Link State** = Generally faster convergence
+- **Distance Vector** = Count-to-Infinity Problem
+
+**মনে রাখার কৌশল:** Distance Vector প্রতিবেশীর কাছ থেকে Route শেখে, আর Link State নেটওয়ার্কের Map তৈরি করে Route বের করে।
 
 
 
