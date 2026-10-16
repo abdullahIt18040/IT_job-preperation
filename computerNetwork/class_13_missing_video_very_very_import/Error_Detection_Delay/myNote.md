@@ -254,6 +254,9 @@ Compare
    ↓
 Error / No Error
 ```
+<img width="1046" height="168" alt="image" src="https://github.com/user-attachments/assets/878218d0-b89d-451f-9de4-df55d288dd66" />
+
+<img width="983" height="451" alt="image" src="https://github.com/user-attachments/assets/cf16da65-79a1-4f38-a39a-6b3d201b35ec" />
 
 ### Simple Example
 
