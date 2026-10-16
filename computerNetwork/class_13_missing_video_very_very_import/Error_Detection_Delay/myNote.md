@@ -326,4 +326,10 @@ CRC          → Polynomial division
 
 <img width="937" height="324" alt="image" src="https://github.com/user-attachments/assets/3fd814d6-0fae-4d1f-be08-a1a220443b64" />
 
+## CRC 
+<img width="970" height="635" alt="image" src="https://github.com/user-attachments/assets/5066e704-a61a-4740-b4a3-4081f666ea9e" />
+
+<img width="460" height="405" alt="image" src="https://github.com/user-attachments/assets/c3529f29-1efa-4792-acce-3dbc6f20141d" />
+
+<img width="1149" height="511" alt="image" src="https://github.com/user-attachments/assets/3f9423cd-4ae9-475e-ad18-8910fbde6344" />
 
