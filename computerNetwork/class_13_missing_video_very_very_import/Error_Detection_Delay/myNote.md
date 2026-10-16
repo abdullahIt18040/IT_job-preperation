@@ -291,6 +291,7 @@ Checksum differs  → Error detected
 
 <img width="416" height="639" alt="image" src="https://github.com/user-attachments/assets/d09d58b2-68c6-4218-8e12-e9490f6f1508" />
 
+<img width="999" height="133" alt="image" src="https://github.com/user-attachments/assets/97b11f6a-b278-4c3f-9355-94ec34cf0651" />
 
 ### Advantages
 
