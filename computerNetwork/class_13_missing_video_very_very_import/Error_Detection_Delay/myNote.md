@@ -329,7 +329,10 @@ CRC          → Polynomial division
 ## CRC 
 <img width="970" height="635" alt="image" src="https://github.com/user-attachments/assets/5066e704-a61a-4740-b4a3-4081f666ea9e" />
 
-<img width="460" height="405" alt="image" src="https://github.com/user-attachments/assets/c3529f29-1efa-4792-acce-3dbc6f20141d" />
+<img width="969" height="790" alt="image" src="https://github.com/user-attachments/assets/7c4428eb-1a00-4681-a60f-8f2a545b2016" />
 
 <img width="1149" height="511" alt="image" src="https://github.com/user-attachments/assets/3f9423cd-4ae9-475e-ad18-8910fbde6344" />
+
+if Divisor given polyomial then it convert binary 
+<img width="1132" height="610" alt="image" src="https://github.com/user-attachments/assets/cbe2d7b1-049a-45f4-8dce-3a136d38c0d8" />
 
