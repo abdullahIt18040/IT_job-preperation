@@ -34,6 +34,7 @@ There are mainly **three types of transmission errors**:
 A **single-bit error** occurs when **only one bit** of the transmitted data is changed.
 
 ### Example
+ <img width="736" height="322" alt="image" src="https://github.com/user-attachments/assets/280ee955-2dd1-478e-947c-cd3f1da2d319" />
 
 ```text
 Sent:     10110110
@@ -57,6 +58,7 @@ A **multiple-bit error** occurs when **more than one bit** is changed during tra
 The affected bits do not necessarily have to be consecutive.
 
 ### Example
+<img width="718" height="320" alt="image" src="https://github.com/user-attachments/assets/307549af-3c55-4b89-b393-6b541bacea4b" />
 
 ```text
 Sent:     10110110
@@ -115,6 +117,8 @@ Burst Error  → Consecutive bits
 Error-detection methods are techniques used to determine whether transmitted data contains an error.
 
 Common methods are:
+
+<img width="615" height="266" alt="image" src="https://github.com/user-attachments/assets/a947006f-eadb-472b-9f84-6ffe8b24ae00" />
 
 1. **Parity Check**
 2. **Checksum**
