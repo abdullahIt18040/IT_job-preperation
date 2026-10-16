@@ -149,7 +149,7 @@ The parity bit is used to make the number of `1`s either **even or odd**.
 
 #### Even Parity
 
-when data send the =  The total number of `1`s should be even. 
+when data send the =  The total number of `1`s should be even. (data+parity)
 if 
 The total number of `1`s is  **even**.then add 0 
 if 
@@ -190,9 +190,18 @@ The total number of `1`s should be **even**.then add 0
 
 #### Odd Parity
 
+#### Odd Parity
+
+when data send the =  The total number of `1`s should be Odd. (data+parity)
+if 
+The total number of `1`s is  **even**.then add 1 
+if 
+The total number of `1`s is  **odd **.then add 0
 The total number of `1`s should be **odd**.
 
 Example:
+<img width="405" height="350" alt="image" src="https://github.com/user-attachments/assets/3c85c2d9-9320-4d3d-bc09-d917184ab974" />
+
 
 ```text
 Data:        1011000
