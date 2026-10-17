@@ -423,4 +423,145 @@ Data Rate depends on:
 <img width="1504" height="526" alt="image" src="https://github.com/user-attachments/assets/de3bb7a3-c86b-4d24-98d6-9c37b7aa5bf6" />
 
 
+# Network Layer Performance
 
+## 1. Definition
+
+**English:** Network Layer Performance describes how efficiently packets are delivered from the source to the destination.
+
+**বাংলা:** সোর্স থেকে ডেস্টিনেশনে প্যাকেট পাঠানোর ক্ষেত্রে Network Layer কতটা দক্ষতার সঙ্গে কাজ করে, তাকে Network Layer Performance বলে।
+
+## 2. Main Factors of Network Performance
+
+### 1. Delay (বিলম্ব)
+
+**Definition:** Delay is the time required for a packet to travel from the source to the destination.
+
+**বাংলা:** একটি প্যাকেট সোর্স থেকে ডেস্টিনেশনে পৌঁছাতে যে সময় লাগে, তাকে Delay বলে।
+
+**Example:**
+- A packet takes 20 ms to reach the destination.
+- Therefore, the one-way delay is 20 ms.
+
+**বাংলা উদাহরণ:** একটি প্যাকেট গন্তব্যে পৌঁছাতে 20 মিলিসেকেন্ড সময় নিলে, তার One-way Delay হলো 20 ms।
+
+**Types of Delay:**
+
+1. **Transmission Delay:** Time required to put all packet bits onto the link.
+
+   বাংলা: প্যাকেটের সব বিট লিংকে পাঠাতে যে সময় লাগে।
+
+   **Formula:**
+
+   Transmission Delay = Packet Size (bits) / Data Rate (bps)
+
+   **Example:**
+
+   Packet size = 12,000 bits  
+   Data rate = 1,000,000 bps
+
+   Transmission Delay = 12,000 / 1,000,000 = **0.012 seconds = 12 ms**
+   
+   <img width="858" height="369" alt="image" src="https://github.com/user-attachments/assets/b836d496-cadc-46d6-9e40-7fee5b2c93b7" />
+
+
+
+
+2. # Propagation Delay
+
+## Definition
+**English:** Propagation delay is the time required for a signal to travel from sender to receiver.
+
+**বাংলা:** সিগন্যালকে প্রেরক থেকে গ্রাহকের কাছে পৌঁছাতে যে সময় লাগে, তাকে Propagation Delay বলে।
+
+## Formula
+<img width="797" height="588" alt="image" src="https://github.com/user-attachments/assets/76a5ecff-e2c6-4323-bf0b-035658f08fc6" />
+<img width="588" height="267" alt="image" src="https://github.com/user-attachments/assets/7347f191-4490-404a-a627-b12986584f4f" />
+<img width="967" height="609" alt="image" src="https://github.com/user-attachments/assets/2d464f32-721c-4da5-a87b-70a20a1992a2" />
+
+
+# Processing Delay
+
+## Definition
+**English:** Processing delay is the time a router takes to examine a packet and determine where to forward it.
+
+**বাংলা:** রাউটার একটি প্যাকেট পরীক্ষা করে কোথায় পাঠাবে তা নির্ধারণ করতে যে সময় নেয়, তাকে Processing Delay বলে।
+
+## Example
+A router takes **2 ms** to examine a packet and determine the next route.
+
+**Processing Delay = 2 ms**
+
+## Key Points
+- Depends on router processing speed and packet complexity.
+- Measured in milliseconds (ms).
+
+**Remember:** Processing Delay = Packet checking and decision-making time.
+
+ **Queuing Delay:** Time a packet waits in a router's queue.
+
+   বাংলা: রাউটারের কিউতে প্যাকেটকে অপেক্ষা করতে যে সময় লাগে।
+
+# Queuing Delay
+
+## Definition
+**English:** Queuing delay is the time a packet waits in a router's queue before being transmitted.
+
+**বাংলা:** রাউটার থেকে পাঠানোর আগে প্যাকেটকে কিউতে যে সময় অপেক্ষা করতে হয়, তাকে Queuing Delay বলে।
+
+## Example
+A packet waits **5 ms** in a router's queue.
+
+**Queuing Delay = 5 ms**
+
+## Key Points
+- Depends on network traffic and congestion.
+- More traffic → Higher queuing delay.
+- Measured in milliseconds (ms).
+
+**Remember:** Queuing Delay = Packet waiting time.
+
+
+
+**Total Delay:**
+
+Total Delay = Processing + Queuing + Transmission + Propagation Delay
+
+বাংলা: এই চার ধরনের বিলম্বের যোগফল হলো Total Delay।
+
+### 2. Throughput (ডেটা সরবরাহের হার)
+
+**Definition:** Throughput is the amount of data successfully delivered per second.
+
+**বাংলা:** প্রতি সেকেন্ডে সফলভাবে গন্তব্যে পৌঁছানো ডেটার পরিমাণকে Throughput বলে।
+
+**Example:** If a network successfully delivers 50 Mbps of data, its throughput is 50 Mbps.
+
+### 3. Packet Loss (প্যাকেট হারানো)
+
+**Definition:** Packet loss occurs when packets fail to reach their destination.
+
+**বাংলা:** কোনো প্যাকেট গন্তব্যে পৌঁছাতে ব্যর্থ হলে তাকে Packet Loss বলে।
+
+**Example:** If 1,000 packets are sent and 10 are lost:
+
+Packet Loss = (10 / 1,000) × 100 = **1%**
+
+### 4. Jitter (বিলম্বের তারতম্য)
+
+**Definition:** Jitter is the variation in packet delay.
+
+**বাংলা:** বিভিন্ন প্যাকেটের Delay-এর পার্থক্যকে Jitter বলে।
+
+**Example:** If packets arrive after 10 ms, 15 ms, and 25 ms, their delays vary, indicating jitter.
+
+### 5. Congestion (নেটওয়ার্কে অতিরিক্ত চাপ)
+
+**Definition:** Congestion occurs when network traffic exceeds the available network capacity.
+
+**বাংলা:** নেটওয়ার্কে ডেটা ট্রাফিক তার ধারণক্ষমতার চেয়ে বেশি হলে Congestion হয়।
+
+**Example:** Too many packets arrive at a router, causing a long queue and increased delay.
+
+
+<img width="1370" height="556" alt="image" src="https://github.com/user-attachments/assets/e401ecfa-3181-4ef5-a433-6a9006a93534" />
