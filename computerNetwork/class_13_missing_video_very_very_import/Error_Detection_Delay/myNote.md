@@ -407,5 +407,13 @@ Data Rate depends on:
 <img width="863" height="626" alt="image" src="https://github.com/user-attachments/assets/9dee9d47-f6c5-443d-ac10-d506ead08309" />
 
 
+<img width="871" height="230" alt="image" src="https://github.com/user-attachments/assets/294be282-43ab-49bd-93fb-6f37b5d79c48" />
+<img width="877" height="607" alt="image" src="https://github.com/user-attachments/assets/4771b641-532b-43b6-ad3d-dff0b4d4e8e2" />
+
+<img width="883" height="615" alt="image" src="https://github.com/user-attachments/assets/272453e3-a06e-4dda-a8b0-3555d007c9cd" />
+<img width="892" height="654" alt="image" src="https://github.com/user-attachments/assets/c231bc43-e76a-4c8d-abbe-a6221cec2c6f" />
+<img width="868" height="636" alt="image" src="https://github.com/user-attachments/assets/0955f800-eccb-4fdd-91fe-b3f92c4a947e" />
+
+
 
 
