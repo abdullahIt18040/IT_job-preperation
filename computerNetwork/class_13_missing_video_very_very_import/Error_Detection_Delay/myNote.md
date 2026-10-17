@@ -418,6 +418,7 @@ Data Rate depends on:
 <img width="856" height="183" alt="image" src="https://github.com/user-attachments/assets/87034be2-7535-4d0e-86ac-c051cd36d854" />
 
 <img width="885" height="428" alt="image" src="https://github.com/user-attachments/assets/d01b2657-6210-47a6-834f-33727ffad09e" />
+<img width="1504" height="526" alt="image" src="https://github.com/user-attachments/assets/de3bb7a3-c86b-4d24-98d6-9c37b7aa5bf6" />
 
 
 
