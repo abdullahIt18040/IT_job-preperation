@@ -368,7 +368,43 @@ If a network has a data rate limit of **100 Mbps**, it can transmit data at a ma
 
 ## Key Point for Job Exams
 Remember: **Data Rate = Number of bits transmitted per second.**
+# Factors Affecting Data Rate
 
+## Definition
+**Data Rate** is the number of bits transmitted over a network per second.
+
+**বাংলা:** প্রতি সেকেন্ডে যে পরিমাণ বিট ডেটা প্রেরণ করা হয়, তাকে Data Rate বলে।
+
+## Three Main Factors
+
+### 1. Available Bandwidth
+**English:** Higher bandwidth allows a higher data rate.
+
+**বাংলা:** ব্যান্ডউইথ বেশি হলে বেশি গতিতে ডেটা পাঠানো যায়।
+
+### 2. Signal Levels
+**English:** More signal levels can transmit more bits per signal.
+
+**বাংলা:** সিগন্যালের লেভেল বেশি হলে প্রতি সিগন্যালে বেশি বিট ডেটা পাঠানো যায়।
+
+### 3. Channel Quality
+**English:** Better channel quality reduces noise and errors, allowing a higher data rate.
+
+**বাংলা:** চ্যানেলের মান ভালো হলে নয়েজ ও ডেটা ট্রান্সমিশনের ভুল কম হয়, ফলে বেশি ডেটা পাঠানো যায়।
+
+## Key Point for Job Exams
+
+Data Rate depends on:
+
+1. Available Bandwidth
+2. Signal Levels
+3. Channel Quality
+
+**Channel Quality ** have two channel 1.noiseless channel and noisy channel .
+
+
+
+<img width="863" height="626" alt="image" src="https://github.com/user-attachments/assets/9dee9d47-f6c5-443d-ac10-d506ead08309" />
 
 
 
