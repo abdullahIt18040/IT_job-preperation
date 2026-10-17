@@ -409,11 +409,15 @@ Data Rate depends on:
 
 <img width="871" height="230" alt="image" src="https://github.com/user-attachments/assets/294be282-43ab-49bd-93fb-6f37b5d79c48" />
 <img width="877" height="607" alt="image" src="https://github.com/user-attachments/assets/4771b641-532b-43b6-ad3d-dff0b4d4e8e2" />
+<img width="1326" height="555" alt="image" src="https://github.com/user-attachments/assets/08422271-c004-49d5-aa69-4eaccacd3fe2" />
 
 <img width="883" height="615" alt="image" src="https://github.com/user-attachments/assets/272453e3-a06e-4dda-a8b0-3555d007c9cd" />
 <img width="892" height="654" alt="image" src="https://github.com/user-attachments/assets/c231bc43-e76a-4c8d-abbe-a6221cec2c6f" />
 <img width="868" height="636" alt="image" src="https://github.com/user-attachments/assets/0955f800-eccb-4fdd-91fe-b3f92c4a947e" />
+<img width="880" height="372" alt="image" src="https://github.com/user-attachments/assets/46d5bd71-bd5f-4a04-85d3-be55c0b2e096" />
+<img width="856" height="183" alt="image" src="https://github.com/user-attachments/assets/87034be2-7535-4d0e-86ac-c051cd36d854" />
 
+<img width="885" height="428" alt="image" src="https://github.com/user-attachments/assets/d01b2657-6210-47a6-834f-33727ffad09e" />
 
 
 
