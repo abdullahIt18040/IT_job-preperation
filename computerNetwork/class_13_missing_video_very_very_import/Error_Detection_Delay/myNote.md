@@ -402,10 +402,10 @@ Data Rate depends on:
 
 **Channel Quality ** have two channel 1.noiseless channel and noisy channel .
 
-<img width="930" height="512" alt="image" src="https://github.com/user-attachments/assets/0893efc5-4c26-42b5-b9a0-65d7b3f87a2c" />
 
 
 <img width="863" height="626" alt="image" src="https://github.com/user-attachments/assets/9dee9d47-f6c5-443d-ac10-d506ead08309" />
+<img width="930" height="512" alt="image" src="https://github.com/user-attachments/assets/0893efc5-4c26-42b5-b9a0-65d7b3f87a2c" />
 
 
 <img width="871" height="230" alt="image" src="https://github.com/user-attachments/assets/294be282-43ab-49bd-93fb-6f37b5d79c48" />
