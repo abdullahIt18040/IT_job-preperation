@@ -342,6 +342,33 @@ if Divisor given polyomial then it convert binary
 <img width="644" height="448" alt="image" src="https://github.com/user-attachments/assets/7e69f904-71b9-4cc5-b923-5d47b30d631b" />
 
 
+# Data Rate Limit
+
+## Definition
+**Data Rate Limit** is the maximum amount of data that can be transmitted over a network per second.
+
+## Explanation (Bangla)
+একটি নেটওয়ার্কের মাধ্যমে প্রতি সেকেন্ডে সর্বোচ্চ কত বিট ডেটা পাঠানো যায়, তাকে Data Rate Limit বলে।
+
+## Example
+If a network has a data rate limit of **100 Mbps**, it can transmit data at a maximum rate of 100 megabits per second under ideal conditions.
+
+## Units
+- bps — bits per second
+- Kbps — kilobits per second
+- Mbps — megabits per second
+- Gbps — gigabits per second
+
+## Important Note
+**Data Rate Limit vs. Rate Limiting**
+
+- **Data Rate Limit:** The maximum data transmission speed of a network connection.
+- **Rate Limiting:** the number of requests allowed within a specific time.
+- **Rate Limiting:** নির্দিষ্ট সময়ে কতগুলো request করা যাবে তার সীমা।
+
+## Key Point for Job Exams
+Remember: **Data Rate = Number of bits transmitted per second.**
+
 
 
 
