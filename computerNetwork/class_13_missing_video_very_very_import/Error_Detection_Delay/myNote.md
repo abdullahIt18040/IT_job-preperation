@@ -335,4 +335,14 @@ CRC          → Polynomial division
 
 if Divisor given polyomial then it convert binary 
 <img width="1132" height="610" alt="image" src="https://github.com/user-attachments/assets/cbe2d7b1-049a-45f4-8dce-3a136d38c0d8" />
+<img width="1432" height="608" alt="image" src="https://github.com/user-attachments/assets/e8d97907-6f84-4314-a18c-6a1313a58fc1" />
+<img width="1309" height="493" alt="image" src="https://github.com/user-attachments/assets/23c3d558-b99e-4c36-a025-2acf404ff4be" />
+<img width="828" height="402" alt="image" src="https://github.com/user-attachments/assets/e50c7998-244f-4748-b024-98379bfb57f7" />
+## receiver side
+<img width="644" height="448" alt="image" src="https://github.com/user-attachments/assets/7e69f904-71b9-4cc5-b923-5d47b30d631b" />
+
+
+
+
+
 
