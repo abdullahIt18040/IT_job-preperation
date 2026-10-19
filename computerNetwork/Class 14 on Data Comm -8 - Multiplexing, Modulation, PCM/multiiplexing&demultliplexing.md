@@ -127,4 +127,10 @@ Examples:
 
 **Demultiplexer (DEMUX):** Real-life example: মনে করো, একটি পানির পাইপ থেকে পানি চারটি পাইপের যেকোনো একটিতে পাঠানো হচ্ছে। কোন পাইপে পানি যাবে, তা একটি সুইচ দিয়ে নির্বাচন করা হয়। DEMUX-ও একইভাবে একটি Input-কে নির্দিষ্ট Output-এ পাঠায়।.
 
+<img width="976" height="570" alt="image" src="https://github.com/user-attachments/assets/d48eb977-43cf-4131-bd34-fbdd84d94376" />
+<img width="1073" height="589" alt="image" src="https://github.com/user-attachments/assets/82aa3bf1-d69b-4cc8-88dc-6661387ffcc9" />
+<img width="1058" height="540" alt="image" src="https://github.com/user-attachments/assets/d0565353-168e-472d-9ed6-b234e23f32f7" />
+
+<img width="1148" height="595" alt="image" src="https://github.com/user-attachments/assets/d9562b86-1c8a-4851-bba8-f0e29a0adee8" />
+
 
