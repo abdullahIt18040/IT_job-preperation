@@ -134,3 +134,65 @@ Examples:
 <img width="1148" height="595" alt="image" src="https://github.com/user-attachments/assets/d9562b86-1c8a-4851-bba8-f0e29a0adee8" />
 
 
+# Frequency Division Multiplexing (FDM)
+
+## 1. Definition
+
+**Frequency Division Multiplexing (FDM)** is a technique in which multiple signals are transmitted simultaneously through a single communication channel using different frequency bands.
+
+**বাংলা ব্যাখ্যা:** একটি Communication Channel-এ আলাদা আলাদা Frequency ব্যবহার করে একাধিক Signal একই সময়ে পাঠানোর পদ্ধতিকে FDM বলে।
+
+## 2. How Does FDM Work?
+
+1. Multiple input signals are collected.
+2. Each signal is assigned a different frequency band.
+3. All signals are transmitted simultaneously through the same communication channel.
+4. The receiver selects the required frequency to receive the desired signal.
+
+## 3. Example: Radio Broadcasting
+
+Suppose three radio stations use different frequencies:
+
+- Radio Station A → 90 MHz
+- Radio Station B → 95 MHz
+- Radio Station C → 100 MHz
+
+All three stations can broadcast at the same time using different frequencies.
+
+When we tune a radio to 95 MHz, we receive Radio Station B.
+
+**বাংলা ব্যাখ্যা:** প্রতিটি Radio Station আলাদা Frequency ব্যবহার করে। তাই তারা একই সময়ে সম্প্রচার করতে পারে। Radio-তে নির্দিষ্ট Frequency নির্বাচন করলে সেই Station-এর সম্প্রচার শোনা যায়।
+
+## 4. Diagram
+
+```text
+Signal A ──► 90 MHz ──┐
+Signal B ──► 95 MHz ──┼──► Multiplexer ──► Single Channel
+Signal C ──► 100 MHz ─┘
+
+                   Receiver
+                       │
+              Select required frequency
+                       │
+                 Desired Signal
+```
+
+## 5. Advantages
+
+- Multiple signals can be transmitted simultaneously.
+- Continuous transmission is possible.
+- Suitable for radio and television broadcasting.
+
+## 6. Disadvantages
+
+- Requires sufficient bandwidth.
+- Signals may interfere with each other if frequency bands are not properly separated.
+- Guard bands may be required to reduce interference.
+
+## 7. Applications
+
+- Radio broadcasting
+- Television broadcasting
+- Cable television
+- Communication systems
+
