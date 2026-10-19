@@ -125,58 +125,6 @@ Examples:
 
 **Multiplexer (MUX):** Imagine four CCTV cameras connected to a system that selects one camera's video to display on a single monitor.
 
-**Demultiplexer (DEMUX):** Imagine one input signal routed to a selected output line among several output lines.
+**Demultiplexer (DEMUX):** Real-life example: মনে করো, একটি পানির পাইপ থেকে পানি চারটি পাইপের যেকোনো একটিতে পাঠানো হচ্ছে। কোন পাইপে পানি যাবে, তা একটি সুইচ দিয়ে নির্বাচন করা হয়। DEMUX-ও একইভাবে একটি Input-কে নির্দিষ্ট Output-এ পাঠায়।.
 
-## 5. Important Exam Points
 
-- MUX stands for **Multiplexer**.
-- DEMUX stands for **Demultiplexer**.
-- MUX performs **many-to-one** data selection.
-- DEMUX performs **one-to-many** data distribution.
-- The number of selectable inputs or outputs is generally `2ⁿ`, where `n` is the number of select lines.
-- A 4-to-1 MUX requires 2 select lines.
-- A 1-to-4 DEMUX requires 2 select lines.
-
-### Quick Memory Trick
-
-**MUX:** Many → One
-
-**DEMUX:** One → Many
-
-## 6. MCQ Practice
-
-**Question 1:** Which device selects one input from multiple inputs and sends it to a single output?
-
-A. Decoder  
-B. Multiplexer  
-C. Encoder  
-D. Demultiplexer
-
-**Answer:** B. Multiplexer
-
-**Question 2:** How many select lines are required for an 8-to-1 MUX?
-
-A. 2  
-B. 3  
-C. 4  
-D. 8
-
-**Answer:** B. 3, because 2³ = 8.
-
-**Question 3:** Which device routes a single input to one of multiple outputs?
-
-A. Multiplexer  
-B. Encoder  
-C. Demultiplexer  
-D. Counter
-
-**Answer:** C. Demultiplexer
-
-**Question 4:** How many outputs can a 1-to-16 DEMUX select?
-
-A. 2  
-B. 4  
-C. 8  
-D. 16
-
-**Answer:** D. 16. It requires 4 select lines because 2⁴ = 16.
