@@ -203,4 +203,7 @@ Signal C ──► 100 MHz ─┘
 A Frequency Band is a range of frequencies used to transmit a signal.
 
 Example: 90 MHz to 100 MHz is a frequency band.
+## Demultiplexing in FDM work as Radio 
+<img width="695" height="561" alt="image" src="https://github.com/user-attachments/assets/0c827d9f-bf9b-4018-b654-340ffc68ad9c" />
+
 
