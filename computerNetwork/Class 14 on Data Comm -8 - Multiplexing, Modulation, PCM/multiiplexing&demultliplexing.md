@@ -205,5 +205,118 @@ A Frequency Band is a range of frequencies used to transmit a signal.
 Example: 90 MHz to 100 MHz is a frequency band.
 ## Demultiplexing in FDM work as Radio 
 <img width="695" height="561" alt="image" src="https://github.com/user-attachments/assets/0c827d9f-bf9b-4018-b654-340ffc68ad9c" />
+## WDM(wavelength division multiplexing)
+<img width="967" height="540" alt="image" src="https://github.com/user-attachments/assets/115ad0ff-341b-47ab-8868-629fdb5151e0" />
+
+1. What is Wavelength?
+
+Wavelength is the distance between two consecutive identical points of a wave, such as two consecutive crests or troughs.
+ Wavelength Formula
+
+λ = v / f
+
+Where:
+
+λ = Wavelength
+
+v = Wave speed
+
+f = Frequency
+<img width="1095" height="602" alt="image" src="https://github.com/user-attachments/assets/7d88fd1e-47cd-453f-bce2-2ae8c8b461ae" />
+# WDM (Wavelength Division Multiplexing)
+
+## 1. What is WDM?
+
+**WDM stands for Wavelength Division Multiplexing.**
+
+WDM is a multiplexing technique that allows multiple optical signals to travel simultaneously through a single optical fiber using different wavelengths of light.
+
+**বাংলায়:** WDM হলো এমন একটি প্রযুক্তি, যেখানে আলোর বিভিন্ন wavelength ব্যবহার করে একই optical fiber দিয়ে একসঙ্গে একাধিক signal পাঠানো হয়।
+
+## 2. How Does WDM Work?
+
+WDM works in four steps:
+
+1. **Input Signals:** Multiple data signals are received.
+2. **Multiplexer:** Each signal is converted into light with a different wavelength and combined.
+3. **Optical Fiber:** All combined signals travel through a single optical fiber.
+4. **Demultiplexer:** The receiver separates the signals according to their wavelengths.
+
+## 3. WDM Diagram
+
+```text
+Signal 1 ──(λ1)──┐
+Signal 2 ──(λ2)──┤
+Signal 3 ──(λ3)──┤
+                 ▼
+          ┌─────────────┐
+          │ Multiplexer │
+          └──────┬──────┘
+                 │
+                 ▼
+       Single Optical Fiber
+          (λ1 + λ2 + λ3)
+                 │
+                 ▼
+          ┌───────────────┐
+          │ Demultiplexer │
+          └───────┬───────┘
+                  │
+          ┌───────┼───────┐
+          ▼       ▼       ▼
+       Signal 1 Signal 2 Signal 3
+```
+
+Here, `λ` (Lambda) represents wavelength.
+
+## 4. Types of WDM
+
+### A. CWDM (Coarse Wavelength Division Multiplexing)
+
+- Uses wavelength channels with relatively wide spacing.
+- Supports fewer wavelength channels than typical DWDM systems.
+- Often used in metropolitan and access networks.
+- Generally less complex and less expensive.
+
+### B. DWDM (Dense Wavelength Division Multiplexing)
+
+- Uses closely spaced wavelength channels.
+- Supports many optical channels over a single fiber.
+- Suitable for high-capacity, long-distance communication.
+- Commonly used in telecom backbone networks.
+
+## 5. WDM vs FDM
+
+| Feature | FDM | WDM |
+|---|---|---|
+| Full form | Frequency Division Multiplexing | Wavelength Division Multiplexing |
+| Signal separation | Different frequencies | Different light wavelengths |
+| Medium | Radio, copper and other communication systems | Optical fiber |
+| Signal type | Commonly electrical/RF signals | Optical signals |
+| Application | Radio broadcasting | Fiber-optic communication |
+
+## 6. Advantages of WDM
+
+- Increases the capacity of optical fiber.
+- Transmits multiple signals simultaneously.
+- Makes efficient use of existing fiber infrastructure.
+- Supports high-speed data communication.
+- Can increase capacity without installing additional fibers.
+
+## 7. Disadvantages of WDM
+
+- Equipment can be expensive.
+- Requires precise optical components.
+- System design and maintenance can be complex.
+
+## 8. Real-Life Applications
+
+- High-speed internet networks
+- Telecommunications
+- Undersea fiber-optic cables
+- Data center interconnections
+- Long-distance communication networks
+
+
 
 
