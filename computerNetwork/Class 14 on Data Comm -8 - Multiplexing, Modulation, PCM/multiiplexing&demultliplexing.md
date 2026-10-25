@@ -196,3 +196,11 @@ Signal C ──► 100 MHz ─┘
 - Cable television
 - Communication systems
 
+<img width="956" height="576" alt="image" src="https://github.com/user-attachments/assets/f0c02d7e-e1e1-4a18-b9b8-f46b82545ded" />
+
+##  What is a Frequency Band?
+
+A Frequency Band is a range of frequencies used to transmit a signal.
+
+Example: 90 MHz to 100 MHz is a frequency band.
+
