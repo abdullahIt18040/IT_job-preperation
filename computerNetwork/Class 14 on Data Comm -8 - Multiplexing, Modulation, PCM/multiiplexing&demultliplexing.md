@@ -318,5 +318,119 @@ Here, `λ` (Lambda) represents wavelength.
 - Long-distance communication networks
 
 
+## Total channel capacity 
+<img width="811" height="528" alt="image" src="https://github.com/user-attachments/assets/4943b4b4-04df-4514-a65a-75c00bdc14c6" />
+<img width="1111" height="528" alt="image" src="https://github.com/user-attachments/assets/33b0d5aa-9233-4848-b612-75a2c9be6361" />
+<img width="1078" height="482" alt="image" src="https://github.com/user-attachments/assets/e2cd64fc-9171-4941-acc1-d0d281d239ac" />
+## TDM
+# Time Division Multiplexing (TDM)
+
+## 1. What is TDM?
+
+**TDM (Time Division Multiplexing)** is a technique in which multiple devices share a single communication channel by transmitting data at different time slots.
+
+**বাংলায়:** TDM হলো এমন একটি পদ্ধতি, যেখানে একাধিক ডিভাইস একটি Communication Channel ব্যবহার করে, কিন্তু প্রত্যেকে নির্দিষ্ট সময়ে ডেটা পাঠায়।
+
+**Example:** একটিমাত্র রাস্তা দিয়ে একাধিক গাড়ি পালাক্রমে চলার মতো।
+
+## 2. How Does TDM Work?
+
+Suppose three computers (A, B, and C) want to transmit data through a single communication channel.
+
+```text
+Computer A ──┐
+Computer B ──┼──> MUX ──> Shared Channel ──> DEMUX ──> Receivers
+Computer C ──┘
+```
+
+- **MUX (Multiplexer):** Combines data from multiple input devices.
+- **Shared Channel:** Carries data from different devices in assigned time slots.
+- **DEMUX (Demultiplexer):** Separates the received data and sends it to the correct destination.
+
+### Time Slot Allocation
+
+```text
+Time ──────────────────────────────────>
+
+|   A   |   B   |   C   |   A   |   B   |   C   |
+   T1      T2      T3      T4      T5      T6
+```
+
+Each device transmits data during its assigned time slot.
+
+## 3. What Is a Time Slot?
+
+A **Time Slot** is a small, specific portion of time allocated to a device for transmitting data.
+
+Example:
+
+| Time Slot | Device |
+|---|---|
+| T1 | Computer A |
+| T2 | Computer B |
+| T3 | Computer C |
+| T4 | Computer A |
+
+The process repeats continuously.
+
+## 4. Types of TDM
+
+### A. Synchronous TDM
+
+ <img width="974" height="513" alt="image" src="https://github.com/user-attachments/assets/114292fb-5800-4ecb-8ee7-5b83dd357df3" />
+ 
+<img width="1059" height="578" alt="image" src="https://github.com/user-attachments/assets/fb8bafbe-d559-420e-8ae8-2d1c95e9bd35" />
+
+- Each device gets a fixed time slot.
+- Time slots are assigned even if a device has no data to transmit.
+- Empty slots may waste bandwidth.
+- The receiver knows the slot allocation in advance.
+
+**Example:** A fixed schedule where A, B, and C transmit in turns.
+
+### B. Statistical TDM (Asynchronous TDM)
+<img width="1076" height="518" alt="image" src="https://github.com/user-attachments/assets/617fcf5b-2dca-454e-bebd-e6d2126d5812" />
+
+- Time slots are allocated dynamically to devices that have data to send.
+- Slots are not necessarily reserved for every device in every cycle.
+- Usually uses bandwidth more efficiently than synchronous TDM.
+- The transmitted data generally needs addressing or identification information.
+
+**Example:** Only A and C have data, so the system allocates slots to A and C instead of reserving an empty slot for B.
+
+## 5. Real-Life Applications of TDM
+
+- Digital telephone communication systems.
+- Digital data transmission systems.
+- GSM cellular networks, which use TDMA for sharing radio resources.
+- Multiplexing multiple digital data streams over a communication link.
+
+## 6. Difference Between TDM and FDM
+
+| Feature | TDM | FDM |
+|---|---|---|
+| Full Form | Time Division Multiplexing | Frequency Division Multiplexing |
+| Resource divided | Time | Frequency |
+| Transmission | Different time slots | Different frequency bands |
+| Example | Taking turns to speak | Speaking on separate frequency channels |
+
+## 7. Advantages of TDM
+
+- Allows multiple devices to share one communication channel.
+- Can improve channel utilization.
+- Avoids the need for a separate channel for every device.
+- Suitable for digital communication systems.
+
+## 8. Disadvantages of TDM
+
+- Requires accurate timing and synchronization.
+- Synchronous TDM can waste slots when devices have no data.
+- Delays may occur while a device waits for its assigned time slot.
+- Statistical TDM requires additional control information to identify data sources.
+
+
+
+
+
 
 
