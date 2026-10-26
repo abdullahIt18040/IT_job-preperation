@@ -566,7 +566,80 @@ A listener may focus on a language they understand. This is a simple analogy for
 
 <img width="1140" height="441" alt="image" src="https://github.com/user-attachments/assets/6329a24c-bab1-486e-abd8-35aa1dbefdc8" />
 
+<img width="1137" height="661" alt="image" src="https://github.com/user-attachments/assets/4f437e18-0cf5-4971-a526-ccf43dc9bb56" />
+<img width="1151" height="509" alt="image" src="https://github.com/user-attachments/assets/91e7dcae-8e43-4406-9a84-3204e6d4ba29" />
+
+
+### MOdulation 
+# Modulation and Demodulation
+
+## 1. Modulation
+<img width="1142" height="592" alt="image" src="https://github.com/user-attachments/assets/0ce99780-2b35-4db8-b5d9-13ab7e6aff5c" />
+
+
+**Modulation** is the process of combining information with a carrier signal to make it suitable for long-distance transmission.
+
+
+## 2. Demodulation
+
+**Demodulation** is the process of recovering the original information from a received modulated signal.
+<img width="859" height="548" alt="image" src="https://github.com/user-attachments/assets/c37b326a-5e2b-405a-bca4-d9434a7d8257" />
+
+**Example:** A radio receiver uses demodulation to recover audio from a radio signal.
+
+## 3. Modulation vs. Demodulation
+<img width="1056" height="539" alt="image" src="https://github.com/user-attachments/assets/670efeef-bff7-495a-a6ec-3e7ae5be4192" />
+
+| Modulation | Demodulation |
+|---|---|
+| Done at the transmitter | Done at the receiver |
+| Prepares information for transmission | Recovers the original information |
+| Uses a modulator | Uses a demodulator |
+
+## 4. Communication System Diagram
+
+```text
+Message Signal
+      |
+      v
+  Modulation
+      |
+      v
+Communication Channel
+      |
+      v
+ Demodulation
+      |
+      v
+Original Message
+```
+
+## 5. Real-Life Example
+
+**Radio Communication:**
+1. A radio station uses modulation to transmit audio information.
+2. The radio signal travels through the air.
+3. A radio receiver uses demodulation to recover the audio.
+
+## 6. Important Points
+
+- Modulation is performed at the transmitter.
+- Demodulation is performed at the receiver.
+- AM changes amplitude.
+- FM changes frequency.
+- PM changes phase.
+
+
+### Types of Modulation
+<img width="1173" height="650" alt="image" src="https://github.com/user-attachments/assets/74eab77b-f5c4-4b8f-b3ae-2b4589c32304" />
+
+- **AM (Amplitude Modulation):** Changes the amplitude of the carrier signal.
+- **FM (Frequency Modulation):** Changes the frequency of the carrier signal.
+- **PM (Phase Modulation):** Changes the phase of the carrier signal.
+
+
+<img width="831" height="515" alt="image" src="https://github.com/user-attachments/assets/b61e05da-687b-4834-bcf7-be5842866a18" />
+
+
 ![Uploading image.png…]()
-
-
 
