@@ -431,6 +431,142 @@ The process repeats continuously.
 
 
 
+# CDM and CDMA (Code Division Multiplexing)
+
+## 1. What is CDM?
+
+**CDM (Code Division Multiplexing)** is a technique in which multiple signals share the same communication channel using different codes to distinguish them.
+
+**বাংলায়:** CDM হলো এমন একটি পদ্ধতি, যেখানে একাধিক সিগন্যাল একই Communication Channel ব্যবহার করে, কিন্তু প্রতিটি সিগন্যালকে আলাদা করার জন্য ভিন্ন কোড ব্যবহার করা হয়।
+
+### Example
+
+Imagine three users transmitting data simultaneously:
+
+- User A uses Code A.
+- User B uses Code B.
+- User C uses Code C.
+
+The receiver uses the appropriate code to recover the desired user's data.
+
+## 2. How Does CDM Work?
+
+```text
+     User A (Code A) ──┐
+                       │
+     User B (Code B) ──┼──> Combiner
+                       │        |
+     User C (Code C) ──┘        v
+                         Shared Communication
+                                Channel
+                                  |
+                                  v
+                              Receiver
+                                  |
+                         Code-based Detection
+                                  |
+                         Recover Desired Data
+```
+
+### Working Steps
+
+1. Each user is assigned a unique code.
+2. Each user's data is encoded using its assigned code.
+3. Multiple encoded signals are transmitted over the same channel, potentially at the same time.
+4. The receiver uses the appropriate code to recover the desired signal.
+
+**Important:** The codes must have suitable correlation properties so that the receiver can distinguish the signals reliably.
+
+## 3. What is CDMA?
+
+**CDMA (Code Division Multiple Access)** is a multiple-access technology that allows multiple users to communicate over the same frequency band at the same time using different codes.
+
+**বাংলায়:** CDMA হলো এমন একটি প্রযুক্তি, যেখানে একাধিক ব্যবহারকারী একই সময়ে একই Frequency Band ব্যবহার করে যোগাযোগ করতে পারে। প্রত্যেক ব্যবহারকারীর সিগন্যাল আলাদা করার জন্য ভিন্ন কোড ব্যবহৃত হয়।
+
+### Real-Life Example
+
+Imagine several people speaking simultaneously in a room using different languages.
+
+A listener may focus on a language they understand. This is a simple analogy for distinguishing signals, although real CDMA uses mathematical codes rather than languages.
+
+## 4. CDM vs CDMA
+
+| Feature | CDM | CDMA |
+|---|---|---|
+| Full form | Code Division Multiplexing | Code Division Multiple Access |
+| Meaning | A code-based signal multiplexing technique | A multiple-access communication technology |
+| Main purpose | Combine and distinguish multiple signals using codes | Allow multiple users to share communication resources |
+| Code usage | Different codes distinguish signals | Different user codes distinguish transmissions |
+| Example | Code-based signal multiplexing | IS-95 cellular networks |
+
+**Note:** CDM and CDMA are closely related terms and are sometimes used interchangeably in introductory networking materials.
+
+## 5. CDM vs TDM vs FDM
+
+| Feature | TDM | FDM | CDM |
+|---|---|---|---|
+| Full form | Time Division Multiplexing | Frequency Division Multiplexing | Code Division Multiplexing |
+| Resource separation | Time slots | Frequency bands | Codes |
+| Sharing method | Different times | Different frequencies | Different codes |
+| Simultaneous transmission | Depends on slot assignment | Possible | Possible |
+| Memory trick | Time | Frequency | Code |
+
+### Simple Examples
+
+- **TDM:** Users take turns transmitting.
+- **FDM:** Users transmit on separate frequency bands.
+- **CDM:** Signals share the channel using different codes.
+
+## 6. Advantages of CDMA
+
+- Multiple users can transmit simultaneously.
+- Efficient sharing of radio spectrum is possible.
+- Spread-spectrum techniques can provide resistance to certain types of interference.
+- Code-based signal separation supports multiple users on shared resources.
+
+## 7. Disadvantages of CDMA
+
+- Requires more complex encoding and decoding.
+- Interference can increase as the number of users grows.
+- Power control is important in cellular systems to reduce the near-far problem.
+- Performance depends on code properties, synchronization, and channel conditions.
+
+## 8. Applications
+
+- IS-95 (cdmaOne) mobile networks.
+- CDMA2000 cellular networks.
+- Some 3G mobile communication systems.
+- Code-based spread-spectrum communication systems.
+
+**Note:** Modern 4G LTE and 5G NR primarily use OFDM-based radio access techniques rather than traditional CDMA cellular access.
+
+## 9. Important Exam Notes
+
+- CDM stands for **Code Division Multiplexing**.
+- CDMA stands for **Code Division Multiple Access**.
+- CDMA allows multiple users to share the same frequency band at the same time.
+- Different codes help distinguish users' signals.
+- TDM separates transmissions by time.
+- FDM separates transmissions by frequency.
+- CDM separates signals using codes.
+
+### Memory Trick
+
+**TDM = Time**
+
+**FDM = Frequency**
+
+**CDM = Code**
+
+**CDMA = Multiple users + Different codes**
+<img width="912" height="588" alt="image" src="https://github.com/user-attachments/assets/1419a23d-3e39-4846-988e-9630247e8208" />
+## 100 % asbe 
+<img width="1056" height="525" alt="image" src="https://github.com/user-attachments/assets/44ef5ab4-191b-4bb3-92c9-8ddec7b421a1" />
+<img width="1121" height="556" alt="image" src="https://github.com/user-attachments/assets/a244e07d-22d5-4158-81c0-bca674f2ed1c" />
+
+<img width="1140" height="441" alt="image" src="https://github.com/user-attachments/assets/6329a24c-bab1-486e-abd8-35aa1dbefdc8" />
+
+![Uploading image.png…]()
 
 
 
