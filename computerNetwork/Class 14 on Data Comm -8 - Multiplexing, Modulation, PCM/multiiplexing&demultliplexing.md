@@ -770,9 +770,34 @@ Digital audio recording and digital telephone systems use PCM to represent audio
 - **Output:** Digital data
 - **Main Steps:** Sampling, Quantization, Encoding
 
+# Advantages and Disadvantages of PCM (Pulse Code Modulation)
+
+## Advantages of PCM
+
+1. **High Noise Immunity:** PCM is less affected by noise during transmission.
+2. **Easy Regeneration:** Digital signals can be regenerated without significant loss of quality.
+3. **Reliable Transmission:** It provides reliable communication over long distances.
+4. **Easy Storage:** PCM data can be easily stored and processed by digital computers.
+5. **Security:** Digital data can be encrypted for secure communication.
+6. **Error Detection:** Errors can be detected and sometimes corrected using error-control techniques.
+
+## Disadvantages of PCM
+
+1. **High Bandwidth Requirement:** PCM generally requires more bandwidth than analog transmission.
+2. **Complex System:** It requires sampling, quantization, and encoding circuits.
+3. **Quantization Error:** The original signal may lose some accuracy during quantization.
+4. **High Bit Rate:** PCM generates a large amount of digital data.
+5. **Higher Cost:** The required digital circuits and equipment may increase system cost.
+6. **Synchronization Required:** The transmitter and receiver must maintain proper timing synchronization.
+
+## Summary
+
+PCM converts analog signals into digital data. It offers better noise immunity, reliable transmission, and easy digital processing, but it requires more bandwidth and may introduce quantization errors.
+
 ## Remember
 **PCM = Sampling + Quantization + Encoding.**
 
+<img width="1155" height="419" alt="image" src="https://github.com/user-attachments/assets/062a3053-aad1-4d42-af35-679840468030" />
 
 
 ![Uploading image.png…]()
