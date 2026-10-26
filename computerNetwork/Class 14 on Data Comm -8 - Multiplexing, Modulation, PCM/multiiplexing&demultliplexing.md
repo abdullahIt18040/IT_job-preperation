@@ -754,6 +754,7 @@ PCM has three main steps:
 <img width="659" height="615" alt="image" src="https://github.com/user-attachments/assets/9ff776e6-74f8-41f1-95c0-8512e22d5453" />
 <img width="1177" height="577" alt="image" src="https://github.com/user-attachments/assets/f74a3fbb-42a7-4703-8d68-5e1eb2b1be6a" />
 <img width="1128" height="455" alt="image" src="https://github.com/user-attachments/assets/b3a19c41-14ce-4403-8aaf-f461c7bd5e87" />
+<img width="1159" height="569" alt="image" src="https://github.com/user-attachments/assets/7cd4fabc-401a-437d-833c-464ec340c852" />
 
 
 1. **Sampling:** Measures the analog signal at regular time intervals.
