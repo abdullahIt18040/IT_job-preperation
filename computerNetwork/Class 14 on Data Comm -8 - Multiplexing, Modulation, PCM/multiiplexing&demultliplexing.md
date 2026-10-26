@@ -639,6 +639,40 @@ Original Message
 
 
 <img width="831" height="515" alt="image" src="https://github.com/user-attachments/assets/b61e05da-687b-4834-bcf7-be5842866a18" />
+# Wave Properties: Amplitude, Wavelength, Frequency, and Phase
+
+## 1. Amplitude (A)
+
+**Amplitude** is the maximum height of a wave measured from its resting position.
+
+- **Symbol:** A
+- **Unit:** Meter (m)
+
+**Remember:** Amplitude = Wave height from the middle position.
+
+## 2. Wavelength (λ)
+
+**Wavelength** is the distance between two consecutive crests or two consecutive troughs.
+
+- **Symbol:** λ (Lambda)
+- **Unit:** Meter (m)
+<img width="915" height="560" alt="image" src="https://github.com/user-attachments/assets/ebb0844c-c66b-4234-aae4-db8ff30bec8a" />
+
+**Remember:** Wavelength = Distance.
+
+## 3. Frequency (f)
+
+**Frequency** is the number of complete wave cycles that pass a point in one second.
+<img width="922" height="553" alt="image" src="https://github.com/user-attachments/assets/4ae2c7e7-d419-446c-a2a6-1cfbf0001f4f" />
+
+
+- **Symbol:** f
+- **Unit:** Hertz (Hz)
+
+**Example:** 5 Hz means 5 cycles per second.
+
+**Remember:** Frequency = Cycles per second.
+
 
 
 ![Uploading image.png…]()
