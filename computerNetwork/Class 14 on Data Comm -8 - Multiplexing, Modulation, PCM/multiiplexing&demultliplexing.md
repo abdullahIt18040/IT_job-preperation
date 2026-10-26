@@ -673,6 +673,105 @@ Original Message
 
 **Remember:** Frequency = Cycles per second.
 
+<img width="1066" height="567" alt="image" src="https://github.com/user-attachments/assets/c2d7b10d-1d9b-4b2c-90dd-b3b5e5521611" />
+
+<img width="997" height="223" alt="image" src="https://github.com/user-attachments/assets/9e66b027-c7aa-4ba8-9365-0b5707bd74e9" />
+
+<img width="941" height="601" alt="image" src="https://github.com/user-attachments/assets/46f27812-6fe5-4243-87c9-32c6844e0008" />
+
+
+# Amplitude Modulation (AM)
+
+## Definition
+**Amplitude Modulation (AM)** is a type of modulation in which the amplitude of the carrier signal changes according to the message signal, while the carrier frequency remains constant.
+<img width="1175" height="570" alt="image" src="https://github.com/user-attachments/assets/ffd6c8b3-f65a-4bdd-9f23-2778e0147bc8" />
+## How It Works
+- A message signal contains information, such as voice.
+- A carrier signal carries the information.
+- In AM, the carrier signal's amplitude changes according to the message signal.
+
+## Example
+AM radio broadcasting uses amplitude modulation to transmit audio signals.
+
+## Important Points
+- **Changed:** Amplitude
+- **Constant:** Carrier frequency
+- **Used in:** AM radio broadcasting
+
+## Remember
+**AM = Amplitude Changes.**
+# Frequency Modulation (FM)
+
+## Definition
+**Frequency Modulation (FM)** is a type of modulation in which the frequency of the carrier signal changes according to the message signal, while the carrier amplitude remains constant.
+
+<img width="1107" height="564" alt="image" src="https://github.com/user-attachments/assets/163c56de-bdcf-46cf-a748-de200b33deb6" />
+## How It Works
+- A message signal contains information, such as voice.
+- A carrier signal carries the information.
+- In FM, the carrier signal's frequency changes according to the message signal.
+
+## Example
+FM radio broadcasting uses frequency modulation to transmit audio signals.
+
+## Important Points
+- **Changed:** Frequency
+- **Constant:** Amplitude
+- **Used in:** FM radio broadcasting
+
+## Remember
+**FM = Frequency Changes.**
+# Phase Modulation (PM)
+
+## Definition
+**Phase Modulation (PM)** is a type of modulation in which the phase of the carrier signal changes according to the message signal, while the carrier amplitude remains constant.
+<img width="1118" height="573" alt="image" src="https://github.com/user-attachments/assets/3a7a5d70-7d10-4623-9435-22215bd524df" />
+## How It Works
+- A message signal contains information, such as voice or data.
+- A carrier signal carries the information.
+- In PM, the phase of the carrier signal changes according to the message signal.
+
+## Example
+Phase modulation is used in digital communication systems and some radio communication systems.
+
+## Important Points
+- **Changed:** Phase
+- **Constant:** Amplitude
+- **Used in:** Radio and digital communication systems
+
+## Remember
+**PM = Phase Changes.**
+
+# Pulse Code Modulation (PCM)
+
+## Definition
+**Pulse Code Modulation (PCM)** is a technique used to convert an analog signal into digital data.
+<img width="684" height="467" alt="image" src="https://github.com/user-attachments/assets/d010e76e-a6a2-4796-97b1-9fe5fc36c50f" />
+
+## How It Works
+PCM has three main steps:
+<img width="1116" height="589" alt="image" src="https://github.com/user-attachments/assets/b7503933-7308-443a-bc06-c914d4b0e20a" />
+<img width="659" height="615" alt="image" src="https://github.com/user-attachments/assets/9ff776e6-74f8-41f1-95c0-8512e22d5453" />
+<img width="1177" height="577" alt="image" src="https://github.com/user-attachments/assets/f74a3fbb-42a7-4703-8d68-5e1eb2b1be6a" />
+<img width="1128" height="455" alt="image" src="https://github.com/user-attachments/assets/b3a19c41-14ce-4403-8aaf-f461c7bd5e87" />
+
+
+1. **Sampling:** Measures the analog signal at regular time intervals.
+2. **Quantization:** Assigns each sample to a suitable discrete level.
+3. **Encoding:** Converts each quantized sample into binary code (0s and 1s).
+
+## Example
+Digital audio recording and digital telephone systems use PCM to represent audio as digital data.
+
+## Important Points
+- **Full Form:** Pulse Code Modulation
+- **Input:** Analog signal
+- **Output:** Digital data
+- **Main Steps:** Sampling, Quantization, Encoding
+
+## Remember
+**PCM = Sampling + Quantization + Encoding.**
+
 
 
 ![Uploading image.png…]()
