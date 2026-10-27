@@ -212,4 +212,48 @@ System.out.println(++a); // 7
 - `++a` → আগে বাড়ে, পরে ব্যবহার।
 
 
+<img width="633" height="413" alt="image" src="https://github.com/user-attachments/assets/fafd9027-2c34-4b80-9977-ffa73c9b3003" />
+<img width="622" height="427" alt="image" src="https://github.com/user-attachments/assets/63a15315-6426-4607-9d5f-a9ba5da0ee98" />
+<img width="761" height="475" alt="image" src="https://github.com/user-attachments/assets/097e2ea2-97a7-4852-ae0e-39cde10db6c4" />
+# Types of Data Types in Java
+
+## 1. Basic (Primitive) Data Types
+Built-in data types provided by Java.
+
+Examples: `int`, `float`, `double`, `char`, `boolean`, `byte`, `short`, `long`
+
+```java
+int age = 25;
+char grade = 'A';
+```
+
+## 2. User-Defined Data Types
+Data types created by the programmer.
+
+Examples: `class`, `interface`, `enum`, `record`
+
+```java
+class Student {
+    String name;
+}
+```
+
+## 3. Derived Data Types
+Data types formed using other data types or reference types.
+
+Examples: Arrays and Classes.
+
+```java
+int[] numbers = {1, 2, 3};
+```
+
+**বাংলায় মনে রাখো:**
+- **Basic:** Java-তে আগে থেকেই আছে।
+- **User-defined:** Programmer তৈরি করে।
+- **Derived:** অন্য data type ব্যবহার করে তৈরি বা গঠন করা হয়।
+
+<img width="1007" height="452" alt="image" src="https://github.com/user-attachments/assets/770a78b9-ed02-416f-aa94-8a36a950112c" />
+
+<img width="620" height="383" alt="image" src="https://github.com/user-attachments/assets/1c8f577f-fc49-4798-b373-eec063040ee9" />
+
 
