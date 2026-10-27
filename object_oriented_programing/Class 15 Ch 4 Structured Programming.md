@@ -398,3 +398,92 @@ int *p = &a;
 
 **Note:** Java does not support explicit pointers like C/C++. Java uses references instead.
 
+# Enum in C
+
+## Definition
+An **enum** is a user-defined data type that contains a set of named integer constants.
+
+**বাংলা:** Enum হলো কিছু নির্দিষ্ট integer value-কে নাম দেওয়ার পদ্ধতি।
+
+## Example
+
+```c
+#include <stdio.h>
+
+enum Day {
+    SUN, MON, TUE, WED
+};
+
+int main() {
+    enum Day today = MON;
+    printf("%d", today);
+    return 0;
+}
+```
+
+**Output:**
+```text
+1
+```
+
+## Key Points
+- `enum` means enumeration.
+- By default, the first value is `0`.
+- Each next value increases by `1`.
+- You can assign custom integer values.
+
+## Example with Custom Values
+
+```c
+enum Status {
+    FAIL = 0,
+    PASS = 1
+};
+```
+
+**Remember:** `enum` gives names to integer constants.
+# Function in C
+
+## Definition
+A **function** is a block of code that performs a specific task.
+
+**বাংলা:** Function হলো কোডের একটি অংশ, যা নির্দিষ্ট কাজ করে।
+<img width="1045" height="482" alt="image" src="https://github.com/user-attachments/assets/db593471-e4d2-4803-9949-c0edf27860a8" />
+
+## Example
+
+```c
+#include <stdio.h>
+
+void greet() {
+    printf("Hello!");
+}
+
+int main() {
+    greet();
+    return 0;
+}
+```
+
+**Output:**
+```text
+Hello!
+```
+
+## Types of Functions
+1. **Library Function:** `printf()`, `scanf()`, `strlen()`
+2. **User-Defined Function:** Created by the programmer.
+
+**Remember:** A function helps reuse code and avoid repetition.
+<img width="1034" height="509" alt="image" src="https://github.com/user-attachments/assets/1e3aedd3-41d5-4a23-8383-3b59a4cd73b7" />
+<img width="926" height="474" alt="image" src="https://github.com/user-attachments/assets/e3466677-d811-4c62-9fb0-b165590ae3c1" />
+<img width="925" height="576" alt="image" src="https://github.com/user-attachments/assets/f67ca04c-8c6d-4277-bc0c-1921b6a45202" />
+<img width="946" height="491" alt="image" src="https://github.com/user-attachments/assets/191f3248-72de-4b23-a543-1f2340ad87f7" />
+<img width="928" height="518" alt="image" src="https://github.com/user-attachments/assets/d2d822a5-8a39-4653-b572-9af9e38177c6" />
+<img width="1035" height="550" alt="image" src="https://github.com/user-attachments/assets/35d791d7-8a6c-4a59-ab5a-656fe54a50a0" />
+
+<img width="787" height="295" alt="image" src="https://github.com/user-attachments/assets/0d4e5a56-9ede-47dc-acf6-f67a558e77eb" />
+
+
+
+
