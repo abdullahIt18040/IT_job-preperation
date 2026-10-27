@@ -1,4 +1,4 @@
-# Structured Programming vs OOP
+<img width="815" height="566" alt="image" src="https://github.com/user-attachments/assets/ad6d5644-eca0-487f-969e-68450ca09db7" /># Structured Programming vs OOP
 
 ## 1. Structured Programming
 <img width="875" height="459" alt="image" src="https://github.com/user-attachments/assets/3d6b7069-a09a-4d56-999d-49378de7845e" />
@@ -255,5 +255,146 @@ int[] numbers = {1, 2, 3};
 <img width="1007" height="452" alt="image" src="https://github.com/user-attachments/assets/770a78b9-ed02-416f-aa94-8a36a950112c" />
 
 <img width="620" height="383" alt="image" src="https://github.com/user-attachments/assets/1c8f577f-fc49-4798-b373-eec063040ee9" />
+# Basic Data Types in Java
 
+**Definition:** Basic data types store simple values.
+
+**বাংলা:** Basic data type দিয়ে সাধারণ ডেটা রাখা হয়।
+
+| Data Type | Example | Use |
+|---|---|---|
+| `byte` | `byte a = 10;` | Small integer |
+| `short` | `short a = 100;` | Integer |
+| `int` | `int age = 25;` | Integer |
+| `long` | `long n = 1000L;` | Large integer |
+| `float` | `float x = 2.5f;` | Decimal |
+| `double` | `double x = 5.25;` | Decimal |
+| `char` | `char c = 'A';` | Single character |
+| `boolean` | `boolean b = true;` | True or false |
+
+**Remember:** Java has **8 primitive data types**.
+# User-Defined Data Types in Java
+
+**Definition:** User-defined data types are created by programmers.
+
+**বাংলা:** Programmer নিজের প্রয়োজন অনুযায়ী যে data type তৈরি করে, তাকে User-Defined Data Type বলে।
+<img width="815" height="566" alt="image" src="https://github.com/user-attachments/assets/1b366f01-dfe1-497b-a9fb-31c0eb7b1c0e" />
+# Union in C
+
+## Definition
+A **union** is a user-defined data type where all members share the same memory location.
+
+**বাংলা:** Union-এ সব member একই memory ব্যবহার করে।
+
+## Example
+
+```c
+#include <stdio.h>
+
+union Data {
+    int a;
+    float b;
+};
+
+int main() {
+    union Data d;
+    d.a = 10;
+
+    printf("%d", d.a);
+    return 0;
+}
+```
+
+**Output:**
+```text
+10
+```
+
+## Key Points
+- All members share the same memory.
+- Only one member's stored value should be relied on at a time.
+- Union size is generally the size of its largest member, adjusted for alignment.
+- It saves memory compared with a structure that stores all members separately.
+
+## Union vs Structure
+
+| Union | Structure |
+|---|---|
+| Shares memory among members | Each member has separate storage |
+| Stores one member's value reliably at a time | Can store values in all members simultaneously |
+| Usually uses less memory | Usually uses more memory |
+
+**Remember:** `union` = shared memory.
+## Examples
+
+1. **Class**
+2. **Interface**
+3. **Enum**
+4. **Record**
+
+### Example
+
+```java
+class Student {
+    String name;
+    int age;
+}
+```
+
+Here, `Student` is a user-defined type.
+
+**Remember:** A programmer creates user-defined data types.
+# Derived Data Types
+
+**Definition:** Derived data types are formed using other data types.
+
+**বাংলা:** অন্য data type ব্যবহার করে যে data type তৈরি করা হয়, তাকে Derived Data Type বলে।
+
+## Examples in Java
+
+1. **Array**
+```java
+int[] numbers = {10, 20, 30};
+```
+
+2. **Class**
+```java
+class Student {
+    int age;
+}
+```
+
+3. **Interface**
+```java
+interface Animal {
+    void sound();
+}
+```
+
+**Remember:** Array, class, and interface are reference types in Java. “Derived data type” is a general programming term, not an official Java category.
+# Pointer in C
+
+## Definition
+A **pointer** is a variable that stores the memory address of another variable.
+
+**বাংলা:** Pointer হলো এমন একটি variable, যা অন্য variable-এর memory address রাখে।
+
+<img width="918" height="485" alt="image" src="https://github.com/user-attachments/assets/9f29a238-99b2-4941-a274-6b9ecbe5d020" />
+## Example
+
+```c
+int a = 10;
+int *p = &a;
+```
+
+- `a` → stores value `10`.
+- `&a` → gives the address of `a`.
+- `p` → stores the address of `a`.
+- `*p` → accesses the value `10`.
+
+## Remember
+- `&` → Address of a variable.
+- `*` → Pointer declaration or accessing the value at an address.
+
+**Note:** Java does not support explicit pointers like C/C++. Java uses references instead.
 
