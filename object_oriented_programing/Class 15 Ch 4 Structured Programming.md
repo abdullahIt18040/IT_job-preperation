@@ -1,4 +1,6 @@
 <img width="815" height="566" alt="image" src="https://github.com/user-attachments/assets/ad6d5644-eca0-487f-969e-68450ca09db7" /># Structured Programming vs OOP
+<img width="996" height="505" alt="image" src="https://github.com/user-attachments/assets/3032c44d-ea86-4841-8d40-d76b6a247de6" />
+<img width="965" height="508" alt="image" src="https://github.com/user-attachments/assets/896242e9-5d01-4aa6-98a6-59dcc0b3d1f6" />
 
 ## 1. Structured Programming
 <img width="875" height="459" alt="image" src="https://github.com/user-attachments/assets/3d6b7069-a09a-4d56-999d-49378de7845e" />
@@ -87,7 +89,44 @@ double salary = 25000.50;
 ```
 
 ## Types of Variables in Java
+# Local and Global Variables in C
 
+## 1. Local Variable
+A **local variable** is declared inside a function and can be used only within its scope.
+
+**বাংলা:** Function-এর ভিতরে declare করা variable হলো Local Variable।
+
+```c
+void test() {
+    int a = 10; // Local variable
+}
+```
+
+## 2. Global Variable
+A **global variable** is declared outside all functions and we can access it entire or throughout the program .
+
+**বাংলা:** সব function-এর বাইরে declare করা variable হলো Global Variable।
+
+```c
+int a = 10; // Global variable
+
+void test() {
+    printf("%d", a);
+}
+```
+
+## Difference
+
+| Local Variable | Global Variable |
+|---|---|
+| Declared inside a function or block | Declared outside all functions |
+| Limited to its scope | Accessible throughout its scope |
+| No automatic default value | Automatically initialized to `0` if not explicitly initialized (for arithmetic types) |
+| Usually exists while its block executes | Exists for the entire program execution |
+
+**Remember:**
+- Local = Inside a function/block.
+- Global = Outside all functions.
 ### 1. Local Variable
 - Declared inside a method, constructor, or block.
 - Must be initialized before use.
@@ -485,5 +524,6 @@ Hello!
 <img width="787" height="295" alt="image" src="https://github.com/user-attachments/assets/0d4e5a56-9ede-47dc-acf6-f67a558e77eb" />
 
 
+<img width="966" height="463" alt="image" src="https://github.com/user-attachments/assets/d5be62c7-dd11-450a-87ef-f53c573f2438" />
 
 
