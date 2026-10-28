@@ -815,4 +815,89 @@ int main() {
   <img width="1018" height="476" alt="image" src="https://github.com/user-attachments/assets/49dd83d4-f726-4bc8-a0c5-527f215f2925" />
 
 
+# Initial Values of Data Types in C
 
+## Definition
+The initial value of a variable depends on where it is declared and whether an initial value is assigned.
+
+## Initial Value Table
+
+| Data Type | Local Variable (Uninitialized) | Global Variable | Static Variable |
+|---|---|---|---|
+| `int` | Indeterminate | `0` | `0` |
+| `float` | Indeterminate | `0.0` | `0.0` |
+| `char` | Indeterminate | `'\0'` | `'\0'` |
+| `double` | Indeterminate | `0.0` | `0.0` |
+
+## Example 1: Global Variables
+
+```c
+#include <stdio.h>
+
+int a;
+float b;
+char c;
+double d;
+
+int main() {
+    printf("%d\n", a);
+    printf("%f\n", b);
+    printf("%d\n", c);
+    printf("%f\n", d);
+
+    return 0;
+}
+```
+
+**Output:**
+```text
+0
+0.000000
+0
+0.000000
+```
+
+## Example 2: Static Variables
+
+```c
+#include <stdio.h>
+
+int main() {
+    static int a;
+    static float b;
+    static char c;
+    static double d;
+
+    printf("%d\n", a);
+    printf("%f\n", b);
+    printf("%d\n", c);
+    printf("%f\n", d);
+
+    return 0;
+}
+```
+
+**Output:**
+```text
+0
+0.000000
+0
+0.000000
+```
+
+## Important Points
+
+- **Local variable:** An uninitialized local variable has an indeterminate value. Reading it may cause undefined behavior.
+- **Global variable:** Automatically initialized to zero.
+- **Static variable:** Automatically initialized to zero.
+- `'\0'` is the null character, with numeric value `0`.
+- `printf("%f", b)` prints a `float` value; `float` is promoted to `double` in a variadic function call.
+- `printf("%f", d)` prints a `double` value.
+
+## Remember
+
+- Local uninitialized variable → Indeterminate value
+- Global variable → Zero-initialized
+- Static variable → Zero-initialized
+
+**Exam Note:** In C, variables with static storage duration, including global and static variables, are initialized to zero by default. Uninitialized automatic local variables have indeterminate values.
