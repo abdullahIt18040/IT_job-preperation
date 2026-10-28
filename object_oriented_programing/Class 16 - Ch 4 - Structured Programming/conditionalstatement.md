@@ -486,3 +486,5 @@ do {
 - `do-while` always executes its body at least once.
 
 **Remember:** A loop repeats code and reduces code duplication.
+<img width="926" height="662" alt="image" src="https://github.com/user-attachments/assets/3c8f9415-73c7-4054-9aec-bc1486cd61d1" />
+
