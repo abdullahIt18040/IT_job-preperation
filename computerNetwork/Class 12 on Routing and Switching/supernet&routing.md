@@ -540,3 +540,90 @@ Each router builds a map of the network and uses it to find the shortest path.
 
 <img width="768" height="413" alt="image" src="https://github.com/user-attachments/assets/08406414-449b-4a91-803c-7eb549db7069" />
 
+
+# Circuit Switching and Packet Switching
+
+## 1. Circuit Switching
+
+### Definition
+Circuit switching is a networking technique in which a dedicated communication path is established between the sender and receiver before data transmission.
+<img width="1146" height="574" alt="image" src="https://github.com/user-attachments/assets/2e951426-e40d-423e-9ab8-332fbf405770" />
+
+### Working Process
+1. Connection Establishment
+2. Data Transfer
+3. Connection Termination
+
+### Example
+Traditional telephone network.
+
+### Advantages
+- Dedicated communication path.
+- Fixed bandwidth during communication.
+- Predictable transmission performance.
+
+### Disadvantages
+- Bandwidth is wasted when no data is transmitted.
+- Connection establishment takes time.
+- Communication may stop if the path fails.
+
+---
+
+## 2. Packet Switching
+
+### Definition
+Packet switching is a networking technique in which data is divided into small units called **packets** before transmission over a network.
+<img width="1175" height="606" alt="image" src="https://github.com/user-attachments/assets/49a3727d-ed6f-4d67-a14a-da48d7776010" />
+
+### Working Process
+1. Data is divided into small packets.
+2. Packets travel through the network.
+3. The receiver reassembles the packets to get the original data.
+
+### Example
+The Internet, email, and web browsing.
+
+### Advantages
+- Efficient use of network resources.
+- No dedicated path is required.
+- Multiple users can share network resources.
+- Suitable for data communication.
+
+### Disadvantages
+- Packets may experience delays.
+- Packets may be lost or arrive out of order.
+- Network congestion can affect performance.
+
+---
+
+## 3. Differences Between Circuit Switching and Packet Switching
+
+| Circuit Switching | Packet Switching |
+|---|---|
+| A dedicated path is established. | No dedicated path is required. |
+| Data is transmitted over the reserved path. | Data is divided into packets. |
+| Resources are reserved for the connection. | Network resources are shared. |
+| Bandwidth is reserved during communication. | Bandwidth is shared among users. |
+| Connection setup is required. | Traditional packet switching does not require a dedicated connection. |
+| Less efficient for bursty data. | Efficient for bursty data. |
+| Used in traditional telephone networks. | Used on the Internet. |
+| Example: Traditional telephone call. | Example: Web browsing and email. |
+
+---
+
+## 4. Key Points to Remember
+
+- **Circuit Switching:** Dedicated path.
+- **Packet Switching:** Data divided into packets.
+- **Circuit Switching:** Resources are reserved.
+- **Packet Switching:** Resources are shared.
+- **Circuit Switching Example:** Traditional telephone network.
+- **Packet Switching Example:** Internet.
+
+## 5. Short Exam Answer
+
+**Circuit Switching:** A dedicated communication path is established between the sender and receiver before data transmission.
+
+**Packet Switching:** Data is divided into small packets and transmitted through a shared network.
+
+**Main Difference:** Circuit switching uses a dedicated path, whereas packet switching divides data into packets and shares network resources.
