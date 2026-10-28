@@ -901,3 +901,8 @@ int main() {
 - Static variable → Zero-initialized
 
 **Exam Note:** In C, variables with static storage duration, including global and static variables, are initialized to zero by default. Uninitialized automatic local variables have indeterminate values.
+<img width="1040" height="706" alt="image" src="https://github.com/user-attachments/assets/20c93c78-bbba-4fad-950d-d878eb2e1060" />
+<img width="1265" height="637" alt="image" src="https://github.com/user-attachments/assets/a4fc07b5-c045-45ab-95d1-23b615d1c1e9" />
+<img width="1198" height="668" alt="image" src="https://github.com/user-attachments/assets/a760bc2b-72b6-40a3-80e7-ec7ecc97a0a5" />
+
+
