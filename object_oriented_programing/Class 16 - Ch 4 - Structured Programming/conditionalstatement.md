@@ -376,3 +376,113 @@ End
 - Excessive use of `goto` makes code difficult to understand.
 
 **Remember:** `goto` = Jump to a label.
+# Loop in C
+
+## Definition
+A **loop** is used to execute a block of code repeatedly while a condition is true.
+
+**বাংলা:** একই কোড বারবার চালানোর জন্য loop ব্যবহার করা হয়।
+
+## Types of Loops in C
+
+| Loop | Purpose |
+|---|---|
+| `for` | Repeats code a specified number of times |
+| `while` | Repeats code while a condition is true |
+| `do-while` | Executes code at least once, then checks the condition |
+
+## 1. `for` Loop
+
+**Syntax:**
+```c
+for (initialization; condition; update) {
+    // Code
+}
+```
+
+**Example:**
+```c
+for (int i = 1; i <= 5; i++) {
+    printf("%d\n", i);
+}
+```
+
+**Output:**
+```text
+1
+2
+3
+4
+5
+```
+
+## 2. `while` Loop
+
+**Syntax:**
+```c
+while (condition) {
+    // Code
+}
+```
+
+**Example:**
+```c
+int i = 1;
+
+while (i <= 5) {
+    printf("%d\n", i);
+    i++;
+}
+```
+
+**Output:**
+```text
+1
+2
+3
+4
+5
+```
+
+## 3. `do-while` Loop
+
+**Syntax:**
+```c
+do {
+    // Code
+} while (condition);
+```
+
+**Example:**
+```c
+int i = 1;
+
+do {
+    printf("%d\n", i);
+    i++;
+} while (i <= 5);
+```
+
+**Output:**
+```text
+1
+2
+3
+4
+5
+```
+
+## Difference Between Loops
+
+| `for` | `while` | `do-while` |
+|---|---|---|
+| Condition is checked first | Condition is checked first | Condition is checked after execution |
+| Suitable when repetitions are known | Suitable when repetitions depend on a condition | Executes at least once |
+
+## Important Points
+- `break` stops the loop.
+- `continue` skips the current iteration and moves to the next one.
+- An infinite loop continues running without stopping.
+- `do-while` always executes its body at least once.
+
+**Remember:** A loop repeats code and reduces code duplication.
