@@ -51,9 +51,9 @@ It represents a real-world entity and contains its own data.
 Student s1;
 Student s2;
 ```
-Question: Does a class occupy memory when it is declared?
+### Question: Does a class occupy memory when it is declared?
 
-Answer: A class declaration itself does not allocate memory for its non-static instance data members. Memory for those members is allocated when an object is created.
+**Answer**: A class declaration itself does not allocate memory for its non-static instance data members. Memory for those members is allocated when an object is created.
 
 ## 4. Class and Object Example in C++
 
