@@ -97,6 +97,7 @@ printf("%d", a);
 <img width="560" height="733" alt="image" src="https://github.com/user-attachments/assets/dea1e2f6-c963-4177-a9f7-854769df0c98" />
 <img width="560" height="733" alt="image" src="https://github.com/user-attachments/assets/3d69658d-665e-4249-999a-26eda3ffb770" />
 <img width="1421" height="791" alt="image" src="https://github.com/user-attachments/assets/e209f336-c2dd-4781-996b-8a87c71f1080" />
+<img width="532" height="712" alt="image" src="https://github.com/user-attachments/assets/0789cb49-e715-4bf8-9d40-38c6219357e8" />
 
 ![Uploading image.png…]()
 
