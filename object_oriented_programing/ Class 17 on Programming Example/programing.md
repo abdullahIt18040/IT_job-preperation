@@ -89,6 +89,14 @@ printf("%d", a);
 - Multiple modifications of the same variable in one C expression can cause undefined behavior.
 
 <img width="887" height="548" alt="image" src="https://github.com/user-attachments/assets/61dad048-e764-4ab7-b49d-aa2d0e1ec269" />
-![Uploading image.png…]()
+<img width="664" height="518" alt="image" src="https://github.com/user-attachments/assets/8d579271-a35d-4543-ab1c-2e4936ca9a81" />
 
+## implement stack using 2 queue 
+<img width="488" height="253" alt="image" src="https://github.com/user-attachments/assets/abc53084-2521-4963-bc6a-c198f9600a7e" />
+
+<img width="560" height="733" alt="image" src="https://github.com/user-attachments/assets/dea1e2f6-c963-4177-a9f7-854769df0c98" />
+<img width="560" height="733" alt="image" src="https://github.com/user-attachments/assets/3d69658d-665e-4249-999a-26eda3ffb770" />
+<img width="1421" height="791" alt="image" src="https://github.com/user-attachments/assets/e209f336-c2dd-4781-996b-8a87c71f1080" />
+
+![Uploading image.png…]()
 
