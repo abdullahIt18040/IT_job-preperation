@@ -51,6 +51,9 @@ It represents a real-world entity and contains its own data.
 Student s1;
 Student s2;
 ```
+Question: Does a class occupy memory when it is declared?
+
+Answer: A class declaration itself does not allocate memory for its non-static instance data members. Memory for those members is allocated when an object is created.
 
 ## 4. Class and Object Example in C++
 
@@ -144,21 +147,5 @@ One class can create multiple objects, and each object can have different values
 7. Four pillars of OOP are Encapsulation, Inheritance, Polymorphism, and Abstraction.
 8. Java and C++ are object-oriented programming languages.
 
-## 10. Remember
+<img width="737" height="605" alt="image" src="https://github.com/user-attachments/assets/13934efc-0eb3-400a-af54-21de60f4b559" />
 
-```text
-OOP = Object-Oriented Programming
-
-Class  = Blueprint
-Object = Instance
-Attributes = Data
-Methods = Behavior
-
-Four Pillars:
-1. Encapsulation
-2. Inheritance
-3. Polymorphism
-4. Abstraction
-```
-
-**In simple words:** OOP is a programming approach where we organize code using classes and objects to make software reusable, modular, and maintainable.
