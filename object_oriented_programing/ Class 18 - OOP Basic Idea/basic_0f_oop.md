@@ -109,6 +109,7 @@ Age: 25
 | A blueprint or template. | An instance of a class. |
 | Defines properties and methods. | Has actual data and uses methods. |
 | Logical concept. | Runtime entity. |
+| when declar class no need memory | when Object initialized it allocate  memory. |
 | Declared using `class` keyword. | Created using the class name. |
 | Example: Student | Example: s1, s2 |
 
@@ -149,3 +150,5 @@ One class can create multiple objects, and each object can have different values
 
 <img width="737" height="605" alt="image" src="https://github.com/user-attachments/assets/13934efc-0eb3-400a-af54-21de60f4b559" />
 
+<img width="1200" height="655" alt="image" src="https://github.com/user-attachments/assets/37f65acb-24de-40ce-869f-949a8b1509a0" />
+<img width="1080" height="622" alt="image" src="https://github.com/user-attachments/assets/382381e8-d5f7-4d3a-a6ca-6a32b08aae80" />
