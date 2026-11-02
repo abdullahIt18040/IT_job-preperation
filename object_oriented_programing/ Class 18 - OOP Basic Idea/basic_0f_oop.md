@@ -152,3 +152,6 @@ One class can create multiple objects, and each object can have different values
 
 <img width="1200" height="655" alt="image" src="https://github.com/user-attachments/assets/37f65acb-24de-40ce-869f-949a8b1509a0" />
 <img width="1080" height="622" alt="image" src="https://github.com/user-attachments/assets/382381e8-d5f7-4d3a-a6ca-6a32b08aae80" />
+<img width="941" height="622" alt="image" src="https://github.com/user-attachments/assets/b5afeb7a-97e8-4530-91e6-a13f1db078e2" />
+<img width="588" height="468" alt="image" src="https://github.com/user-attachments/assets/65e310a4-35f0-4eaa-91f9-011945f0bb6a" />
+
