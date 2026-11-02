@@ -1116,4 +1116,78 @@ The four pillars of OOP provide the foundation for designing software using obje
 
 **OOP = Inheritance + Polymorphism + Encapsulation + Abstraction**
 
+<img width="1206" height="505" alt="image" src="https://github.com/user-attachments/assets/bad200a7-c2c2-4a33-8cd3-2ebea44113e4" />
+<img width="1221" height="668" alt="image" src="https://github.com/user-attachments/assets/33d0a668-0f3a-4909-b691-7d95c28d2af6" />
 
+# Difference Between Class and Structure (C++)
+
+## 1. Class
+
+A **Class** is a user-defined data type that combines data members (variables) and member functions (methods) into a single unit.
+
+```cpp
+class Student {
+    int id;  // Private by default
+public:
+    void display() {
+        cout << id;
+    }
+};
+```
+
+## 2. Structure (Struct)
+
+A **Structure** is a user-defined data type that groups different types of variables and functions into a single unit.
+
+```cpp
+struct Student {
+    int id;  // Public by default
+    string name;
+};
+```
+
+## 3. Difference Between Class and Structure
+
+| Feature | Class | Structure |
+|---|---|---|
+| Keyword | `class` | `struct` |
+| Default Access Modifier | Private | Public |
+| Default Inheritance | Private | Public |
+| Data Members | Supported | Supported |
+| Member Functions | Supported | Supported |
+| Constructors | Supported | Supported |
+| Inheritance | Supported | Supported |
+| Polymorphism | Supported | Supported |
+
+## 4. Important Job Exam Questions
+
+**Q1. What is the default access modifier of a class in C++?**
+
+Answer: Private.
+
+**Q2. What is the default access modifier of a structure in C++?**
+
+Answer: Public.
+
+**Q3. Can a structure contain member functions in C++?**
+## Class-এর ভিতরে যে function তৈরি করা হয়, তাকে Member Function বলে। এগুলো class-এর data members (variables) ব্যবহার এবং পরিবর্তন করতে পারে।
+Answer: Yes.
+
+**Q4. Can a structure support inheritance in C++?**
+
+Answer: Yes.
+
+**Q5. Does Java support C++-style structures?**
+
+Answer: No.
+
+## 5. Quick Revision
+
+- Class → Private by default.
+- Struct → Public by default.
+- Class → Private inheritance by default.
+- Struct → Public inheritance by default.
+
+**Important:** In C++, both Class and Struct support Encapsulation, Inheritance, Polymorphism, Constructors, and Member Functions.
+
+**Main Difference:** Default access modifier and default inheritance access.
