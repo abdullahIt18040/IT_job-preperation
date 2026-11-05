@@ -479,47 +479,266 @@ Animal Constructor
 Dog Constructor
 ```
 
-**Important:**
-- `this()` calls the current class constructor.
-- `super()` calls the parent class constructor.
-- Both must be the first statement in a constructor when explicitly used.
-- Both cannot be explicitly used together in the same constructor.
-- If no constructor invocation is specified, Java implicitly inserts `super()` when an accessible no-argument parent constructor exists.
+# Encapsulation in Java (OOP)
 
----
+## 1. What is Encapsulation?
 
-## 7. Important Job Exam Points
+Encapsulation is one of the four main pillars of Object-Oriented Programming (OOP).
 
-1. A constructor has no return type.
-2. Constructor name must be the same as the class name.
-3. Constructors can be overloaded.
-4. Constructors cannot be overridden.
-5. Constructors cannot be inherited.
-6. Abstract classes can have constructors.
-7. Interfaces cannot have constructors.
-8. Private constructors are allowed in Java.
-9. If a programmer declares any constructor, Java does not automatically provide the default constructor.
-10. Constructors execute during object creation.
-11. Constructors cannot be static, final, or abstract.
-12. A constructor can call another constructor using `this()` or `super()`.
+**Definition:** Encapsulation is the process of wrapping data (variables) and methods into a single unit (class) and restricting direct access to the data.
 
----
+**In Simple Words:** Encapsulation means binding data and methods together and protecting data from direct external access.
 
-## 8. Quick Revision
+## 2. How to Achieve Encapsulation?
 
-| Term | Meaning |
+We can achieve encapsulation in Java by:
+
+1. Declaring class variables as `private`.
+2. Providing `public` getter and setter methods to access and modify private variables.
+
+## 3. Java Example
+
+```java
+class Student {
+
+    // Private variables (Data Hiding)
+    private String name;
+    private int age;
+
+    // Getter method
+    public String getName() {
+        return name;
+    }
+
+    // Setter method
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        if (age > 0) {
+            this.age = age;
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        Student student = new Student();
+
+        student.setName("Abdullah");
+        student.setAge(25);
+
+        System.out.println(student.getName());
+        System.out.println(student.getAge());
+    }
+}
+```
+
+## 4. Why Do We Use Encapsulation?
+
+1. **Data Hiding:** Prevents direct access to private variables.
+2. **Data Security:** Protects data from unauthorized modification.
+3. **Validation:** Allows validation before updating data.
+4. **Maintainability:** Makes code easier to maintain.
+5. **Flexibility:** Allows internal implementation to change without affecting external code.
+
+## 5. Real-Life Example
+
+**ATM Machine:**
+
+- Users cannot directly access the bank database.
+- Users interact with the ATM through buttons and a screen.
+- The ATM validates the PIN before allowing transactions.
+- Users can withdraw money only when the required conditions are satisfied.
+
+This is similar to encapsulation.
+
+## 6. Encapsulation vs Data Hiding
+
+| Encapsulation | Data Hiding |
 |---|---|
-| Constructor | Initializes an object |
-| Default Constructor | Compiler-provided constructor when none is declared |
-| No-Argument Constructor | Constructor without parameters |
-| Parameterized Constructor | Constructor with parameters |
-| Constructor Overloading | Multiple constructors with different parameter lists |
-| `this()` | Calls another constructor in the same class |
-| `super()` | Calls the immediate parent class constructor |
+| Wrapping data and methods into a single unit. | Restricting direct access to data. |
+| Achieved through classes. | Achieved using access modifiers like `private`. |
+| Provides a way to organize and control data. | Protects internal data from direct access. |
 
-### Remember
+**Note:** Data hiding is an important part of encapsulation, but they are not the same.
 
-- Constructor = Object Initialization.
-- `this()` = Current Class Constructor.
-- `super()` = Parent Class Constructor.
-- Constructor Overloading = Multiple constructors in one class.
+<img width="1370" height="499" alt="image" src="https://github.com/user-attachments/assets/64b15fc9-ffb0-4bdf-b805-2f431d778705" />
+# Bank Account Program Using Encapsulation in Java
+
+**Problem:** Write a Java program to represent a Bank Account using the concept of Encapsulation.
+
+## 1. Requirements
+
+Create a `BankAccount` class with the following:
+
+1. Data members:
+   - Account holder's name
+   - Account number
+   - Account balance
+
+2. Member functions:
+   - `deposit()` – Deposit money into the account.
+   - `withdraw()` – Withdraw money if sufficient balance is available.
+   - `display()` – Display account details.
+
+3. Demonstrate encapsulation by keeping all data members private and providing public methods for controlled access.
+
+## 2. Java Implementation
+
+```java
+class BankAccount {
+
+    // Private data members (Data Hiding)
+    private String accountHolderName;
+    private String accountNumber;
+    private double balance;
+
+    // Constructor
+    public BankAccount(String name, String accNumber, double initialBalance) {
+        this.accountHolderName = name;
+        this.accountNumber = accNumber;
+        this.balance = initialBalance;
+    }
+
+    // Deposit money
+    public void deposit(double amount) {
+        if (amount > 0) {
+            balance += amount;
+            System.out.println("Deposit successful!");
+        } else {
+            System.out.println("Invalid deposit amount!");
+        }
+    }
+
+    // Withdraw money
+    public void withdraw(double amount) {
+        if (amount > 0 && amount <= balance) {
+            balance -= amount;
+            System.out.println("Withdrawal successful!");
+        } else {
+            System.out.println("Insufficient balance or invalid amount!");
+        }
+    }
+
+    // Display account details
+    public void display() {
+        System.out.println("Account Holder: " + accountHolderName);
+        System.out.println("Account Number: " + accountNumber);
+        System.out.println("Balance: " + balance);
+    }
+}
+
+// Main class
+public class Main {
+    public static void main(String[] args) {
+
+        BankAccount account = new BankAccount(
+            "Abdullah",
+            "123456789",
+            5000
+        );
+
+        // Display initial details
+        account.display();
+
+        // Deposit money
+        account.deposit(2000);
+
+        // Withdraw money
+        account.withdraw(1500);
+
+        // Display updated details
+        System.out.println("\nAfter Transactions:");
+        account.display();
+    }
+}
+```
+
+## 3. Output
+
+```text
+Account Holder: Abdullah
+Account Number: 123456789
+Balance: 5000.0
+
+Deposit successful!
+Withdrawal successful!
+
+After Transactions:
+Account Holder: Abdullah
+Account Number: 123456789
+Balance: 5500.0
+```
+
+## 4. Code Explanation
+
+### A. Private Data Members
+
+```java
+private String accountHolderName;
+private String accountNumber;
+private double balance;
+```
+
+- All variables are declared as `private`.
+- They cannot be accessed directly from outside the `BankAccount` class.
+- This concept is called **Data Hiding**.
+
+### B. Constructor
+
+```java
+public BankAccount(String name, String accNumber, double initialBalance) {
+    this.accountHolderName = name;
+    this.accountNumber = accNumber;
+    this.balance = initialBalance;
+}
+```
+
+The constructor initializes account information when an object is created.
+
+### C. deposit() Method
+
+```java
+public void deposit(double amount) {
+    if (amount > 0) {
+        balance += amount;
+    }
+}
+```
+
+Adds the deposit amount to the current account balance.
+
+### D. withdraw() Method
+
+```java
+public void withdraw(double amount) {
+    if (amount > 0 && amount <= balance) {
+        balance -= amount;
+    }
+}
+```
+
+Withdraws money only if the amount is valid and sufficient balance is available.
+
+### E. display() Method
+
+Displays the account holder's name, account number, and current balance.
+
+## 5. How Does This Program Demonstrate Encapsulation?
+
+| Concept | Implementation |
+|---|---|
+| Data Hiding | Private variables |
+| Data Binding | Variables and methods inside one class |
+| Controlled Access | Public methods |
+| Data Validation | Deposit and withdraw conditions |
+| Data Protection | Prevents direct external modification |
+
+
