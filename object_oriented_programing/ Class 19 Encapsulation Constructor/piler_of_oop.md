@@ -1437,9 +1437,483 @@ All classes follow the same Payment contract but have different implementations.
 <img width="1081" height="336" alt="image" src="https://github.com/user-attachments/assets/be74a7f4-bdb9-47df-baeb-c07b0eda613a" />
 
 
-After Transactions:
-Account Holder: Abdullah
-Account Number: 123456789
-Balance: 5500.0
+# Abstract Method in Java
+
+## 1. What is an Abstract Method?
+
+An **abstract method** is a method that is declared without a body (implementation).
+
+- It only declares what a method should do.
+- The child class provides the actual implementation.
+- It is declared using the `abstract` keyword.
+
+### Syntax
+
+```java
+abstract returnType methodName();
 ```
 
+Example:
+
+```java
+abstract void calculateBill();
+```
+
+## 2. Abstract Method with Inheritance
+
+Suppose we have a `Customer` parent class and two child classes: `Residential` and `Commercial`.
+
+Both customers need to calculate electricity bills, but their calculation rules are different.
+
+- Residential: 6 TK per unit.
+- Commercial: 10 TK per unit.
+
+Instead of implementing the calculation in the parent class, we can declare `calculateBill()` as an abstract method.
+
+### Complete Java Program
+
+```java
+// Abstract Parent Class
+abstract class Customer {
+
+    int customerId;
+    int customerUtility;
+
+    Customer(int customerId, int customerUtility) {
+        this.customerId = customerId;
+        this.customerUtility = customerUtility;
+    }
+
+    // Abstract Method
+    abstract void calculateBill();
+}
+
+// Residential Child Class
+class Residential extends Customer {
+
+    Residential(int id, int units) {
+        super(id, units);
+    }
+
+    @Override
+    void calculateBill() {
+        int bill = customerUtility * 6;
+
+        System.out.println("Residential Bill: " + bill + " TK");
+    }
+}
+
+// Commercial Child Class
+class Commercial extends Customer {
+
+    Commercial(int id, int units) {
+        super(id, units);
+    }
+
+    @Override
+    void calculateBill() {
+        int bill = customerUtility * 10;
+
+        System.out.println("Commercial Bill: " + bill + " TK");
+    }
+}
+
+// Main Class
+public class Main {
+
+    public static void main(String[] args) {
+
+        Customer c1 = new Residential(101, 100);
+        Customer c2 = new Commercial(102, 100);
+
+        c1.calculateBill();
+        c2.calculateBill();
+    }
+}
+```
+
+### Output
+
+```text
+Residential Bill: 600 TK
+Commercial Bill: 1000 TK
+```
+
+## 3. How Does It Work?
+
+1. `Customer` is an abstract parent class.
+2. `calculateBill()` is declared as an abstract method without a body.
+3. `Residential` inherits the `Customer` class and implements `calculateBill()` at 6 TK per unit.
+4. `Commercial` inherits the `Customer` class and implements `calculateBill()` at 10 TK per unit.
+5. In the `main()` method, both child objects call the same method but produce different results.
+
+<img width="888" height="424" alt="image" src="https://github.com/user-attachments/assets/b55eeef5-6c5e-4281-8c2b-407b9877ecd3" />
+<img width="1366" height="770" alt="image" src="https://github.com/user-attachments/assets/4ee0b3f0-43f4-4ea5-8f1a-a8c47b516b84" />
+
+# Interface in Java
+
+## 1. What is an Interface?
+
+An **interface** in Java is a blueprint or contract for a class that defines what functionality a class must provide.
+
+- Declared using the `interface` keyword.
+- A class implements an interface using the `implements` keyword.
+- Supports abstraction.
+- Supports multiple inheritance of type.
+- Helps achieve loose coupling.
+
+**Easy Bangla Explanation:**
+
+Interface হলো একটি contract বা চুক্তি। এটি বলে দেয় একটি class-এ কোন কোন method থাকতে হবে, কিন্তু abstract method-এর ক্ষেত্রে কীভাবে কাজ করবে তা বলে দেয় না।
+
+## 2. Syntax of Interface
+
+```java
+interface InterfaceName {
+    void methodName();
+}
+```
+
+Implementing an interface:
+
+```java
+class MyClass implements InterfaceName {
+
+    @Override
+    public void methodName() {
+        // Implementation
+    }
+}
+```
+
+## 3. Example of Interface
+
+Suppose we have a `Vehicle` interface. Both Car and Bike implement this interface.
+
+```java
+// Interface
+interface Vehicle {
+
+    void start();
+    void stop();
+}
+
+// Car Class
+class Car implements Vehicle {
+
+    @Override
+    public void start() {
+        System.out.println("Car is starting");
+    }
+
+    @Override
+    public void stop() {
+        System.out.println("Car is stopping");
+    }
+}
+
+// Bike Class
+class Bike implements Vehicle {
+
+    @Override
+    public void start() {
+        System.out.println("Bike is starting");
+    }
+
+    @Override
+    public void stop() {
+        System.out.println("Bike is stopping");
+    }
+}
+
+// Main Class
+public class Main {
+
+    public static void main(String[] args) {
+
+        Vehicle v1 = new Car();
+        Vehicle v2 = new Bike();
+
+        v1.start();
+        v1.stop();
+
+        v2.start();
+        v2.stop();
+    }
+}
+```
+
+### Output
+
+```text
+Car is starting
+Car is stopping
+Bike is starting
+Bike is stopping
+```
+
+## 4. Why Do We Use Interface?
+
+### 1. Abstraction
+
+Hide implementation details and expose only necessary functionality.
+
+Example: A Vehicle interface declares `start()`, but Car and Bike implement it differently.
+
+### 2. Loose Coupling
+
+Loose coupling means reducing dependency between classes.
+
+Instead of depending on a specific implementation, we depend on an interface.
+
+```java
+Vehicle vehicle = new Car();
+```
+
+We can easily change the implementation:
+
+```java
+Vehicle vehicle = new Bike();
+```
+
+The code that uses the Vehicle interface does not need to depend directly on Car or Bike.
+
+### 3. Code Reusability
+
+Different classes can implement the same interface and follow a common contract.
+
+Example: Car, Bike and Bus can all implement Vehicle.
+
+### 4. Multiple Inheritance
+
+Java does not support multiple inheritance using classes.
+
+But a class can implement multiple interfaces.
+
+**Syntax:**
+
+```java
+class ChildClass implements Interface1, Interface2 {
+    // Implementation
+}
+```
+
+### Example: Multiple Inheritance Using Interface
+
+```java
+interface Camera {
+    void takePhoto();
+}
+
+interface MusicPlayer {
+    void playMusic();
+}
+
+class Smartphone implements Camera, MusicPlayer {
+
+    @Override
+    public void takePhoto() {
+        System.out.println("Taking Photo");
+    }
+
+    @Override
+    public void playMusic() {
+        System.out.println("Playing Music");
+    }
+}
+```
+
+Here, Smartphone implements two interfaces: Camera and MusicPlayer.
+
+## 5. Same Method in Multiple Interfaces
+
+What happens if two interfaces contain the same abstract method?
+
+**Answer:** No problem! The implementing class only needs one implementation.
+
+```java
+interface A {
+    void show();
+}
+
+interface B {
+    void show();
+}
+
+class C implements A, B {
+
+    @Override
+    public void show() {
+        System.out.println("Hello from Class C");
+    }
+}
+```
+
+One `show()` method satisfies both interfaces.
+
+### What if Both Interfaces Have the Same Default Method?
+
+Java creates a conflict because both interfaces provide their own implementation.
+
+The implementing class must override the method.
+
+```java
+interface A {
+    default void show() {
+        System.out.println("Interface A");
+    }
+}
+
+interface B {
+    default void show() {
+        System.out.println("Interface B");
+    }
+}
+
+class C implements A, B {
+
+    @Override
+    public void show() {
+        A.super.show();
+        B.super.show();
+
+        System.out.println("Class C");
+    }
+}
+```
+
+**Output:**
+
+```text
+Interface A
+Interface B
+Class C
+```
+
+- `A.super.show()` calls the default method of interface A.
+- `B.super.show()` calls the default method of interface B.
+
+**Important:**
+
+| Situation | Result |
+|---|---|
+| Same abstract method in two interfaces | One implementation is enough |
+| Same default method in two interfaces | Must override and resolve conflict |
+| Same static method in two interfaces | No overriding conflict; call using interface name |
+
+## 6. Important Rules of Interface in Java
+
+1. An interface is declared using the `interface` keyword.
+2. A class implements an interface using `implements`.
+3. Interface variables are implicitly `public static final`.
+4. Abstract methods are implicitly `public abstract`.
+5. Implemented abstract methods must be declared `public`.
+6. We cannot create an object of an interface.
+7. An interface can extend multiple interfaces.
+8. A class can implement multiple interfaces.
+9. An interface can contain `default` and `static` methods (Java 8).
+10. An interface can contain private methods (Java 9).
+11. An interface cannot have a constructor.
+
+## 7. Interface vs Abstract Class
+
+| Interface | Abstract Class |
+|---|---|
+| Uses `interface` keyword | Uses `abstract class` |
+| A class uses `implements` | A class uses `extends` |
+| Supports multiple interface implementation | A class can extend only one class |
+| No constructors | Can have constructors |
+| Variables are implicitly public static final | Can have instance variables |
+| Supports abstract and default methods | Supports abstract and normal methods |
+| Cannot have instance fields | Can have instance fields |
+
+## 8. When Should We Use Interface vs Abstract Class?
+
+**Use Interface when:**
+
+- Different or unrelated classes need to follow the same contract.
+- Multiple inheritance of type is required.
+- You want loose coupling.
+- You want to define common behavior without forcing a shared parent class.
+
+**Use Abstract Class when:**
+
+- Related classes share common properties and state.
+- You need constructors.
+- You want to provide common code to child classes.
+- You need both abstract and normal methods.
+
+## 9. Important Interview & Exam Questions
+
+**Q1. Can a class implement multiple interfaces?**
+
+Yes.
+
+**Q2. Can an interface extend another interface?**
+
+Yes. An interface can extend multiple interfaces.
+
+**Q3. Can we create an object of an interface?**
+
+No. But we can create an interface reference.
+
+```java
+Vehicle v = new Car();
+```
+
+**Q4. Are interface variables final?**
+
+Yes. They are implicitly `public static final`.
+
+**Q5. Can an interface have a constructor?**
+
+No.
+
+**Q6. Does Java support multiple inheritance?**
+
+Yes, through interfaces (multiple inheritance of type).
+
+**Q7. What happens if two interfaces have the same abstract method?**
+
+One implementation in the implementing class is enough.
+
+**Q8. What happens if two interfaces have the same default method?**
+
+The implementing class must override the method to resolve the conflict.
+
+**Q9. Can an interface contain a normal method?**
+
+Yes. It can contain default, static and private methods with implementations.
+
+## 10. Important Keywords
+
+| Keyword | Meaning |
+|---|---|
+| `interface` | Declares an interface |
+| `implements` | Implements an interface |
+| `extends` | Inherits an interface |
+| `default` | Defines a default method |
+| `static` | Defines a static method |
+| `private` | Defines a private helper method |
+| `@Override` | Indicates method overriding |
+
+## 11. Remember for Exams
+
+- **Interface = Contract**
+- **implements = Implement an interface**
+- **extends = Inherit an interface**
+- **Abstraction = Hiding implementation details**
+- **Loose Coupling = Depend on abstraction, not concrete implementation**
+- **Multiple Inheritance = Implement multiple interfaces**
+- **Same Abstract Method = One implementation is enough**
+- **Same Default Method = Must override to resolve conflict**
+
+### Easy Bangla Explanation
+
+ধরো, একটি `Vehicle` interface বলছে প্রত্যেক Vehicle-এর `start()` এবং `stop()` method থাকতে হবে।
+
+Car, Bike এবং Bus প্রত্যেকে নিজের মতো করে method দুটি implement করবে।
+
+আবার একটি class একসাথে একাধিক interface implement করতে পারে।
+
+অর্থাৎ, Interface শুধু নিয়ম বা contract তৈরি করে দেয়, আর implementing class সেই নিয়ম অনুযায়ী কাজ করে।
