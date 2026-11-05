@@ -741,4 +741,113 @@ Displays the account holder's name, account number, and current balance.
 | Data Validation | Deposit and withdraw conditions |
 | Data Protection | Prevents direct external modification |
 
+## QUestion 
+<img width="1081" height="336" alt="image" src="https://github.com/user-attachments/assets/be74a7f4-bdb9-47df-baeb-c07b0eda613a" />
+
+# Bank Account Program Using Encapsulation in Java
+
+**Problem:** Write a Java program to represent a Bank Account using the concept of Encapsulation.
+
+## 1. Requirements
+
+Create a `BankAccount` class with the following:
+
+1. Data members:
+   - Account holder's name
+   - Account number
+   - Account balance
+
+2. Member functions:
+   - `deposit()` – Deposit money into the account.
+   - `withdraw()` – Withdraw money if sufficient balance is available.
+   - `display()` – Display account details.
+
+3. Demonstrate encapsulation by keeping all data members private and providing public methods for controlled access.
+
+## 2. Java Implementation
+
+```java
+class BankAccount {
+
+    // Private data members (Data Hiding)
+    private String accountHolderName;
+    private String accountNumber;
+    private double balance;
+
+    // Constructor
+    public BankAccount(String name, String accNumber, double initialBalance) {
+        this.accountHolderName = name;
+        this.accountNumber = accNumber;
+        this.balance = initialBalance;
+    }
+
+    // Deposit money
+    public void deposit(double amount) {
+        if (amount > 0) {
+            balance += amount;
+            System.out.println("Deposit successful!");
+        } else {
+            System.out.println("Invalid deposit amount!");
+        }
+    }
+
+    // Withdraw money
+    public void withdraw(double amount) {
+        if (amount > 0 && amount <= balance) {
+            balance -= amount;
+            System.out.println("Withdrawal successful!");
+        } else {
+            System.out.println("Insufficient balance or invalid amount!");
+        }
+    }
+
+    // Display account details
+    public void display() {
+        System.out.println("Account Holder: " + accountHolderName);
+        System.out.println("Account Number: " + accountNumber);
+        System.out.println("Balance: " + balance);
+    }
+}
+
+// Main class
+public class Main {
+    public static void main(String[] args) {
+
+        BankAccount account = new BankAccount(
+            "Abdullah",
+            "123456789",
+            5000
+        );
+
+        // Display initial details
+        account.display();
+
+        // Deposit money
+        account.deposit(2000);
+
+        // Withdraw money
+        account.withdraw(1500);
+
+        // Display updated details
+        System.out.println("\nAfter Transactions:");
+        account.display();
+    }
+}
+```
+
+## 3. Output
+
+```text
+Account Holder: Abdullah
+Account Number: 123456789
+Balance: 5000.0
+
+Deposit successful!
+Withdrawal successful!
+
+After Transactions:
+Account Holder: Abdullah
+Account Number: 123456789
+Balance: 5500.0
+```
 
