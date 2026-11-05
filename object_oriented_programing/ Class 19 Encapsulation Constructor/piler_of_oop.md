@@ -1287,50 +1287,151 @@ We use abstraction to hide implementation complexity and expose only essential f
 
   <img width="481" height="121" alt="image" src="https://github.com/user-attachments/assets/a936f563-6b26-44f9-a7a9-3cad752230d5" />
 
-// Interface
+# How Abstraction Supports Code Reusability in Java
+
+## 1. How Does Abstraction Help in Code Reusability?
+
+Abstraction supports code reusability by defining common methods and contracts in abstract classes or interfaces that multiple classes can reuse.
+
+**In Simple Words:** Abstraction allows multiple classes to follow the same common structure without defining the contract again and again.
+
+**বাংলায়:**
+
+ধরো, আমাদের তিন ধরনের Payment System আছে:
+
+- Bkash
+- Nagad
+- Rocket
+
+সব Payment System-এ `pay()` method প্রয়োজন।
+
+আমরা প্রতিটি class-এর জন্য আলাদা design না করে একটি common Interface তৈরি করতে পারি।
+
+তারপর সব Payment class সেই Interface implement করতে পারবে।
+
+এভাবে common structure বা contract reuse করা যায়।
+
+## 2. Java Example Using Abstraction
+
+### Step 1: Create an Interface
+
+```java
+// Common interface
 interface Payment {
-    void pay();
+    void pay(double amount);
 }
+```
 
-// Bkash
+Here, we define a common contract using the `Payment` interface.
+
+All payment classes must provide their own implementation of the `pay()` method.
+
+### Step 2: Implement the Interface
+
+```java
+// Bkash implementation
 class Bkash implements Payment {
-    public void pay() {
-        System.out.println("Payment using Bkash");
+
+    @Override
+    public void pay(double amount) {
+        System.out.println("Bkash payment: " + amount);
     }
 }
 
-// Nagad
+// Nagad implementation
 class Nagad implements Payment {
-    public void pay() {
-        System.out.println("Payment using Nagad");
+
+    @Override
+    public void pay(double amount) {
+        System.out.println("Nagad payment: " + amount);
     }
 }
 
-// Order
-class Order {
+// Rocket implementation
+class Rocket implements Payment {
 
-    private Payment payment;
-
-    Order(Payment payment) {
-        this.payment = payment;
-    }
-
-    void processOrder() {
-        payment.pay();
+    @Override
+    public void pay(double amount) {
+        System.out.println("Rocket payment: " + amount);
     }
 }
+```
 
-// Main
+Here, three different classes implement the same `Payment` interface.
+
+Each class provides its own implementation of the `pay()` method.
+
+### Step 3: Reuse the Common Interface
+
+```java
 public class Main {
+
+    // Reusable method
+    public static void processPayment(Payment payment) {
+        payment.pay(1000);
+    }
+
     public static void main(String[] args) {
 
-        Order order1 = new Order(new Bkash());
-        order1.processOrder();
+        processPayment(new Bkash());
 
-        Order order2 = new Order(new Nagad());
-        order2.processOrder();
+        processPayment(new Nagad());
+
+        processPayment(new Rocket());
     }
 }
+```
+
+### Output
+
+```text
+Bkash payment: 1000.0
+Nagad payment: 1000.0
+Rocket payment: 1000.0
+```
+
+## 3. How Does Code Reusability Happen Here?
+
+1. We create the `Payment` interface once.
+2. Multiple classes implement the same interface.
+3. Every class follows the same contract.
+4. We write `processPayment()` only once.
+5. The same method works with Bkash, Nagad, and Rocket.
+
+**Important:** Interface reuses a common contract, not necessarily the actual method implementation. Each implementing class provides its own implementation.
+
+## 4. Diagram
+
+```text
+              Payment (Interface)
+                      |
+             -------------------
+             |        |        |
+           Bkash    Nagad    Rocket
+             |        |        |
+           pay()    pay()    pay()
+```
+
+All classes follow the same Payment contract but have different implementations.
+
+## 5. Abstraction vs Inheritance in Code Reusability
+
+| Abstraction | Inheritance |
+|---|---|
+| Reuses common contracts and design. | Reuses existing properties and method implementations. |
+| Uses interfaces and abstract classes. | Uses `extends`. |
+| Focuses on what a class should do. | Focuses on reusing existing code. |
+| Supports flexible implementations. | Reduces code duplication. |
+
+## 6. Benefits of Abstraction for Code Reusability
+
+1. **Code Reusability:** Multiple classes can follow the same common contract.
+2. **Flexibility:** New payment methods can be added easily.
+3. **Maintainability:** Changes in implementation do not require changes to the common contract.
+4. **Loose Coupling:** Classes depend on an abstraction rather than a specific implementation.
+5. **Extensibility:** New classes can implement the existing interface.
+
+
 
 ## QUestion 
 <img width="1081" height="336" alt="image" src="https://github.com/user-attachments/assets/be74a7f4-bdb9-47df-baeb-c07b0eda613a" />
