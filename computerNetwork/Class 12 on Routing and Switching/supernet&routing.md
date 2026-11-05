@@ -770,3 +770,77 @@ Suppose you want to send a 100-page PDF file to your friend.
 - TCP → Reliable and ordered data delivery.
 - UDP → No guaranteed delivery or ordering.
 - Internet → Major example of packet-switched networking.
+  # Distance Vector Routing (DVR)
+
+## 1. What is Distance Vector Routing?
+
+**Distance Vector Routing** is a dynamic routing algorithm used in computer networks to find the best path from one router to another based on distance (cost) and direction (next hop).
+
+**বাংলায়:** Distance Vector Routing হলো এমন একটি Routing Algorithm যেখানে প্রতিটি Router তার Neighbor Router-এর কাছ থেকে Routing Information সংগ্রহ করে এবং সবচেয়ে কম Cost-এর পথ নির্বাচন করে।
+
+## 2. How Does Distance Vector Routing Work?
+
+Distance Vector Routing works step by step:
+
+1. **Initial Routing Table:** Each router initially store information which router  are directly connected .
+2. **Share Information:** Each router shares its routing table with neighboring routers.
+3. **Update Routing Table:** Routers receive information from neighbors and update their routing tables.
+4. **Find Best Path:** Each router selects the path with the minimum cost.
+5. **Repeat:** Routers periodically exchange routing information to maintain updated routing tables.
+
+
+
+## 4. Bellman-Ford Algorithm
+
+Distance Vector Routing uses the **Bellman-Ford Algorithm** to calculate the shortest path.
+
+
+## 5. Advantages of Distance Vector Routing
+
+1. Simple and easy to implement.
+2. Requires less computational power.
+3. Suitable for small networks.
+4. Automatically updates routing information when network topology changes.
+
+## 6. Disadvantages of Distance Vector Routing
+
+1. **Slow Convergence:** It takes time for all routers to update their routing tables after a network change.
+2. **Routing Loops:** Packets may circulate repeatedly between routers.
+3. **Count to Infinity:** The cost of an unreachable destination may increase gradually.
+4. **Limited Scalability:** Not suitable for very large networks.
+
+## 7. Solutions to Routing Problems
+
+| Technique | Description |
+|---|---|
+| Split Horizon | Does not advertise a route back through the interface from which it was learned. |
+| Route Poisoning | Advertises a failed route with an infinite metric. |
+| Poison Reverse | Advertises a learned route back to the neighbor with an infinite metric. |
+| Hold-down Timer | Temporarily ignores potentially incorrect routing updates after a route failure. |
+
+## 8. Distance Vector Routing Protocol
+
+**RIP (Routing Information Protocol)** is a popular example of a Distance Vector Routing Protocol.
+
+Important facts about RIP:
+
+- Uses Distance Vector Routing.
+- Uses Bellman-Ford Algorithm.
+- Uses Hop Count as its routing metric.
+- Maximum hop count = 15.
+- Hop count 16 means the destination is unreachable.
+- Uses UDP port 520.
+  <img width="594" height="393" alt="image" src="https://github.com/user-attachments/assets/4beb4226-315d-45da-9980-89d6246f7afb" />
+
+
+## 9. Distance Vector vs Link State Routing
+
+| Distance Vector | Link State |
+|---|---|
+| Shares routing information with neighbors. | Shares link-state information. |
+| Uses Bellman-Ford Algorithm. | Uses Dijkstra Algorithm. |
+| Knows routes learned from neighbors. | Builds a network topology map. |
+| Generally slower convergence. | Generally faster convergence. |
+| Example: RIP | Example: OSPF |
+
+
