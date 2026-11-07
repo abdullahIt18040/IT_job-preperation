@@ -23,22 +23,119 @@ IP addressing and routing work together at the **Network Layer (Layer 3)** to de
 
 7. **Packet Delivery:** The packet reaches the destination network and is delivered to the destination device.
 
-## Example
-
-PC-A → Router R1 → Router R2 → Router R3 → PC-B
-
-## Important Points for Job Exams
-
-| Topic | Answer |
-|---|---|
-| Network Layer | Layer 3 |
-| IP Address | Logical Address |
-| OSPF Type | Link State Routing |
-| OSPF Algorithm | Dijkstra's SPF |
-| OSPF Protocol Number | 89 |
-| OSPF Function | Selects the best route |
-| Router Function | Forwards packets between networks |
 
 ## Conclusion
 
 IP addressing identifies the source and destination, OSPF determines the best route, and routers forward packets to deliver data across different networks.
+
+# 02..Transmission Media Used in LAN ? write maxium length and capacity 
+
+## 1. Introduction
+
+A **Transmission Medium** is the physical path through which data travels from one device to another in a network.
+
+In a Local Area Network (LAN), transmission media are classified into two main categories:
+
+1. **Guided (Wired) Transmission Media**
+2. **Unguided (Wireless) Transmission Media**
+
+---
+
+## 2. Guided (Wired) Transmission Media
+
+Guided transmission media transmit data through physical cables.
+
+There are three main types:
+
+### A. Twisted Pair Cable (UTP/STP)
+
+- **Maximum Length:** 100 meters (standard Ethernet).
+- **Capacity:** 
+  - Cat 5e: Up to 1 Gbps.
+  - Cat 6: Up to 10 Gbps (up to 55 meters).
+  - Cat 6a: Up to 10 Gbps (100 meters).
+- **Uses:** Commonly used in Ethernet LAN.
+
+### B. Coaxial Cable
+
+- **Maximum Length:**
+  - 10BASE2: 185 meters.
+  - 10BASE5: 500 meters.
+- **Capacity:** 10 Mbps (classic Ethernet).
+- **Uses:** Older Ethernet LAN.
+
+**Important:**
+
+- 10BASE2 = Thin Ethernet (Thinnet).
+- 10BASE5 = Thick Ethernet (Thicknet).
+- Both use Coaxial Cable and support 10 Mbps.
+
+### C. Fiber Optic Cable
+
+- **Maximum Length:** 550 meters to 100 km or more (depending on type and standard).
+- **Capacity:** 10 Gbps, 40 Gbps, 100 Gbps or higher.
+- **Uses:** High-speed LAN backbone and long-distance communication.
+
+---
+
+## 3. Unguided (Wireless) Transmission Media
+
+Unguided transmission media transmit data through electromagnetic waves without physical cables.
+
+### A. Radio Waves (Wi-Fi)
+
+- **Maximum Range:** Approximately 30–100 meters indoors.
+- **Capacity:** Several Gbps (depending on Wi-Fi standard).
+- **Uses:** Wireless LAN (WLAN).
+- **Standard:** IEEE 802.11.
+
+### B. Infrared (IR)
+
+- **Maximum Range:** Approximately 1–5 meters (typical).
+- **Capacity:** Depends on the technology.
+- **Uses:** Short-range, line-of-sight communication.
+
+---
+
+
+*Note: Actual transmission distance and capacity depend on the cable category, Ethernet standard, fiber type, Wi-Fi standard and environmental conditions.*
+
+---
+
+
+
+## Q3 what is  10BASE2 and 10BASE5 Ethernet Standards?
+
+## 1. Introduction
+
+10BASE2 and 10BASE5 are early Ethernet standards used in Local Area Networks (LAN). Both use **Coaxial Cable** and support a data transmission speed of **10 Mbps**.
+
+## 2. 10BASE2 (Thin Ethernet)
+
+- **Cable Type:** Thin Coaxial Cable
+- **Maximum Length:** 185 meters
+- **Speed:** 10 Mbps
+- **Topology:** Bus Topology
+- **Connector:** BNC Connector
+- **Also Known As:** Thin Ethernet or Thinnet
+
+## 3. 10BASE5 (Thick Ethernet)
+
+- **Cable Type:** Thick Coaxial Cable
+- **Maximum Length:** 500 meters
+- **Speed:** 10 Mbps
+- **Topology:** Bus Topology
+- **Connection:** Vampire Tap
+- **Also Known As:** Thick Ethernet or Thicknet
+
+## 4. Meaning of 10BASE2 and 10BASE5
+
+| Part | Meaning |
+|---|---|
+| 10 | 10 Mbps data transmission speed |
+| BASE | Baseband transmission |
+| 2 | Approximately 200 meters (actual maximum: 185 m) |
+| 5 | Approximately 500 meters |
+
+
+
