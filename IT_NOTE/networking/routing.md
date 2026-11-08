@@ -138,4 +138,106 @@ Unguided transmission media transmit data through electromagnetic waves without 
 | 5 | Approximately 500 meters |
 
 
+# Unguided Transmission Media (Wireless Media)
 
+## 1. Definition
+Unguided media transmits data through electromagnetic waves without using physical cables.
+
+**Examples:** Wi-Fi, Bluetooth, Radio, Satellite Communication.
+
+## 2. Types of Unguided Media
+
+### Radio Waves
+
+Radio waves are electromagnetic waves used for wireless communication. They can travel in different directions and generally do not require a direct line of sight.
+
+Frequency range (traditional textbook classification): 3 kHz – 1 GHz.
+
+Characteristics:
+
+Usually omnidirectional.
+
+Can cover large areas.
+
+Can penetrate walls, depending on frequency and material.
+
+Used for broadcasting and wireless communication.
+
+Examples:
+
+AM and FM Radio
+
+Television Broadcasting
+
+Wi-Fi
+
+Bluetooth
+
+Mobile Communication
+
+### B.
+### Radio Waves
+
+Radio waves are electromagnetic waves used for wireless communication. They can travel in different directions and generally do not require a direct line of sight.
+
+Frequency range (traditional textbook classification): 3 kHz – 1 GHz.
+
+Characteristics:
+
+Usually omnidirectional.
+
+Can cover large areas.
+
+Can penetrate walls, depending on frequency and material.
+
+Used for broadcasting and wireless communication.
+
+Examples:
+
+AM and FM Radio
+
+Television Broadcasting
+
+Wi-Fi
+
+Bluetooth
+
+Mobile Communication
+
+Types:
+- Terrestrial Microwave
+- Satellite Microwave
+
+### C.  Infrared Waves (IR)
+
+Infrared waves are electromagnetic waves used for short-range wireless communication.
+
+Frequency range (approximate): 300 GHz – 400 THz.
+
+Characteristics:
+
+Short communication range.
+
+Usually requires a direct line of sight or a suitable reflection path.
+
+Cannot normally penetrate walls.
+
+Less interference between separate rooms.
+
+Examples:
+
+TV Remote Control
+
+Infrared Sensors
+
+Short-range Device Communication.
+
+## 6. Important Exam Points
+
+- Radio Waves → Omnidirectional.
+- Microwaves → Directional + LOS.
+- Infrared → Short-range communication.
+- Wi-Fi → Wireless communication.
+- Mobility → Ability to move while staying connected.
+
+**Note:** Frequency ranges are traditional textbook classifications.
