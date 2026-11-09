@@ -286,14 +286,57 @@ A **Transmission Medium** is the path through which data travels from one device
 
 *Cat6 supports 10 Gbps up to approximately 55 meters under suitable conditions.*
 
-## 3. Important Points for Job Exams
+#Q4: # Router vs Gateway (Data Transmission)
 
-1. UTP = Unshielded Twisted Pair.
-2. STP = Shielded Twisted Pair.
-3. UTP is cheaper than STP.
-4. Optical Fiber transmits data using light signals.
-5. Coaxial cable is an older LAN transmission medium.
-6. Wi-Fi provides wireless communication and mobility.
-7. Ethernet twisted-pair standard maximum channel length is 100 meters.
+## Q4:  Which is More Convenient for Data Transmission?
 
-**Remember:** UTP = 100m, 10BASE2 = 185m, 10BASE5 = 500m.
+**Answer: Router is generally more suitable for data transmission between IP networks.**
+
+### 1. Router
+- Connects different IP networks.
+- Uses IP addresses to forward data packets.
+- Selects the best path for data transmission.
+- Works at OSI Layer 3 (Network Layer).
+- Efficiently manages network traffic.
+
+### 2. Gateway
+- Connects different networks or systems.
+- Performs protocol translation when required.
+- Acts as an entry and exit point of a network.
+- Can operate at different OSI layers.
+
+### 3. Difference Between Router and Gateway
+
+| Router | Gateway |
+|---|---|
+| Selects the best path. | Connects different systems or protocols. |
+| Forwards IP packets. | May translate protocols. |
+| Works at Layer 3. | Can work at multiple layers. |
+| Used for IP network routing. | Used for communication between different systems. |
+
+### 4. Conclusion
+
+- **Router:** More suitable for routing data packets between IP networks.
+- **Gateway:** More suitable for connecting different protocols or systems.
+
+### 5. Important Job Exam Questions
+
+**Q1. Which device determines the best path for data transmission?**
+
+Answer: Router.
+
+**Q2. Which device connects networks using different protocols?**
+
+Answer: Gateway.
+
+**Q3. At which OSI layer does a traditional router work?**
+
+Answer: Network Layer (Layer 3).
+
+**Q4. What is a Default Gateway?**
+
+Answer: A default gateway is the router through which a device sends data to destinations outside its local network.
+
+**Remember:**
+- Router = Best Path Selection.
+- Gateway = Protocol Conversion / Connecting Different Systems.
