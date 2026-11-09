@@ -241,3 +241,59 @@ Short-range Device Communication.
 - Mobility → Ability to move while staying connected.
 
 **Note:** Frequency ranges are traditional textbook classifications.
+# Q3: Transmission Media Used in LAN
+
+A **Transmission Medium** is the path through which data travels from one device to another in a network.
+
+## 1. Types of Transmission Media
+
+### 1. Twisted Pair Cable (UTP/STP)
+- Maximum Length: 100 meters
+- Cat5e Capacity: 1 Gbps
+- Cat6 Capacity: 10 Gbps (up to 55 meters)
+- Cat6a Capacity: 10 Gbps (up to 100 meters)
+- Commonly used in LAN.
+
+### 2. Coaxial Cable
+- 10BASE2 Maximum Length: 185 meters
+- 10BASE5 Maximum Length: 500 meters
+- Capacity: 10 Mbps
+- Used in older LAN technology.
+
+### 3. Optical Fiber Cable
+- Maximum Length: Several kilometers or more (depends on type and speed).
+- Capacity: 1 Gbps, 10 Gbps, 40 Gbps, 100 Gbps or higher.
+- Uses light signals to transmit data.
+- Provides high speed and long-distance communication.
+
+### 4. Wireless (Radio Waves / Wi-Fi)
+- Typical Indoor Range: 30–100 meters.
+- Capacity: Depends on Wi-Fi standard.
+- Wi-Fi 6: Up to 9.6 Gbps (theoretical).
+- Provides mobility without cables.
+
+## 2. Summary Table
+
+| Transmission Media | Maximum Length / Range | Capacity |
+|---|---|---|
+| UTP Cat5e | 100 m | 1 Gbps |
+| UTP Cat6 | 100 m | 10 Gbps* |
+| UTP Cat6a | 100 m | 10 Gbps |
+| Coaxial (10BASE2) | 185 m | 10 Mbps |
+| Coaxial (10BASE5) | 500 m | 10 Mbps |
+| Optical Fiber | Several km or more | 1–100+ Gbps |
+| Wi-Fi | 30–100 m (typical indoor) | Standard-dependent |
+
+*Cat6 supports 10 Gbps up to approximately 55 meters under suitable conditions.*
+
+## 3. Important Points for Job Exams
+
+1. UTP = Unshielded Twisted Pair.
+2. STP = Shielded Twisted Pair.
+3. UTP is cheaper than STP.
+4. Optical Fiber transmits data using light signals.
+5. Coaxial cable is an older LAN transmission medium.
+6. Wi-Fi provides wireless communication and mobility.
+7. Ethernet twisted-pair standard maximum channel length is 100 meters.
+
+**Remember:** UTP = 100m, 10BASE2 = 185m, 10BASE5 = 500m.
