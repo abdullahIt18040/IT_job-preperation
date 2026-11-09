@@ -1991,3 +1991,5 @@ Because static methods are resolved using the reference type.
 
 **Remember:** Method Hiding = Inheritance + Same Static Method Signature.
 
+## Find  method overloading and method hiding method find>
+<img width="1353" height="580" alt="image" src="https://github.com/user-attachments/assets/af6a9b96-9383-4924-845a-840ffe3118d4" />
