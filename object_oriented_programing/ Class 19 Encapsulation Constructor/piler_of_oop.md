@@ -1917,3 +1917,77 @@ Car, Bike এবং Bus প্রত্যেকে নিজের মতো �
 আবার একটি class একসাথে একাধিক interface implement করতে পারে।
 
 অর্থাৎ, Interface শুধু নিয়ম বা contract তৈরি করে দেয়, আর implementing class সেই নিয়ম অনুযায়ী কাজ করে।
+
+# Method Hiding in Java (OOP)
+
+## Definition
+Method Hiding occurs when a child class defines a `static` method with the same name and parameters as a static method in its parent class.
+
+## Example
+
+```java
+class Parent {
+    static void show() {
+        System.out.println("Parent Method");
+    }
+}
+
+class Child extends Parent {
+    static void show() {
+        System.out.println("Child Method");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Parent.show();
+        Child.show();
+    }
+}
+```
+
+**Output:**
+```text
+Parent Method
+Child Method
+```
+
+## Why Use Method Hiding?
+- To provide a separate static implementation in the child class.
+- Parent class-এর static method অক্ষত রেখে Child class-এর জন্য আলাদা implementation দিতে।
+- To keep the parent's static method unchanged.
+- To define class-specific static behavior.
+
+## Important Points
+1. Method Hiding applies to `static` methods.
+2. Inheritance is required.
+3. Parent and Child methods must have the same method signature.
+4. Resolved at compile time.
+5. Depends on the reference type, not the actual object.
+6. Static methods cannot be overridden.
+
+## Method Hiding vs Method Overriding
+
+| Method Hiding | Method Overriding |
+|---|---|
+| Static methods | Non-static methods |
+| Compile-time resolution | Runtime resolution |
+| Depends on reference type | Depends on actual object |
+| No runtime polymorphism | Supports runtime polymorphism |
+
+## Important Example
+
+```java
+Parent obj = new Child();
+obj.show();
+```
+
+**Output:**
+```text
+Parent Method
+```
+
+Because static methods are resolved using the reference type.
+
+**Remember:** Method Hiding = Inheritance + Same Static Method Signature.
+
