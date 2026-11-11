@@ -1,0 +1,1 @@
+https://github.com/abdullahIt18040/Software_devlopment/blob/main/lecture_21_Ch%20DBMS%201%20DB%20%26%20DBMS%2C%20ER%20Model%2C%20Diagram%2C%20Keys.md
