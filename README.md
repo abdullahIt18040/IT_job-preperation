@@ -1,4 +1,6 @@
 ## MArk distribution
+<img width="546" height="812" alt="image" src="https://github.com/user-attachments/assets/77ce4572-1eed-42f9-a9a0-e3531611ba07" />
+
 ## McQ +written same day
 ## if  mcq pass then written exam dekbe
 
